@@ -19,9 +19,9 @@ data/external/*
 *.feather
 
 # ---- Models & experiment tracking ----
-models/
-mlruns/
-mlartifacts/
+/models/
+/mlruns/
+/mlartifacts/
 
 # ---- Secrets ----
 .env
