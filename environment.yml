@@ -1,0 +1,58 @@
+name: climate-impact
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.12          # conservative: every package below has stable builds
+  - pip
+  # --- Core data handling ---
+  - pandas
+  - numpy
+  - pyarrow              # Parquet I/O for interim/processed layers
+  - pyyaml
+  # --- Gridded & geospatial (compiled; why we use conda-forge) ---
+  - xarray
+  - netcdf4
+  - dask                 # lazy loading of large ERA5 files
+  - geopandas
+  - shapely
+  - regionmask
+  - pooch                # regionmask downloads Natural Earth via pooch
+  # --- Statistical inference (replaces the R stack) ---
+  - scipy
+  - statsmodels
+  - linearmodels         # independent cross-check for panel FE
+  - ruptures             # change-point detection
+  # --- Machine learning ---
+  - scikit-learn
+  - lightgbm
+  - optuna
+  - shap
+  - mlflow
+  - pandera              # data contracts / schema validation
+  # --- Visualization & app ---
+  - matplotlib
+  - seaborn
+  - plotly
+  - streamlit
+  # --- Data access ---
+  - requests
+  - cdsapi               # Copernicus ERA5 API
+  # --- Dev tooling ---
+  - make                 # Windows has no make; this provides `make all`
+  - ruff
+  - pytest
+  - pre-commit
+  - nbstripout
+  - jupyterlab
+  - ipykernel
+  - missingno
+  - pip:
+      - pyfixest              # fixest port: two-way FE, PPML, clustered SE
+      - pymannkendall         # (modified) Mann-Kendall, Sen's slope
+      - piecewise-regression  # segmented regression with breakpoint CI
+      - pyextremes            # extreme value analysis (stretch)
+      - mapie                 # conformal prediction intervals
+      - wbgapi                # World Bank WDI
+      - country_converter     # country names -> ISO3
+      - ydata-profiling       # Phase 3 profiling
