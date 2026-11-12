@@ -54,3 +54,12 @@ def test_projection_stack() -> None:
 
     gdf = gpd.GeoDataFrame(geometry=[Point(106.8, -6.2)], crs="EPSG:4326")
     assert gdf.to_crs("EPSG:3857").crs.to_epsg() == 3857
+
+def test_running_in_project_python() -> None:
+    """Guard: tests must run in the project's Python 3.12 environment."""
+    import sys
+
+    assert sys.version_info[:2] == (3, 12), (
+        f"Running {sys.version.split()[0]} at {sys.executable}; "
+        "activate the env: conda activate climate-impact"
+    )
