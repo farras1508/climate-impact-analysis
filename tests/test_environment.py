@@ -1,11 +1,13 @@
 """Smoke tests: the scientific stack imports and its compiled I/O layers work."""
 
 import importlib
+from importlib.metadata import version
 
 import numpy as np
 import pandas as pd
 import pytest
 import xarray as xr
+from packaging.version import Version
 
 PACKAGES = [
     "pyarrow",
@@ -94,3 +96,18 @@ def test_running_in_project_python() -> None:
         f"Running {sys.version.split()[0]} at {sys.executable}; "
         "activate the env: conda activate climate-impact"
     )
+
+
+# Mirrors the pins in environment.yml (DEC-019, DEC-022). Fails if pip silently
+# replaces a conda-managed core library with an out-of-range version.
+VERSION_BOUNDS = {
+    "numpy": ("2.0", "2.4"),
+    "pandas": ("3.0", "4.0"),
+}
+
+
+@pytest.mark.parametrize(("pkg", "bounds"), VERSION_BOUNDS.items())
+def test_core_versions_within_pins(pkg, bounds):
+    low, high = (Version(b) for b in bounds)
+    installed = Version(version(pkg))
+    assert low <= installed < high, f"{pkg} {installed} outside pinned range [{low}, {high})"
