@@ -65,3 +65,8 @@ paths:
   external: data/external
   figures: reports/figures
   manifest: data/raw/manifest.json
+
+
+tracking:
+  mlflow_db: mlflow.db                 # SQLite store at project root (gitignored)
+  artifact_dir: mlartifacts            # model artifacts (gitignored)
