@@ -77,4 +77,5 @@ filterwarnings = [
   "error::FutureWarning:climate_impact.*",
   # third-party noise: matplotlib's internal use of deprecated pyparsing API
   "ignore:'\\w+' deprecated - use:Warning",
+  "ignore::PendingDeprecationWarning:shap.*",
 ]

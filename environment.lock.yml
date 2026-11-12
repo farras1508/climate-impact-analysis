@@ -250,6 +250,7 @@ dependencies:
   - lightgbm=4.7.0
   - linearmodels=7.1
   - llvm-openmp=23.1.5
+  - llvmlite=0.50.0
   - locket=1.0.0
   - lz4=4.4.5
   - lz4-c=1.10.0
@@ -259,6 +260,8 @@ dependencies:
   - mapclassify=2.11.0
   - markdown-it-py=4.3.0
   - markupsafe=3.0.4
+  - matplotlib=3.11.2
+  - matplotlib-base=3.11.2
   - matplotlib-inline=0.2.2
   - mdurl=0.1.2
   - minizip=4.2.2
@@ -286,6 +289,7 @@ dependencies:
   - nlohmann_json=3.12.0
   - nodeenv=1.12.0
   - notebook-shim=0.2.4
+  - numba=0.68.1
   - numpy=2.3.5
   - opencl-headers=2025.06.13
   - openjpeg=2.5.4
@@ -302,6 +306,7 @@ dependencies:
   - orc=2.3.1
   - overrides=7.7.0
   - packaging=26.3
+  - pandas=3.1.1
   - pandas-stubs=3.1.0.261029
   - pandera=0.34.1
   - pandera-base=0.34.1
@@ -469,38 +474,23 @@ dependencies:
   - zstd=1.5.7
   - pip:
       - country-converter==1.3.2
-      - dacite==1.9.2
       - emcee==3.1.6
       - faicons==0.2.2
-      - filetype==1.2.0
       - great-tables==1.1.0
       - htmltools==0.7.0
-      - imagehash==4.3.2
       - importlib-resources==7.1.0
-      - llvmlite==0.45.1
       - lxml==6.1.3
       - maketables==0.2.0
       - mapie==1.6.0
-      - matplotlib==3.10.0
-      - minify-html==0.18.1
       - multimark==0.4.0
-      - multimethod==1.12
       - nokap==0.1.0
-      - numba==0.62.1
-      - pandas==2.3.3
-      - phik==0.12.5
       - piecewise-regression==1.5.0
-      - puremagic==2.2.0
       - pyarrow==26.0.1
       - pyextremes==2.6.1
       - pyfixest==0.70.0
       - pymannkendall==1.4.3
       - python-docx==1.2.0
-      - pywavelets==1.10.0
-      - scipy==1.16.3
+      - scipy==1.18.1
       - tabulate==0.10.0
-      - visions==0.8.1
       - wbgapi==1.0.14
       - within-py==0.4.0
-      - wordcloud==1.9.6
-      - ydata-profiling==4.18.4

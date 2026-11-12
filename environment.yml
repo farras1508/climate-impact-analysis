@@ -6,7 +6,7 @@ dependencies:
   - python=3.12          # conservative: every package below has stable builds
   - pip
   # --- Core data handling ---
-  - pandas
+  - pandas>=3.0,<4       # major version pinned: CoW + string dtype semantics affect results
   - numpy>=2.0,<2.4      # numba (required by shap) supports NumPy <= 2.3; relax when numba catches up
   - numba                # explicit, so conda (not pip) resolves it against numpy
   - pyarrow              # Parquet I/O for interim/processed layers
@@ -59,4 +59,3 @@ dependencies:
       - mapie                 # conformal prediction intervals
       - wbgapi                # World Bank WDI
       - country_converter     # country names -> ISO3
-      - ydata-profiling       # Phase 3 profiling
