@@ -54,3 +54,5 @@ reports/*_files/
 Thumbs.db
 .vscode/
 .idea/
+# Provenance record IS commited (checksums prove which data was used)
+!data/raw/manifest.json

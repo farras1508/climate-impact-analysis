@@ -17,6 +17,7 @@ dependencies:
   - argon2-cffi=25.1.0
   - argon2-cffi-bindings=26.1.0
   - arrow=1.4.0
+  - ast-serialize=0.13.1
   - asttokens=3.0.2
   - async-lru=2.4.0
   - attrs=26.1.0
@@ -272,6 +273,7 @@ dependencies:
   - multiurl=0.3.10
   - munkres=1.1.4
   - muparser=2.3.5
+  - mypy=2.4.1
   - mypy_extensions=1.1.0
   - narwhals=2.28.0
   - nbclient=0.11.0
@@ -284,6 +286,7 @@ dependencies:
   - nlohmann_json=3.12.0
   - nodeenv=1.12.0
   - notebook-shim=0.2.4
+  - numpy=2.3.5
   - opencl-headers=2025.06.13
   - openjpeg=2.5.4
   - openssl=3.6.5
@@ -299,12 +302,14 @@ dependencies:
   - orc=2.3.1
   - overrides=7.7.0
   - packaging=26.3
+  - pandas-stubs=3.1.0.261029
   - pandera=0.34.1
   - pandera-base=0.34.1
   - pandocfilters=1.5.1
   - paramiko=5.1.0
   - parso=0.8.7
   - partd=1.4.2
+  - pathspec=1.1.1
   - patsy=1.0.3
   - pcre2=10.47
   - pillow=13.0.0
@@ -351,6 +356,7 @@ dependencies:
   - python-fastjsonschema=2.22.3
   - python-gil=3.12.16
   - python-json-logger=4.2.0
+  - python-librt=0.16.0
   - python-multipart=0.0.33
   - python-tzdata=2026.6
   - python_abi=3.12
@@ -416,6 +422,8 @@ dependencies:
   - truststore=0.10.5
   - typeguard=4.6.0
   - typer=0.29.1
+  - types-pytz=2026.6.0.20261031
+  - types-pyyaml=6.0.12.20261111
   - typing-extensions=4.16.0
   - typing-inspection=0.4.5
   - typing_extensions=4.16.0
@@ -479,7 +487,6 @@ dependencies:
       - multimethod==1.12
       - nokap==0.1.0
       - numba==0.62.1
-      - numpy==2.3.5
       - pandas==2.3.3
       - phik==0.12.5
       - piecewise-regression==1.5.0

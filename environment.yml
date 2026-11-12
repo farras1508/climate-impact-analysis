@@ -7,7 +7,8 @@ dependencies:
   - pip
   # --- Core data handling ---
   - pandas
-  - numpy
+  - numpy>=2.0,<2.4      # numba (required by shap) supports NumPy <= 2.3; relax when numba catches up
+  - numba                # explicit, so conda (not pip) resolves it against numpy
   - pyarrow              # Parquet I/O for interim/processed layers
   - pyyaml
   # --- Gridded & geospatial (compiled; why we use conda-forge) ---
@@ -47,6 +48,9 @@ dependencies:
   - jupyterlab
   - ipykernel
   - missingno
+  - mypy
+  - pandas-stubs
+  - types-pyyaml
   - pip:
       - pyfixest              # fixest port: two-way FE, PPML, clustered SE
       - pymannkendall         # (modified) Mann-Kendall, Sen's slope

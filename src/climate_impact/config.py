@@ -1,11 +1,12 @@
 """Load and validate project configuration.
 
-All paths, years, thresholds and seeds come from config/*.yaml via this module.
-Nothing else in the codebase may hard-code them.
+All paths, years, thresholds and seeds come from ``config/*.yaml`` through this
+module. Nothing else in the codebase may hard-code them.
 """
 
 from __future__ import annotations
 
+import copy
 import random
 from functools import lru_cache
 from pathlib import Path
@@ -14,19 +15,32 @@ from typing import Any
 import numpy as np
 import yaml
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]  # src/climate_impact/config.py -> repo root
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_DIR = PROJECT_ROOT / "config"
 
 
 def _read_yaml(name: str) -> dict[str, Any]:
-    with open(CONFIG_DIR / name, encoding="utf-8") as f:
-        return yaml.safe_load(f)
+    with (CONFIG_DIR / name).open(encoding="utf-8") as f:
+        data = yaml.safe_load(f)
+    if not isinstance(data, dict):  # an empty file parses to None
+        msg = f"{name} must contain a top-level mapping, got {type(data).__name__}."
+        raise ValueError(msg)
+    return data
 
 
 def validate_config(cfg: dict[str, Any]) -> None:
-    """Raise ValueError if the configuration is internally inconsistent.
+    """Check that the configuration is internally consistent.
 
-    Uses explicit exceptions, not ``assert`` (asserts are stripped under ``python -O``).
+    Parameters
+    ----------
+    cfg : dict
+        Parsed contents of ``config/config.yaml``.
+
+    Raises
+    ------
+    ValueError
+        If any rule is violated. Explicit exceptions are used instead of
+        ``assert``, which Python strips under ``-O``.
     """
     a, s, st = cfg["analysis"], cfg["splits"], cfg["statistics"]
     b0, b1 = a["baseline_period"]
@@ -47,32 +61,101 @@ def validate_config(cfg: dict[str, Any]) -> None:
 
 
 @lru_cache(maxsize=1)
-def load_config() -> dict[str, Any]:
-    """Return the validated project configuration (cached)."""
+def _config_cached() -> dict[str, Any]:
     cfg = _read_yaml("config.yaml")
     validate_config(cfg)
     return cfg
 
 
 @lru_cache(maxsize=1)
+def _datasets_cached() -> dict[str, Any]:
+    datasets = _read_yaml("datasets.yaml").get("datasets")
+    if not isinstance(datasets, dict):
+        raise ValueError("datasets.yaml must contain a top-level 'datasets' mapping.")
+    return datasets
+
+
+def load_config() -> dict[str, Any]:
+    """Return the validated project configuration.
+
+    Returns
+    -------
+    dict
+        A deep copy, so no caller can mutate the shared configuration.
+    """
+    return copy.deepcopy(_config_cached())
+
+
 def load_datasets() -> dict[str, Any]:
-    """Return the dataset registry from config/datasets.yaml (cached)."""
-    return _read_yaml("datasets.yaml")["datasets"]
+    """Return the dataset registry from ``config/datasets.yaml``.
+
+    Returns
+    -------
+    dict
+        A deep copy, keyed by dataset identifier.
+    """
+    return copy.deepcopy(_datasets_cached())
 
 
 def get_path(layer: str) -> Path:
-    """Absolute path for a configured location, e.g. get_path('raw')."""
-    return PROJECT_ROOT / load_config()["paths"][layer]
+    """Return the absolute path of a configured location.
+
+    Parameters
+    ----------
+    layer : str
+        Key under ``paths`` in ``config.yaml``, e.g. ``"raw"`` or ``"processed"``.
+
+    Returns
+    -------
+    pathlib.Path
+        Absolute path inside the project root.
+
+    Raises
+    ------
+    KeyError
+        If ``layer`` is not configured.
+    """
+    relative = load_config()["paths"][layer]
+    if not isinstance(relative, str):
+        raise TypeError(f"paths.{layer} must be a string, got {type(relative).__name__}.")
+    return PROJECT_ROOT / relative
 
 
 def get_rng(seed: int | None = None) -> np.random.Generator:
-    """Seeded NumPy Generator. Pass it explicitly to every stochastic function."""
-    return np.random.default_rng(load_config()["project"]["random_seed"] if seed is None else seed)
+    """Return a seeded NumPy ``Generator``.
+
+    Pass the generator explicitly to every stochastic function rather than
+    relying on global state.
+
+    Parameters
+    ----------
+    seed : int, optional
+        Overrides ``project.random_seed`` (used for multi-seed robustness runs).
+
+    Returns
+    -------
+    numpy.random.Generator
+    """
+    if seed is None:
+        seed = int(load_config()["project"]["random_seed"])
+    return np.random.default_rng(seed)
 
 
 def set_global_seeds(seed: int | None = None) -> int:
-    """Seed legacy global RNGs (for libraries that ignore explicit generators)."""
-    seed = load_config()["project"]["random_seed"] if seed is None else seed
+    """Seed the legacy global RNGs for libraries that ignore explicit generators.
+
+    Parameters
+    ----------
+    seed : int, optional
+        Overrides ``project.random_seed``.
+
+    Returns
+    -------
+    int
+        The seed that was applied (log it with every experiment).
+    """
+    if seed is None:
+        seed = int(load_config()["project"]["random_seed"])
     random.seed(seed)
     np.random.seed(seed)  # noqa: NPY002 - legacy API, intentionally seeded
     return seed

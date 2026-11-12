@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,10 +7,74 @@ name = "climate-impact"
 version = "0.1.0"
 description = "Reproducible climate change impact analysis: signal, drivers, impacts, risk."
 requires-python = ">=3.12"
-license = { text = "MIT" }
+license = "MIT"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
+# ------------------------------------------------------------------ Ruff
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+  "E", "W", "F",   # pycodestyle + pyflakes: core errors (E711, F841, ...)
+  "I",             # import sorting
+  "B",             # bugbear: likely bugs (B006, B905, ...)
+  "UP",            # modern Python syntax
+  "N",             # naming conventions
+  "NPY",           # NumPy: legacy RNG, deprecated aliases
+  "PD",            # pandas pitfalls (inplace, .values, ...)
+  "SIM", "C4",     # simplifications
+  "RUF",           # ruff-specific (ambiguous unicode, ...)
+  "D",             # docstrings (NumPy convention)
+  "ANN",           # type annotations on all functions
+  "T20",           # no print() in library code
+  "PTH",           # pathlib over os.path / string paths
+  "PT",            # pytest best practices
+  "ERA",           # commented-out code
+  "S113",          # requests without timeout
+  "S506",          # unsafe yaml.load
+]
+ignore = [
+  "D104", "D105", "D107",  # docstrings for __init__.py / magic methods / __init__
+  "W191", "D206", "D300",  # conflict with ruff formatter
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.isort]
+known-first-party = ["climate_impact"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D", "ANN"]
+"notebooks/**" = ["D", "ANN", "T20", "E402", "ERA001"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+# ------------------------------------------------------------------ mypy
+[tool.mypy]
+python_version = "3.12"
+files = ["src"]
+disallow_untyped_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_return_any = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+ignore_missing_imports = true   # many scientific libraries ship no type stubs
+
+# ------------------------------------------------------------------ pytest
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+filterwarnings = [
+  # pandas/numpy FutureWarnings in OUR code signal upcoming silent behaviour changes -> fail
+  "error::FutureWarning:climate_impact.*",
+  # third-party noise: matplotlib's internal use of deprecated pyparsing API
+  "ignore:'\\w+' deprecated - use:Warning",
+]
