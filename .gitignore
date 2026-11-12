@@ -56,3 +56,6 @@ Thumbs.db
 .idea/
 # Provenance record IS commited (checksums prove which data was used)
 !data/raw/manifest.json
+
+# MLflow local tracking store
+mlflow.db
