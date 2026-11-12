@@ -1,0 +1,175 @@
+# Source registry. sha256 = null until first download (Phase 2), then pinned.
+# access: http | cdsapi | wbgapi | manual | package
+
+datasets:
+  gistemp_v4_global_monthly:
+    provider: NASA GISS
+    url: https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv
+    access: http
+    format: csv
+    native_units: degC anomaly
+    native_baseline: [1951, 1980]
+    missing_sentinel: "***"
+    license: Public domain (US Government work)
+    priority: core
+    questions: [Q1, Q2]
+    raw_path: gistemp/GLB.Ts+dSST.csv
+    sha256: null
+    status: verify_in_phase2
+
+  hadcrut5_global_monthly:
+    provider: Met Office Hadley Centre / UEA CRU
+    url: https://www.metoffice.gov.uk/hadobs/hadcrut5/data/HadCRUT.5.0.2.0/analysis/diagnostics/HadCRUT.5.0.2.0.analysis.summary_series.global.monthly.csv
+    access: http
+    format: csv
+    native_units: degC anomaly
+    native_baseline: [1961, 1990]
+    license: Open Government Licence v3
+    priority: core
+    questions: [Q1, Q2]
+    raw_path: hadcrut5/global_monthly.csv
+    sha256: null
+    status: verify_in_phase2           # check for a newer 5.x release
+
+  berkeley_global_monthly:
+    provider: Berkeley Earth
+    url: https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Global/Land_and_Ocean_complete.txt
+    access: http
+    format: txt
+    native_units: degC anomaly
+    native_baseline: [1951, 1980]
+    license: CC BY-NC 4.0
+    priority: core
+    questions: [Q1, Q2]
+    raw_path: berkeley/Land_and_Ocean_complete.txt
+    sha256: null
+    status: url_checked_2026-11-12
+
+  berkeley_country_monthly:
+    provider: Berkeley Earth
+    url_template: https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/{country}-TAVG-Trend.txt
+    access: http
+    format: txt
+    native_units: degC anomaly (+ baseline climatology in header)
+    license: CC BY-NC 4.0
+    priority: core                     # cross-check for ERA5 country series
+    questions: [Q1]
+    raw_path: berkeley/country/{country}-TAVG-Trend.txt
+    status: url_checked_2026-11-12
+
+  era5_monthly_single_levels:
+    provider: ECMWF / Copernicus C3S
+    access: cdsapi
+    cds_dataset: reanalysis-era5-single-levels-monthly-means
+    request:
+      product_type: [monthly_averaged_reanalysis]
+      variable: [2m_temperature, total_precipitation]
+      month: ["01","02","03","04","05","06","07","08","09","10","11","12"]
+      time: ["00:00"]
+      data_format: netcdf
+      download_format: unarchived
+    chunk_by: year
+    native_units: {t2m: K, tp: m per day (monthly mean of daily accumulation)}
+    license: Copernicus licence (attribution required)
+    priority: core
+    questions: [Q1, Q3, Q4, Q5]
+    raw_path: era5/era5_monthly_{year}.nc
+    approx_size: ~100 MB/year at 0.25 deg (~6.5 GB for 1961-2025)
+    status: verify_in_phase2
+
+  noaa_co2_mlo_monthly:
+    provider: NOAA GML
+    url: https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv
+    access: http
+    format: csv
+    native_units: ppm
+    missing_sentinel: -99.99
+    license: Public domain; cite per GML
+    priority: core
+    questions: [Q2]
+    raw_path: noaa/co2_mm_mlo.csv
+    sha256: null
+    status: verify_in_phase2
+
+  noaa_oni:
+    provider: NOAA CPC
+    url: https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt
+    access: http
+    format: fixed-width text
+    native_units: degC (3-month running mean SST anomaly, Nino 3.4)
+    license: Public domain
+    priority: core
+    questions: [Q2]
+    raw_path: noaa/oni.ascii.txt
+    sha256: null
+    status: verify_in_phase2
+
+  owid_co2:
+    provider: Our World in Data
+    url: https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv
+    access: http
+    format: csv
+    license: CC BY 4.0
+    priority: core
+    questions: [Q2, Q5]
+    raw_path: owid/owid-co2-data.csv
+    sha256: null
+    status: url_checked_2026-11-12
+
+  faostat_crops_livestock:
+    provider: UN FAO
+    url: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip
+    access: http
+    format: zip (normalized csv)
+    license: CC BY 4.0
+    priority: core
+    questions: [Q3, Q5]
+    raw_path: faostat/Production_Crops_Livestock_E_All_Data_(Normalized).zip
+    sha256: null
+    status: verify_in_phase2
+
+  emdat:
+    provider: CRED, UCLouvain
+    url: https://public.emdat.be
+    access: manual                     # logged-in export; record filters in manifest
+    format: xlsx
+    license: Non-commercial; NO redistribution
+    priority: core
+    questions: [Q4, Q5]
+    raw_path: emdat/emdat_export.xlsx
+    sha256: null
+    status: verify_in_phase2
+
+  wdi:
+    provider: World Bank
+    access: wbgapi
+    indicators:
+      population: SP.POP.TOTL
+      gdp_pc_ppp_const: NY.GDP.PCAP.PP.KD
+      agri_share_gdp: NV.AGR.TOTL.ZS
+      urban_share: SP.URB.TOTL.IN.ZS
+      land_area_km2: AG.LND.TOTL.K2
+    license: CC BY 4.0
+    priority: core
+    questions: [Q3, Q4, Q5]
+    raw_path: wdi/wdi_indicators.csv
+    status: verify_in_phase2
+
+  nd_gain:
+    provider: University of Notre Dame
+    url: https://gain.nd.edu/our-work/country-index/download-data/
+    access: manual                     # zip link changes with each annual release
+    license: Per ND-GAIN terms
+    priority: core
+    questions: [Q5]
+    raw_path: nd_gain/
+    status: verify_in_phase2
+
+  natural_earth_admin0:
+    provider: Natural Earth
+    access: package                    # via regionmask (downloads with pooch)
+    regionmask_name: natural_earth_v5_1_2.countries_50
+    license: Public domain
+    priority: core
+    questions: [Q1, Q3, Q4, Q5]
+    status: verify_in_phase4

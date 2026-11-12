@@ -1,0 +1,67 @@
+# Single source of truth for analytical choices.
+# Changing a value here = a decision -> log it in docs/decision_log.md.
+
+project:
+  name: climate-impact-analysis
+  random_seed: 42
+
+analysis:
+  baseline_period: [1991, 2020]        # WMO climate normal; anomaly reference
+  preindustrial_period: [1850, 1900]   # IPCC AR6 reference; context statements only
+  study_start_year: 1961               # FAOSTAT coverage begins
+  study_end_year: 2025                 # latest complete year (per-dataset ends set in Phase 3)
+  context_start_year: 1880             # long-run charts only, not formal tests
+  min_valid_months: 12                 # annual aggregates require complete years
+  temperature_datasets: [gistemp_v4_global_monthly, hadcrut5_global_monthly, berkeley_global_monthly]
+
+statistics:
+  alpha: 0.05
+  ci_level: 0.95
+  fdr_method: fdr_bh                   # Benjamini-Hochberg (statsmodels name)
+  hac_maxlags: newey_west_rule         # floor(4 * (T/100)^(2/9))
+  bootstrap_reps: 2000
+
+drivers:
+  oni_lag_months: 3                    # primary, pre-specified
+  oni_lag_sensitivity: [0, 1, 2, 3, 4, 5, 6]
+
+crops:                                 # FAOSTAT item codes (names change between releases)
+  wheat: 15
+  rice_paddy: 27
+  maize: 56
+  soybeans: 236
+
+faostat:
+  elements:
+    area_harvested: 5312               # ha
+    production: 5510                   # t
+    yield_kg_ha: 5412                  # current releases
+    yield_hg_ha_legacy: 5419           # older releases; convert /10 -> kg/ha
+
+disasters:
+  climate_subgroups: [Hydrological, Meteorological, Climatological]
+  negative_control_subgroup: Geophysical   # placebo: must NOT track temperature
+  start_year_sensitivity: [1980, 1990, 2000]
+  robustness_min_deaths: 100           # large events, less prone to reporting bias
+
+spatial:
+  boundaries: natural_earth_v5_1_2.countries_50
+  weighting_default: area              # area | cropland | population
+  min_grid_cells_flag: 10              # flag (not drop) countries with fewer 0.25 deg cells
+
+splits:
+  train_end_year: 2010
+  validation_end_year: 2016            # test = 2017 onward; locked until Phase 9
+  country_holdout_folds: 5             # GroupKFold by iso3: generalization to unseen countries
+
+clustering:
+  min_silhouette: 0.25
+  min_bootstrap_ari: 0.6
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  external: data/external
+  figures: reports/figures
+  manifest: data/raw/manifest.json
