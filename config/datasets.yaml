@@ -48,6 +48,7 @@ datasets:
   berkeley_country_monthly:
     provider: Berkeley Earth
     url_template: https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/{country}-TAVG-Trend.txt
+    template_check_value: indonesia     # sample country used only by the reachability check
     access: http
     format: txt
     native_units: degC anomaly (+ baseline climatology in header)
