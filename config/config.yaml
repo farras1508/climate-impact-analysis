@@ -53,6 +53,7 @@ splits:
   train_end_year: 2010
   validation_end_year: 2016            # test = 2017 onward; locked until Phase 9
   country_holdout_folds: 5             # GroupKFold by iso3: generalization to unseen countries
+  min_test_years: 5                    # locked test set must cover >= 5 harvest years
 
 clustering:
   min_silhouette: 0.25

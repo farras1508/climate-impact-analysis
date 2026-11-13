@@ -58,3 +58,22 @@ def test_triangulation_needs_three_temperature_datasets():
     datasets = load_datasets()
     assert len(names) >= 3
     assert all(n in datasets for n in names)
+
+
+@pytest.mark.parametrize(
+    ("path", "bad_value", "expected_error"),
+    [
+        (("hypotheses", "h1b", "window"), [1880, 2024], r"h1b\.window"),
+        (("hypotheses", "h2", "window"), ["1958-03", "2025-12"], r"h2\.window"),
+        (("hypotheses", "h4", "primary_start_year"), 1995, r"h4\.primary_start_year"),
+        (("splits", "min_test_years"), 10, "min_test_years"),
+    ],
+)
+def test_validator_rejects_inconsistent_windows(path, bad_value, expected_error):
+    cfg = copy.deepcopy(load_config())
+    target = cfg
+    for key in path[:-1]:
+        target = target[key]
+    target[path[-1]] = bad_value
+    with pytest.raises(ValueError, match=expected_error):
+        validate_config(cfg)

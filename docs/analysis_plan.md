@@ -270,7 +270,45 @@ All results are at the stated grain. Country-level associations are not claimed 
 sub-national regions, farms or individuals (ecological fallacy; see 1.4).
 
 ## 4. Study window
-_Step 1.4 — to be written._
+
+### 4.1 Windows by analysis
+
+All windows are fixed by external criteria (data availability, WMO conventions, record start dates),
+never by inspecting results. They are stored in `config/config.yaml` and checked by `validate_config`.
+
+| Analysis | Window | Justification |
+|----------|--------|---------------|
+| H1a, H1c (formal trend tests) | 1961-2025 | FAOSTAT start; common to all datasets so results are comparable |
+| H1b (structural break) | 1880-2025 | A 1970s break needs a long pre-break record (DEC-027) |
+| Context charts | 1850/1880-2025 | Descriptive only; never used for tests |
+| H2, Q2 forecast | 1959-01 to 2025-12 | First complete year of the Mauna Loa CO2 record |
+| H3, Q3 model | 1961 to FAOSTAT effective end | FAOSTAT coverage |
+| H4 | 1990-2025 primary; 1980 and 2000 sensitivity | Disaster-reporting completeness (DEC-030) |
+| H5 features | Warming rate 1961-2025; disasters 2000-effective end; agricultural share last 10 years; ND-GAIN latest year | Recent conditions for risk; long record for the warming rate |
+| Anomaly baseline | 1991-2020 | WMO climate normal (DEC-009) |
+| Pre-industrial reference | 1850-1900 | IPCC AR6; context statements only |
+| ML splits | Train <= 2010; validation 2011-2016; test 2017-effective end (>= 5 years) | Temporal hold-out; test set locked until Phase 9 |
+
+The last complete year as of planning is 2025; partial 2026 data are excluded everywhere.
+
+### 4.2 Effective-coverage policy (pre-registered contingencies)
+
+Applying these rules in Phase 3 is part of the plan, not a deviation.
+
+1. **Effective end year.** For each dataset, the last year that is complete:
+   - monthly data: all 12 months present;
+   - annual country data (FAOSTAT, WDI, EM-DAT): the number of reporting countries is >= 90% of the
+     median count over the previous 5 years (this guards against a provisional, partly reported last year).
+2. **Truncation, never extension.** Each analysis ends at the minimum of its planned end and the
+   effective end of every dataset it uses. Missing final years are never imputed or extrapolated.
+3. **Test-set contingency.** If truncation leaves fewer than `splits.min_test_years` (5) test years,
+   the train/validation/test boundaries all shift earlier by the shortfall.
+4. **Provisional values.** Values flagged as provisional or estimated stay in the data and are flagged;
+   a robustness check excludes the last effective year (section 2.6, secondary analyses).
+5. **"Latest" definitions.** ND-GAIN "latest" is the most recent year available at the access date.
+   All "latest" years are recorded in the manifest and the data quality report.
+6. **Vintage.** Coverage is assessed on the frozen download (DEC-024). New releases are not pulled in
+   to extend windows during the analysis.
 
 ## 5. Risk and assumption register
 _Step 1.5 — to be written._
