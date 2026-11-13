@@ -441,4 +441,7 @@ those that add new topics.
 Actual time per phase is logged in `docs/time_log.md` (input to the Phase 12 retrospective).
 
 ## 7. Deviations log
-_Empty until the plan is frozen. Format: date · section changed · what · why · results seen before the change? (yes/no)._
+| ID | Date | Section | Change | Why | Results seen before change? |
+|----|------|---------|--------|-----|-----------------------------|
+| DV1 | 2026-11-13 | 2.2, 2.3 (Berkeley global) | Berkeley's global file contains two series (air temperature over sea ice; water temperature under sea ice). Primary: the air-temperature-over-sea-ice series, which Berkeley Earth presents as its primary version; the Phase 4 parser must confirm each table's label from the file header. The water-temperature series is an exploratory sensitivity | The plan did not specify which series | No (only file structure inspected) |
+| DV2 | 2026-11-13 | 2.4 (H1c replication) | Berkeley country replication covers countries whose newest Berkeley file spans 1961-2020 (195 files); 33 territories whose files end 2016-05 are outside the replication (flagged, not deleted) | Berkeley publishes two file generations; DEC-037 truncation | No |

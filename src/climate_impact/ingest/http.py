@@ -14,12 +14,14 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import requests
+import yaml
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from climate_impact.config import PROJECT_ROOT, get_path, load_datasets
+from climate_impact.config import CONFIG_DIR, PROJECT_ROOT, get_path, load_datasets
 from climate_impact.ingest.source_check import MIN_PLAUSIBLE_BYTES, USER_AGENT, resolve_url
 from climate_impact.provenance import build_entry, load_manifest, record, sha256_file, to_relative
 
@@ -90,6 +92,30 @@ def _check_existing(name: str, target: Path, rel: str, manifest: Path) -> Downlo
     return DownloadResult(name, rel, "skipped", entry.sha256)
 
 
+def expand_templated(meta: dict[str, Any], stems: dict[str, str]) -> list[dict[str, Any]]:
+    """Expand a url_template entry into one concrete entry per country (ISO3 -> file stem)."""
+    template_keys = {"url_template", "template_check_value", "countries_file"}
+    expanded: list[dict[str, Any]] = []
+    for iso3, stem in sorted(stems.items()):
+        entry = {k: v for k, v in meta.items() if k not in template_keys}
+        entry["url"] = str(meta["url_template"]).format(country=quote(stem, safe="()',-"))
+        entry["raw_path"] = str(meta["raw_path"]).format(country=stem)
+        entry["iso3"] = iso3
+        expanded.append(entry)
+    return expanded
+
+
+def jobs_for(name: str, meta: dict[str, Any]) -> list[dict[str, Any]]:
+    """Return the concrete download entries for one catalogue dataset."""
+    if "url" in meta:
+        return [meta]
+    if "url_template" in meta and "countries_file" in meta:
+        listing_path = CONFIG_DIR / str(meta["countries_file"])
+        listing = yaml.safe_load(listing_path.read_text(encoding="utf-8"))
+        return expand_templated(meta, dict(listing["countries"]))
+    raise ValueError(f"{name}: needs either url or url_template + countries_file")
+
+
 def download(
     name: str,
     meta: dict[str, Any],
@@ -143,7 +169,7 @@ def download(
         license=str(meta.get("license", "")),
         retrieval="http",
         notes=f"Last-Modified: {last_modified}" if last_modified else "",
-        request={"requested_url": url},
+        request={"requested_url": url, **({"iso3": meta["iso3"]} if "iso3" in meta else {})},
         root=root,
     )
     record(entry, manifest)
@@ -161,24 +187,41 @@ def main(argv: list[str] | None = None) -> int:
 
     catalogue = load_datasets()
     if args.datasets == ["all"]:
-        names = sorted(n for n, m in catalogue.items() if m.get("access") == "http" and "url" in m)
+        names = sorted(
+            n
+            for n, m in catalogue.items()
+            if m.get("access") == "http" and ("url" in m or "countries_file" in m)
+        )
     else:
         names = args.datasets
-    failures = 0
+    downloaded = skipped = failures = 0
     with make_session() as session:
         for name in names:
             try:
-                download(
-                    name,
-                    catalogue[name],
-                    session=session,
-                    raw_dir=get_path("raw"),
-                    manifest=get_path("manifest"),
-                    force=args.force,
-                )
-            except (DownloadError, ValueError, KeyError, requests.RequestException) as exc:
+                jobs = jobs_for(name, catalogue[name])
+            except (KeyError, ValueError) as exc:
                 failures += 1
                 logger.error("%s: %s", name, exc)
+                continue
+            for job in jobs:
+                try:
+                    result = download(
+                        name,
+                        job,
+                        session=session,
+                        raw_dir=get_path("raw"),
+                        manifest=get_path("manifest"),
+                        force=args.force,
+                    )
+                except (DownloadError, ValueError, requests.RequestException) as exc:
+                    failures += 1
+                    logger.error("%s (%s): %s", name, job.get("iso3", "-"), exc)
+                    continue
+                if result.action == "downloaded":
+                    downloaded += 1
+                else:
+                    skipped += 1
+    logger.info("Done: %d downloaded, %d skipped, %d failed.", downloaded, skipped, failures)
     return 1 if failures else 0
 
 

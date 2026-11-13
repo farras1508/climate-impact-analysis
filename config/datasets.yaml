@@ -60,7 +60,8 @@ datasets:
     questions: [Q1]
     raw_path: berkeley/country/{country}-TAVG-Trend.txt
     status: url_checked_2026-11-12
-    observed_end: "2020-12 (indonesia sample; checked 2026-11-13)"
+    countries_file: berkeley_countries.yaml
+    observed_end: "2020-12 for 195 of 228 files; 33 territories end 2016-05 (checked 2026-11-13)"
 
   era5_monthly_single_levels:
     provider: ECMWF / Copernicus C3S
