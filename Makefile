@@ -1,5 +1,7 @@
 # Phase 0 task runner; grows into the full pipeline in Phase 11.
 .PHONY: help test lint verify-data mlflow-ui
+check-sources:  ## Check every HTTP data source is reachable (writes reports/source_check.md)
+	$(PY) -m climate_impact.ingest.source_check
 
 PY := python
 
