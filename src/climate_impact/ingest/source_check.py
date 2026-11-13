@@ -64,17 +64,23 @@ def _size_from_headers(headers: Mapping[str, str]) -> str:
 
 
 def check_source(name: str, meta: dict[str, Any], session: requests.Session) -> SourceStatus:
-    """Check one catalogue entry; non-HTTP sources are marked for manual verification."""
+    """Check one catalogue entry; non-HTTP sources are marked for manual verification.
+
+    A HEAD size below MIN_PLAUSIBLE_BYTES is not trusted on its own (some servers report
+    misleading HEAD lengths); it is confirmed with a 1-byte ranged GET before flagging.
+    """
     priority = str(meta.get("priority", ""))
     access = str(meta.get("access", ""))
     url = resolve_url(meta)
     if url is None:
         return SourceStatus(name, priority, access, "manual", note="verify access and licence")
 
-    headers = {"User-Agent": USER_AGENT}
+    headers = {"User-Agent": USER_AGENT, "Accept-Encoding": "identity"}
     try:
         response = session.head(url, allow_redirects=True, timeout=TIMEOUT_S, headers=headers)
-        if response.status_code in HEAD_REJECTED:
+        size = _size_from_headers(response.headers)
+        too_small = size.isdigit() and int(size) < MIN_PLAUSIBLE_BYTES
+        if response.status_code in HEAD_REJECTED or (response.status_code < 400 and too_small):
             response = session.get(
                 url,
                 allow_redirects=True,
@@ -83,14 +89,14 @@ def check_source(name: str, meta: dict[str, Any], session: requests.Session) -> 
                 stream=True,
             )
             response.close()
+            size = _size_from_headers(response.headers)
     except requests.RequestException as exc:
         return SourceStatus(name, priority, access, "failed", url=url, note=type(exc).__name__)
 
-    size = _size_from_headers(response.headers)
     if response.status_code >= 400:
         outcome, note = "failed", ""
     elif size.isdigit() and int(size) < MIN_PLAUSIBLE_BYTES:
-        outcome, note = "suspect", f"only {size} bytes: likely a stub or moved file"
+        outcome, note = "suspect", f"only {size} bytes (confirmed by ranged GET)"
     else:
         outcome, note = "ok", ""
     return SourceStatus(

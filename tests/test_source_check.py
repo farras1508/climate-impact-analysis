@@ -16,6 +16,7 @@ HTTP_META = {
     "priority": "core",
     "questions": ["Q1", "Q3"],
 }
+DEFAULT_HEAD = {"Content-Length": "1234", "Last-Modified": "Thu, 01 Oct 2026 00:00:00 GMT"}
 
 
 class FakeResponse:
@@ -29,14 +30,14 @@ class FakeResponse:
 
 
 class FakeSession:
-    def __init__(self, head_status=200, get_status=206, error=None, head_headers=None):
+    def __init__(
+        self, head_status=200, get_status=206, error=None, head_headers=None, get_headers=None
+    ):
         self.head_status = head_status
         self.get_status = get_status
         self.error = error
-        self.head_headers = head_headers or {
-            "Content-Length": "1234",
-            "Last-Modified": "Thu, 01 Oct 2026 00:00:00 GMT",
-        }
+        self.head_headers = head_headers or DEFAULT_HEAD
+        self.get_headers = get_headers or {"Content-Range": "bytes 0-0/98765"}
         self.calls = []
 
     def head(self, url, **kwargs):
@@ -47,7 +48,7 @@ class FakeSession:
 
     def get(self, url, **kwargs):
         self.calls.append(("GET", kwargs))
-        return FakeResponse(self.get_status, {"Content-Range": "bytes 0-0/98765"})
+        return FakeResponse(self.get_status, self.get_headers)
 
 
 def test_reachable_source_records_metadata():
@@ -68,6 +69,24 @@ def test_rejected_head_falls_back_to_one_byte_get():
     assert status.size_bytes == "98765"
 
 
+def test_small_head_size_is_confirmed_before_flagging():
+    """HadCRUT5 case: HEAD claimed 20 bytes, but the real file is large."""
+    session = FakeSession(head_headers={"Content-Length": "20"})
+    status = check_source("demo", HTTP_META, session)
+    assert [method for method, _ in session.calls] == ["HEAD", "GET"]
+    assert status.outcome == "ok"
+    assert status.size_bytes == "98765"
+
+
+def test_tiny_file_confirmed_by_ranged_get_is_suspect():
+    session = FakeSession(
+        head_headers={"Content-Length": "20"}, get_headers={"Content-Range": "bytes 0-0/20"}
+    )
+    status = check_source("demo", HTTP_META, session)
+    assert status.outcome == "suspect"
+    assert "20 bytes" in status.note
+
+
 def test_http_error_is_reported_as_failed():
     assert check_source("demo", HTTP_META, FakeSession(head_status=404)).outcome == "failed"
 
@@ -78,12 +97,13 @@ def test_network_error_is_recorded_not_raised():
     assert status.note == "ConnectionError"
 
 
-def test_every_request_has_timeout_and_user_agent():
+def test_every_request_has_timeout_user_agent_and_identity_encoding():
     session = FakeSession(head_status=405)
     check_source("demo", HTTP_META, session)
     for _, kwargs in session.calls:
         assert kwargs["timeout"] > 0
         assert kwargs["headers"]["User-Agent"] == USER_AGENT
+        assert kwargs["headers"]["Accept-Encoding"] == "identity"
 
 
 def test_non_http_source_needs_manual_check_and_makes_no_request():
@@ -110,6 +130,4 @@ def test_coverage_matrix_marks_questions():
 def test_every_http_entry_in_catalogue_resolves_to_a_url():
     for name, meta in load_datasets().items():
         if meta.get("access") == "http":
-            assert resolve_url(meta), (
-                f"{name}: no checkable URL (url or url_template + check value)"
-            )
+            assert resolve_url(meta), f"{name}: no checkable URL"
