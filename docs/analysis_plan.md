@@ -1,6 +1,6 @@
 # Analysis Plan (Pre-registration)
 
-**Status:** DRAFT — not yet frozen. Will be tagged `prereg-v1` at the end of Phase 1.
+**Status:** FROZEN — `prereg-v1`, 2026-11-13. Sections 1-6 change only through Section 7 (Deviations log).
 **Rule:** No project data has been downloaded or inspected while writing this plan.
 Changes after freezing are recorded in Section 7 (Deviations log) with date and reason.
 
@@ -378,7 +378,67 @@ A **tripwire** is an observable signal that the risk is happening. When a tripwi
 | A9 | Predecessor/successor border rules do not bias panels | H1c, H3, H4 | Rule fixed in advance (RD3) | Robustness excluding all countries affected by border changes |
 
 ## 6. Scope: MVP vs stretch
-_Step 1.6 — to be written._
+
+### 6.1 MVP (must ship)
+
+Every confirmatory **and secondary** analysis in section 2 is MVP and is never cut for time.
+
+| ID | Deliverable | Definition of done |
+|----|-------------|--------------------|
+| M1 | Q1 signal: H1a, H1b, H1c | All decision rules evaluated on all specified datasets; secondary analyses reported; country warming map with flags (R8) |
+| M2 | Q2 drivers: H2 + 12-month forecast | Stationarity, cointegration and DOLS results; volcanic-exclusion robustness; forecast beats or is honestly compared with all baselines (section 2.9) |
+| M3 | Q3 agriculture: H3 panel + yield ML model | Lind-Mehlum results for 4 crops; % per degC effects vs benchmark with caveat; ML model vs 3 baselines under temporal and country CV; R3 hot-season evaluation; R4 interval coverage |
+| M4 | Q4 extremes: H4 | PPML IRR with CI; placebo pass/fail result; start-year and severity sensitivities |
+| M5 | Q5 risk: H5 | Chosen k, silhouette, bootstrap ARI and Jaccard; R2 switching share; segment profiles |
+| M6 | Dashboard (D5) | Deployed publicly; uncertainty shown for every country value (R1); data-quality flags (R8) |
+| M7 | Reports (D2, D3, D6, D7) | Data quality report; statistical report; executive summary; data card; model card |
+| M8 | Reproducibility (D1) | `make all` rebuilds every result from raw data; CI passes |
+
+### 6.2 Stretch goals (ranked; dropped from the bottom up)
+
+| Rank | ID | Stretch goal | Serves | Cost |
+|------|----|--------------|--------|------|
+| 1 | S1 | Long-differences estimator (exploratory) | H3 interpretation (A2) | Low |
+| 2 | S2 | Cropland-weighted climate aggregation | H3, Q3 | Medium (cropland mask) |
+| 3 | S3 | Volcanic aerosol regressor | H2 (RM9) | Medium (new dataset) |
+| 4 | S4 | Degree-day features from daily ERA5 | H3, Q3 (RM4) | High (daily data, ~30x volume) |
+| 5 | S5 | Gridded, time-varying crop calendar | H3 (RD7, A6) | Medium |
+| 6 | S6 | Extreme value analysis (return-period shifts, GHCN-Daily) | Q1 extension | High |
+| 7 | S7 | SPEI drought-index features | Q3, Q4 | Medium |
+| 8 | S8 | Docker image / DVC pipeline | D1 | Medium |
+| 9 | S9 | Sea-level and sea-ice indicator module | Q1 extension | Medium |
+
+Ranking principle: stretch goals that address a named risk or assumption in section 5 rank above
+those that add new topics.
+
+### 6.3 Descoping and scope-change rules
+
+1. **Order.** Stretch goals are dropped from rank 9 upward. Confirmatory and secondary analyses
+   and requirements R1-R8 are never dropped for time.
+2. **Trigger.** If a phase exceeds its planned time by more than 50%, the next stretch goal in the
+   drop order is removed and the removal is logged (decision log + `docs/time_log.md`).
+3. **Pre-registered fallbacks.** If ERA5 cannot be acquired within Phase 2's budget, country
+   climate comes from World Bank CCKP aggregates (framework Step 2.4). Any other unavailable MVP
+   input is a deviation (section 7), reported with its consequence.
+4. **No silent additions.** Analyses added after `prereg-v1` are exploratory by definition, are
+   labelled as such, and are started only after the MVP items they relate to are done.
+
+### 6.4 Time budget (part-time, framework Appendix B)
+
+| Weeks | Phases | Milestone |
+|-------|--------|-----------|
+| 1 | 0-1 | Repo live; plan frozen (`v0.0-setup`, `prereg-v1`) |
+| 2 | 2 | Core data downloaded with manifest |
+| 3 | 3 | Data quality report; effective coverage fixed (DEC-037) |
+| 4-5 | 4 | ABTs validated against `abt_schemas.yaml` |
+| 6 | 5 | EDA insight log |
+| 7-8 | 6 | Statistical results register + robustness tables |
+| 8-9 | 7-8 | Feature tables versioned; models tracked in MLflow |
+| 10 | 9 | Locked test evaluation; interpretation; model card |
+| 11 | 10 | Report + dashboard |
+| 12 | 11-12 | CI, deployment, README, `v1.0` |
+
+Actual time per phase is logged in `docs/time_log.md` (input to the Phase 12 retrospective).
 
 ## 7. Deviations log
 _Empty until the plan is frozen. Format: date · section changed · what · why · results seen before the change? (yes/no)._
