@@ -46,6 +46,7 @@ datasets:
     raw_path: berkeley/Land_and_Ocean_complete.txt
     sha256: null
     status: url_checked_2026-11-12
+    observed_end: "2024-12 (classic S3 product; checked 2026-11-13)"
 
   berkeley_country_monthly:
     provider: Berkeley Earth
@@ -59,6 +60,7 @@ datasets:
     questions: [Q1]
     raw_path: berkeley/country/{country}-TAVG-Trend.txt
     status: url_checked_2026-11-12
+    observed_end: "2020-12 (indonesia sample; checked 2026-11-13)"
 
   era5_monthly_single_levels:
     provider: ECMWF / Copernicus C3S
