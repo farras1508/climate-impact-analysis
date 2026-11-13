@@ -1,0 +1,107 @@
+[
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_global_monthly",
+    "file": "data/raw/berkeley/Land_and_Ocean_complete.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Fri, 10 Jan 2025 04:48:46 GMT",
+    "request": {
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Global/Land_and_Ocean_complete.txt"
+    },
+    "retrieval": "http",
+    "sha256": "e2d57dc0efc309e1b9879bab2bf95ce93a4e8e162ccf2c8eb5b090c07378dd56",
+    "size_bytes": 416532,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Global/Land_and_Ocean_complete.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "faostat_crops_livestock",
+    "file": "data/raw/faostat/Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+    "license": "CC BY 4.0 (since 2024-07-01) + FAO Statistical Database Terms of Use",
+    "notes": "Last-Modified: Wed, 31 Dec 2025 11:33:28 GMT",
+    "request": {
+      "requested_url": "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip"
+    },
+    "retrieval": "http",
+    "sha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853",
+    "size_bytes": 33921825,
+    "source_url": "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "gistemp_v4_global_monthly",
+    "file": "data/raw/gistemp/GLB.Ts+dSST.csv",
+    "license": "Public domain (US Government work)",
+    "notes": "Last-Modified: Tue, 10 Nov 2026 13:53:24 GMT",
+    "request": {
+      "requested_url": "https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv"
+    },
+    "retrieval": "http",
+    "sha256": "a7b1939db2e7e484c798e925e0f07f8184356c52ac0e7ce264adcd0f25e81253",
+    "size_bytes": 12887,
+    "source_url": "https://data.giss.nasa.gov/gistemp/tabledata_v4/GLB.Ts+dSST.csv",
+    "version": "GISTEMP v4 (GHCN v4 land + ERSST v5 ocean)"
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "hadcrut5_global_monthly",
+    "file": "data/raw/hadcrut5/global_monthly.csv",
+    "license": "Open Government Licence v3",
+    "notes": "Last-Modified: Fri, 23 Oct 2026 10:05:25 GMT",
+    "request": {
+      "requested_url": "https://www.metoffice.gov.uk/hadobs/hadcrut5/data/HadCRUT.5.2.0.0/analysis/diagnostics/HadCRUT.5.2.0.0.analysis.summary_series.global.monthly.csv"
+    },
+    "retrieval": "http",
+    "sha256": "0374543a368f896c2d9da3ef03630aba1f3b7126fbe6d98f164128456e4ab922",
+    "size_bytes": 89673,
+    "source_url": "https://www.metoffice.gov.uk/hadobs/hadcrut5/data/HadCRUT.5.2.0.0/analysis/diagnostics/HadCRUT.5.2.0.0.analysis.summary_series.global.monthly.csv",
+    "version": "HadCRUT 5.2.0.0"
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "noaa_co2_mlo_monthly",
+    "file": "data/raw/noaa/co2_mm_mlo.csv",
+    "license": "Public domain; cite per GML",
+    "notes": "Last-Modified: Fri, 09 Oct 2026 19:23:07 GMT",
+    "request": {
+      "requested_url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv"
+    },
+    "retrieval": "http",
+    "sha256": "d895fb5b4a59fb5e4cd98e69b7667fe5bef595c6581f630852b12cb41c07f675",
+    "size_bytes": 38776,
+    "source_url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "noaa_oni",
+    "file": "data/raw/noaa/oni.ascii.txt",
+    "license": "Public domain",
+    "notes": "Last-Modified: Tue, 03 Nov 2026 19:31:48 GMT",
+    "request": {
+      "requested_url": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt"
+    },
+    "retrieval": "http",
+    "sha256": "118c563331335c8649cdc2677e6be7ae89d1259d901345fcddbc2857af280f7f",
+    "size_bytes": 23050,
+    "source_url": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "owid_co2",
+    "file": "data/raw/owid/owid-co2-data.csv",
+    "license": "CC BY 4.0",
+    "notes": "",
+    "request": {
+      "requested_url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv"
+    },
+    "retrieval": "http",
+    "sha256": "300fb68fe6b0d514ed7f5cf773df77d7e24a495438d84b76e2f39eba1584a0f7",
+    "size_bytes": 15242657,
+    "source_url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv",
+    "version": ""
+  }
+]
