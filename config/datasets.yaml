@@ -15,11 +15,12 @@ datasets:
     questions: [Q1, Q2]
     raw_path: gistemp/GLB.Ts+dSST.csv
     sha256: null
-    status: verify_in_phase2
+    status: url_checked_2026-11-13
+    version: "GISTEMP v4 (GHCN v4 land + ERSST v5 ocean)"
 
   hadcrut5_global_monthly:
     provider: Met Office Hadley Centre / UEA CRU
-    url: https://www.metoffice.gov.uk/hadobs/hadcrut5/data/HadCRUT.5.0.2.0/analysis/diagnostics/HadCRUT.5.0.2.0.analysis.summary_series.global.monthly.csv
+    url: https://www.metoffice.gov.uk/hadobs/hadcrut5/data/HadCRUT.5.2.0.0/analysis/diagnostics/HadCRUT.5.2.0.0.analysis.summary_series.global.monthly.csv
     access: http
     format: csv
     native_units: degC anomaly
@@ -29,7 +30,8 @@ datasets:
     questions: [Q1, Q2]
     raw_path: hadcrut5/global_monthly.csv
     sha256: null
-    status: verify_in_phase2           # check for a newer 5.x release
+    status: url_checked_2026-11-13           # check for a newer 5.x release
+    version: "HadCRUT 5.2.0.0"
 
   berkeley_global_monthly:
     provider: Berkeley Earth
@@ -122,19 +124,19 @@ datasets:
     url: https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip
     access: http
     format: zip (normalized csv)
-    license: CC BY 4.0
+    license: "CC BY 4.0 (since 2024-07-01) + FAO Statistical Database Terms of Use"
     priority: core
     questions: [Q3, Q5]
     raw_path: faostat/Production_Crops_Livestock_E_All_Data_(Normalized).zip
     sha256: null
-    status: verify_in_phase2
+    status: url_checked_2026-11-13
 
   emdat:
     provider: CRED, UCLouvain
     url: https://public.emdat.be
     access: manual                     # logged-in export; record filters in manifest
     format: xlsx
-    license: Non-commercial; NO redistribution
+    license: "Non-commercial; no redistribution of records; derived aggregates/charts publishable with citation"
     priority: core
     questions: [Q4, Q5]
     raw_path: emdat/emdat_export.xlsx
@@ -164,7 +166,7 @@ datasets:
     priority: core
     questions: [Q5]
     raw_path: nd_gain/
-    status: verify_in_phase2
+    status: "latest confirmed release 2025-06-25; record file date at download"
 
   natural_earth_admin0:
     provider: Natural Earth
