@@ -20,6 +20,9 @@ statistics:
   fdr_method: fdr_bh                   # Benjamini-Hochberg (statsmodels name)
   hac_maxlags: newey_west_rule         # floor(4 * (T/100)^(2/9))
   bootstrap_reps: 2000
+  min_clusters_for_crve: 40            # below this: wild cluster bootstrap (Cameron & Miller 2015)
+  wild_bootstrap_reps: 9999
+  wild_bootstrap_weights: webb
 
 drivers:
   oni_lag_months: 3                    # primary, pre-specified

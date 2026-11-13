@@ -71,6 +71,9 @@ case studies after seeing which countries show the most striking results.
   *Secondary*: pre-specified robustness checks; they qualify confirmatory results.
   *Exploratory*: anything not listed here; always labelled as exploratory, never claimed.
 - **Inference.** Two-sided, alpha = 0.05; 95% CIs reported for every estimate, significant or not.
+- **Few clusters.** If a cluster-robust analysis has fewer than 40 clusters (e.g. countries for one
+  crop in H3), inference uses the wild cluster bootstrap (Webb six-point weights, 9,999 replications;
+  MacKinnon & Webb 2017) instead of analytical cluster-robust SE (Cameron & Miller 2015).
 - **Multiple testing.**
   - H1a, H1b, H2: the decision requires every dataset to pass (intersection-union test; Berger 1982), so no further correction is needed.
   - H1c: Benjamini-Hochberg FDR across countries. Robustness: Benjamini-Yekutieli, valid under any dependence.
@@ -121,7 +124,7 @@ case studies after seeing which countries show the most striking results.
 | Autocorrelation | Davies and Muggeo assume independent errors. Robustness: moving-block bootstrap (block length 5) for the break-date and slope-change CIs |
 | Secondary | ruptures dynamic programming with a piecewise-linear cost and BIC penalty |
 | Descriptive only | Pettitt test. It detects a shift in level, and any trending series will trigger it, so it cannot test H1b |
-| Exploratory | A possible post-2010 acceleration. The post-break segment is too short for confirmatory inference |
+| Exploratory | Heterogeneity by income group and irrigation share; degree-day features (stretch); long-differences estimator comparing ~20-year averages (Burke & Emerick 2016) to contrast short-run weather and long-run climate responses |
 
 ### 2.4 H1c: Country-level warming
 
@@ -311,7 +314,68 @@ Applying these rules in Phase 3 is part of the plan, not a deviation.
    to extend windows during the analysis.
 
 ## 5. Risk and assumption register
-_Step 1.5 — to be written._
+
+Scale: Likelihood (L) and Impact (I) from 1 (low) to 3 (high); Priority P = L x I.
+A **tripwire** is an observable signal that the risk is happening. When a tripwire fires:
+(1) record it in the decision log, (2) apply the pre-registered response below,
+(3) any response not listed here is a deviation (section 7).
+
+### 5.1 Data risks
+
+| ID | Risk | L | I | P | Tripwire (early-warning signal) | Pre-registered response | Checked in |
+|----|------|---|---|---|---------------------------------|-------------------------|------------|
+| RD1 | EM-DAT reporting improves over time, creating a false "more disasters" signal | 3 | 3 | 9 | Geophysical counts trend upward; placebo IRR CI excludes 1 | Year FE; placebo is pass/fail for H4; 1980/2000 starts; >= 100 deaths subset | 3, 6 |
+| RD2 | Unit changes (FAOSTAT hg/ha vs kg/ha; ERA5 K and m/day) | 2 | 3 | 6 | Contract range violations; yield / (production/area) ratio of ~10 instead of ~1 | Explicit conversions with unit tests; one unit asserted per column after cleaning | 3, 4 |
+| RD3 | Historical entities break series (USSR, Yugoslavia, Czechoslovakia, Sudan, Ethiopia/Eritrea, Serbia & Montenegro) | 3 | 2 | 6 | Unmatched names in the ISO3 crosswalk log; duplicate country-year keys | Crosswalk table; predecessor entities excluded from panels; successors enter when their data begin | 4 |
+| RD4 | FAOSTAT values estimated or imputed, mostly in low-capacity countries | 3 | 2 | 6 | Share of flagged values > 30% for a country-crop | Keep flags; robustness excluding flagged values; R8 visual flags | 3, 6 |
+| RD5 | ERA5 quality lower before the satellite era (pre-1979: fewer assimilated observations) | 2 | 2 | 4 | A step change in the ERA5 minus Berkeley country difference around 1979 | H1c requires agreement with Berkeley Earth; robustness on 1979-2025 | 3, 6 |
+| RD6 | Sparse station coverage makes early country temperatures noisy | 2 | 2 | 4 | ERA5 vs Berkeley country correlation < 0.8 | Replication across both products; flag affected countries | 3 |
+| RD7 | Simplified crop calendar (one season per country; ignores double-cropped rice and shifting planting dates) | 3 | 2 | 6 | Rice growing-season coefficients near zero, unlike the other crops | Document the limitation; gridded crop calendar as a stretch goal | 4, 6 |
+| RD8 | Partial or provisional final year | 3 | 1 | 3 | Fewer reporting countries in the last year (DEC-037 rule) | Truncate to the effective end year; robustness excluding the last year | 3 |
+| RD9 | Small countries and islands covered by few grid cells; coastal land-sea mixing | 3 | 1 | 3 | n_grid_cells < 10 | Flag (R8); robustness excluding flagged countries | 4 |
+| RD10 | Data revised by providers during the project | 2 | 2 | 4 | `make verify-data` checksum mismatch | Frozen snapshot (DEC-024); deliberate refresh only, with a DEC entry | 2-11 |
+| RD11 | EM-DAT export is manual, so not fully scriptable | 2 | 1 | 2 | — | Record export filters and date in the manifest | 2 |
+
+### 5.2 Method and inference risks
+
+| ID | Risk | L | I | P | Tripwire | Pre-registered response | Checked in |
+|----|------|---|---|---|----------|-------------------------|------------|
+| RM1 | Technology growth confounds the climate effect on yields | 3 | 3 | 9 | H3 results change sign or significance between trend specifications | Country quadratic trends (primary); linear trends and first differences as robustness | 6 |
+| RM2 | Serial and spatial correlation make SEs too small | 3 | 3 | 9 | Residual autocorrelation; residual Moran's I across countries within a year | Two-way clustering (H3), HAC (H1/H2), block bootstrap (H1b) | 6 |
+| RM3 | Few clusters for cluster-robust inference | 2 | 3 | 6 | Fewer than 40 countries in an estimation sample | Wild cluster bootstrap (section 2.0) | 6 |
+| RM4 | Aggregation bias: country-season means smooth over damaging extremes (H3) | 3 | 2 | 6 | Lind-Mehlum fails while the linear temperature effect is negative | Report honestly as attenuation; degree-day features as a stretch goal | 6, 9 |
+| RM5 | CO2 indistinguishable from any smooth trend (H2) | 3 | 2 | 6 | BIC difference < 2 between the ln(CO2) and time-trend models | State the identification limit explicitly | 6 |
+| RM6 | H4 identifies only year-to-year responses (year FE absorb long-run warming) | 3 | 2 | 6 | Structural (always true) | Explicit language in every H4 statement | 6, 10 |
+| RM7 | ML leakage (features from the future, scaling fitted on all data, lags crossing the split) | 2 | 3 | 6 | Test performance clearly better than validation performance | Phase 7 leakage audit; preprocessing fitted on training folds only | 7, 8 |
+| RM8 | Forking paths and undisclosed flexibility | 2 | 3 | 6 | Any analysis choice not in this plan | Pre-registration; Deviations log; exploratory label | all |
+| RM9 | Omitted volcanic and solar forcing (H2) | 2 | 2 | 4 | beta moves by more than 1 SE under the volcanic exclusion windows | Report the shift; volcanic aerosol regressor as a stretch goal | 6 |
+| RM10 | No cointegration between GMST and ln(CO2) | 1 | 3 | 3 | Engle-Granger fails to reject | Pre-registered "inconclusive" path (section 2.5) | 6 |
+| RM11 | Weak cluster structure (H5) | 3 | 1 | 3 | Silhouette < 0.5 | "Screening groups" wording (DEC-031) | 8 |
+
+### 5.3 Engineering, communication and process risks
+
+| ID | Risk | L | I | P | Tripwire | Pre-registered response | Checked in |
+|----|------|---|---|---|----------|-------------------------|------------|
+| RC1 | Over-claiming causality or attribution | 2 | 3 | 6 | Causal or attribution wording in drafts | R7 language rules; review checklist in Phase 10 | 10 |
+| RC2 | Country rankings misused for stigmatization or as a sole funding criterion | 2 | 2 | 4 | Bare ranks without intervals | R1 rank intervals; R8 flags; screening-tool framing | 10 |
+| RC3 | Benchmark mismatch misread (local growing-season degC vs global degC in Zhao et al. 2017) | 2 | 2 | 4 | Comparison stated without its caveat | Mandatory caveat next to every benchmark comparison | 10 |
+| RE1 | ERA5 download size and CDS queue delays (~6.5 GB) | 2 | 2 | 4 | Requests queued for many hours | Year-by-year chunks with resume; fallback: World Bank CCKP aggregates, recorded as a deviation | 2 |
+| RE2 | Dependency drift changes numerical results | 1 | 3 | 3 | Version-contract test failure | Pinned env + lock file + rebuild from file (DEC-019, DEC-022) | all |
+| RP1 | No independent reviewer (solo project) | 3 | 2 | 6 | — | Self-review via the PR template; optionally ask a peer to review the plan before `prereg-v1` | 1, 10 |
+
+### 5.4 Assumption register
+
+| ID | Assumption | Needed by | Why plausible | How checked / if violated |
+|----|------------|-----------|---------------|---------------------------|
+| A1 | Conditional on fixed effects and trends, year-to-year weather is as good as random with respect to other yield and disaster drivers (Dell, Jones & Olken 2014) | H3, H4 | Weather is not chosen by farmers or governments | Placebo (H4); robustness to trend specification (H3) |
+| A2 | Panel weather responses approximate climate responses; adaptation is limited over the horizon studied | H3 interpretation | Standard in the literature, but contested | Exploratory long-differences comparison (Burke & Emerick 2016); interpretation limited to short-run responses |
+| A3 | Little spillover between countries (e.g. via world prices changing planting and inputs) | H3 | Year FE absorb global price shocks common to all countries | Year FE; acknowledged limitation |
+| A4 | Errors in measuring climate are mostly random, which biases effects toward zero rather than away from it | H3, H4 | Reanalysis error is not driven by yields or disasters | Agreement of ERA5 and Berkeley Earth; the direction of any bias is stated |
+| A5 | EM-DAT inclusion criteria are applied consistently across countries within a year | H4 | A single database with fixed thresholds | Placebo test; >= 100 deaths subset |
+| A6 | Crop calendars are stable over the study period | H3 | Planting dates shift slowly | Limitation (RD7); stretch: time-varying gridded calendar |
+| A7 | GMST and ln(CO2) are cointegrated | H2 | Physical forcing-response relationship | Engle-Granger test; "inconclusive" path if violated |
+| A8 | The countries analysed represent the population of interest | H1c, H5 | All countries with data are included (census, not sample) | Missingness analysis vs GDP and region (Phase 3, Step 3.4); exclusions reported |
+| A9 | Predecessor/successor border rules do not bias panels | H1c, H3, H4 | Rule fixed in advance (RD3) | Robustness excluding all countries affected by border changes |
 
 ## 6. Scope: MVP vs stretch
 _Step 1.6 — to be written._
