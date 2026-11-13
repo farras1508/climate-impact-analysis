@@ -1,0 +1,104 @@
+# Pre-registered Analytical Base Table (ABT) contracts (docs/analysis_plan.md, section 3).
+# Phase 4 builds these tables and validates them against this file (pandera).
+# dtype: int | float | str | bool | date. "range" = physical-plausibility bounds, not expectations.
+# Rows are never deleted for analysis reasons: sample membership is an in_sample_* flag.
+
+tables:
+  abt_global_monthly:
+    grain: "one row per calendar month, global"
+    primary_key: [date]
+    coverage: [1850, 2025]
+    expected_rows: 2112              # 176 years x 12; complete index, NaN where a source has no data
+    used_by: [H1a-secondary, H2, Q2-forecast]
+    columns:
+      - {name: date, dtype: date, unit: "month start (YYYY-MM-01)", nullable: false}
+      - {name: temp_anom_gistemp, dtype: float, unit: "degC vs 1991-2020", nullable: true, range: [-2.5, 3.0], source: gistemp_v4_global_monthly}
+      - {name: temp_anom_hadcrut5, dtype: float, unit: "degC vs 1991-2020", nullable: true, range: [-2.5, 3.0], source: hadcrut5_global_monthly}
+      - {name: temp_anom_berkeley, dtype: float, unit: "degC vs 1991-2020", nullable: true, range: [-2.5, 3.0], source: berkeley_global_monthly}
+      - {name: co2_ppm, dtype: float, unit: "ppm", nullable: true, range: [300, 500], source: noaa_co2_mlo_monthly}
+      - {name: co2_ppm_deseason, dtype: float, unit: "ppm (seasonal cycle removed)", nullable: true, range: [300, 500], source: noaa_co2_mlo_monthly}
+      - {name: oni, dtype: float, unit: "degC (Nino 3.4 anomaly; 3-month mean at centre month)", nullable: true, range: [-3.5, 3.5], source: noaa_oni}
+      - {name: volcanic_exclusion, dtype: bool, unit: "flag (H2 robustness windows)", nullable: false}
+
+  abt_global_annual:
+    grain: "one row per calendar year, global"
+    primary_key: [year]
+    coverage: [1850, 2025]
+    expected_rows: 176
+    used_by: [H1a, H1b]
+    columns:
+      - {name: year, dtype: int, unit: "calendar year", nullable: false, range: [1850, 2025]}
+      - {name: temp_anom_gistemp, dtype: float, unit: "degC vs 1991-2020; NaN if < 12 valid months", nullable: true, range: [-2.5, 3.0]}
+      - {name: temp_anom_hadcrut5, dtype: float, unit: "degC vs 1991-2020; NaN if < 12 valid months", nullable: true, range: [-2.5, 3.0]}
+      - {name: temp_anom_berkeley, dtype: float, unit: "degC vs 1991-2020; NaN if < 12 valid months", nullable: true, range: [-2.5, 3.0]}
+      - {name: co2_ppm, dtype: float, unit: "ppm (annual mean)", nullable: true, range: [300, 500]}
+      - {name: oni, dtype: float, unit: "degC (annual mean)", nullable: true, range: [-3.5, 3.5]}
+
+  abt_country_year:
+    grain: "one row per country x calendar year (balanced grid)"
+    primary_key: [iso3, year]
+    coverage: [1961, 2025]
+    expected_countries: [150, 260]
+    balanced: true
+    used_by: [H1c, H4, Q5-inputs]
+    columns:
+      - {name: iso3, dtype: str, unit: "ISO 3166-1 alpha-3", nullable: false}
+      - {name: year, dtype: int, unit: "calendar year", nullable: false, range: [1961, 2025]}
+      - {name: temp_mean_c, dtype: float, unit: "degC (ERA5, area-weighted)", nullable: true, range: [-35, 35], source: era5_monthly_single_levels}
+      - {name: temp_anom_c, dtype: float, unit: "degC vs 1991-2020 (ERA5)", nullable: true, range: [-6, 6], source: era5_monthly_single_levels}
+      - {name: temp_anom_berkeley, dtype: float, unit: "degC vs 1991-2020 (Berkeley Earth)", nullable: true, range: [-6, 6], source: berkeley_country_monthly}
+      - {name: precip_mm, dtype: float, unit: "mm/year (sum of 12 months)", nullable: true, range: [0, 12000], source: era5_monthly_single_levels}
+      - {name: n_grid_cells, dtype: int, unit: "count of 0.25-degree cells", nullable: false, range: [0, 200000]}
+      - {name: small_country_flag, dtype: bool, unit: "flag (n_grid_cells < spatial.min_grid_cells_flag)", nullable: false}
+      - {name: disasters_climate_n, dtype: int, unit: "events/year (structural zero inside H4 window)", nullable: true, range: [0, 500], source: emdat}
+      - {name: disasters_climate_deaths100_n, dtype: int, unit: "events/year with >= 100 deaths", nullable: true, range: [0, 500], source: emdat}
+      - {name: disasters_geophysical_n, dtype: int, unit: "events/year (negative control)", nullable: true, range: [0, 500], source: emdat}
+      - {name: population, dtype: float, unit: "persons", nullable: true, range: [1000, 2000000000], source: wdi}
+      - {name: gdp_pc_ppp, dtype: float, unit: "constant international $ (PPP)", nullable: true, range: [100, 250000], source: wdi}
+      - {name: agri_share_gdp, dtype: float, unit: "% of GDP", nullable: true, range: [0, 100], source: wdi}
+      - {name: wb_region, dtype: str, unit: "World Bank region code (fixed reference year)", nullable: true}
+      - {name: wb_income_group, dtype: str, unit: "World Bank income group (fixed reference year)", nullable: true}
+      - {name: in_sample_h1c, dtype: bool, unit: "flag", nullable: false}
+      - {name: in_sample_h4, dtype: bool, unit: "flag", nullable: false}
+
+  abt_crop_panel:
+    grain: "one row per country x harvest year x crop, where FAOSTAT reports the crop"
+    primary_key: [iso3, year, crop_code]
+    coverage: [1961, 2025]
+    balanced: false
+    used_by: [H3, Q3-model]
+    foreign_keys:
+      - {columns: [iso3, year], table: abt_country_year}
+    columns:
+      - {name: iso3, dtype: str, unit: "ISO 3166-1 alpha-3", nullable: false}
+      - {name: year, dtype: int, unit: "harvest year (FAOSTAT year)", nullable: false, range: [1961, 2025]}
+      - {name: crop_code, dtype: int, unit: "FAOSTAT item code", nullable: false, range: [1, 2000]}
+      - {name: crop, dtype: str, unit: "label from config crops", nullable: false}
+      - {name: yield_kg_ha, dtype: float, unit: "kg/ha", nullable: true, range: [1, 30000], source: faostat_crops_livestock}
+      - {name: yield_flag, dtype: str, unit: "FAOSTAT flag (official / estimated / imputed)", nullable: true}
+      - {name: yield_computed_kg_ha, dtype: float, unit: "kg/ha (production / area; cross-check)", nullable: true, range: [1, 30000]}
+      - {name: area_harvested_ha, dtype: float, unit: "ha", nullable: true, range: [0, 200000000]}
+      - {name: production_t, dtype: float, unit: "tonnes", nullable: true, range: [0, 2000000000]}
+      - {name: gs_temp_c, dtype: float, unit: "degC (growing-season mean)", nullable: true, range: [-10, 40]}
+      - {name: gs_precip_mm, dtype: float, unit: "mm (growing-season total)", nullable: true, range: [0, 8000]}
+      - {name: gs_n_months, dtype: int, unit: "months in growing season", nullable: true, range: [1, 12]}
+      - {name: gs_spans_two_years, dtype: bool, unit: "flag (season starts in previous calendar year)", nullable: false}
+      - {name: in_sample_h3, dtype: bool, unit: "flag (>= 20 years and mean area >= 10,000 ha)", nullable: false}
+
+  abt_country_profile:
+    grain: "one row per country (cross-section)"
+    primary_key: [iso3]
+    used_by: [H5, dashboard-profiles]
+    foreign_keys:
+      - {columns: [iso3], table: abt_country_year}
+    columns:
+      - {name: iso3, dtype: str, unit: "ISO 3166-1 alpha-3", nullable: false}
+      - {name: warming_rate_c_per_decade, dtype: float, unit: "degC/decade (Sen slope, ERA5, 1961-2025)", nullable: true, range: [-1, 2]}
+      - {name: disasters_per_million_log1p, dtype: float, unit: "log1p(events per million people per year, 2000-latest)", nullable: true, range: [0, 10]}
+      - {name: agri_share_gdp_mean10, dtype: float, unit: "% of GDP (mean of last 10 years)", nullable: true, range: [0, 100]}
+      - {name: ndgain_vulnerability, dtype: float, unit: "ND-GAIN score, 0-1 (latest)", nullable: true, range: [0, 1], source: nd_gain}
+      - {name: ndgain_readiness, dtype: float, unit: "ND-GAIN score, 0-1 (latest)", nullable: true, range: [0, 1], source: nd_gain}
+      - {name: wb_region, dtype: str, unit: "World Bank region code", nullable: true}
+      - {name: wb_income_group, dtype: str, unit: "World Bank income group", nullable: true}
+      - {name: small_country_flag, dtype: bool, unit: "flag", nullable: false}
+      - {name: in_sample_h5, dtype: bool, unit: "flag (all 5 H5 features present)", nullable: false}

@@ -59,6 +59,29 @@ def validate_config(cfg: dict[str, Any]) -> None:
     if not 1 <= a["min_valid_months"] <= 12:
         raise ValueError("min_valid_months must be between 1 and 12.")
 
+    h = cfg["hypotheses"]
+    h1b_start, h1b_end = h["h1b"]["window"]
+    if not (1850 <= h1b_start <= start and h1b_end == end):
+        raise ValueError(
+            "hypotheses.h1b.window must start in 1850..study_start and end at study_end."
+        )
+    h2_start, h2_end = (int(month[:4]) for month in h["h2"]["window"])
+    if h2_start < 1959 or h2_end != end:
+        raise ValueError(
+            "hypotheses.h2.window must start >= 1959 (first full Mauna Loa year) "
+            "and end at study_end."
+        )
+    h4_start = h["h4"]["primary_start_year"]
+    if h4_start not in cfg["disasters"]["start_year_sensitivity"] or not (start <= h4_start < end):
+        raise ValueError(
+            "hypotheses.h4.primary_start_year must be one of disasters.start_year_sensitivity "
+            "and inside the study window."
+        )
+    if end - s["validation_end_year"] < s["min_test_years"]:
+        raise ValueError(
+            "Test period (validation_end+1 .. study_end) is shorter than splits.min_test_years."
+        )
+
 
 @lru_cache(maxsize=1)
 def _config_cached() -> dict[str, Any]:
@@ -95,6 +118,19 @@ def load_datasets() -> dict[str, Any]:
         A deep copy, keyed by dataset identifier.
     """
     return copy.deepcopy(_datasets_cached())
+
+
+@lru_cache(maxsize=1)
+def _abt_schemas_cached() -> dict[str, Any]:
+    schemas = _read_yaml("abt_schemas.yaml").get("tables")
+    if not isinstance(schemas, dict):
+        raise ValueError("abt_schemas.yaml must contain a top-level 'tables' mapping.")
+    return schemas
+
+
+def load_abt_schemas() -> dict[str, Any]:
+    """Return the pre-registered ABT contracts, keyed by table name (deep copy)."""
+    return copy.deepcopy(_abt_schemas_cached())
 
 
 def get_path(layer: str) -> Path:
