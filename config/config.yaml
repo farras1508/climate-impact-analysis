@@ -70,3 +70,43 @@ paths:
 tracking:
   mlflow_db: mlflow.db                 # SQLite store at project root (gitignored)
   artifact_dir: mlartifacts            # model artifacts (gitignored)
+
+
+# Pre-registered numeric parameters (docs/analysis_plan.md, section 2). Do not change after prereg-v1
+# without a Deviations-log entry.
+hypotheses:
+  h1b:
+    window: [1880, 2025]
+    max_breakpoints: 3
+    min_segment_years: 15
+    recent_break_expected: [1960, 1985]
+    block_bootstrap_length: 5
+  h1a:
+    plausibility_degc_per_decade: [0.10, 0.30]   # pipeline audit trigger, not a hypothesis
+  h2:
+    window: ["1959-01", "2025-12"]
+    co2_series: deseasonalized
+    dols_leads_lags: 12
+    volcanic_exclusion_windows:
+      - ["1982-04", "1984-03"]   # El Chichon
+      - ["1991-06", "1993-05"]   # Pinatubo
+  h3:
+    min_years_per_country_crop: 20
+    min_mean_harvested_ha: 10000
+    sesoi_pct_per_degc: 1.0
+    weights: mean_harvested_area
+    multiple_testing: holm
+  h4:
+    primary_start_year: 1990
+    controls_lag_years: 1
+    sesoi_irr: 1.05
+    negative_control_equivalence: [0.90, 1.10]
+  h5:
+    k_range: [3, 7]
+    kmeans_n_init: 50
+    bootstrap_reps: 500
+    min_cluster_jaccard: 0.75
+    winsor_quantiles: [0.01, 0.99]
+
+benchmarks:
+  zhao_2017_pct_per_degc_global: {maize: -7.4, wheat: -6.0, rice: -3.2, soybeans: -3.1}
