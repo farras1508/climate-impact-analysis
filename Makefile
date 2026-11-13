@@ -2,6 +2,8 @@
 .PHONY: help test lint verify-data mlflow-ui
 check-sources:  ## Check every HTTP data source is reachable (writes reports/source_check.md)
 	$(PY) -m climate_impact.ingest.source_check
+data-http:  ## Download all direct-URL HTTP datasets into data/raw (provenance-recorded)
+	$(PY) -m climate_impact.ingest.http all
 
 PY := python
 
