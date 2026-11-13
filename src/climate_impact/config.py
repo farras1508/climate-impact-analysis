@@ -97,6 +97,19 @@ def load_datasets() -> dict[str, Any]:
     return copy.deepcopy(_datasets_cached())
 
 
+@lru_cache(maxsize=1)
+def _abt_schemas_cached() -> dict[str, Any]:
+    schemas = _read_yaml("abt_schemas.yaml").get("tables")
+    if not isinstance(schemas, dict):
+        raise ValueError("abt_schemas.yaml must contain a top-level 'tables' mapping.")
+    return schemas
+
+
+def load_abt_schemas() -> dict[str, Any]:
+    """Return the pre-registered ABT contracts, keyed by table name (deep copy)."""
+    return copy.deepcopy(_abt_schemas_cached())
+
+
 def get_path(layer: str) -> Path:
     """Return the absolute path of a configured location.
 

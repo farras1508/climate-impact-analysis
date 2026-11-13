@@ -212,7 +212,62 @@ case studies after seeing which countries show the most striking results.
 | Q3 yield model | ln(yield) per country-year-crop | Temporal (train <= 2010, validation 2011-16, test >= 2017, **evaluated once**) and GroupKFold by country | Country mean, country linear trend, the H3 panel FE model | RMSE (guideline: >= 10% better than the best baseline); hot-season subset error (R3); 90% interval coverage (R4) |
 
 ## 3. Units of analysis and granularity
-_Step 1.3 — to be written._
+
+The authoritative, machine-readable contracts are in `config/abt_schemas.yaml`;
+this section explains the rules behind them.
+
+### 3.1 Analytical Base Tables
+
+| ABT | Grain | Primary key | Coverage | Expected size | Used by |
+|-----|-------|-------------|----------|---------------|---------|
+| `abt_global_monthly` | Global x month | `date` | 1850-01 to 2025-12 | exactly 2,112 rows | H1a (secondary), H2, Q2 forecast |
+| `abt_global_annual` | Global x year | `year` | 1850-2025 | exactly 176 rows | H1a, H1b |
+| `abt_country_year` | Country x year (balanced grid) | `iso3, year` | 1961-2025 | 150-260 countries x 65 years | H1c, H4, Q5 inputs |
+| `abt_crop_panel` | Country x harvest year x crop | `iso3, year, crop_code` | 1961-latest FAOSTAT year | unbalanced | H3, Q3 model |
+| `abt_country_profile` | Country | `iso3` | cross-section | one row per country | H5, dashboard |
+
+### 3.2 Conventions
+
+1. **Keys.** Countries: ISO 3166-1 alpha-3. Crops: FAOSTAT item codes (DEC-011). Months: month-start dates.
+   Regional and income aggregates (e.g. "World", "Africa") never appear as keys.
+2. **Balanced grids.** `abt_country_year` holds every country x every year; missing values are NaN.
+   This makes lags, completeness checks and missingness maps reliable.
+3. **Flags, not deletions.** ABTs are never filtered for analysis reasons; sample membership is a
+   boolean `in_sample_*` column, so every exclusion is counted and auditable.
+4. **Temporal aggregation.** Temperature: mean of 12 months; precipitation: sum of 12 months;
+   annual values are NaN unless all 12 months are valid. ONI (3-month running mean) is assigned to its
+   centre month (DJF -> January). Disaster events are assigned to their start year.
+5. **Harvest-year rule (H3).** Growing-season climate is assigned to the FAOSTAT year (= harvest year).
+   Seasons may begin in the previous calendar year (e.g. Southern-Hemisphere summer crops);
+   `gs_spans_two_years` records this.
+6. **Structural zeros (H4).** Inside the H4 window, a country-year with no EM-DAT record has 0 events.
+   Outside the window, or before a country existed, the value is NaN. This assumes EM-DAT's inclusion
+   criteria are applied consistently; reporting gaps are handled by year FE and the geophysical
+   placebo (section 2.7).
+7. **Fixed classification.** World Bank region and income group come from one reference
+   classification year (recorded in the manifest), so composition changes do not mix with real effects.
+8. **Panel operations.** Lags and differences are computed within `iso3`, sorted by `year`; the first
+   year of each country is NaN. Values never cross from one country to another.
+
+### 3.3 Join rules
+
+- Joins always use the full key; every merge declares its cardinality
+  (`pandas.merge(..., validate="one_to_one" | "many_to_one")`), which raises on duplicate keys.
+- Every left join asserts that the row count is unchanged (no fan-out).
+- Crop rows join country-year rows on `(iso3, year)` (many-to-one); country-level quantities are
+  never summed over crop rows.
+
+### 3.4 Contract checks (enforced in Phase 4)
+
+Unique primary keys · non-null keys · declared dtypes · values within plausibility ranges · exact row
+counts for global tables · complete monthly/annual index without gaps · balanced country-year grid ·
+foreign keys resolve · `iso3` values are valid ISO codes (no aggregates) · annual = mean of
+monthly within 1e-9 · 1991-2020 mean of every rebased anomaly series = 0 within 1e-6.
+
+### 3.5 Level of inference
+
+All results are at the stated grain. Country-level associations are not claimed to hold for
+sub-national regions, farms or individuals (ecological fallacy; see 1.4).
 
 ## 4. Study window
 _Step 1.4 — to be written._
