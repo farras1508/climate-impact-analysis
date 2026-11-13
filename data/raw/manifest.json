@@ -1,6 +1,3654 @@
 [
   {
     "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/afghanistan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:48 GMT",
+    "request": {
+      "iso3": "AFG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/afghanistan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "dfeb92c87749121ee19c0e97c38586c2d051081b86c8bcdb74c6510ee9978247",
+    "size_bytes": 206640,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/afghanistan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/albania-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:49 GMT",
+    "request": {
+      "iso3": "ALB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/albania-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "58ebec10fd6e7052d1d1639c81a18ed55e528b9869652fea043575a2bea307c4",
+    "size_bytes": 322271,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/albania-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/algeria-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:49 GMT",
+    "request": {
+      "iso3": "DZA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/algeria-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "cff8b91a483c97eb2ca5d52431a2384ad9799e839793368033139860fe735c5c",
+    "size_bytes": 273667,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/algeria-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/american-samoa-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:49 GMT",
+    "request": {
+      "iso3": "ASM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/american-samoa-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4830ae6a5bcfdacf41f34a20bca13d4897c84863f1f106dea7bc8db593cafd1f",
+    "size_bytes": 173328,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/american-samoa-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/andorra-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "AND",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/andorra-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "80d3a2d688028a81a35325a260c2c70ddaf73949e0f3478cfd1f4d2f786d9b54",
+    "size_bytes": 322263,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/andorra-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/angola-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "AGO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/angola-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7a33f2f3f65fde41a4716a37c93339389570c6ba8bdaa959b1b2245488af43c3",
+    "size_bytes": 170568,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/angola-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/anguilla-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "AIA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/anguilla-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a5e28584573a6071d445000a9bc4433e76708d52212b0f20e648344a664d8b61",
+    "size_bytes": 229808,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/anguilla-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/antarctica-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "ATA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/antarctica-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "94e1081d372d68268615a510a203ac5ba1d54816d16dc1d4b12c556b16361ec0",
+    "size_bytes": 80031,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/antarctica-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/antigua-and-barbuda-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "ATG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/antigua-and-barbuda-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "3f34821eb4a74cd38cf39492c1548fe3e1945cc35aa9d30e2b1f601c64982cea",
+    "size_bytes": 235270,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/antigua-and-barbuda-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/argentina-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "ARG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/argentina-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "5356cbb1ac65eac858f5d695155b62537b8b3470c213c3f708499d059bc48bd6",
+    "size_bytes": 198412,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/argentina-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/armenia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "ARM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/armenia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "530766b4536970a6d339826e1a2996c34e9346ccb84b04622ad400e378ff50ae",
+    "size_bytes": 241127,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/armenia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/aruba-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:50 GMT",
+    "request": {
+      "iso3": "ABW",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/aruba-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7888aa4899d431c0f5bbe665b203c258b3edd59adb007a2f5da36a4e4358fa5a",
+    "size_bytes": 229806,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/aruba-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/australia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:51 GMT",
+    "request": {
+      "iso3": "AUS",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/australia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f7f1a897304e9d63a47aba54dc0446ff36f98c0889c302a9c421439c26f8a6e0",
+    "size_bytes": 174009,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/australia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/austria-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:51 GMT",
+    "request": {
+      "iso3": "AUT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/austria-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "83e2a3de53685b420bfe8edd09e31181e743b3c99709a3a8d3f67b13409ed1cf",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/austria-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/azerbaijan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:51 GMT",
+    "request": {
+      "iso3": "AZE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/azerbaijan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "25a9eb1693af1320edca8fe03906ec0c8a42791638ba479750a05929d0f7a05a",
+    "size_bytes": 241133,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/azerbaijan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/bahrain-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:51 GMT",
+    "request": {
+      "iso3": "BHR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bahrain-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f295c24b297e0da47910d081c3cd4c35de3a50a7257cce24c2508dd35aea97d3",
+    "size_bytes": 173795,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bahrain-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/bangladesh-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:51 GMT",
+    "request": {
+      "iso3": "BGD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bangladesh-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "558ef06dda2dde9433a4bd05d7fdc32f87869ee054626aaacb539070f4cb1c9d",
+    "size_bytes": 244467,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bangladesh-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/barbados-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:52 GMT",
+    "request": {
+      "iso3": "BRB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/barbados-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f4e130de58b01e332c502abb403c2379e252829a7ab0a817bbf5b4860cb92dde",
+    "size_bytes": 235248,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/barbados-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/belarus-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:52 GMT",
+    "request": {
+      "iso3": "BLR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/belarus-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "3f0a2b82d5056df73250e46dc098a5badba71c800db544bbaa61253eb62ea687",
+    "size_bytes": 322273,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/belarus-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/belgium-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:52 GMT",
+    "request": {
+      "iso3": "BEL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/belgium-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a1b2b1c2c75b68d770d218d0ce0e1208510075a621e4b57fab4370db9de5268f",
+    "size_bytes": 322269,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/belgium-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/belize-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:52 GMT",
+    "request": {
+      "iso3": "BLZ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/belize-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4e73f63f5fef3fdd9d6a9ad8eae4c08fed15b8781bff938f8b966fa1299b927a",
+    "size_bytes": 204965,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/belize-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/benin-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:52 GMT",
+    "request": {
+      "iso3": "BEN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/benin-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ce7d0f39b24bb0710bc8760d8fe9400d37b821b891611f13548140e4f0fce3f8",
+    "size_bytes": 177028,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/benin-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/bhutan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:52 GMT",
+    "request": {
+      "iso3": "BTN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bhutan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "cdf8148495c45aa91ac0f567dbf340dc858cc460ac8e7dd6b4691141bbd8d5d2",
+    "size_bytes": 244454,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bhutan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/bolivia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:53 GMT",
+    "request": {
+      "iso3": "BOL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bolivia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "9bfeea12962c720b739ae8a01f538860b60a1ab684abd24486d31b48af0d2202",
+    "size_bytes": 198405,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bolivia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/bonaire,-saint-eustatius-and-saba-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:53 GMT",
+    "request": {
+      "iso3": "BES",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bonaire,-saint-eustatius-and-saba-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4f3e257846b7ec36665fa00608726f11634a197067d8a0ea71c91c9995125f40",
+    "size_bytes": 229834,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bonaire,-saint-eustatius-and-saba-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/bosnia-and-herzegovina-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:53 GMT",
+    "request": {
+      "iso3": "BIH",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bosnia-and-herzegovina-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c152ca8c8ab5af5a6f0d0ea346038b49189a2981a490dcae67df703b20b370cb",
+    "size_bytes": 322302,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bosnia-and-herzegovina-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/botswana-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:53 GMT",
+    "request": {
+      "iso3": "BWA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/botswana-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "fc940ae2348dcf31ca741155125340ea8687a6989c8228ac2f4cf89d64814862",
+    "size_bytes": 193112,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/botswana-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/brazil-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:53 GMT",
+    "request": {
+      "iso3": "BRA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/brazil-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "8f03fcf5285697beb0f718d1ad96fe64e897831c75f46f24817087b43ada72b3",
+    "size_bytes": 196444,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/brazil-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/british-virgin-islands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:53 GMT",
+    "request": {
+      "iso3": "VGB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/british-virgin-islands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c6eaad944ebad81567f401ac725cafeb7401983a43e9fa971704d4f098fff342",
+    "size_bytes": 229822,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/british-virgin-islands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/brunei-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "BRN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/brunei-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "34117c8fe816d9699058132a92217344f148976dda8475dacab3c14f55d83e2e",
+    "size_bytes": 185851,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/brunei-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/bulgaria-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "BGR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bulgaria-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "3a97642c463923a2841c27cbe112791bca8f3d4403a273f449f82f8bb72f9550",
+    "size_bytes": 322275,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/bulgaria-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/burkina-faso-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "BFA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/burkina-faso-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "67aea46513500999738d2d003bf70cec9d4d6d9931d29ce05d2604eaa04e3f95",
+    "size_bytes": 177044,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/burkina-faso-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/burundi-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "BDI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/burundi-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ab6a3989824639690bbb223259d2da9450be846d4d2382d3f4efc2f14da4b07e",
+    "size_bytes": 155277,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/burundi-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/cabo-verde-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "CPV",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cabo-verde-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "aeecb1c2938fb73b95bb52147e2ad95c83526e05cba3b200c3a91b419ece3cdb",
+    "size_bytes": 190565,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cabo-verde-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/cambodia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "KHM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cambodia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a67422724aed495c9c8a54d691677f7b6e66edd91d884d39c0eb131306a53670",
+    "size_bytes": 216435,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cambodia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/cameroon-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "CMR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cameroon-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "8341936dfd4722c76aa76beb8cf72a7af90f9254a9f6af7cf1ed5a313ac724df",
+    "size_bytes": 177428,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cameroon-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/canada-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:54 GMT",
+    "request": {
+      "iso3": "CAN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/canada-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ca2cd7cbf7f40b5123abe36b0fb0d892fbb88a652a9dbade23af824d11671a96",
+    "size_bytes": 249857,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/canada-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/cayman-islands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:55 GMT",
+    "request": {
+      "iso3": "CYM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cayman-islands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "d85de5eee0be7bb82cf44692c96174543f49fb312ad0271a5298355b4f5bf9cf",
+    "size_bytes": 230991,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cayman-islands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/central-african-republic-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:55 GMT",
+    "request": {
+      "iso3": "CAF",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/central-african-republic-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "504883a0dd5f421738cb3fb678f3c7bbdce11f0bfa6bd0e839d72cefa13a6310",
+    "size_bytes": 162564,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/central-african-republic-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/chad-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:55 GMT",
+    "request": {
+      "iso3": "TCD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/chad-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "23d91b5759f38fe52dd62f6ca04f52edcf9d132c3962aa72d577a1d2edf768e1",
+    "size_bytes": 159194,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/chad-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/chile-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:56 GMT",
+    "request": {
+      "iso3": "CHL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/chile-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "2262e9a1aa3f19329e83c2660edb1d2852cd84fe7c369ffc458f83edfd368043",
+    "size_bytes": 192913,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/chile-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/china-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:56 GMT",
+    "request": {
+      "iso3": "CHN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/china-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "44b6ef59c69bb128b284537fed24c3d206dfb9321998e99acdcc92300bac44cf",
+    "size_bytes": 215257,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/china-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/christmas-island-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:56 GMT",
+    "request": {
+      "iso3": "CXR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/christmas-island-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "13a3a39dff3c0f4631677f573c533d6faf57c0c97fff062d2c990a3811d07090",
+    "size_bytes": 228641,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/christmas-island-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/colombia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:56 GMT",
+    "request": {
+      "iso3": "COL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/colombia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "168f7bb90787814465583b64791cdb4d222d15b80e59317897272a982d4851e6",
+    "size_bytes": 168026,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/colombia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/comoros-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:56 GMT",
+    "request": {
+      "iso3": "COM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/comoros-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f58a89466d77df587de9afdc2396f57ad309b9aace90478ea56a0a6a0ebaa81d",
+    "size_bytes": 158807,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/comoros-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/costa-rica-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:57 GMT",
+    "request": {
+      "iso3": "CRI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/costa-rica-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a202afe641872b9576c7a0cb23db10290140cd390d19eb1928cd12e4d279961a",
+    "size_bytes": 196348,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/costa-rica-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/croatia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:57 GMT",
+    "request": {
+      "iso3": "HRV",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/croatia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "28c079bcc6c9d8aba7a715f45c7e93e2a7c2c167c37db64cfad0b031018c9cb7",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/croatia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/cuba-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:57 GMT",
+    "request": {
+      "iso3": "CUB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cuba-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4821538bdc0ec7a383b381335f4cb32a4e1f5c3c7671cb99e215c195f3387ecc",
+    "size_bytes": 235049,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cuba-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/cyprus-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:58 GMT",
+    "request": {
+      "iso3": "CYP",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cyprus-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "17663494c1b8fa22ce61974a11db960633389362e6669ce2b309174bbfa3be62",
+    "size_bytes": 241123,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/cyprus-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/czechia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:58 GMT",
+    "request": {
+      "iso3": "CZE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/czechia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c2f28c850e7774e59051bccf6792099919da70c0afc4b83b512f47ab82714f3d",
+    "size_bytes": 322273,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/czechia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/democratic-republic-of-the-congo-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:58 GMT",
+    "request": {
+      "iso3": "COD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/democratic-republic-of-the-congo-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "0608c4f64cd855566e317872025bc8b81ae905ada0535538d8c8b000c66bc3d5",
+    "size_bytes": 155332,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/democratic-republic-of-the-congo-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/denmark-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:58 GMT",
+    "request": {
+      "iso3": "DNK",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/denmark-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a1bbbeac3b6e19c2da9be4ef8fed331d6bce7d6475dd3e7881877b71c0d67113",
+    "size_bytes": 254559,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/denmark-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/djibouti-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:59 GMT",
+    "request": {
+      "iso3": "DJI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/djibouti-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4b6424dd6c18b682e983d07512c7f658b4c145ade68d846003765a0971ead167",
+    "size_bytes": 168705,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/djibouti-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/dominica-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:59 GMT",
+    "request": {
+      "iso3": "DMA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/dominica-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "076a7e02954932feb1f7211f97f9810e3d202d2e894bb423901ca17068bfe988",
+    "size_bytes": 235248,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/dominica-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/dominican-republic-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:59 GMT",
+    "request": {
+      "iso3": "DOM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/dominican-republic-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "125dea804ad07fe6ce2ee31fb3497fd781d2e773dedd5424264995909a1ab6b9",
+    "size_bytes": 235272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/dominican-republic-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/east-timor-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:59 GMT",
+    "request": {
+      "iso3": "TLS",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/east-timor-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c6907d23bae4f15f5e10b12a3d385c59ed367e0b9239840a8fae433ebb83a132",
+    "size_bytes": 159989,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/east-timor-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/ecuador-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:50:59 GMT",
+    "request": {
+      "iso3": "ECU",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ecuador-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "514ace2748ed146a0bf2a77f943a9d8351cbb9a85cc52aef0d575a29e307a1d3",
+    "size_bytes": 156458,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ecuador-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/egypt-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "EGY",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/egypt-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "dfd3c69e3866da643a7715bbba844d92f3251f54b432eaef82f1a7f6f266c2cb",
+    "size_bytes": 212901,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/egypt-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/el-salvador-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "SLV",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/el-salvador-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c0566485211b21f65bae2f392c05975a4dcbe92e34f2966799dcb8ecce8f2ca8",
+    "size_bytes": 196351,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/el-salvador-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/equatorial-guinea-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "GNQ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/equatorial-guinea-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "5e5682dd2b972df039da591a3ee6c4109ef315f326e44b8a21c8da9bc17b0f76",
+    "size_bytes": 177443,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/equatorial-guinea-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/eritrea-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "ERI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/eritrea-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "65922a2a5ac2c155b1d718376e35758c8a02da1bdebc5b8f45a04ae3d966b6b0",
+    "size_bytes": 168702,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/eritrea-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/estonia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "EST",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/estonia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "41d5aa59e25710fd51d7ff98fe6e14d3750c54cb365a37d3d6dc8021a204a73f",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/estonia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/eswatini-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "SWZ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/eswatini-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "d458e6062fe424742f3d362d0ee1592502999873dbfd2ca626ad12eec5027093",
+    "size_bytes": 193111,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/eswatini-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/ethiopia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "ETH",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ethiopia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "187143962cfad49349e9640d8ae359afe5ceafb257c609aece597bc06148018a",
+    "size_bytes": 168709,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ethiopia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/falkland-islands-(islas-malvinas)-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "FLK",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/falkland-islands-(islas-malvinas)-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6805b0462657decc36e8509d032ca14f9e6b8325394093aceea55f2f8b3b46df",
+    "size_bytes": 187501,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/falkland-islands-(islas-malvinas)-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/faroe-islands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "FRO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/faroe-islands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f7c059ea2f10a7efff3a70fb3e8fc8a9dbd6f8418b821cc840bbb0058cb45b39",
+    "size_bytes": 324087,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/faroe-islands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/fiji-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "FJI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/fiji-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c80be6b9216466fdd4ebda980c05ed2ae3a71a408e2a2eb6f96204e6edfde171",
+    "size_bytes": 184678,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/fiji-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/finland-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:00 GMT",
+    "request": {
+      "iso3": "FIN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/finland-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7d230ff102d05de3416dd642ae24366024e465f5ba4957699d084ece6c1118fc",
+    "size_bytes": 322275,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/finland-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/france-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:01 GMT",
+    "request": {
+      "iso3": "FRA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/france-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "fa5d38227fe5aeee828cb3d70b4a087a5f49489dcc3c36f9e864c6f8b162d609",
+    "size_bytes": 322277,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/france-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/french-guiana-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:01 GMT",
+    "request": {
+      "iso3": "GUF",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/french-guiana-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "97c31ed6b4ea9cb6701f14ca5b6aaea01f091c113593e037e40b944fb4396f64",
+    "size_bytes": 229815,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/french-guiana-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/french-polynesia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:01 GMT",
+    "request": {
+      "iso3": "PYF",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/french-polynesia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "23145669afd173f0458753196ebdf55a0cf95e59085ec0f5c14efeca08234f16",
+    "size_bytes": 167984,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/french-polynesia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/french-southern-and-antarctic-lands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:01 GMT",
+    "request": {
+      "iso3": "ATF",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/french-southern-and-antarctic-lands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "defa1ae388ef37b3b8cdd483898c4f3c5d9a59be93740bc11c6414d87084a5c2",
+    "size_bytes": 83915,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/french-southern-and-antarctic-lands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/gabon-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:01 GMT",
+    "request": {
+      "iso3": "GAB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/gabon-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "d44eb0ced0b43b08be5d5b1ea9737406834d5b18f08d60257f5567902c671a73",
+    "size_bytes": 177422,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/gabon-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/gambia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:01 GMT",
+    "request": {
+      "iso3": "GMB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/gambia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "aa212d9c8e658eafd9d724776dc54caa693e482a753c943e5b1fd00a20e97c51",
+    "size_bytes": 205847,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/gambia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/georgia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:01 GMT",
+    "request": {
+      "iso3": "GEO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/georgia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "e9c9d59f2d746d059def1c6ef4d5921a4693eca1ad47dec8cc526067458d0861",
+    "size_bytes": 248966,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/georgia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/germany-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:02 GMT",
+    "request": {
+      "iso3": "DEU",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/germany-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6da33824ffab5b519292deecdb4e2215fb1e5a8c83529c083848adf2ceb47d97",
+    "size_bytes": 322273,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/germany-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/ghana-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:02 GMT",
+    "request": {
+      "iso3": "GHA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ghana-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ac0543b68374f2a57bf4867706b1b37c73f249ea1bdd6abbaaa84f6a43fcfd2d",
+    "size_bytes": 177030,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ghana-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/greece-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:02 GMT",
+    "request": {
+      "iso3": "GRC",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/greece-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "63b784e9c9d8311f35e85c75abc65b8416a50b90e17181ad207147d2311d3a78",
+    "size_bytes": 273663,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/greece-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/greenland-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:02 GMT",
+    "request": {
+      "iso3": "GRL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/greenland-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "699c56b4cb17dd8d0b115e1575e9847e85cb36117529a2822a758c42501ef022",
+    "size_bytes": 276074,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/greenland-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/grenada-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:02 GMT",
+    "request": {
+      "iso3": "GRD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/grenada-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "47b5360b20f5ddcbbc0a11980505e8e51a28dbd942f6c4b9180ef16c9c731efc",
+    "size_bytes": 235246,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/grenada-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/guadeloupe-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:02 GMT",
+    "request": {
+      "iso3": "GLP",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guadeloupe-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a03ac3be44d096d304159acc4ac0e8570da119640559112e5c858ba23159f73e",
+    "size_bytes": 229812,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guadeloupe-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/guam-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:02 GMT",
+    "request": {
+      "iso3": "GUM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guam-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "0f606b586ee4dbd10053586a98d9ca5ff5e9f4d8014b80d40f179e9487fc08dc",
+    "size_bytes": 134105,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guam-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/guatemala-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:03 GMT",
+    "request": {
+      "iso3": "GTM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guatemala-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "88ce8ec775ccbfed16754ffa4f4a7df665bd51a645c0f5c1d5369fea716afb14",
+    "size_bytes": 201444,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guatemala-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/guernsey-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:03 GMT",
+    "request": {
+      "iso3": "GGY",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guernsey-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "80317659e38ca22da81ec9b5fd84a9002add106b0a5c3d3029d0283ec7e13844",
+    "size_bytes": 324080,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guernsey-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/guinea-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:03 GMT",
+    "request": {
+      "iso3": "GIN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guinea-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "daeed8456d73b98ac4012e445af57c4dd645bf4bc7dc0e3d7cb2946c78dbfeaf",
+    "size_bytes": 205845,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guinea-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/guinea-bissau-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:03 GMT",
+    "request": {
+      "iso3": "GNB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guinea-bissau-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "48fbe68b27e26bd565edfd6e72c3c694543382f3ae69951d953133145e14969b",
+    "size_bytes": 205859,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guinea-bissau-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/guyana-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:03 GMT",
+    "request": {
+      "iso3": "GUY",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guyana-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a22fe7b208e417f6e38d2a72a8e8375c46677f8e55cbaa26aab2afa6182ccab2",
+    "size_bytes": 210550,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/guyana-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/haiti-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:03 GMT",
+    "request": {
+      "iso3": "HTI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/haiti-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6141612054c3b60b9706d9b6d346c82fdd8db52cae8b4f31e1912f4b9d1cd2fb",
+    "size_bytes": 235243,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/haiti-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/heard-island-and-mcdonald-islands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:03 GMT",
+    "request": {
+      "iso3": "HMD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/heard-island-and-mcdonald-islands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "eca6387fa510520323a26daa760555fda1dc3d45a40528a0580fdd3acebc6e79",
+    "size_bytes": 83911,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/heard-island-and-mcdonald-islands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/honduras-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:04 GMT",
+    "request": {
+      "iso3": "HND",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/honduras-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "1cdf3dcf668614f8214d407d364b73dc839a725892e688ae120e4178ce0ce9e0",
+    "size_bytes": 201442,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/honduras-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/hong-kong-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:04 GMT",
+    "request": {
+      "iso3": "HKG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/hong-kong-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "dd46aa3d3edf909a98a576efe1025384fbd306f9c96f9b24bb17279669e5a25a",
+    "size_bytes": 210995,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/hong-kong-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/hungary-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:04 GMT",
+    "request": {
+      "iso3": "HUN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/hungary-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f65801c8b70b6d83c2dbd9b237f4cd9802803508b11f9070f761ad248a12bf0b",
+    "size_bytes": 322271,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/hungary-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/iceland-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:04 GMT",
+    "request": {
+      "iso3": "ISL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/iceland-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "60ccaf5668d856b609c3d3008bf00077de10b4020d3365609367249f6f2a99eb",
+    "size_bytes": 254556,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/iceland-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/india-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:05 GMT",
+    "request": {
+      "iso3": "IND",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/india-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "78ee32552baba24b35114a8bcd6e6d4d993273756df50a0a627933637189f900",
+    "size_bytes": 244263,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/india-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/indonesia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:05 GMT",
+    "request": {
+      "iso3": "IDN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/indonesia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "e46eb2718d044ec4b8fec50c9b56cc0cfbb5886a455757705e5b36ae15d36d97",
+    "size_bytes": 182336,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/indonesia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/iran-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:05 GMT",
+    "request": {
+      "iso3": "IRN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/iran-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "3c3bbf32c6ba5a9b65e260fcf6898eb612af898d262344af656ae34ae62abd41",
+    "size_bytes": 207021,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/iran-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/iraq-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:05 GMT",
+    "request": {
+      "iso3": "IRQ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/iraq-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "13f75f29cb9b42036ab9f6485695a8556c07497daffc60c077efeccc5e26ef2d",
+    "size_bytes": 212899,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/iraq-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/ireland-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:05 GMT",
+    "request": {
+      "iso3": "IRL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ireland-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "23656b34f445b7ed55820f2b099679d787ceb2ce46af851d5799f084662efdc3",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ireland-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/isle-of-man-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:06 GMT",
+    "request": {
+      "iso3": "IMN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/isle-of-man-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f98b76806bb6d612399e2422e32377517adfb3566956a4e50d3fe10b205bc407",
+    "size_bytes": 324085,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/isle-of-man-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/israel-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:06 GMT",
+    "request": {
+      "iso3": "ISR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/israel-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b94b02189b4b63806f76ff4d23baccd21f4fb72999e93af3d8dfca173ad18a60",
+    "size_bytes": 212902,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/israel-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/italy-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:06 GMT",
+    "request": {
+      "iso3": "ITA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/italy-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "921b33bb2199aa2a425fa19ed7a61e9289f30ff457909a388cd96b8ba0119d0b",
+    "size_bytes": 322270,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/italy-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/ivory-coast-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:06 GMT",
+    "request": {
+      "iso3": "CIV",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ivory-coast-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "df4115c4303cf9b8657c12e9cbc0a8e2ba6ac36fa9c160c60cd408ffd2266d77",
+    "size_bytes": 205856,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ivory-coast-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/jamaica-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:05 GMT",
+    "request": {
+      "iso3": "JAM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/jamaica-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "076867239f4f77e42bbb560d0ef30e78b52dcf1ac386ac14d5223c7824cccff3",
+    "size_bytes": 234954,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/jamaica-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/japan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:06 GMT",
+    "request": {
+      "iso3": "JPN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/japan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7e4cb46cdce27323dc000db8c3c9ab6ef61161885ee22eb95fa41182b0e6f749",
+    "size_bytes": 240541,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/japan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/jersey-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:06 GMT",
+    "request": {
+      "iso3": "JEY",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/jersey-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "43523ba0e2b347db1b114b70d1abe23f5263e376419805c8c3dca040a33fe602",
+    "size_bytes": 324081,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/jersey-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/jordan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:06 GMT",
+    "request": {
+      "iso3": "JOR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/jordan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a97450210cf8e8143fa8ecc448c50a8cb770882ff801809806f5df84874ce5c1",
+    "size_bytes": 212901,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/jordan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/kazakhstan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:07 GMT",
+    "request": {
+      "iso3": "KAZ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kazakhstan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "db921ec106f55d0959ed66073a02d3e9f7a5e2b61885d1f6533dac9e8722d228",
+    "size_bytes": 225849,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kazakhstan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/kenya-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:07 GMT",
+    "request": {
+      "iso3": "KEN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kenya-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "36a1ecaeae9f26c6fb1790f2dc0cfdc42aeadff21dedf8e159e5b44a1155ab33",
+    "size_bytes": 155276,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kenya-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/kiribati-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:08 GMT",
+    "request": {
+      "iso3": "KIR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kiribati-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c904a029b3f3ba419f89ea951fbea2077e2d044e176c22d3a140ae5fe2916236",
+    "size_bytes": 156457,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kiribati-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/kosovo-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:08 GMT",
+    "request": {
+      "iso3": "XKX",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kosovo-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f26c732ee67ec7c887e0fc9acc40047c0ac7404d4021d69af25846e0203b0e0e",
+    "size_bytes": 322268,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kosovo-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/kuwait-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:09 GMT",
+    "request": {
+      "iso3": "KWT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kuwait-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "fef0b9fea3a345940a45e3fa9bcb48f4210847faba1930df3bd5a28cb4221aac",
+    "size_bytes": 191733,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kuwait-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/kyrgyzstan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:09 GMT",
+    "request": {
+      "iso3": "KGZ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kyrgyzstan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "cfc605d76824ca7ad539da5951b3683614e364a7eec9ee3e29a58fb4b0086e4b",
+    "size_bytes": 207030,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/kyrgyzstan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/laos-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:09 GMT",
+    "request": {
+      "iso3": "LAO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/laos-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "374c947090fef5411dfb5592476dcc0d6cb13d9ba9f5f0173a3b24d54dcd311e",
+    "size_bytes": 216429,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/laos-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/latvia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:09 GMT",
+    "request": {
+      "iso3": "LVA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/latvia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "e64fa62b93f9e8f93e475451302f63b28301b0a9dac206c374e9b6a48bbb21ea",
+    "size_bytes": 322270,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/latvia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/lebanon-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:09 GMT",
+    "request": {
+      "iso3": "LBN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/lebanon-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "dbb9e91fd6e09cc450dc95c8122224d479aa4bdc32b26d4debb8c15a872a34e2",
+    "size_bytes": 241126,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/lebanon-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/lesotho-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:09 GMT",
+    "request": {
+      "iso3": "LSO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/lesotho-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "0fb9ac0646e3b24e352417beb8608fb42505a51fcbe25beaab2504550c40f7d2",
+    "size_bytes": 193108,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/lesotho-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/liberia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:10 GMT",
+    "request": {
+      "iso3": "LBR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/liberia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c027df9f30d60fc6be54cdaa14ff5d42e5dea696bc83e152a820348a9d5d6693",
+    "size_bytes": 205845,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/liberia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/libya-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:10 GMT",
+    "request": {
+      "iso3": "LBY",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/libya-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ab638e566eac6fe2b3bd514de08ad8716d041c1407e6698f2d2c8211cf7a12ea",
+    "size_bytes": 241125,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/libya-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/liechtenstein-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:10 GMT",
+    "request": {
+      "iso3": "LIE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/liechtenstein-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ddccebc8fda8568144a0aff4ec00ae683f28f418591f62b10599d635ae44c6d7",
+    "size_bytes": 322277,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/liechtenstein-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/lithuania-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:10 GMT",
+    "request": {
+      "iso3": "LTU",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/lithuania-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "1cb646f8d22e8744612f7d22d4f9fbe1de416d085a15e662125b2b558a8a3060",
+    "size_bytes": 322274,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/lithuania-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/luxembourg-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:10 GMT",
+    "request": {
+      "iso3": "LUX",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/luxembourg-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b34dcd9fe0f37883369e536a667ee7f4412a27d34c5706d4e4cb25a5a9909452",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/luxembourg-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/macau-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:11 GMT",
+    "request": {
+      "iso3": "MAC",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/macau-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "807c809f1746f91c78172f7be9797754b9e599211e8cecb8b3af886b35762e16",
+    "size_bytes": 210987,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/macau-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/macedonia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:11 GMT",
+    "request": {
+      "iso3": "MKD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/macedonia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "26bbdf379c87a020818038cc7b2410390ee6fd0bd4ddcc4bb3af75fa89067bfd",
+    "size_bytes": 322275,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/macedonia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/madagascar-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:11 GMT",
+    "request": {
+      "iso3": "MDG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/madagascar-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "5f2e9b976fc94c4ba8ad55fda22c0f1662db7fa44b39f58e348587ffdc24647a",
+    "size_bytes": 193117,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/madagascar-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/malawi-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:11 GMT",
+    "request": {
+      "iso3": "MWI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/malawi-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "5f87015da85863dfc5e03db622f0f114a0b61cf4ebe6389638c2d7e10dff7109",
+    "size_bytes": 155278,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/malawi-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/malaysia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:11 GMT",
+    "request": {
+      "iso3": "MYS",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/malaysia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6e31fb754b0035e931a1909b89bc35594a7f2a70411db86ce18bd9ee0333be11",
+    "size_bytes": 234074,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/malaysia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/mali-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:11 GMT",
+    "request": {
+      "iso3": "MLI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mali-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ffd886fbc8db5cbc3868bd4a0d3739397d0451471be54ba2432ef607f7fbbc58",
+    "size_bytes": 195652,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mali-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/malta-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:11 GMT",
+    "request": {
+      "iso3": "MLT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/malta-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "960d2c334a20f0d433c59a0ab1ca6c3f56d43fbace6dd36743d2515e2220c368",
+    "size_bytes": 286984,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/malta-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/martinique-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:12 GMT",
+    "request": {
+      "iso3": "MTQ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/martinique-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "9d096d980ef78bbd2bfc9f85759cf5b28c48e845478d4626ae15c151ccf7696f",
+    "size_bytes": 229813,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/martinique-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/mauritania-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:12 GMT",
+    "request": {
+      "iso3": "MRT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mauritania-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b6aea8c09f46d6314451a9ff2a4047ea170935f0626909149f1060f7cc933ec1",
+    "size_bytes": 205856,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mauritania-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/mauritius-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:12 GMT",
+    "request": {
+      "iso3": "MUS",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mauritius-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "39870bb4e31673ce70dee72bf95d1d9a1cfa41263e86aeb05c5d2bd8af7b3d2a",
+    "size_bytes": 278763,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mauritius-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/mayotte-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:12 GMT",
+    "request": {
+      "iso3": "MYT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mayotte-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "965bfa4de61d505c0f6ccc7a15ea19dcf51bb6758dc6516e0fe8cde68780b7e7",
+    "size_bytes": 273318,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mayotte-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/mexico-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:12 GMT",
+    "request": {
+      "iso3": "MEX",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mexico-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b4634355a724ef476c78fae088d148b662db245db9995827e5025f1d7a6eca52",
+    "size_bytes": 205267,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mexico-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/micronesia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:13 GMT",
+    "request": {
+      "iso3": "FSM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/micronesia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ebd3e1aebd097f2bc640e15b2c19b497c89f167ae7810dc0181c8a09c7e4478c",
+    "size_bytes": 134121,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/micronesia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/moldova-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:13 GMT",
+    "request": {
+      "iso3": "MDA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/moldova-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7eeee36335ed534a13054b39cf98906add11ee42919d983da245fcce83aea4b8",
+    "size_bytes": 322271,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/moldova-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/monaco-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:14 GMT",
+    "request": {
+      "iso3": "MCO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/monaco-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "688732644f0877b24129e5a4028bafb5f9486c1b0971d2bcf78c752ae6f8b161",
+    "size_bytes": 322259,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/monaco-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/mongolia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:14 GMT",
+    "request": {
+      "iso3": "MNG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mongolia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b23e9e1031a5ba3c5b29454b108f2780053ee830554f678a675e1514322a655f",
+    "size_bytes": 239272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mongolia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/montenegro-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:14 GMT",
+    "request": {
+      "iso3": "MNE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/montenegro-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4a6a6e10328dd9dd53022c9d91e54608878d763fde24d69cd97ffa442229c767",
+    "size_bytes": 322277,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/montenegro-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/montserrat-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:14 GMT",
+    "request": {
+      "iso3": "MSR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/montserrat-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7b3064f514c123a40b65cf75411fdc73030d54c28efd6044d903a238e06d6c28",
+    "size_bytes": 229811,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/montserrat-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/morocco-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:14 GMT",
+    "request": {
+      "iso3": "MAR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/morocco-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "111d937ba6afa55e397588929c0f5d4b0f46b1e5e731ec07c51627cf6150286f",
+    "size_bytes": 278762,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/morocco-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/mozambique-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:14 GMT",
+    "request": {
+      "iso3": "MOZ",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mozambique-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4390d5361f242bcd149547d7493c16d7a71e1aa9073f5d12f8b7fa4ce1629466",
+    "size_bytes": 158817,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/mozambique-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/myanmar-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:14 GMT",
+    "request": {
+      "iso3": "MMR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/myanmar-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "49530deabcc235249698c461f8850011739c4f70b3df50a95832b628c35124e7",
+    "size_bytes": 244461,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/myanmar-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/namibia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:15 GMT",
+    "request": {
+      "iso3": "NAM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/namibia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "8a27155badde8a43ad8a97ff689af0febe4280e0b08cbcf256ff2bc2a1a7338e",
+    "size_bytes": 170570,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/namibia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/nepal-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:15 GMT",
+    "request": {
+      "iso3": "NPL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/nepal-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "26bff3feb079080e47604f3d7c8fa49bc00435ed155bd0ed9599ed8a236ed3c9",
+    "size_bytes": 244456,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/nepal-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/netherlands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:15 GMT",
+    "request": {
+      "iso3": "NLD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/netherlands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "9ea08c6d1682319e1dee3f81342aa54fb2cedc5a8ef9ea98b81ee8b187a877cd",
+    "size_bytes": 322279,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/netherlands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/new-caledonia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:15 GMT",
+    "request": {
+      "iso3": "NCL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/new-caledonia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7c64010c9f4950b48f8e67a44d2dff8e0e315af1f7cdebde0df362fc2cc411da",
+    "size_bytes": 189934,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/new-caledonia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/new-zealand-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:16 GMT",
+    "request": {
+      "iso3": "NZL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/new-zealand-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "286549082d471fa2c94a2e18b41123693bbeeab35220cb04f7f579f0607591ab",
+    "size_bytes": 201157,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/new-zealand-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/nicaragua-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:16 GMT",
+    "request": {
+      "iso3": "NIC",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/nicaragua-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7363f16d368461a3c40c8bce3658423b741a1ecb6a6bb6214d6580388d83f55b",
+    "size_bytes": 201444,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/nicaragua-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/niger-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:16 GMT",
+    "request": {
+      "iso3": "NER",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/niger-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "2876b4a93634da30ee17f6abe5a35232645c641c2172f83504c097e1b0ae993d",
+    "size_bytes": 162333,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/niger-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/nigeria-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:17 GMT",
+    "request": {
+      "iso3": "NGA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/nigeria-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6a96ca350c8c9b730c18f88fa10dcceb3ffd72b65d338ddcf4f28fea669db517",
+    "size_bytes": 177035,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/nigeria-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/niue-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:17 GMT",
+    "request": {
+      "iso3": "NIU",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/niue-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "cf7ce20d51af5eb194aff54107aaa572c7103cab5867bdef3e7740cf8dd2a868",
+    "size_bytes": 179241,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/niue-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/north-korea-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:17 GMT",
+    "request": {
+      "iso3": "PRK",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/north-korea-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f46f92fc68e1017c7c2ea05cd7ca982f7770d3219b892cf4671eb2c168999298",
+    "size_bytes": 240550,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/north-korea-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/northern-mariana-islands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:18 GMT",
+    "request": {
+      "iso3": "MNP",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/northern-mariana-islands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "9a80f766222913dc9aaeaeac8777438a310463ef447fa63f15d5317286bba217",
+    "size_bytes": 136921,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/northern-mariana-islands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/norway-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:18 GMT",
+    "request": {
+      "iso3": "NOR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/norway-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ad29bd065b8f0a69a0fb562b79c4c6191090c1f41bcece480520abc74eecc1b7",
+    "size_bytes": 322274,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/norway-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/oman-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:19 GMT",
+    "request": {
+      "iso3": "OMN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/oman-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ffee59706118bc9954b4000f79c19aeeb3baa900dc37870a3cff6bdc3b7257c6",
+    "size_bytes": 168700,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/oman-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/pakistan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:19 GMT",
+    "request": {
+      "iso3": "PAK",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/pakistan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "9f1e934c6702342afda051480f31028e46fbb6087ea521b2d5702f5992936571",
+    "size_bytes": 207027,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/pakistan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/palau-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:19 GMT",
+    "request": {
+      "iso3": "PLW",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/palau-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "bef37e21683b0fd34aa9c5615b9f1e6e50aeb051494c2b134b0f8c6048e3b1dd",
+    "size_bytes": 142335,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/palau-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/palestina-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:20 GMT",
+    "request": {
+      "iso3": "PSE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/palestina-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "df0b43bbb0452c8fcd28a383b1355ce1b7b146ee4e51a03466240b74283bc269",
+    "size_bytes": 207470,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/palestina-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/panama-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:20 GMT",
+    "request": {
+      "iso3": "PAN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/panama-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b69dd9caa2ffd13b9cc96c213b55fa20a3a16006275aa9e3d4f3ab556f799fa1",
+    "size_bytes": 196143,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/panama-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/papua-new-guinea-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:20 GMT",
+    "request": {
+      "iso3": "PNG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/papua-new-guinea-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "73911b4d4c1d769c2aeea633e55f3b63e4ebd8bda362ee4b18bb3527dc4db00d",
+    "size_bytes": 156477,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/papua-new-guinea-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/paraguay-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:20 GMT",
+    "request": {
+      "iso3": "PRY",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/paraguay-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6d91878626736f2456574fe3f1f5da13a623198ab39e124c086b1d7bce9fb12a",
+    "size_bytes": 198407,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/paraguay-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/peru-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:20 GMT",
+    "request": {
+      "iso3": "PER",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/peru-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "11a5cbf659b907eb4cf80ade58d3559b83750182d9502f56fa30ee315fecf41a",
+    "size_bytes": 155279,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/peru-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/philippines-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:21 GMT",
+    "request": {
+      "iso3": "PHL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/philippines-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "99988a3e48d39cfdf8d00b986b50eee6040576d1270b007ae97dfc58c9311448",
+    "size_bytes": 169402,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/philippines-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/poland-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:21 GMT",
+    "request": {
+      "iso3": "POL",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/poland-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7238f622d2d5b0aadb9649bc808e549fb1adbef9d99a524aa54fe55681a8f979",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/poland-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/portugal-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:21 GMT",
+    "request": {
+      "iso3": "PRT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/portugal-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6093205f3284109ac289bd48f1d5f86134999c31edea7249a2377ce3eb07633b",
+    "size_bytes": 286995,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/portugal-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/puerto-rico-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:22 GMT",
+    "request": {
+      "iso3": "PRI",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/puerto-rico-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "88b1dfee1a40ed4b9a67f6b359a11678fb053ce4bfb004b9f8da6880fda4cd62",
+    "size_bytes": 235257,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/puerto-rico-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/qatar-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:22 GMT",
+    "request": {
+      "iso3": "QAT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/qatar-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f504a47c6eeaf49441ae78b1b70c7c1eb49e93ca2ab498d7558dd98a921911a1",
+    "size_bytes": 171738,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/qatar-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/republic-of-serbia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:22 GMT",
+    "request": {
+      "iso3": "SRB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/republic-of-serbia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6e678ea0cc10f20c3d7bfd7f60a467a9c5ce76fcae54fb8aca3a31e29e57559d",
+    "size_bytes": 322294,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/republic-of-serbia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/republic-of-the-congo-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:22 GMT",
+    "request": {
+      "iso3": "COG",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/republic-of-the-congo-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4405c045c07a997a9a9fee5c3083a09e3f55f963f0841cb31c86ee580680f4b5",
+    "size_bytes": 170594,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/republic-of-the-congo-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/reunion-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:22 GMT",
+    "request": {
+      "iso3": "REU",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/reunion-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "980b0fa8930a474db983bbe6ff6c09f0edc424ecfe28c5b1007fb1ca3452ca90",
+    "size_bytes": 273321,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/reunion-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/romania-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:23 GMT",
+    "request": {
+      "iso3": "ROU",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/romania-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b717bb58ee12cb2e3feae73dd510b43028839347ba697772e7e05145e28eb8e7",
+    "size_bytes": 322273,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/romania-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/russia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:23 GMT",
+    "request": {
+      "iso3": "RUS",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/russia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "1290c7ae8723c8ce22809f0da7539dd0fa1635e224996de5f4c1e4742556bfbe",
+    "size_bytes": 228985,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/russia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/rwanda-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:23 GMT",
+    "request": {
+      "iso3": "RWA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/rwanda-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "fc5d6d5039d4a941b4edc3bee9880f783b106cf5a4b669658a19c9f0d63869e8",
+    "size_bytes": 155275,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/rwanda-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/saint-kitts-and-nevis-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:23 GMT",
+    "request": {
+      "iso3": "KNA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-kitts-and-nevis-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "7acb487e0d59853e843deeef5a3b9c92a5726c0fddae1dacd1344ca4f7fbc935",
+    "size_bytes": 235274,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-kitts-and-nevis-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/saint-lucia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:23 GMT",
+    "request": {
+      "iso3": "LCA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-lucia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "fd654d77add6662d9b3770af104111d8cc14616e34686216c67db3cb19c2ef71",
+    "size_bytes": 235255,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-lucia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/saint-martin-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:23 GMT",
+    "request": {
+      "iso3": "MAF",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-martin-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "bbea66a19c98eebe723021e35a4b798c3ca77b39a5ce59dd7a92c769d40dca5c",
+    "size_bytes": 229810,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-martin-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/saint-pierre-and-miquelon-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:24 GMT",
+    "request": {
+      "iso3": "SPM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-pierre-and-miquelon-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6ddafe43da844783ffdab6fff3fab2e0ba3428d652bef2f799559989903d28aa",
+    "size_bytes": 324099,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-pierre-and-miquelon-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/saint-vincent-and-the-grenadines-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:24 GMT",
+    "request": {
+      "iso3": "VCT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-vincent-and-the-grenadines-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ec4d425448ef1609a8705a08cf0a0c65aa9d5439c993451cddb67f9ed872ef69",
+    "size_bytes": 235294,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saint-vincent-and-the-grenadines-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/samoa-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:24 GMT",
+    "request": {
+      "iso3": "WSM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/samoa-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "434b20dcbc0ab0928b9b6622b3fa85cc8a5557b83bf8e63e22f7f2a981d8fd86",
+    "size_bytes": 173310,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/samoa-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/san-marino-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:24 GMT",
+    "request": {
+      "iso3": "SMR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/san-marino-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "64531d34975b30b01d223777e947eded843728da0663bc7fd44cc329a9a61ae4",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/san-marino-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/sao-tome-and-principe-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:24 GMT",
+    "request": {
+      "iso3": "STP",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sao-tome-and-principe-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "8bb967bbf260939234dd64802c46b4022d8255aa8ff9e0119b01dd898dd47d89",
+    "size_bytes": 192186,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sao-tome-and-principe-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/saudi-arabia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:24 GMT",
+    "request": {
+      "iso3": "SAU",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saudi-arabia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f888b92de2ffd50acd0b86adabeca877f1cafc5b8b243216a038b8042457a10b",
+    "size_bytes": 168718,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/saudi-arabia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/senegal-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:25 GMT",
+    "request": {
+      "iso3": "SEN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/senegal-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a2f1440ce03741a8efb6fb84e5559eeb235dad3a81ab575524cb804f3187b76b",
+    "size_bytes": 205851,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/senegal-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/seychelles-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:25 GMT",
+    "request": {
+      "iso3": "SYC",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/seychelles-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "d63fedcc8bcee154b7de7dc64a54dc7b45058bf9b4b16a33f4fffc46f0fadd9e",
+    "size_bytes": 155280,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/seychelles-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/sierra-leone-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:25 GMT",
+    "request": {
+      "iso3": "SLE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sierra-leone-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "01935d74d3cd86ad7de5d06aa4268437357f61726c91c574f702c25f09e276b5",
+    "size_bytes": 205857,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sierra-leone-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/singapore-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:25 GMT",
+    "request": {
+      "iso3": "SGP",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/singapore-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "eddef380bfe7dd234e6f2c06d34ca97fa6d0384fa3109269ef7d87fde87529c1",
+    "size_bytes": 234072,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/singapore-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/sint-maarten-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:25 GMT",
+    "request": {
+      "iso3": "SXM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sint-maarten-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b0988995bdc5bf1ee0e14d483e068306956cf212b9b26ce58840ba75825f9f69",
+    "size_bytes": 229812,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sint-maarten-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/slovakia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:26 GMT",
+    "request": {
+      "iso3": "SVK",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/slovakia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "d8c143f02a0611795f3bcbee8500cf206b810680f3e99f4b104efec2d8c36161",
+    "size_bytes": 322274,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/slovakia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/slovenia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:26 GMT",
+    "request": {
+      "iso3": "SVN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/slovenia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f5eae2db14a2d3e66cf391b75bdb3196ffde3ef7284b872ee166582bbf143877",
+    "size_bytes": 322273,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/slovenia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/solomon-islands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:26 GMT",
+    "request": {
+      "iso3": "SLB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/solomon-islands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "ee8cf8f94e8ee08d908ec6fca181220b46f446a538607fd85d23707b0a93ccdc",
+    "size_bytes": 156473,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/solomon-islands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/somalia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:26 GMT",
+    "request": {
+      "iso3": "SOM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/somalia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "e68977d8097bbeae5897cd90c00dc7774eb0246d7091eff0c6a70383ed968374",
+    "size_bytes": 168706,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/somalia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/south-africa-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:26 GMT",
+    "request": {
+      "iso3": "ZAF",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/south-africa-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "74e9927f7a5b603d4a87a802d53549c22f95446212fb17160dc19c6aa98328a3",
+    "size_bytes": 196456,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/south-africa-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/south-korea-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:27 GMT",
+    "request": {
+      "iso3": "KOR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/south-korea-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "66ff25088bdcfb3cd208f7341d290bf0b86e1a1c6439e3bfff5afe4c1057e2e1",
+    "size_bytes": 240551,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/south-korea-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/south-sudan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:27 GMT",
+    "request": {
+      "iso3": "SSD",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/south-sudan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "d367f27c2a5b71f0d3d1f462ad01a3b2dced21d7bcfdc274a3b32eb662625b49",
+    "size_bytes": 155286,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/south-sudan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/spain-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:27 GMT",
+    "request": {
+      "iso3": "ESP",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/spain-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "51309c03038f663380f1dc97162a771011773bc7c01f4bd203a6d3179c102f84",
+    "size_bytes": 305807,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/spain-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/sri-lanka-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:27 GMT",
+    "request": {
+      "iso3": "LKA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sri-lanka-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "6359619614f19a4fa08a40358ac26b29ce10792462b77d5e06a6cd03f63ff933",
+    "size_bytes": 268177,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sri-lanka-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/sudan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:27 GMT",
+    "request": {
+      "iso3": "SDN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sudan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "cb3c50a51ce6dcc3519df76ae1add069c37582a1d88b0f38a6a061544f373889",
+    "size_bytes": 162529,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sudan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/suriname-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:27 GMT",
+    "request": {
+      "iso3": "SUR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/suriname-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f272925807cbcca80602646c55ac3ef9c73be02a8bfd5f07bbc7ba14d10c6059",
+    "size_bytes": 210554,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/suriname-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/svalbard-and-jan-mayen-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:28 GMT",
+    "request": {
+      "iso3": "SJM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/svalbard-and-jan-mayen-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "024db4003fc076efbc71d2400ee56d0e957ecc8140cd080f516338647f64f292",
+    "size_bytes": 303913,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/svalbard-and-jan-mayen-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/sweden-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:28 GMT",
+    "request": {
+      "iso3": "SWE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sweden-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "647a66f431af0000b8372c353ca52221c816afd08d22ee195098352b9c8503d7",
+    "size_bytes": 322272,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/sweden-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/switzerland-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:28 GMT",
+    "request": {
+      "iso3": "CHE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/switzerland-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "0f3f878323b51d77148e08e2f466b025200bf43efb411f079428715626e611a6",
+    "size_bytes": 322279,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/switzerland-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/syria-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:28 GMT",
+    "request": {
+      "iso3": "SYR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/syria-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "01ffa9f53699b7132a084613e8f99f9af8828911276d101525c4ebb78898c6a8",
+    "size_bytes": 241124,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/syria-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/taiwan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:28 GMT",
+    "request": {
+      "iso3": "TWN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/taiwan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "61e7f99f5109309ffd8e51fdd3c49d4efe416c55e7652a29c6598cac81fb69e9",
+    "size_bytes": 208200,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/taiwan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/tajikistan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:28 GMT",
+    "request": {
+      "iso3": "TJK",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/tajikistan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "1174666966d1e456718685f8bf7f792b662592a9be17f1f61fc0f5425ec17a16",
+    "size_bytes": 207030,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/tajikistan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/thailand-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:29 GMT",
+    "request": {
+      "iso3": "THA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/thailand-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "e6d300bb00786c6ecee80001c9d9888dab7e19728f9944f3a61765937fb2a2e6",
+    "size_bytes": 216436,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/thailand-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/the-bahamas-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:29 GMT",
+    "request": {
+      "iso3": "BHS",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/the-bahamas-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "e8f3f9507332c0273d5d358934a44e530c0ca316ea1607b60a01383d29c0a48d",
+    "size_bytes": 235257,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/the-bahamas-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/togo-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:29 GMT",
+    "request": {
+      "iso3": "TGO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/togo-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "16a11400a0ca9b897c6800426101aae703669663e27517fef663766016805d5f",
+    "size_bytes": 177027,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/togo-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/tonga-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:29 GMT",
+    "request": {
+      "iso3": "TON",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/tonga-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "84cf0cede29d182870238f8d126ebd1635dfc1071981660a86a617f12736f7d3",
+    "size_bytes": 184678,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/tonga-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/trinidad-and-tobago-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:29 GMT",
+    "request": {
+      "iso3": "TTO",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/trinidad-and-tobago-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "4123772d8c0ebb9607e0de6a49dc29dcc9d9e7cb376654324977deda440d4adf",
+    "size_bytes": 235271,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/trinidad-and-tobago-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/tunisia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:30 GMT",
+    "request": {
+      "iso3": "TUN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/tunisia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "62053b108848782ea24d9a1200298f304f8ee4b67b240c32d918c275cc94ac0f",
+    "size_bytes": 278760,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/tunisia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/turkey-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:30 GMT",
+    "request": {
+      "iso3": "TUR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/turkey-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "267b4391e1a21d9b5c89b7f807179cc28cb32cc9d4bece3915ecaeee85c9ef1f",
+    "size_bytes": 249361,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/turkey-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/turkmenistan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:30 GMT",
+    "request": {
+      "iso3": "TKM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/turkmenistan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a979cb55e02eaf648fdd8ce7c87029446679254d8f732d5468d0712149702701",
+    "size_bytes": 210759,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/turkmenistan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/uganda-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:31 GMT",
+    "request": {
+      "iso3": "UGA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/uganda-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "2f9fd8f34579e4523ab3778aa9d4920d8037a024bfd394f1c3a670c7f98ccfe2",
+    "size_bytes": 155278,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/uganda-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/ukraine-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:30 GMT",
+    "request": {
+      "iso3": "UKR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ukraine-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c0beefbc011ae7c496f224b9e6be0a62be4f87e7d3a8598666424a71eebb9f2e",
+    "size_bytes": 322274,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/ukraine-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/united-arab-emirates-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:31 GMT",
+    "request": {
+      "iso3": "ARE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-arab-emirates-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "818920c545a3c758665d950dad88460e345f6896a64b4d9d620236788adcf963",
+    "size_bytes": 168731,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-arab-emirates-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/united-kingdom-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:31 GMT",
+    "request": {
+      "iso3": "GBR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-kingdom-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "f854e1476789e7c3c22c74731c13ca7686f40f75e0861bdc181d771fc47b2a99",
+    "size_bytes": 322291,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-kingdom-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/united-republic-of-tanzania-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:31 GMT",
+    "request": {
+      "iso3": "TZA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-republic-of-tanzania-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "c8c7981da13238036dc3f5ecaccead4f3e86a4f62826d67871fa403b6e6038db",
+    "size_bytes": 155322,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-republic-of-tanzania-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/united-states-of-america-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:31 GMT",
+    "request": {
+      "iso3": "USA",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-states-of-america-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "128bb59ad363fbc6414c5cb4578d56bb67ff07ae0ae505fe9825ad917e247d94",
+    "size_bytes": 239016,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/united-states-of-america-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/uruguay-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:31 GMT",
+    "request": {
+      "iso3": "URY",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/uruguay-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a92984b7e3113ed1c8b2d35d14bc4dab12adb314acc7eb8d44a4cab8e83d9de9",
+    "size_bytes": 198405,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/uruguay-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/uzbekistan-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:32 GMT",
+    "request": {
+      "iso3": "UZB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/uzbekistan-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "fd627361ce2671d421ec67d20bde5f102d172aef0cd6d333b9e6bf1d6d9713ff",
+    "size_bytes": 211343,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/uzbekistan-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/vanuatu-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:32 GMT",
+    "request": {
+      "iso3": "VUT",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/vanuatu-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "358f03c25b65f59b531886d0221dfa3bfa4569d969ed6bdb8a0d103fd614c5ce",
+    "size_bytes": 184682,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/vanuatu-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/venezuela-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:32 GMT",
+    "request": {
+      "iso3": "VEN",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/venezuela-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "29fe6bd0a35aa08dad7bdbbbb5dcfc5c5f3fb6c581f4b0eade322fcce63cb577",
+    "size_bytes": 235254,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/venezuela-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/vietnam-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:32 GMT",
+    "request": {
+      "iso3": "VNM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/vietnam-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "b9b296563c71adc8c0652840d41c9b3129e20423a2454af51352b8d7da26b24d",
+    "size_bytes": 216434,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/vietnam-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/virgin-islands-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:32 GMT",
+    "request": {
+      "iso3": "VIR",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/virgin-islands-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a16b09c74a5770faa2769509f94e9a854336cc163a311c23ec76b303c24ba6fc",
+    "size_bytes": 235261,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/virgin-islands-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/western-sahara-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:35 GMT",
+    "request": {
+      "iso3": "ESH",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/western-sahara-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "0dbac08708e7560ff71fd1f80660bc8b0eb9e824fc6a708294bfecaf644b6a48",
+    "size_bytes": 205662,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/western-sahara-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/yemen-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:35 GMT",
+    "request": {
+      "iso3": "YEM",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/yemen-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "1cb8ae235fd195ca034a68967236588fc81999e5e83428b8b3688a8f955a3c3c",
+    "size_bytes": 168702,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/yemen-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/zambia-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:35 GMT",
+    "request": {
+      "iso3": "ZMB",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/zambia-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "fcc4320c74bdd0b5b75380120935dea5b8553323a1392eb4bfcc571a2e8d3f07",
+    "size_bytes": 158514,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/zambia-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
+    "dataset": "berkeley_country_monthly",
+    "file": "data/raw/berkeley/country/zimbabwe-TAVG-Trend.txt",
+    "license": "CC BY-NC 4.0",
+    "notes": "Last-Modified: Thu, 26 Oct 2023 10:51:36 GMT",
+    "request": {
+      "iso3": "ZWE",
+      "requested_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/zimbabwe-TAVG-Trend.txt"
+    },
+    "retrieval": "http",
+    "sha256": "a5d258ac511c253ce511770c5dbb12b925cbc820ef62d4ac245fa3e47fed990c",
+    "size_bytes": 163517,
+    "source_url": "https://berkeley-earth-temperature.s3.us-west-1.amazonaws.com/Regional/TAVG/zimbabwe-TAVG-Trend.txt",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-13",
     "dataset": "berkeley_global_monthly",
     "file": "data/raw/berkeley/Land_and_Ocean_complete.txt",
     "license": "CC BY-NC 4.0",

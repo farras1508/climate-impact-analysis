@@ -5,7 +5,14 @@ import logging
 
 import pytest
 
-from climate_impact.ingest.http import DownloadError, download, target_path
+from climate_impact.config import load_datasets
+from climate_impact.ingest.http import (
+    DownloadError,
+    download,
+    expand_templated,
+    jobs_for,
+    target_path,
+)
 from climate_impact.provenance import load_manifest
 
 PAYLOAD = b"year,anomaly\n" + b"2000,0.40\n" * 200  # > 1 KB, plausible CSV
@@ -138,3 +145,38 @@ def test_raw_path_cannot_escape_the_raw_directory(layout):
     _, raw, _ = layout
     with pytest.raises(ValueError, match="escapes"):
         target_path({**META, "raw_path": "../../outside.csv"}, raw)
+
+
+def test_template_expands_one_entry_per_country():
+    meta = {
+        "access": "http",
+        "url_template": "https://x.org/{country}-TAVG-Trend.txt",
+        "template_check_value": "indonesia",
+        "countries_file": "c.yaml",
+        "raw_path": "berkeley/country/{country}-TAVG-Trend.txt",
+        "license": "CC BY-NC 4.0",
+    }
+    stems = {"COD": "democratic-republic-of-the-congo", "BES": "bonaire,-saint-eustatius-and-saba"}
+    entries = expand_templated(meta, stems)
+    assert [e["iso3"] for e in entries] == ["BES", "COD"]
+    assert entries[0]["url"] == "https://x.org/bonaire,-saint-eustatius-and-saba-TAVG-Trend.txt"
+    assert (
+        entries[1]["raw_path"] == "berkeley/country/democratic-republic-of-the-congo-TAVG-Trend.txt"
+    )
+    assert all("url_template" not in e and "countries_file" not in e for e in entries)
+
+
+def test_many_files_under_one_dataset_get_separate_manifest_entries(layout):
+    _, _, manifest = layout
+    for stem in ("a", "b"):
+        meta = {**META, "raw_path": f"demo/{stem}.csv", "iso3": stem.upper()}
+        run(layout, FakeSession(FakeResponse(PAYLOAD)), meta=meta)
+    entries = load_manifest(manifest)
+    assert [e.file for e in entries] == ["data/raw/demo/a.csv", "data/raw/demo/b.csv"]
+    assert entries[0].request["iso3"] == "A"
+
+
+def test_berkeley_country_list_covers_at_least_the_2020_generation():
+    jobs = jobs_for("berkeley_country_monthly", load_datasets()["berkeley_country_monthly"])
+    assert len(jobs) >= 195
+    assert all(len(j["iso3"]) == 3 and j["iso3"].isupper() for j in jobs)
