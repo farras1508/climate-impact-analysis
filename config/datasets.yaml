@@ -82,6 +82,8 @@ datasets:
     raw_path: era5/era5_monthly_{year}.nc
     approx_size: ~100 MB/year at 0.25 deg (~6.5 GB for 1961-2025)
     status: verify_in_phase2
+    years: [1960, 2025]                # 1960 needed: harvest-year rule (DEC-033) lets 1961 seasons start in 1960
+    version: "ERA5 monthly averaged reanalysis (CDS)"
 
   noaa_co2_mlo_monthly:
     provider: NOAA GML
