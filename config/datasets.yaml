@@ -150,7 +150,9 @@ datasets:
 
   wdi:
     provider: World Bank
-    access: wbgapi
+    url: https://databank.worldbank.org/data/download/WDI_CSV.zip
+    access: http
+    format: "zip (WDICSV.csv wide by year; WDICountry.csv with Region and Income Group)"
     indicators:
       population: SP.POP.TOTL
       gdp_pc_ppp_const: NY.GDP.PCAP.PP.KD
@@ -160,8 +162,9 @@ datasets:
     license: CC BY 4.0
     priority: core
     questions: [Q3, Q4, Q5]
-    raw_path: wdi/wdi_indicators.csv
-    status: verify_in_phase2
+    raw_path: wdi/WDI_CSV.zip
+    sha256: null
+    status: "bulk file instead of API (API returned 502/504 on 2026-11-14)"
 
   nd_gain:
     provider: University of Notre Dame
