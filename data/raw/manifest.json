@@ -3751,5 +3751,18 @@
     "size_bytes": 15242657,
     "source_url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv",
     "version": ""
+  },
+  {
+    "access_date": "2026-11-16",
+    "dataset": "wdi",
+    "file": "data/raw/wdi/WDI_CSV.zip",
+    "license": "CC BY 4.0",
+    "notes": "Browser download 2026-11-16 of the CSV bulk resource; original file name <name>; dataset last updated <date>; scripted download returned HTTP 403",
+    "request": {},
+    "retrieval": "manual",
+    "sha256": "1cbb81b7e8e656e05fe9236f201d6d59a82d62a77f96c147c1bc63940a7b0c0c",
+    "size_bytes": 283089754,
+    "source_url": "https://datacatalog.worldbank.org/search/dataset/0037712/world-development-indicators",
+    "version": ""
   }
 ]

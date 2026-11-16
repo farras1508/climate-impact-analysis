@@ -150,8 +150,8 @@ datasets:
 
   wdi:
     provider: World Bank
-    url: https://databank.worldbank.org/data/download/WDI_CSV.zip
-    access: http
+    download_url: https://databank.worldbank.org/data/download/WDI_CSV.zip
+    access: manual
     format: "zip (WDICSV.csv wide by year; WDICountry.csv with Region and Income Group)"
     indicators:
       population: SP.POP.TOTL
