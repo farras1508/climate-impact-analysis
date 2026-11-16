@@ -1,6 +1,8 @@
 """ERA5 acquisition tests: a fake CDS API serves small ZIP-of-NetCDF files (offline)."""
 
+import tempfile
 import zipfile
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -36,13 +38,11 @@ def write_member(path, var, units, years, hour=0, short=0):
 
 def make_zip(path, years, drop=None, t2m_units="K", short=0):
     """Build a ZIP shaped like the real CDS delivery (tp stamped at 06:00)."""
-    members_dir = path.parent / f"{path.stem}_members"
-    members_dir.mkdir(parents=True, exist_ok=True)
-    with zipfile.ZipFile(path, "w") as archive:
+    with tempfile.TemporaryDirectory() as tmp, zipfile.ZipFile(path, "w") as archive:
         for var, units, step, hour in (("t2m", t2m_units, "avgua", 0), ("tp", "m", "avgad", 6)):
             if var == drop:
                 continue
-            member = members_dir / f"data_stream-moda_stepType-{step}.nc"
+            member = Path(tmp) / f"data_stream-moda_stepType-{step}.nc"
             write_member(member, var, units, years, hour=hour, short=short)
             archive.write(member, arcname=member.name)
 
@@ -193,6 +193,7 @@ def test_failed_cds_job_is_forgotten_for_resubmission(layout):
     counts = run(layout, api, state)
     assert counts["failed"] == 1
     assert "2000_2000" not in state
+    assert counts["submitted"] == 0
 
 
 def test_stored_chunk_is_skipped_on_rerun(layout):

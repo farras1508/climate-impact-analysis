@@ -271,6 +271,9 @@ def run_once(
             state.pop(chunk.label, None)
             counts["failed"] += 1
 
+    if counts["failed"]:
+        return counts  # never queue new work in a pass that saw a failure; investigate first
+
     active = counts["waiting"]
     for chunk in pending:
         if active >= max_active:
