@@ -79,11 +79,14 @@ datasets:
     license: Copernicus licence (attribution required)
     priority: core
     questions: [Q1, Q3, Q4, Q5]
-    raw_path: era5/era5_monthly_{year}.nc
-    approx_size: ~100 MB/year at 0.25 deg (~6.5 GB for 1961-2025)
+    raw_path: era5/era5_monthly_{first}_{last}.zip
+    approx_size: "~32 MB/year as delivered (~2.1 GB for 1960-2025)"
     status: verify_in_phase2
+    format: "zip of NetCDF (one file per stepType: t2m instantaneous, tp accumulated)"
     years: [1960, 2025]                # 1960 needed: harvest-year rule (DEC-033) lets 1961 seasons start in 1960
     version: "ERA5 monthly averaged reanalysis (CDS)"
+    years_per_request: 6
+    max_active_requests: 4
 
   noaa_co2_mlo_monthly:
     provider: NOAA GML
