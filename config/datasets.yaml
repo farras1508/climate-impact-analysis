@@ -186,4 +186,4 @@ datasets:
     license: Public domain
     priority: core
     questions: [Q1, Q3, Q4, Q5]
-    status: verify_in_phase4
+    status: "provided by regionmask (v5.1.2, files SHA-256-verified by regionmask); version pinned in environment.lock.yml"
