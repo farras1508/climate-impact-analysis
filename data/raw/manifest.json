@@ -3664,6 +3664,19 @@
   },
   {
     "access_date": "2026-11-17",
+    "dataset": "emdat",
+    "file": "data/raw/emdat/emdat_export.xlsx",
+    "license": "Non-commercial; no redistribution of records; derived aggregates/charts publishable with citation",
+    "notes": "Export 2026-11-17: classification Natural (all subgroups), all countries, all years, historical events (pre-2000) included; EM-DAT version/update last update 2026-11-10; original file name public_emdat_custom_request_2026-11-17_af69f63c-bac0-4384-84db-1730c46b56c2.xlsx",
+    "request": {},
+    "retrieval": "manual",
+    "sha256": "a391a7aa1c8fb9a5b6b58f020224efe650302fb70e4e9a88f47cd1df0b43bf0a",
+    "size_bytes": 6556886,
+    "source_url": "https://public.emdat.be",
+    "version": ""
+  },
+  {
+    "access_date": "2026-11-17",
     "dataset": "era5_monthly_single_levels",
     "file": "data/raw/era5/era5_monthly_1960_1970.zip",
     "license": "Copernicus licence (attribution required)",
