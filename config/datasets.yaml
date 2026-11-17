@@ -85,8 +85,8 @@ datasets:
     format: "zip of NetCDF (one file per stepType: t2m instantaneous, tp accumulated)"
     years: [1960, 2025]                # 1960 needed: harvest-year rule (DEC-033) lets 1961 seasons start in 1960
     version: "ERA5 monthly averaged reanalysis (CDS)"
-    years_per_request: 6
-    max_active_requests: 4
+    years_per_request: 11
+    max_active_requests: 1             # CDS rule: one queued request per dataset per user
 
   noaa_co2_mlo_monthly:
     provider: NOAA GML
