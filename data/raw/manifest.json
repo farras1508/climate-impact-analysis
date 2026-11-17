@@ -3775,6 +3775,19 @@
     "version": "HadCRUT 5.2.0.0"
   },
   {
+    "access_date": "2026-11-17",
+    "dataset": "nd_gain",
+    "file": "data/raw/nd_gain/nd_gain_country_index_2026_release_data_v2.zip",
+    "license": "Per ND-GAIN terms",
+    "notes": "Browser download 2026-11-17; ND-GAIN Country Index 2026 release (data v2, 2026 codebook included); original file name nd_gain_country_index_2026_release_data_v2.zip; archive includes macOS metadata (__MACOSX, .DS_Store), ignored in Phase 4",
+    "request": {},
+    "retrieval": "manual",
+    "sha256": "e854c7fe6ccef8c5d24a5ef7f370b7f61d1b8c6816da19fda4cd892ca6cdf0de",
+    "size_bytes": 4910250,
+    "source_url": "https://gain.nd.edu/our-work/country-index/download-data/",
+    "version": ""
+  },
+  {
     "access_date": "2026-11-13",
     "dataset": "noaa_co2_mlo_monthly",
     "file": "data/raw/noaa/co2_mm_mlo.csv",
