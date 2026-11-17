@@ -11,6 +11,7 @@ dependencies:
   - numba                # explicit, so conda (not pip) resolves it against numpy
   - pyarrow              # Parquet I/O for interim/processed layers
   - pyyaml
+  - openpyxl             # reads EM-DAT .xlsx exports
   # --- Gridded & geospatial (compiled; why we use conda-forge) ---
   - xarray
   - netcdf4
