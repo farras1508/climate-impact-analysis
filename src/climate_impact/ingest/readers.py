@@ -156,17 +156,28 @@ def _month_start(year: pd.Series, month: pd.Series) -> pd.Series:
     )
 
 
-def _zip_member(archive: zipfile.ZipFile, basename: str) -> zipfile.ZipInfo:
-    """Return the single member called ``basename`` (case-insensitive), skipping macOS junk."""
+def _zip_member(
+    archive: zipfile.ZipFile, basename: str, parent: str | None = None
+) -> zipfile.ZipInfo:
+    """Return the single member called ``basename`` (case-insensitive), skipping macOS junk.
+
+    ``parent`` also requires the name of the member's folder, for archives holding several
+    files with the same name (ND-GAIN: ``vulnerability/vulnerability.csv`` is the index,
+    ``trends/vulnerability.csv`` a trend summary).
+    """
     hits = [
         info
         for info in archive.infolist()
         if not info.is_dir()
         and "__MACOSX" not in info.filename
         and Path(info.filename).name.lower() == basename.lower()
+        and (parent is None or Path(info.filename).parent.name.lower() == parent.lower())
     ]
     if len(hits) != 1:
-        raise ValueError(f"expected exactly one member named {basename!r}, found {len(hits)}")
+        found = [i.filename for i in hits]
+        raise ValueError(
+            f"expected exactly one member {basename!r} (folder {parent}), found {found}"
+        )
     return hits[0]
 
 
@@ -661,7 +672,7 @@ def read_nd_gain(entries: list[ManifestEntry], root: Path = PROJECT_ROOT) -> lis
     tables = []
     with zipfile.ZipFile(_path(entry, root)) as archive:
         for name in ("vulnerability", "readiness"):
-            info = _zip_member(archive, f"{name}.csv")
+            info = _zip_member(archive, f"{name}.csv", parent=name)
             notes = [_member_note(info)]
             wide = _read_csv_member(archive, info, notes, dtype=str)
             _require(wide, ["ISO3", "Name"], info.filename)

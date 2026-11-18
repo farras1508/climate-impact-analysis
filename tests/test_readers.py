@@ -300,6 +300,7 @@ def test_nd_gain_skips_macos_artefacts(tmp_path):
             "release/vulnerability/vulnerability.csv": csv,
             "__MACOSX/release/vulnerability/._vulnerability.csv": b"\x00\x05junk",
             "release/readiness/readiness.csv": csv,
+            "release/trends/vulnerability.csv": "ISO3,Name,trend\nKEN,Kenya,0.1\n",
         }
     )
     rel = write(tmp_path, "nd_gain/nd_gain.zip", archive)
