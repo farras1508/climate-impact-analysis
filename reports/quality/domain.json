@@ -1,0 +1,1043 @@
+{
+ "baselines": {
+  "gistemp_v4_global_monthly/monthly": {
+   "declared_baseline": [
+    1951,
+    1980
+   ],
+   "months_in_baseline": 360,
+   "mean_over_baseline": -0.0001,
+   "baseline_confirmed": true,
+   "months_in_rebase_period": 360,
+   "rebase_possible": true,
+   "rebase_offset": 0.6113
+  },
+  "hadcrut5_global_monthly/monthly": {
+   "declared_baseline": [
+    1961,
+    1990
+   ],
+   "months_in_baseline": 360,
+   "mean_over_baseline": 0.008,
+   "baseline_confirmed": true,
+   "months_in_rebase_period": 360,
+   "rebase_possible": true,
+   "rebase_offset": 0.5482
+  },
+  "berkeley_global_monthly/air_over_sea_ice": {
+   "declared_baseline": [
+    1951,
+    1980
+   ],
+   "months_in_baseline": 360,
+   "mean_over_baseline": 0.0173,
+   "baseline_confirmed": true,
+   "months_in_rebase_period": 360,
+   "rebase_possible": true,
+   "rebase_offset": 0.6584
+  },
+  "berkeley_global_monthly/water_under_sea_ice": {
+   "declared_baseline": [
+    1951,
+    1980
+   ],
+   "months_in_baseline": 360,
+   "mean_over_baseline": 0.0017,
+   "baseline_confirmed": true,
+   "months_in_rebase_period": 360,
+   "rebase_possible": true,
+   "rebase_offset": 0.5741
+  },
+  "berkeley_country_monthly/monthly": {
+   "n_countries": 228,
+   "abs_mean_quantiles": {
+    "0.5": 0.0,
+    "0.9": 0.0,
+    "0.99": 0.0,
+    "1.0": 0.0
+   },
+   "baseline_not_confirmed": {},
+   "rebase_incomplete": {
+    "ABW": 305,
+    "AIA": 305,
+    "ATF": 305,
+    "BES": 305,
+    "CXR": 305,
+    "CYM": 305,
+    "FLK": 305,
+    "FRO": 305,
+    "GGY": 305,
+    "GLP": 305,
+    "GRL": 305,
+    "GUF": 305,
+    "HKG": 305,
+    "HMD": 305,
+    "IMN": 305,
+    "JEY": 305,
+    "KIR": 334,
+    "MAC": 305,
+    "MAF": 305,
+    "MNP": 305,
+    "MSR": 305,
+    "MTQ": 305,
+    "MYT": 305,
+    "NCL": 305,
+    "NIU": 305,
+    "PSE": 305,
+    "PYF": 305,
+    "REU": 305,
+    "SJM": 305,
+    "SPM": 305,
+    "STP": 305,
+    "SXM": 305,
+    "VGB": 305
+   }
+  },
+  "noaa_oni/monthly (moving base, mean by decade)": {
+   "1950s": 0.002,
+   "1960s": 0.155,
+   "1970s": -0.206,
+   "1980s": 0.014,
+   "1990s": 0.174,
+   "2000s": -0.101,
+   "2010s": 0.14,
+   "2020s": 0.004
+  }
+ },
+ "successions": {
+  "faostat": {
+   "USSR": {
+    "ended": 1991,
+    "predecessor_years": [
+     1961,
+     1991
+    ],
+    "predecessor_years_in_window": 31,
+    "successor_first_year": {
+     "ARM": 1992,
+     "AZE": 1992,
+     "BLR": 1992,
+     "EST": 1992,
+     "GEO": 1992,
+     "KAZ": 1992,
+     "KGZ": 1992,
+     "LTU": 1992,
+     "LVA": 1992,
+     "MDA": 1992,
+     "RUS": 1992,
+     "TJK": 1992,
+     "TKM": 1992,
+     "UKR": 1992,
+     "UZB": 1992
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Yugoslavia": {
+    "ended": 1991,
+    "predecessor_years": [
+     1961,
+     1991
+    ],
+    "predecessor_years_in_window": 31,
+    "successor_first_year": {
+     "BIH": 1992,
+     "HRV": 1992,
+     "MKD": 1992,
+     "SVN": 1992,
+     "SRB": 2006,
+     "MNE": 2006
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Serbia and Montenegro": {
+    "ended": 2005,
+    "predecessor_years": [
+     1992,
+     2005
+    ],
+    "predecessor_years_in_window": 14,
+    "successor_first_year": {
+     "SRB": 2006,
+     "MNE": 2006
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Czechoslovakia": {
+    "ended": 1992,
+    "predecessor_years": [
+     1961,
+     1992
+    ],
+    "predecessor_years_in_window": 32,
+    "successor_first_year": {
+     "CZE": 1993,
+     "SVK": 1993
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Ethiopia PDR": {
+    "ended": 1992,
+    "predecessor_years": [
+     1961,
+     1992
+    ],
+    "predecessor_years_in_window": 32,
+    "successor_first_year": {
+     "ETH": 1993,
+     "ERI": 1993
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Sudan (former)": {
+    "ended": 2011,
+    "predecessor_years": [
+     1961,
+     2011
+    ],
+    "predecessor_years_in_window": 51,
+    "successor_first_year": {
+     "SDN": 2012,
+     "SSD": 2012
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Belgium-Luxembourg": {
+    "ended": 1999,
+    "predecessor_years": [
+     1961,
+     1999
+    ],
+    "predecessor_years_in_window": 39,
+    "successor_first_year": {
+     "BEL": 2000,
+     "LUX": 2000
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Germany": {
+    "ended": 1990,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "DEU": 1961
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "DEU": 30
+    }
+   },
+   "Yemen": {
+    "ended": 1990,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "YEM": 1961
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "YEM": 30
+    }
+   }
+  },
+  "emdat": {
+   "USSR": {
+    "ended": 1991,
+    "predecessor_years": [
+     1902,
+     1991
+    ],
+    "predecessor_years_in_window": 15,
+    "successor_first_year": {
+     "ARM": 1931,
+     "AZE": 1995,
+     "BLR": 1993,
+     "EST": 2005,
+     "GEO": 1991,
+     "KAZ": 1911,
+     "KGZ": 1992,
+     "LTU": 1992,
+     "LVA": 1999,
+     "MDA": 1994,
+     "RUS": 1992,
+     "TJK": 1992,
+     "TKM": 1993,
+     "UKR": 1992,
+     "UZB": 1992
+    },
+    "overlap_years": [
+     1911,
+     1991
+    ],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "GEO": 1
+    }
+   },
+   "Yugoslavia": {
+    "ended": 1991,
+    "predecessor_years": [
+     1943,
+     1990
+    ],
+    "predecessor_years_in_window": 15,
+    "successor_first_year": {
+     "BIH": 1999,
+     "HRV": 1996,
+     "MKD": 1993,
+     "SVN": 1998,
+     "SCG": 1992,
+     "SRB": 2007,
+     "MNE": 2007
+    },
+    "overlap_years": [],
+    "gap_years": [
+     1991
+    ],
+    "successor_backcast_years_in_window": {}
+   },
+   "Serbia and Montenegro": {
+    "ended": 2005,
+    "predecessor_years": [
+     1992,
+     2006
+    ],
+    "predecessor_years_in_window": 7,
+    "successor_first_year": {
+     "SRB": 2007,
+     "MNE": 2007
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {}
+   },
+   "Czechoslovakia": {
+    "ended": 1992,
+    "predecessor_years": [
+     1974,
+     1987
+    ],
+    "predecessor_years_in_window": 4,
+    "successor_first_year": {
+     "CZE": 1996,
+     "SVK": 1997
+    },
+    "overlap_years": [],
+    "gap_years": [
+     1988,
+     1989,
+     1990,
+     1991,
+     1992,
+     1993,
+     1994,
+     1995
+    ],
+    "successor_backcast_years_in_window": {}
+   },
+   "Ethiopia PDR": {
+    "ended": 1992,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "ETH": 1961,
+     "ERI": 1993
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "ETH": 20
+    }
+   },
+   "Sudan (former)": {
+    "ended": 2011,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "SDN": 1940,
+     "SSD": 2008
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "SDN": 30,
+     "SSD": 3
+    }
+   },
+   "Belgium-Luxembourg": {
+    "ended": 1999,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "BEL": 1926,
+     "LUX": 1983
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "BEL": 14,
+     "LUX": 4
+    }
+   },
+   "Germany": {
+    "ended": 1990,
+    "predecessor_years": [
+     1920,
+     1988
+    ],
+    "predecessor_years_in_window": 11,
+    "successor_first_year": {
+     "DEU": 1990
+    },
+    "overlap_years": [],
+    "gap_years": [
+     1989
+    ],
+    "successor_backcast_years_in_window": {
+     "DEU": 1
+    }
+   },
+   "Yemen": {
+    "ended": 1990,
+    "predecessor_years": [
+     1941,
+     1989
+    ],
+    "predecessor_years_in_window": 10,
+    "successor_first_year": {
+     "YEM": 1991
+    },
+    "overlap_years": [],
+    "gap_years": [
+     1990
+    ],
+    "successor_backcast_years_in_window": {}
+   },
+   "Netherlands Antilles": {
+    "ended": 2010,
+    "predecessor_years": [
+     1954,
+     1995
+    ],
+    "predecessor_years_in_window": 2,
+    "successor_first_year": {
+     "SXM": 1995
+    },
+    "overlap_years": [
+     1995
+    ],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "SXM": 2
+    }
+   }
+  },
+  "wdi": {
+   "USSR": {
+    "ended": 1991,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "ARM": 1960,
+     "AZE": 1960,
+     "BLR": 1960,
+     "EST": 1960,
+     "GEO": 1960,
+     "KAZ": 1960,
+     "KGZ": 1960,
+     "LTU": 1960,
+     "LVA": 1960,
+     "MDA": 1960,
+     "RUS": 1960,
+     "TJK": 1960,
+     "TKM": 1960,
+     "UKR": 1960,
+     "UZB": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "ARM": 31,
+     "AZE": 31,
+     "BLR": 31,
+     "EST": 31,
+     "GEO": 31,
+     "KAZ": 31,
+     "KGZ": 31,
+     "LTU": 31,
+     "LVA": 31,
+     "MDA": 31,
+     "RUS": 31,
+     "TJK": 31,
+     "TKM": 31,
+     "UKR": 31,
+     "UZB": 31
+    }
+   },
+   "Yugoslavia": {
+    "ended": 1991,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "BIH": 1960,
+     "HRV": 1960,
+     "MKD": 1960,
+     "SVN": 1960,
+     "SRB": 1960,
+     "MNE": 1960,
+     "XKX": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "BIH": 31,
+     "HRV": 31,
+     "MKD": 31,
+     "SVN": 31,
+     "SRB": 31,
+     "MNE": 31,
+     "XKX": 31
+    }
+   },
+   "Serbia and Montenegro": {
+    "ended": 2005,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "SRB": 1960,
+     "MNE": 1960,
+     "XKX": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "SRB": 45,
+     "MNE": 45,
+     "XKX": 45
+    }
+   },
+   "Czechoslovakia": {
+    "ended": 1992,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "CZE": 1960,
+     "SVK": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "CZE": 32,
+     "SVK": 32
+    }
+   },
+   "Ethiopia PDR": {
+    "ended": 1992,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "ETH": 1960,
+     "ERI": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "ETH": 32,
+     "ERI": 32
+    }
+   },
+   "Sudan (former)": {
+    "ended": 2011,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "SDN": 1960,
+     "SSD": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "SDN": 51,
+     "SSD": 51
+    }
+   },
+   "Belgium-Luxembourg": {
+    "ended": 1999,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "BEL": 1960,
+     "LUX": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "BEL": 39,
+     "LUX": 39
+    }
+   },
+   "Germany": {
+    "ended": 1990,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "DEU": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "DEU": 30
+    }
+   },
+   "Yemen": {
+    "ended": 1990,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "YEM": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "YEM": 30
+    }
+   },
+   "Netherlands Antilles": {
+    "ended": 2010,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "CUW": 1960,
+     "SXM": 1960
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "CUW": 50,
+     "SXM": 50
+    }
+   }
+  },
+  "owid_co2": {
+   "USSR": {
+    "ended": 1991,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "ARM": 1830,
+     "AZE": 1830,
+     "BLR": 1830,
+     "EST": 1830,
+     "GEO": 1830,
+     "KAZ": 1830,
+     "KGZ": 1830,
+     "LTU": 1830,
+     "LVA": 1830,
+     "MDA": 1830,
+     "RUS": 1830,
+     "TJK": 1830,
+     "TKM": 1830,
+     "UKR": 1830,
+     "UZB": 1830
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "ARM": 31,
+     "AZE": 31,
+     "BLR": 31,
+     "EST": 31,
+     "GEO": 31,
+     "KAZ": 31,
+     "KGZ": 31,
+     "LTU": 31,
+     "LVA": 31,
+     "MDA": 31,
+     "RUS": 31,
+     "TJK": 31,
+     "TKM": 31,
+     "UKR": 31,
+     "UZB": 31
+    }
+   },
+   "Yugoslavia": {
+    "ended": 1991,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "BIH": 1885,
+     "HRV": 1885,
+     "MKD": 1885,
+     "SVN": 1885,
+     "SRB": 1885,
+     "MNE": 1885
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "BIH": 31,
+     "HRV": 31,
+     "MKD": 31,
+     "SVN": 31,
+     "SRB": 31,
+     "MNE": 31
+    }
+   },
+   "Serbia and Montenegro": {
+    "ended": 2005,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "SRB": 1885,
+     "MNE": 1885
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "SRB": 45,
+     "MNE": 45
+    }
+   },
+   "Czechoslovakia": {
+    "ended": 1992,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "CZE": 1860,
+     "SVK": 1860
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "CZE": 32,
+     "SVK": 32
+    }
+   },
+   "Ethiopia PDR": {
+    "ended": 1992,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "ETH": 1941,
+     "ERI": 1939
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "ETH": 32
+    }
+   },
+   "Sudan (former)": {
+    "ended": 2011,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "SDN": 1950,
+     "SSD": 1950
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "SDN": 51,
+     "SSD": 51
+    }
+   },
+   "Belgium-Luxembourg": {
+    "ended": 1999,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "BEL": 1802,
+     "LUX": 1945
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "BEL": 39,
+     "LUX": 39
+    }
+   },
+   "Germany": {
+    "ended": 1990,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "DEU": 1792
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "DEU": 30
+    }
+   },
+   "Yemen": {
+    "ended": 1990,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "YEM": 1950
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "YEM": 30
+    }
+   },
+   "Netherlands Antilles": {
+    "ended": 2010,
+    "predecessor_years": null,
+    "predecessor_years_in_window": 0,
+    "successor_first_year": {
+     "CUW": 1926,
+     "SXM": 1926,
+     "BES": 1926
+    },
+    "overlap_years": [],
+    "gap_years": [],
+    "successor_backcast_years_in_window": {
+     "CUW": 50,
+     "SXM": 50,
+     "BES": 50
+    }
+   }
+  }
+ },
+ "reporting_effort": {
+  "emdat_by_decade": {
+   "1900s": {
+    "events_all": 83.0,
+    "events_geophysical": 49.0,
+    "pct_deaths_reported": 90.4,
+    "pct_historic": 100.0
+   },
+   "1910s": {
+    "events_all": 81.0,
+    "events_geophysical": 35.0,
+    "pct_deaths_reported": 77.8,
+    "pct_historic": 100.0
+   },
+   "1920s": {
+    "events_all": 114.0,
+    "events_geophysical": 45.0,
+    "pct_deaths_reported": 83.3,
+    "pct_historic": 100.0
+   },
+   "1930s": {
+    "events_all": 141.0,
+    "events_geophysical": 71.0,
+    "pct_deaths_reported": 88.7,
+    "pct_historic": 100.0
+   },
+   "1940s": {
+    "events_all": 173.0,
+    "events_geophysical": 80.0,
+    "pct_deaths_reported": 83.8,
+    "pct_historic": 100.0
+   },
+   "1950s": {
+    "events_all": 324.0,
+    "events_geophysical": 78.0,
+    "pct_deaths_reported": 91.0,
+    "pct_historic": 100.0
+   },
+   "1960s": {
+    "events_all": 598.0,
+    "events_geophysical": 102.0,
+    "pct_deaths_reported": 76.1,
+    "pct_historic": 100.0
+   },
+   "1970s": {
+    "events_all": 882.0,
+    "events_geophysical": 132.0,
+    "pct_deaths_reported": 72.0,
+    "pct_historic": 100.0
+   },
+   "1980s": {
+    "events_all": 1747.0,
+    "events_geophysical": 218.0,
+    "pct_deaths_reported": 67.5,
+    "pct_historic": 100.0
+   },
+   "1990s": {
+    "events_all": 2994.0,
+    "events_geophysical": 327.0,
+    "pct_deaths_reported": 70.7,
+    "pct_historic": 100.0
+   },
+   "2000s": {
+    "events_all": 4389.0,
+    "events_geophysical": 350.0,
+    "pct_deaths_reported": 71.7,
+    "pct_historic": 0.0
+   },
+   "2010s": {
+    "events_all": 3752.0,
+    "events_geophysical": 307.0,
+    "pct_deaths_reported": 72.8,
+    "pct_historic": 0.0
+   },
+   "2020s": {
+    "events_all": 2808.0,
+    "events_geophysical": 202.0,
+    "pct_deaths_reported": 70.8,
+    "pct_historic": 0.0
+   }
+  },
+  "faostat_flags_by_decade": {
+   "5412": {
+    "1960s": {
+     "A": 70.8,
+     "E": 27.9,
+     "X": 1.3
+    },
+    "1970s": {
+     "A": 75.6,
+     "E": 22.6,
+     "X": 1.8
+    },
+    "1980s": {
+     "A": 78.6,
+     "E": 19.3,
+     "X": 2.1
+    },
+    "1990s": {
+     "A": 79.2,
+     "E": 19.1,
+     "X": 1.7
+    },
+    "2000s": {
+     "A": 81.1,
+     "E": 16.3,
+     "X": 2.6
+    },
+    "2010s": {
+     "A": 81.0,
+     "E": 16.5,
+     "X": 2.5
+    },
+    "2020s": {
+     "A": 70.8,
+     "E": 22.4,
+     "X": 6.8
+    }
+   },
+   "5510": {
+    "1960s": {
+     "A": 79.8,
+     "E": 15.6,
+     "I": 0.0,
+     "M": 0.9,
+     "X": 3.6
+    },
+    "1970s": {
+     "A": 85.4,
+     "E": 10.2,
+     "I": 0.0,
+     "M": 0.9,
+     "X": 3.4
+    },
+    "1980s": {
+     "A": 84.3,
+     "E": 11.2,
+     "I": 0.0,
+     "M": 0.9,
+     "X": 3.6
+    },
+    "1990s": {
+     "A": 81.7,
+     "E": 6.4,
+     "I": 5.1,
+     "M": 3.3,
+     "X": 3.5
+    },
+    "2000s": {
+     "A": 82.5,
+     "E": 5.2,
+     "I": 5.7,
+     "M": 3.1,
+     "X": 3.6
+    },
+    "2010s": {
+     "A": 83.2,
+     "E": 3.5,
+     "I": 6.9,
+     "M": 2.5,
+     "X": 3.9
+    },
+    "2020s": {
+     "A": 76.5,
+     "E": 5.3,
+     "I": 6.0,
+     "M": 2.5,
+     "X": 9.8
+    }
+   },
+   "5312": {
+    "1960s": {
+     "A": 74.7,
+     "E": 22.4,
+     "I": 0.0,
+     "M": 0.9,
+     "X": 2.0
+    },
+    "1970s": {
+     "A": 77.3,
+     "E": 18.8,
+     "I": 0.0,
+     "M": 0.9,
+     "X": 3.0
+    },
+    "1980s": {
+     "A": 79.6,
+     "E": 16.3,
+     "I": 0.0,
+     "M": 0.9,
+     "X": 3.2
+    },
+    "1990s": {
+     "A": 77.2,
+     "E": 10.1,
+     "I": 6.6,
+     "M": 3.5,
+     "X": 2.6
+    },
+    "2000s": {
+     "A": 78.6,
+     "E": 8.1,
+     "I": 6.7,
+     "M": 3.3,
+     "X": 3.3
+    },
+    "2010s": {
+     "A": 78.9,
+     "E": 4.7,
+     "I": 10.9,
+     "M": 2.7,
+     "X": 2.9
+    },
+    "2020s": {
+     "A": 71.3,
+     "E": 5.3,
+     "I": 13.7,
+     "M": 2.5,
+     "X": 7.2
+    }
+   }
+  }
+ }
+}
