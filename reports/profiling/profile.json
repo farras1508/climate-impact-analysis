@@ -1,0 +1,6074 @@
+{
+ "manifest_sha256": "69e2d0a97138f5821c5addda33ba1298b0a9aa5169ec7d9ffbe2733053cd0cb8",
+ "datasets": {
+  "gistemp_v4_global_monthly": {
+   "declared": {
+    "provider": "NASA GISS",
+    "version": "GISTEMP v4 (GHCN v4 land + ERSST v5 ocean)",
+    "native_units": "degC anomaly",
+    "native_baseline": [
+     1951,
+     1980
+    ],
+    "missing_sentinel": "***",
+    "license": "Public domain (US Government work)"
+   },
+   "files": [
+    {
+     "file": "data/raw/gistemp/GLB.Ts+dSST.csv",
+     "size_bytes": 12887,
+     "sha256": "a7b1939db2e7e484c798e925e0f07f8184356c52ac0e7ce264adcd0f25e81253"
+    }
+   ],
+   "tables": [
+    {
+     "table": "monthly",
+     "rows": 1764,
+     "columns": 4,
+     "cells": 7056,
+     "missing_cells": 2,
+     "pct_missing_cells": 0.03,
+     "time_col": "date",
+     "time_freq": "M",
+     "entity_col": null,
+     "value_cols": [
+      "anomaly"
+     ],
+     "key": [
+      "date"
+     ],
+     "sentinels_replaced": {
+      "value: ***": 2
+     },
+     "notes": [
+      "J-D, D-N and seasonal columns not read (recomputed in Phase 4)"
+     ],
+     "period_all_rows": {
+      "first": "1880-01",
+      "last": "2026-12",
+      "n_periods": 1764
+     },
+     "period_with_values": {
+      "first": "1880-01",
+      "last": "2026-10",
+      "n_periods": 1762
+     },
+     "column_profiles": {
+      "date": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 1764,
+       "kind": "datetime",
+       "min": "1880-01-01",
+       "max": "2026-12-01"
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 147,
+       "kind": "numeric",
+       "min": 1880.0,
+       "p01": 1881.0,
+       "median": 1953.0,
+       "p99": 2025.0,
+       "max": 2026.0,
+       "mean": 1953.0,
+       "std": 42.44629585445635,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "month": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 12,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 6.5,
+       "p99": 12.0,
+       "max": 12.0,
+       "mean": 6.5,
+       "std": 3.4530314186879085,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "anomaly": {
+       "dtype": "float64",
+       "n_missing": 2,
+       "pct_missing": 0.11,
+       "n_unique": 201,
+       "kind": "numeric",
+       "min": -0.81,
+       "p01": -0.58,
+       "median": -0.03,
+       "p99": 1.2716999999999963,
+       "max": 1.55,
+       "mean": 0.08963677639046538,
+       "std": 0.4214536157392637,
+       "n_negative": 911,
+       "n_zero": 12
+      }
+     }
+    }
+   ]
+  },
+  "hadcrut5_global_monthly": {
+   "declared": {
+    "provider": "Met Office Hadley Centre / UEA CRU",
+    "version": "HadCRUT 5.2.0.0",
+    "native_units": "degC anomaly",
+    "native_baseline": [
+     1961,
+     1990
+    ],
+    "license": "Open Government Licence v3"
+   },
+   "files": [
+    {
+     "file": "data/raw/hadcrut5/global_monthly.csv",
+     "size_bytes": 89673,
+     "sha256": "0374543a368f896c2d9da3ef03630aba1f3b7126fbe6d98f164128456e4ab922"
+    }
+   ],
+   "tables": [
+    {
+     "table": "monthly",
+     "rows": 2121,
+     "columns": 4,
+     "cells": 8484,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": "date",
+     "time_freq": "M",
+     "entity_col": null,
+     "value_cols": [
+      "anomaly"
+     ],
+     "key": [
+      "date"
+     ],
+     "sentinels_replaced": {},
+     "notes": [],
+     "period_all_rows": {
+      "first": "1850-01",
+      "last": "2026-09",
+      "n_periods": 2121
+     },
+     "period_with_values": {
+      "first": "1850-01",
+      "last": "2026-09",
+      "n_periods": 2121
+     },
+     "column_profiles": {
+      "date": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2121,
+       "kind": "datetime",
+       "min": "1850-01-01",
+       "max": "2026-09-01"
+      },
+      "anomaly": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2121,
+       "kind": "numeric",
+       "min": -1.0416374,
+       "p01": -0.73094192,
+       "median": -0.15293284,
+       "p99": 1.1378623800000014,
+       "max": 1.36002,
+       "mean": -0.053576687406654847,
+       "std": 0.423160855959643,
+       "n_negative": 1384,
+       "n_zero": 0
+      },
+      "lower_2p5": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2121,
+       "kind": "numeric",
+       "min": -1.2204044,
+       "p01": -0.984473982,
+       "median": -0.2947715,
+       "p99": 1.0869899800000018,
+       "max": 1.297572,
+       "mean": -0.18965464410653463,
+       "std": 0.4786512596403336,
+       "n_negative": 1538,
+       "n_zero": 0
+      },
+      "upper_97p5": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2121,
+       "kind": "numeric",
+       "min": -0.8628705,
+       "p01": -0.546571076,
+       "median": 0.0005857006,
+       "p99": 1.1881224000000001,
+       "max": 1.4224682,
+       "mean": 0.08250126994585572,
+       "std": 0.3759516475576154,
+       "n_negative": 1058,
+       "n_zero": 0
+      }
+     }
+    }
+   ]
+  },
+  "berkeley_global_monthly": {
+   "declared": {
+    "provider": "Berkeley Earth",
+    "native_units": "degC anomaly",
+    "native_baseline": [
+     1951,
+     1980
+    ],
+    "license": "CC BY-NC 4.0"
+   },
+   "files": [
+    {
+     "file": "data/raw/berkeley/Land_and_Ocean_complete.txt",
+     "size_bytes": 416532,
+     "sha256": "e2d57dc0efc309e1b9879bab2bf95ce93a4e8e162ccf2c8eb5b090c07378dd56"
+    }
+   ],
+   "tables": [
+    {
+     "table": "air_over_sea_ice",
+     "rows": 2100,
+     "columns": 5,
+     "cells": 10500,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": "date",
+     "time_freq": "M",
+     "entity_col": null,
+     "value_cols": [
+      "anomaly"
+     ],
+     "key": [
+      "date"
+     ],
+     "sentinels_replaced": {},
+     "notes": [
+      "moving-average columns (annual .. twenty-year) not read"
+     ],
+     "period_all_rows": {
+      "first": "1850-01",
+      "last": "2024-12",
+      "n_periods": 2100
+     },
+     "period_with_values": {
+      "first": "1850-01",
+      "last": "2024-12",
+      "n_periods": 2100
+     },
+     "column_profiles": {
+      "date": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2100,
+       "kind": "datetime",
+       "min": "1850-01-01",
+       "max": "2024-12-01"
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 175,
+       "kind": "numeric",
+       "min": 1850.0,
+       "p01": 1851.0,
+       "median": 1937.0,
+       "p99": 2023.0,
+       "max": 2024.0,
+       "mean": 1937.0,
+       "std": 50.52935599288537,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "month": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 12,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 6.5,
+       "p99": 12.0,
+       "max": 12.0,
+       "mean": 6.5,
+       "std": 3.4528747404620153,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "anomaly": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 1109,
+       "kind": "numeric",
+       "min": -1.004,
+       "p01": -0.677,
+       "median": -0.08549999999999999,
+       "p99": 1.2300099999999998,
+       "max": 1.548,
+       "mean": 0.008249523809523816,
+       "std": 0.4320580325841626,
+       "n_negative": 1247,
+       "n_zero": 2
+      },
+      "uncertainty": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 313,
+       "kind": "numeric",
+       "min": 0.03,
+       "p01": 0.033,
+       "median": 0.116,
+       "p99": 0.409,
+       "max": 0.57,
+       "mean": 0.12296333333333334,
+       "std": 0.08185397057933712,
+       "n_negative": 0,
+       "n_zero": 0
+      }
+     }
+    },
+    {
+     "table": "water_under_sea_ice",
+     "rows": 2100,
+     "columns": 5,
+     "cells": 10500,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": "date",
+     "time_freq": "M",
+     "entity_col": null,
+     "value_cols": [
+      "anomaly"
+     ],
+     "key": [
+      "date"
+     ],
+     "sentinels_replaced": {},
+     "notes": [
+      "moving-average columns (annual .. twenty-year) not read"
+     ],
+     "period_all_rows": {
+      "first": "1850-01",
+      "last": "2024-12",
+      "n_periods": 2100
+     },
+     "period_with_values": {
+      "first": "1850-01",
+      "last": "2024-12",
+      "n_periods": 2100
+     },
+     "column_profiles": {
+      "date": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2100,
+       "kind": "datetime",
+       "min": "1850-01-01",
+       "max": "2024-12-01"
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 175,
+       "kind": "numeric",
+       "min": 1850.0,
+       "p01": 1851.0,
+       "median": 1937.0,
+       "p99": 2023.0,
+       "max": 2024.0,
+       "mean": 1937.0,
+       "std": 50.52935599288537,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "month": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 12,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 6.5,
+       "p99": 12.0,
+       "max": 12.0,
+       "mean": 6.5,
+       "std": 3.4528747404620153,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "anomaly": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 1073,
+       "kind": "numeric",
+       "min": -0.949,
+       "p01": -0.65411,
+       "median": -0.099,
+       "p99": 1.1250499999999988,
+       "max": 1.326,
+       "mean": -0.011775714285714306,
+       "std": 0.39303080733299933,
+       "n_negative": 1268,
+       "n_zero": 2
+      },
+      "uncertainty": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 291,
+       "kind": "numeric",
+       "min": 0.025,
+       "p01": 0.028,
+       "median": 0.104,
+       "p99": 0.35105999999999854,
+       "max": 0.501,
+       "mean": 0.10585380952380952,
+       "std": 0.07071882376054613,
+       "n_negative": 0,
+       "n_zero": 0
+      }
+     }
+    }
+   ]
+  },
+  "berkeley_country_monthly": {
+   "declared": {
+    "provider": "Berkeley Earth",
+    "native_units": "degC anomaly (+ baseline climatology in header)",
+    "license": "CC BY-NC 4.0"
+   },
+   "files": [
+    {
+     "file": "data/raw/berkeley/country/afghanistan-TAVG-Trend.txt",
+     "size_bytes": 206640,
+     "sha256": "dfeb92c87749121ee19c0e97c38586c2d051081b86c8bcdb74c6510ee9978247"
+    },
+    {
+     "file": "data/raw/berkeley/country/albania-TAVG-Trend.txt",
+     "size_bytes": 322271,
+     "sha256": "58ebec10fd6e7052d1d1639c81a18ed55e528b9869652fea043575a2bea307c4"
+    },
+    {
+     "file": "data/raw/berkeley/country/algeria-TAVG-Trend.txt",
+     "size_bytes": 273667,
+     "sha256": "cff8b91a483c97eb2ca5d52431a2384ad9799e839793368033139860fe735c5c"
+    },
+    {
+     "file": "data/raw/berkeley/country/american-samoa-TAVG-Trend.txt",
+     "size_bytes": 173328,
+     "sha256": "4830ae6a5bcfdacf41f34a20bca13d4897c84863f1f106dea7bc8db593cafd1f"
+    },
+    {
+     "file": "data/raw/berkeley/country/andorra-TAVG-Trend.txt",
+     "size_bytes": 322263,
+     "sha256": "80d3a2d688028a81a35325a260c2c70ddaf73949e0f3478cfd1f4d2f786d9b54"
+    },
+    {
+     "file": "data/raw/berkeley/country/angola-TAVG-Trend.txt",
+     "size_bytes": 170568,
+     "sha256": "7a33f2f3f65fde41a4716a37c93339389570c6ba8bdaa959b1b2245488af43c3"
+    },
+    {
+     "file": "data/raw/berkeley/country/anguilla-TAVG-Trend.txt",
+     "size_bytes": 229808,
+     "sha256": "a5e28584573a6071d445000a9bc4433e76708d52212b0f20e648344a664d8b61"
+    },
+    {
+     "file": "data/raw/berkeley/country/antarctica-TAVG-Trend.txt",
+     "size_bytes": 80031,
+     "sha256": "94e1081d372d68268615a510a203ac5ba1d54816d16dc1d4b12c556b16361ec0"
+    },
+    {
+     "file": "data/raw/berkeley/country/antigua-and-barbuda-TAVG-Trend.txt",
+     "size_bytes": 235270,
+     "sha256": "3f34821eb4a74cd38cf39492c1548fe3e1945cc35aa9d30e2b1f601c64982cea"
+    },
+    {
+     "file": "data/raw/berkeley/country/argentina-TAVG-Trend.txt",
+     "size_bytes": 198412,
+     "sha256": "5356cbb1ac65eac858f5d695155b62537b8b3470c213c3f708499d059bc48bd6"
+    },
+    {
+     "file": "data/raw/berkeley/country/armenia-TAVG-Trend.txt",
+     "size_bytes": 241127,
+     "sha256": "530766b4536970a6d339826e1a2996c34e9346ccb84b04622ad400e378ff50ae"
+    },
+    {
+     "file": "data/raw/berkeley/country/aruba-TAVG-Trend.txt",
+     "size_bytes": 229806,
+     "sha256": "7888aa4899d431c0f5bbe665b203c258b3edd59adb007a2f5da36a4e4358fa5a"
+    },
+    {
+     "file": "data/raw/berkeley/country/australia-TAVG-Trend.txt",
+     "size_bytes": 174009,
+     "sha256": "f7f1a897304e9d63a47aba54dc0446ff36f98c0889c302a9c421439c26f8a6e0"
+    },
+    {
+     "file": "data/raw/berkeley/country/austria-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "83e2a3de53685b420bfe8edd09e31181e743b3c99709a3a8d3f67b13409ed1cf"
+    },
+    {
+     "file": "data/raw/berkeley/country/azerbaijan-TAVG-Trend.txt",
+     "size_bytes": 241133,
+     "sha256": "25a9eb1693af1320edca8fe03906ec0c8a42791638ba479750a05929d0f7a05a"
+    },
+    {
+     "file": "data/raw/berkeley/country/bahrain-TAVG-Trend.txt",
+     "size_bytes": 173795,
+     "sha256": "f295c24b297e0da47910d081c3cd4c35de3a50a7257cce24c2508dd35aea97d3"
+    },
+    {
+     "file": "data/raw/berkeley/country/bangladesh-TAVG-Trend.txt",
+     "size_bytes": 244467,
+     "sha256": "558ef06dda2dde9433a4bd05d7fdc32f87869ee054626aaacb539070f4cb1c9d"
+    },
+    {
+     "file": "data/raw/berkeley/country/barbados-TAVG-Trend.txt",
+     "size_bytes": 235248,
+     "sha256": "f4e130de58b01e332c502abb403c2379e252829a7ab0a817bbf5b4860cb92dde"
+    },
+    {
+     "file": "data/raw/berkeley/country/belarus-TAVG-Trend.txt",
+     "size_bytes": 322273,
+     "sha256": "3f0a2b82d5056df73250e46dc098a5badba71c800db544bbaa61253eb62ea687"
+    },
+    {
+     "file": "data/raw/berkeley/country/belgium-TAVG-Trend.txt",
+     "size_bytes": 322269,
+     "sha256": "a1b2b1c2c75b68d770d218d0ce0e1208510075a621e4b57fab4370db9de5268f"
+    },
+    {
+     "file": "data/raw/berkeley/country/belize-TAVG-Trend.txt",
+     "size_bytes": 204965,
+     "sha256": "4e73f63f5fef3fdd9d6a9ad8eae4c08fed15b8781bff938f8b966fa1299b927a"
+    },
+    {
+     "file": "data/raw/berkeley/country/benin-TAVG-Trend.txt",
+     "size_bytes": 177028,
+     "sha256": "ce7d0f39b24bb0710bc8760d8fe9400d37b821b891611f13548140e4f0fce3f8"
+    },
+    {
+     "file": "data/raw/berkeley/country/bhutan-TAVG-Trend.txt",
+     "size_bytes": 244454,
+     "sha256": "cdf8148495c45aa91ac0f567dbf340dc858cc460ac8e7dd6b4691141bbd8d5d2"
+    },
+    {
+     "file": "data/raw/berkeley/country/bolivia-TAVG-Trend.txt",
+     "size_bytes": 198405,
+     "sha256": "9bfeea12962c720b739ae8a01f538860b60a1ab684abd24486d31b48af0d2202"
+    },
+    {
+     "file": "data/raw/berkeley/country/bonaire,-saint-eustatius-and-saba-TAVG-Trend.txt",
+     "size_bytes": 229834,
+     "sha256": "4f3e257846b7ec36665fa00608726f11634a197067d8a0ea71c91c9995125f40"
+    },
+    {
+     "file": "data/raw/berkeley/country/bosnia-and-herzegovina-TAVG-Trend.txt",
+     "size_bytes": 322302,
+     "sha256": "c152ca8c8ab5af5a6f0d0ea346038b49189a2981a490dcae67df703b20b370cb"
+    },
+    {
+     "file": "data/raw/berkeley/country/botswana-TAVG-Trend.txt",
+     "size_bytes": 193112,
+     "sha256": "fc940ae2348dcf31ca741155125340ea8687a6989c8228ac2f4cf89d64814862"
+    },
+    {
+     "file": "data/raw/berkeley/country/brazil-TAVG-Trend.txt",
+     "size_bytes": 196444,
+     "sha256": "8f03fcf5285697beb0f718d1ad96fe64e897831c75f46f24817087b43ada72b3"
+    },
+    {
+     "file": "data/raw/berkeley/country/british-virgin-islands-TAVG-Trend.txt",
+     "size_bytes": 229822,
+     "sha256": "c6eaad944ebad81567f401ac725cafeb7401983a43e9fa971704d4f098fff342"
+    },
+    {
+     "file": "data/raw/berkeley/country/brunei-TAVG-Trend.txt",
+     "size_bytes": 185851,
+     "sha256": "34117c8fe816d9699058132a92217344f148976dda8475dacab3c14f55d83e2e"
+    },
+    {
+     "file": "data/raw/berkeley/country/bulgaria-TAVG-Trend.txt",
+     "size_bytes": 322275,
+     "sha256": "3a97642c463923a2841c27cbe112791bca8f3d4403a273f449f82f8bb72f9550"
+    },
+    {
+     "file": "data/raw/berkeley/country/burkina-faso-TAVG-Trend.txt",
+     "size_bytes": 177044,
+     "sha256": "67aea46513500999738d2d003bf70cec9d4d6d9931d29ce05d2604eaa04e3f95"
+    },
+    {
+     "file": "data/raw/berkeley/country/burundi-TAVG-Trend.txt",
+     "size_bytes": 155277,
+     "sha256": "ab6a3989824639690bbb223259d2da9450be846d4d2382d3f4efc2f14da4b07e"
+    },
+    {
+     "file": "data/raw/berkeley/country/cabo-verde-TAVG-Trend.txt",
+     "size_bytes": 190565,
+     "sha256": "aeecb1c2938fb73b95bb52147e2ad95c83526e05cba3b200c3a91b419ece3cdb"
+    },
+    {
+     "file": "data/raw/berkeley/country/cambodia-TAVG-Trend.txt",
+     "size_bytes": 216435,
+     "sha256": "a67422724aed495c9c8a54d691677f7b6e66edd91d884d39c0eb131306a53670"
+    },
+    {
+     "file": "data/raw/berkeley/country/cameroon-TAVG-Trend.txt",
+     "size_bytes": 177428,
+     "sha256": "8341936dfd4722c76aa76beb8cf72a7af90f9254a9f6af7cf1ed5a313ac724df"
+    },
+    {
+     "file": "data/raw/berkeley/country/canada-TAVG-Trend.txt",
+     "size_bytes": 249857,
+     "sha256": "ca2cd7cbf7f40b5123abe36b0fb0d892fbb88a652a9dbade23af824d11671a96"
+    },
+    {
+     "file": "data/raw/berkeley/country/cayman-islands-TAVG-Trend.txt",
+     "size_bytes": 230991,
+     "sha256": "d85de5eee0be7bb82cf44692c96174543f49fb312ad0271a5298355b4f5bf9cf"
+    },
+    {
+     "file": "data/raw/berkeley/country/central-african-republic-TAVG-Trend.txt",
+     "size_bytes": 162564,
+     "sha256": "504883a0dd5f421738cb3fb678f3c7bbdce11f0bfa6bd0e839d72cefa13a6310"
+    },
+    {
+     "file": "data/raw/berkeley/country/chad-TAVG-Trend.txt",
+     "size_bytes": 159194,
+     "sha256": "23d91b5759f38fe52dd62f6ca04f52edcf9d132c3962aa72d577a1d2edf768e1"
+    },
+    {
+     "file": "data/raw/berkeley/country/chile-TAVG-Trend.txt",
+     "size_bytes": 192913,
+     "sha256": "2262e9a1aa3f19329e83c2660edb1d2852cd84fe7c369ffc458f83edfd368043"
+    },
+    {
+     "file": "data/raw/berkeley/country/china-TAVG-Trend.txt",
+     "size_bytes": 215257,
+     "sha256": "44b6ef59c69bb128b284537fed24c3d206dfb9321998e99acdcc92300bac44cf"
+    },
+    {
+     "file": "data/raw/berkeley/country/christmas-island-TAVG-Trend.txt",
+     "size_bytes": 228641,
+     "sha256": "13a3a39dff3c0f4631677f573c533d6faf57c0c97fff062d2c990a3811d07090"
+    },
+    {
+     "file": "data/raw/berkeley/country/colombia-TAVG-Trend.txt",
+     "size_bytes": 168026,
+     "sha256": "168f7bb90787814465583b64791cdb4d222d15b80e59317897272a982d4851e6"
+    },
+    {
+     "file": "data/raw/berkeley/country/comoros-TAVG-Trend.txt",
+     "size_bytes": 158807,
+     "sha256": "f58a89466d77df587de9afdc2396f57ad309b9aace90478ea56a0a6a0ebaa81d"
+    },
+    {
+     "file": "data/raw/berkeley/country/costa-rica-TAVG-Trend.txt",
+     "size_bytes": 196348,
+     "sha256": "a202afe641872b9576c7a0cb23db10290140cd390d19eb1928cd12e4d279961a"
+    },
+    {
+     "file": "data/raw/berkeley/country/croatia-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "28c079bcc6c9d8aba7a715f45c7e93e2a7c2c167c37db64cfad0b031018c9cb7"
+    },
+    {
+     "file": "data/raw/berkeley/country/cuba-TAVG-Trend.txt",
+     "size_bytes": 235049,
+     "sha256": "4821538bdc0ec7a383b381335f4cb32a4e1f5c3c7671cb99e215c195f3387ecc"
+    },
+    {
+     "file": "data/raw/berkeley/country/cyprus-TAVG-Trend.txt",
+     "size_bytes": 241123,
+     "sha256": "17663494c1b8fa22ce61974a11db960633389362e6669ce2b309174bbfa3be62"
+    },
+    {
+     "file": "data/raw/berkeley/country/czechia-TAVG-Trend.txt",
+     "size_bytes": 322273,
+     "sha256": "c2f28c850e7774e59051bccf6792099919da70c0afc4b83b512f47ab82714f3d"
+    },
+    {
+     "file": "data/raw/berkeley/country/democratic-republic-of-the-congo-TAVG-Trend.txt",
+     "size_bytes": 155332,
+     "sha256": "0608c4f64cd855566e317872025bc8b81ae905ada0535538d8c8b000c66bc3d5"
+    },
+    {
+     "file": "data/raw/berkeley/country/denmark-TAVG-Trend.txt",
+     "size_bytes": 254559,
+     "sha256": "a1bbbeac3b6e19c2da9be4ef8fed331d6bce7d6475dd3e7881877b71c0d67113"
+    },
+    {
+     "file": "data/raw/berkeley/country/djibouti-TAVG-Trend.txt",
+     "size_bytes": 168705,
+     "sha256": "4b6424dd6c18b682e983d07512c7f658b4c145ade68d846003765a0971ead167"
+    },
+    {
+     "file": "data/raw/berkeley/country/dominica-TAVG-Trend.txt",
+     "size_bytes": 235248,
+     "sha256": "076a7e02954932feb1f7211f97f9810e3d202d2e894bb423901ca17068bfe988"
+    },
+    {
+     "file": "data/raw/berkeley/country/dominican-republic-TAVG-Trend.txt",
+     "size_bytes": 235272,
+     "sha256": "125dea804ad07fe6ce2ee31fb3497fd781d2e773dedd5424264995909a1ab6b9"
+    },
+    {
+     "file": "data/raw/berkeley/country/east-timor-TAVG-Trend.txt",
+     "size_bytes": 159989,
+     "sha256": "c6907d23bae4f15f5e10b12a3d385c59ed367e0b9239840a8fae433ebb83a132"
+    },
+    {
+     "file": "data/raw/berkeley/country/ecuador-TAVG-Trend.txt",
+     "size_bytes": 156458,
+     "sha256": "514ace2748ed146a0bf2a77f943a9d8351cbb9a85cc52aef0d575a29e307a1d3"
+    },
+    {
+     "file": "data/raw/berkeley/country/egypt-TAVG-Trend.txt",
+     "size_bytes": 212901,
+     "sha256": "dfd3c69e3866da643a7715bbba844d92f3251f54b432eaef82f1a7f6f266c2cb"
+    },
+    {
+     "file": "data/raw/berkeley/country/el-salvador-TAVG-Trend.txt",
+     "size_bytes": 196351,
+     "sha256": "c0566485211b21f65bae2f392c05975a4dcbe92e34f2966799dcb8ecce8f2ca8"
+    },
+    {
+     "file": "data/raw/berkeley/country/equatorial-guinea-TAVG-Trend.txt",
+     "size_bytes": 177443,
+     "sha256": "5e5682dd2b972df039da591a3ee6c4109ef315f326e44b8a21c8da9bc17b0f76"
+    },
+    {
+     "file": "data/raw/berkeley/country/eritrea-TAVG-Trend.txt",
+     "size_bytes": 168702,
+     "sha256": "65922a2a5ac2c155b1d718376e35758c8a02da1bdebc5b8f45a04ae3d966b6b0"
+    },
+    {
+     "file": "data/raw/berkeley/country/estonia-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "41d5aa59e25710fd51d7ff98fe6e14d3750c54cb365a37d3d6dc8021a204a73f"
+    },
+    {
+     "file": "data/raw/berkeley/country/eswatini-TAVG-Trend.txt",
+     "size_bytes": 193111,
+     "sha256": "d458e6062fe424742f3d362d0ee1592502999873dbfd2ca626ad12eec5027093"
+    },
+    {
+     "file": "data/raw/berkeley/country/ethiopia-TAVG-Trend.txt",
+     "size_bytes": 168709,
+     "sha256": "187143962cfad49349e9640d8ae359afe5ceafb257c609aece597bc06148018a"
+    },
+    {
+     "file": "data/raw/berkeley/country/falkland-islands-(islas-malvinas)-TAVG-Trend.txt",
+     "size_bytes": 187501,
+     "sha256": "6805b0462657decc36e8509d032ca14f9e6b8325394093aceea55f2f8b3b46df"
+    },
+    {
+     "file": "data/raw/berkeley/country/faroe-islands-TAVG-Trend.txt",
+     "size_bytes": 324087,
+     "sha256": "f7c059ea2f10a7efff3a70fb3e8fc8a9dbd6f8418b821cc840bbb0058cb45b39"
+    },
+    {
+     "file": "data/raw/berkeley/country/fiji-TAVG-Trend.txt",
+     "size_bytes": 184678,
+     "sha256": "c80be6b9216466fdd4ebda980c05ed2ae3a71a408e2a2eb6f96204e6edfde171"
+    },
+    {
+     "file": "data/raw/berkeley/country/finland-TAVG-Trend.txt",
+     "size_bytes": 322275,
+     "sha256": "7d230ff102d05de3416dd642ae24366024e465f5ba4957699d084ece6c1118fc"
+    },
+    {
+     "file": "data/raw/berkeley/country/france-TAVG-Trend.txt",
+     "size_bytes": 322277,
+     "sha256": "fa5d38227fe5aeee828cb3d70b4a087a5f49489dcc3c36f9e864c6f8b162d609"
+    },
+    {
+     "file": "data/raw/berkeley/country/french-guiana-TAVG-Trend.txt",
+     "size_bytes": 229815,
+     "sha256": "97c31ed6b4ea9cb6701f14ca5b6aaea01f091c113593e037e40b944fb4396f64"
+    },
+    {
+     "file": "data/raw/berkeley/country/french-polynesia-TAVG-Trend.txt",
+     "size_bytes": 167984,
+     "sha256": "23145669afd173f0458753196ebdf55a0cf95e59085ec0f5c14efeca08234f16"
+    },
+    {
+     "file": "data/raw/berkeley/country/french-southern-and-antarctic-lands-TAVG-Trend.txt",
+     "size_bytes": 83915,
+     "sha256": "defa1ae388ef37b3b8cdd483898c4f3c5d9a59be93740bc11c6414d87084a5c2"
+    },
+    {
+     "file": "data/raw/berkeley/country/gabon-TAVG-Trend.txt",
+     "size_bytes": 177422,
+     "sha256": "d44eb0ced0b43b08be5d5b1ea9737406834d5b18f08d60257f5567902c671a73"
+    },
+    {
+     "file": "data/raw/berkeley/country/gambia-TAVG-Trend.txt",
+     "size_bytes": 205847,
+     "sha256": "aa212d9c8e658eafd9d724776dc54caa693e482a753c943e5b1fd00a20e97c51"
+    },
+    {
+     "file": "data/raw/berkeley/country/georgia-TAVG-Trend.txt",
+     "size_bytes": 248966,
+     "sha256": "e9c9d59f2d746d059def1c6ef4d5921a4693eca1ad47dec8cc526067458d0861"
+    },
+    {
+     "file": "data/raw/berkeley/country/germany-TAVG-Trend.txt",
+     "size_bytes": 322273,
+     "sha256": "6da33824ffab5b519292deecdb4e2215fb1e5a8c83529c083848adf2ceb47d97"
+    },
+    {
+     "file": "data/raw/berkeley/country/ghana-TAVG-Trend.txt",
+     "size_bytes": 177030,
+     "sha256": "ac0543b68374f2a57bf4867706b1b37c73f249ea1bdd6abbaaa84f6a43fcfd2d"
+    },
+    {
+     "file": "data/raw/berkeley/country/greece-TAVG-Trend.txt",
+     "size_bytes": 273663,
+     "sha256": "63b784e9c9d8311f35e85c75abc65b8416a50b90e17181ad207147d2311d3a78"
+    },
+    {
+     "file": "data/raw/berkeley/country/greenland-TAVG-Trend.txt",
+     "size_bytes": 276074,
+     "sha256": "699c56b4cb17dd8d0b115e1575e9847e85cb36117529a2822a758c42501ef022"
+    },
+    {
+     "file": "data/raw/berkeley/country/grenada-TAVG-Trend.txt",
+     "size_bytes": 235246,
+     "sha256": "47b5360b20f5ddcbbc0a11980505e8e51a28dbd942f6c4b9180ef16c9c731efc"
+    },
+    {
+     "file": "data/raw/berkeley/country/guadeloupe-TAVG-Trend.txt",
+     "size_bytes": 229812,
+     "sha256": "a03ac3be44d096d304159acc4ac0e8570da119640559112e5c858ba23159f73e"
+    },
+    {
+     "file": "data/raw/berkeley/country/guam-TAVG-Trend.txt",
+     "size_bytes": 134105,
+     "sha256": "0f606b586ee4dbd10053586a98d9ca5ff5e9f4d8014b80d40f179e9487fc08dc"
+    },
+    {
+     "file": "data/raw/berkeley/country/guatemala-TAVG-Trend.txt",
+     "size_bytes": 201444,
+     "sha256": "88ce8ec775ccbfed16754ffa4f4a7df665bd51a645c0f5c1d5369fea716afb14"
+    },
+    {
+     "file": "data/raw/berkeley/country/guernsey-TAVG-Trend.txt",
+     "size_bytes": 324080,
+     "sha256": "80317659e38ca22da81ec9b5fd84a9002add106b0a5c3d3029d0283ec7e13844"
+    },
+    {
+     "file": "data/raw/berkeley/country/guinea-TAVG-Trend.txt",
+     "size_bytes": 205845,
+     "sha256": "daeed8456d73b98ac4012e445af57c4dd645bf4bc7dc0e3d7cb2946c78dbfeaf"
+    },
+    {
+     "file": "data/raw/berkeley/country/guinea-bissau-TAVG-Trend.txt",
+     "size_bytes": 205859,
+     "sha256": "48fbe68b27e26bd565edfd6e72c3c694543382f3ae69951d953133145e14969b"
+    },
+    {
+     "file": "data/raw/berkeley/country/guyana-TAVG-Trend.txt",
+     "size_bytes": 210550,
+     "sha256": "a22fe7b208e417f6e38d2a72a8e8375c46677f8e55cbaa26aab2afa6182ccab2"
+    },
+    {
+     "file": "data/raw/berkeley/country/haiti-TAVG-Trend.txt",
+     "size_bytes": 235243,
+     "sha256": "6141612054c3b60b9706d9b6d346c82fdd8db52cae8b4f31e1912f4b9d1cd2fb"
+    },
+    {
+     "file": "data/raw/berkeley/country/heard-island-and-mcdonald-islands-TAVG-Trend.txt",
+     "size_bytes": 83911,
+     "sha256": "eca6387fa510520323a26daa760555fda1dc3d45a40528a0580fdd3acebc6e79"
+    },
+    {
+     "file": "data/raw/berkeley/country/honduras-TAVG-Trend.txt",
+     "size_bytes": 201442,
+     "sha256": "1cdf3dcf668614f8214d407d364b73dc839a725892e688ae120e4178ce0ce9e0"
+    },
+    {
+     "file": "data/raw/berkeley/country/hong-kong-TAVG-Trend.txt",
+     "size_bytes": 210995,
+     "sha256": "dd46aa3d3edf909a98a576efe1025384fbd306f9c96f9b24bb17279669e5a25a"
+    },
+    {
+     "file": "data/raw/berkeley/country/hungary-TAVG-Trend.txt",
+     "size_bytes": 322271,
+     "sha256": "f65801c8b70b6d83c2dbd9b237f4cd9802803508b11f9070f761ad248a12bf0b"
+    },
+    {
+     "file": "data/raw/berkeley/country/iceland-TAVG-Trend.txt",
+     "size_bytes": 254556,
+     "sha256": "60ccaf5668d856b609c3d3008bf00077de10b4020d3365609367249f6f2a99eb"
+    },
+    {
+     "file": "data/raw/berkeley/country/india-TAVG-Trend.txt",
+     "size_bytes": 244263,
+     "sha256": "78ee32552baba24b35114a8bcd6e6d4d993273756df50a0a627933637189f900"
+    },
+    {
+     "file": "data/raw/berkeley/country/indonesia-TAVG-Trend.txt",
+     "size_bytes": 182336,
+     "sha256": "e46eb2718d044ec4b8fec50c9b56cc0cfbb5886a455757705e5b36ae15d36d97"
+    },
+    {
+     "file": "data/raw/berkeley/country/iran-TAVG-Trend.txt",
+     "size_bytes": 207021,
+     "sha256": "3c3bbf32c6ba5a9b65e260fcf6898eb612af898d262344af656ae34ae62abd41"
+    },
+    {
+     "file": "data/raw/berkeley/country/iraq-TAVG-Trend.txt",
+     "size_bytes": 212899,
+     "sha256": "13f75f29cb9b42036ab9f6485695a8556c07497daffc60c077efeccc5e26ef2d"
+    },
+    {
+     "file": "data/raw/berkeley/country/ireland-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "23656b34f445b7ed55820f2b099679d787ceb2ce46af851d5799f084662efdc3"
+    },
+    {
+     "file": "data/raw/berkeley/country/isle-of-man-TAVG-Trend.txt",
+     "size_bytes": 324085,
+     "sha256": "f98b76806bb6d612399e2422e32377517adfb3566956a4e50d3fe10b205bc407"
+    },
+    {
+     "file": "data/raw/berkeley/country/israel-TAVG-Trend.txt",
+     "size_bytes": 212902,
+     "sha256": "b94b02189b4b63806f76ff4d23baccd21f4fb72999e93af3d8dfca173ad18a60"
+    },
+    {
+     "file": "data/raw/berkeley/country/italy-TAVG-Trend.txt",
+     "size_bytes": 322270,
+     "sha256": "921b33bb2199aa2a425fa19ed7a61e9289f30ff457909a388cd96b8ba0119d0b"
+    },
+    {
+     "file": "data/raw/berkeley/country/ivory-coast-TAVG-Trend.txt",
+     "size_bytes": 205856,
+     "sha256": "df4115c4303cf9b8657c12e9cbc0a8e2ba6ac36fa9c160c60cd408ffd2266d77"
+    },
+    {
+     "file": "data/raw/berkeley/country/jamaica-TAVG-Trend.txt",
+     "size_bytes": 234954,
+     "sha256": "076867239f4f77e42bbb560d0ef30e78b52dcf1ac386ac14d5223c7824cccff3"
+    },
+    {
+     "file": "data/raw/berkeley/country/japan-TAVG-Trend.txt",
+     "size_bytes": 240541,
+     "sha256": "7e4cb46cdce27323dc000db8c3c9ab6ef61161885ee22eb95fa41182b0e6f749"
+    },
+    {
+     "file": "data/raw/berkeley/country/jersey-TAVG-Trend.txt",
+     "size_bytes": 324081,
+     "sha256": "43523ba0e2b347db1b114b70d1abe23f5263e376419805c8c3dca040a33fe602"
+    },
+    {
+     "file": "data/raw/berkeley/country/jordan-TAVG-Trend.txt",
+     "size_bytes": 212901,
+     "sha256": "a97450210cf8e8143fa8ecc448c50a8cb770882ff801809806f5df84874ce5c1"
+    },
+    {
+     "file": "data/raw/berkeley/country/kazakhstan-TAVG-Trend.txt",
+     "size_bytes": 225849,
+     "sha256": "db921ec106f55d0959ed66073a02d3e9f7a5e2b61885d1f6533dac9e8722d228"
+    },
+    {
+     "file": "data/raw/berkeley/country/kenya-TAVG-Trend.txt",
+     "size_bytes": 155276,
+     "sha256": "36a1ecaeae9f26c6fb1790f2dc0cfdc42aeadff21dedf8e159e5b44a1155ab33"
+    },
+    {
+     "file": "data/raw/berkeley/country/kiribati-TAVG-Trend.txt",
+     "size_bytes": 156457,
+     "sha256": "c904a029b3f3ba419f89ea951fbea2077e2d044e176c22d3a140ae5fe2916236"
+    },
+    {
+     "file": "data/raw/berkeley/country/kosovo-TAVG-Trend.txt",
+     "size_bytes": 322268,
+     "sha256": "f26c732ee67ec7c887e0fc9acc40047c0ac7404d4021d69af25846e0203b0e0e"
+    },
+    {
+     "file": "data/raw/berkeley/country/kuwait-TAVG-Trend.txt",
+     "size_bytes": 191733,
+     "sha256": "fef0b9fea3a345940a45e3fa9bcb48f4210847faba1930df3bd5a28cb4221aac"
+    },
+    {
+     "file": "data/raw/berkeley/country/kyrgyzstan-TAVG-Trend.txt",
+     "size_bytes": 207030,
+     "sha256": "cfc605d76824ca7ad539da5951b3683614e364a7eec9ee3e29a58fb4b0086e4b"
+    },
+    {
+     "file": "data/raw/berkeley/country/laos-TAVG-Trend.txt",
+     "size_bytes": 216429,
+     "sha256": "374c947090fef5411dfb5592476dcc0d6cb13d9ba9f5f0173a3b24d54dcd311e"
+    },
+    {
+     "file": "data/raw/berkeley/country/latvia-TAVG-Trend.txt",
+     "size_bytes": 322270,
+     "sha256": "e64fa62b93f9e8f93e475451302f63b28301b0a9dac206c374e9b6a48bbb21ea"
+    },
+    {
+     "file": "data/raw/berkeley/country/lebanon-TAVG-Trend.txt",
+     "size_bytes": 241126,
+     "sha256": "dbb9e91fd6e09cc450dc95c8122224d479aa4bdc32b26d4debb8c15a872a34e2"
+    },
+    {
+     "file": "data/raw/berkeley/country/lesotho-TAVG-Trend.txt",
+     "size_bytes": 193108,
+     "sha256": "0fb9ac0646e3b24e352417beb8608fb42505a51fcbe25beaab2504550c40f7d2"
+    },
+    {
+     "file": "data/raw/berkeley/country/liberia-TAVG-Trend.txt",
+     "size_bytes": 205845,
+     "sha256": "c027df9f30d60fc6be54cdaa14ff5d42e5dea696bc83e152a820348a9d5d6693"
+    },
+    {
+     "file": "data/raw/berkeley/country/libya-TAVG-Trend.txt",
+     "size_bytes": 241125,
+     "sha256": "ab638e566eac6fe2b3bd514de08ad8716d041c1407e6698f2d2c8211cf7a12ea"
+    },
+    {
+     "file": "data/raw/berkeley/country/liechtenstein-TAVG-Trend.txt",
+     "size_bytes": 322277,
+     "sha256": "ddccebc8fda8568144a0aff4ec00ae683f28f418591f62b10599d635ae44c6d7"
+    },
+    {
+     "file": "data/raw/berkeley/country/lithuania-TAVG-Trend.txt",
+     "size_bytes": 322274,
+     "sha256": "1cb646f8d22e8744612f7d22d4f9fbe1de416d085a15e662125b2b558a8a3060"
+    },
+    {
+     "file": "data/raw/berkeley/country/luxembourg-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "b34dcd9fe0f37883369e536a667ee7f4412a27d34c5706d4e4cb25a5a9909452"
+    },
+    {
+     "file": "data/raw/berkeley/country/macau-TAVG-Trend.txt",
+     "size_bytes": 210987,
+     "sha256": "807c809f1746f91c78172f7be9797754b9e599211e8cecb8b3af886b35762e16"
+    },
+    {
+     "file": "data/raw/berkeley/country/macedonia-TAVG-Trend.txt",
+     "size_bytes": 322275,
+     "sha256": "26bbdf379c87a020818038cc7b2410390ee6fd0bd4ddcc4bb3af75fa89067bfd"
+    },
+    {
+     "file": "data/raw/berkeley/country/madagascar-TAVG-Trend.txt",
+     "size_bytes": 193117,
+     "sha256": "5f2e9b976fc94c4ba8ad55fda22c0f1662db7fa44b39f58e348587ffdc24647a"
+    },
+    {
+     "file": "data/raw/berkeley/country/malawi-TAVG-Trend.txt",
+     "size_bytes": 155278,
+     "sha256": "5f87015da85863dfc5e03db622f0f114a0b61cf4ebe6389638c2d7e10dff7109"
+    },
+    {
+     "file": "data/raw/berkeley/country/malaysia-TAVG-Trend.txt",
+     "size_bytes": 234074,
+     "sha256": "6e31fb754b0035e931a1909b89bc35594a7f2a70411db86ce18bd9ee0333be11"
+    },
+    {
+     "file": "data/raw/berkeley/country/mali-TAVG-Trend.txt",
+     "size_bytes": 195652,
+     "sha256": "ffd886fbc8db5cbc3868bd4a0d3739397d0451471be54ba2432ef607f7fbbc58"
+    },
+    {
+     "file": "data/raw/berkeley/country/malta-TAVG-Trend.txt",
+     "size_bytes": 286984,
+     "sha256": "960d2c334a20f0d433c59a0ab1ca6c3f56d43fbace6dd36743d2515e2220c368"
+    },
+    {
+     "file": "data/raw/berkeley/country/martinique-TAVG-Trend.txt",
+     "size_bytes": 229813,
+     "sha256": "9d096d980ef78bbd2bfc9f85759cf5b28c48e845478d4626ae15c151ccf7696f"
+    },
+    {
+     "file": "data/raw/berkeley/country/mauritania-TAVG-Trend.txt",
+     "size_bytes": 205856,
+     "sha256": "b6aea8c09f46d6314451a9ff2a4047ea170935f0626909149f1060f7cc933ec1"
+    },
+    {
+     "file": "data/raw/berkeley/country/mauritius-TAVG-Trend.txt",
+     "size_bytes": 278763,
+     "sha256": "39870bb4e31673ce70dee72bf95d1d9a1cfa41263e86aeb05c5d2bd8af7b3d2a"
+    },
+    {
+     "file": "data/raw/berkeley/country/mayotte-TAVG-Trend.txt",
+     "size_bytes": 273318,
+     "sha256": "965bfa4de61d505c0f6ccc7a15ea19dcf51bb6758dc6516e0fe8cde68780b7e7"
+    },
+    {
+     "file": "data/raw/berkeley/country/mexico-TAVG-Trend.txt",
+     "size_bytes": 205267,
+     "sha256": "b4634355a724ef476c78fae088d148b662db245db9995827e5025f1d7a6eca52"
+    },
+    {
+     "file": "data/raw/berkeley/country/micronesia-TAVG-Trend.txt",
+     "size_bytes": 134121,
+     "sha256": "ebd3e1aebd097f2bc640e15b2c19b497c89f167ae7810dc0181c8a09c7e4478c"
+    },
+    {
+     "file": "data/raw/berkeley/country/moldova-TAVG-Trend.txt",
+     "size_bytes": 322271,
+     "sha256": "7eeee36335ed534a13054b39cf98906add11ee42919d983da245fcce83aea4b8"
+    },
+    {
+     "file": "data/raw/berkeley/country/monaco-TAVG-Trend.txt",
+     "size_bytes": 322259,
+     "sha256": "688732644f0877b24129e5a4028bafb5f9486c1b0971d2bcf78c752ae6f8b161"
+    },
+    {
+     "file": "data/raw/berkeley/country/mongolia-TAVG-Trend.txt",
+     "size_bytes": 239272,
+     "sha256": "b23e9e1031a5ba3c5b29454b108f2780053ee830554f678a675e1514322a655f"
+    },
+    {
+     "file": "data/raw/berkeley/country/montenegro-TAVG-Trend.txt",
+     "size_bytes": 322277,
+     "sha256": "4a6a6e10328dd9dd53022c9d91e54608878d763fde24d69cd97ffa442229c767"
+    },
+    {
+     "file": "data/raw/berkeley/country/montserrat-TAVG-Trend.txt",
+     "size_bytes": 229811,
+     "sha256": "7b3064f514c123a40b65cf75411fdc73030d54c28efd6044d903a238e06d6c28"
+    },
+    {
+     "file": "data/raw/berkeley/country/morocco-TAVG-Trend.txt",
+     "size_bytes": 278762,
+     "sha256": "111d937ba6afa55e397588929c0f5d4b0f46b1e5e731ec07c51627cf6150286f"
+    },
+    {
+     "file": "data/raw/berkeley/country/mozambique-TAVG-Trend.txt",
+     "size_bytes": 158817,
+     "sha256": "4390d5361f242bcd149547d7493c16d7a71e1aa9073f5d12f8b7fa4ce1629466"
+    },
+    {
+     "file": "data/raw/berkeley/country/myanmar-TAVG-Trend.txt",
+     "size_bytes": 244461,
+     "sha256": "49530deabcc235249698c461f8850011739c4f70b3df50a95832b628c35124e7"
+    },
+    {
+     "file": "data/raw/berkeley/country/namibia-TAVG-Trend.txt",
+     "size_bytes": 170570,
+     "sha256": "8a27155badde8a43ad8a97ff689af0febe4280e0b08cbcf256ff2bc2a1a7338e"
+    },
+    {
+     "file": "data/raw/berkeley/country/nepal-TAVG-Trend.txt",
+     "size_bytes": 244456,
+     "sha256": "26bff3feb079080e47604f3d7c8fa49bc00435ed155bd0ed9599ed8a236ed3c9"
+    },
+    {
+     "file": "data/raw/berkeley/country/netherlands-TAVG-Trend.txt",
+     "size_bytes": 322279,
+     "sha256": "9ea08c6d1682319e1dee3f81342aa54fb2cedc5a8ef9ea98b81ee8b187a877cd"
+    },
+    {
+     "file": "data/raw/berkeley/country/new-caledonia-TAVG-Trend.txt",
+     "size_bytes": 189934,
+     "sha256": "7c64010c9f4950b48f8e67a44d2dff8e0e315af1f7cdebde0df362fc2cc411da"
+    },
+    {
+     "file": "data/raw/berkeley/country/new-zealand-TAVG-Trend.txt",
+     "size_bytes": 201157,
+     "sha256": "286549082d471fa2c94a2e18b41123693bbeeab35220cb04f7f579f0607591ab"
+    },
+    {
+     "file": "data/raw/berkeley/country/nicaragua-TAVG-Trend.txt",
+     "size_bytes": 201444,
+     "sha256": "7363f16d368461a3c40c8bce3658423b741a1ecb6a6bb6214d6580388d83f55b"
+    },
+    {
+     "file": "data/raw/berkeley/country/niger-TAVG-Trend.txt",
+     "size_bytes": 162333,
+     "sha256": "2876b4a93634da30ee17f6abe5a35232645c641c2172f83504c097e1b0ae993d"
+    },
+    {
+     "file": "data/raw/berkeley/country/nigeria-TAVG-Trend.txt",
+     "size_bytes": 177035,
+     "sha256": "6a96ca350c8c9b730c18f88fa10dcceb3ffd72b65d338ddcf4f28fea669db517"
+    },
+    {
+     "file": "data/raw/berkeley/country/niue-TAVG-Trend.txt",
+     "size_bytes": 179241,
+     "sha256": "cf7ce20d51af5eb194aff54107aaa572c7103cab5867bdef3e7740cf8dd2a868"
+    },
+    {
+     "file": "data/raw/berkeley/country/north-korea-TAVG-Trend.txt",
+     "size_bytes": 240550,
+     "sha256": "f46f92fc68e1017c7c2ea05cd7ca982f7770d3219b892cf4671eb2c168999298"
+    },
+    {
+     "file": "data/raw/berkeley/country/northern-mariana-islands-TAVG-Trend.txt",
+     "size_bytes": 136921,
+     "sha256": "9a80f766222913dc9aaeaeac8777438a310463ef447fa63f15d5317286bba217"
+    },
+    {
+     "file": "data/raw/berkeley/country/norway-TAVG-Trend.txt",
+     "size_bytes": 322274,
+     "sha256": "ad29bd065b8f0a69a0fb562b79c4c6191090c1f41bcece480520abc74eecc1b7"
+    },
+    {
+     "file": "data/raw/berkeley/country/oman-TAVG-Trend.txt",
+     "size_bytes": 168700,
+     "sha256": "ffee59706118bc9954b4000f79c19aeeb3baa900dc37870a3cff6bdc3b7257c6"
+    },
+    {
+     "file": "data/raw/berkeley/country/pakistan-TAVG-Trend.txt",
+     "size_bytes": 207027,
+     "sha256": "9f1e934c6702342afda051480f31028e46fbb6087ea521b2d5702f5992936571"
+    },
+    {
+     "file": "data/raw/berkeley/country/palau-TAVG-Trend.txt",
+     "size_bytes": 142335,
+     "sha256": "bef37e21683b0fd34aa9c5615b9f1e6e50aeb051494c2b134b0f8c6048e3b1dd"
+    },
+    {
+     "file": "data/raw/berkeley/country/palestina-TAVG-Trend.txt",
+     "size_bytes": 207470,
+     "sha256": "df0b43bbb0452c8fcd28a383b1355ce1b7b146ee4e51a03466240b74283bc269"
+    },
+    {
+     "file": "data/raw/berkeley/country/panama-TAVG-Trend.txt",
+     "size_bytes": 196143,
+     "sha256": "b69dd9caa2ffd13b9cc96c213b55fa20a3a16006275aa9e3d4f3ab556f799fa1"
+    },
+    {
+     "file": "data/raw/berkeley/country/papua-new-guinea-TAVG-Trend.txt",
+     "size_bytes": 156477,
+     "sha256": "73911b4d4c1d769c2aeea633e55f3b63e4ebd8bda362ee4b18bb3527dc4db00d"
+    },
+    {
+     "file": "data/raw/berkeley/country/paraguay-TAVG-Trend.txt",
+     "size_bytes": 198407,
+     "sha256": "6d91878626736f2456574fe3f1f5da13a623198ab39e124c086b1d7bce9fb12a"
+    },
+    {
+     "file": "data/raw/berkeley/country/peru-TAVG-Trend.txt",
+     "size_bytes": 155279,
+     "sha256": "11a5cbf659b907eb4cf80ade58d3559b83750182d9502f56fa30ee315fecf41a"
+    },
+    {
+     "file": "data/raw/berkeley/country/philippines-TAVG-Trend.txt",
+     "size_bytes": 169402,
+     "sha256": "99988a3e48d39cfdf8d00b986b50eee6040576d1270b007ae97dfc58c9311448"
+    },
+    {
+     "file": "data/raw/berkeley/country/poland-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "7238f622d2d5b0aadb9649bc808e549fb1adbef9d99a524aa54fe55681a8f979"
+    },
+    {
+     "file": "data/raw/berkeley/country/portugal-TAVG-Trend.txt",
+     "size_bytes": 286995,
+     "sha256": "6093205f3284109ac289bd48f1d5f86134999c31edea7249a2377ce3eb07633b"
+    },
+    {
+     "file": "data/raw/berkeley/country/puerto-rico-TAVG-Trend.txt",
+     "size_bytes": 235257,
+     "sha256": "88b1dfee1a40ed4b9a67f6b359a11678fb053ce4bfb004b9f8da6880fda4cd62"
+    },
+    {
+     "file": "data/raw/berkeley/country/qatar-TAVG-Trend.txt",
+     "size_bytes": 171738,
+     "sha256": "f504a47c6eeaf49441ae78b1b70c7c1eb49e93ca2ab498d7558dd98a921911a1"
+    },
+    {
+     "file": "data/raw/berkeley/country/republic-of-serbia-TAVG-Trend.txt",
+     "size_bytes": 322294,
+     "sha256": "6e678ea0cc10f20c3d7bfd7f60a467a9c5ce76fcae54fb8aca3a31e29e57559d"
+    },
+    {
+     "file": "data/raw/berkeley/country/republic-of-the-congo-TAVG-Trend.txt",
+     "size_bytes": 170594,
+     "sha256": "4405c045c07a997a9a9fee5c3083a09e3f55f963f0841cb31c86ee580680f4b5"
+    },
+    {
+     "file": "data/raw/berkeley/country/reunion-TAVG-Trend.txt",
+     "size_bytes": 273321,
+     "sha256": "980b0fa8930a474db983bbe6ff6c09f0edc424ecfe28c5b1007fb1ca3452ca90"
+    },
+    {
+     "file": "data/raw/berkeley/country/romania-TAVG-Trend.txt",
+     "size_bytes": 322273,
+     "sha256": "b717bb58ee12cb2e3feae73dd510b43028839347ba697772e7e05145e28eb8e7"
+    },
+    {
+     "file": "data/raw/berkeley/country/russia-TAVG-Trend.txt",
+     "size_bytes": 228985,
+     "sha256": "1290c7ae8723c8ce22809f0da7539dd0fa1635e224996de5f4c1e4742556bfbe"
+    },
+    {
+     "file": "data/raw/berkeley/country/rwanda-TAVG-Trend.txt",
+     "size_bytes": 155275,
+     "sha256": "fc5d6d5039d4a941b4edc3bee9880f783b106cf5a4b669658a19c9f0d63869e8"
+    },
+    {
+     "file": "data/raw/berkeley/country/saint-kitts-and-nevis-TAVG-Trend.txt",
+     "size_bytes": 235274,
+     "sha256": "7acb487e0d59853e843deeef5a3b9c92a5726c0fddae1dacd1344ca4f7fbc935"
+    },
+    {
+     "file": "data/raw/berkeley/country/saint-lucia-TAVG-Trend.txt",
+     "size_bytes": 235255,
+     "sha256": "fd654d77add6662d9b3770af104111d8cc14616e34686216c67db3cb19c2ef71"
+    },
+    {
+     "file": "data/raw/berkeley/country/saint-martin-TAVG-Trend.txt",
+     "size_bytes": 229810,
+     "sha256": "bbea66a19c98eebe723021e35a4b798c3ca77b39a5ce59dd7a92c769d40dca5c"
+    },
+    {
+     "file": "data/raw/berkeley/country/saint-pierre-and-miquelon-TAVG-Trend.txt",
+     "size_bytes": 324099,
+     "sha256": "6ddafe43da844783ffdab6fff3fab2e0ba3428d652bef2f799559989903d28aa"
+    },
+    {
+     "file": "data/raw/berkeley/country/saint-vincent-and-the-grenadines-TAVG-Trend.txt",
+     "size_bytes": 235294,
+     "sha256": "ec4d425448ef1609a8705a08cf0a0c65aa9d5439c993451cddb67f9ed872ef69"
+    },
+    {
+     "file": "data/raw/berkeley/country/samoa-TAVG-Trend.txt",
+     "size_bytes": 173310,
+     "sha256": "434b20dcbc0ab0928b9b6622b3fa85cc8a5557b83bf8e63e22f7f2a981d8fd86"
+    },
+    {
+     "file": "data/raw/berkeley/country/san-marino-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "64531d34975b30b01d223777e947eded843728da0663bc7fd44cc329a9a61ae4"
+    },
+    {
+     "file": "data/raw/berkeley/country/sao-tome-and-principe-TAVG-Trend.txt",
+     "size_bytes": 192186,
+     "sha256": "8bb967bbf260939234dd64802c46b4022d8255aa8ff9e0119b01dd898dd47d89"
+    },
+    {
+     "file": "data/raw/berkeley/country/saudi-arabia-TAVG-Trend.txt",
+     "size_bytes": 168718,
+     "sha256": "f888b92de2ffd50acd0b86adabeca877f1cafc5b8b243216a038b8042457a10b"
+    },
+    {
+     "file": "data/raw/berkeley/country/senegal-TAVG-Trend.txt",
+     "size_bytes": 205851,
+     "sha256": "a2f1440ce03741a8efb6fb84e5559eeb235dad3a81ab575524cb804f3187b76b"
+    },
+    {
+     "file": "data/raw/berkeley/country/seychelles-TAVG-Trend.txt",
+     "size_bytes": 155280,
+     "sha256": "d63fedcc8bcee154b7de7dc64a54dc7b45058bf9b4b16a33f4fffc46f0fadd9e"
+    },
+    {
+     "file": "data/raw/berkeley/country/sierra-leone-TAVG-Trend.txt",
+     "size_bytes": 205857,
+     "sha256": "01935d74d3cd86ad7de5d06aa4268437357f61726c91c574f702c25f09e276b5"
+    },
+    {
+     "file": "data/raw/berkeley/country/singapore-TAVG-Trend.txt",
+     "size_bytes": 234072,
+     "sha256": "eddef380bfe7dd234e6f2c06d34ca97fa6d0384fa3109269ef7d87fde87529c1"
+    },
+    {
+     "file": "data/raw/berkeley/country/sint-maarten-TAVG-Trend.txt",
+     "size_bytes": 229812,
+     "sha256": "b0988995bdc5bf1ee0e14d483e068306956cf212b9b26ce58840ba75825f9f69"
+    },
+    {
+     "file": "data/raw/berkeley/country/slovakia-TAVG-Trend.txt",
+     "size_bytes": 322274,
+     "sha256": "d8c143f02a0611795f3bcbee8500cf206b810680f3e99f4b104efec2d8c36161"
+    },
+    {
+     "file": "data/raw/berkeley/country/slovenia-TAVG-Trend.txt",
+     "size_bytes": 322273,
+     "sha256": "f5eae2db14a2d3e66cf391b75bdb3196ffde3ef7284b872ee166582bbf143877"
+    },
+    {
+     "file": "data/raw/berkeley/country/solomon-islands-TAVG-Trend.txt",
+     "size_bytes": 156473,
+     "sha256": "ee8cf8f94e8ee08d908ec6fca181220b46f446a538607fd85d23707b0a93ccdc"
+    },
+    {
+     "file": "data/raw/berkeley/country/somalia-TAVG-Trend.txt",
+     "size_bytes": 168706,
+     "sha256": "e68977d8097bbeae5897cd90c00dc7774eb0246d7091eff0c6a70383ed968374"
+    },
+    {
+     "file": "data/raw/berkeley/country/south-africa-TAVG-Trend.txt",
+     "size_bytes": 196456,
+     "sha256": "74e9927f7a5b603d4a87a802d53549c22f95446212fb17160dc19c6aa98328a3"
+    },
+    {
+     "file": "data/raw/berkeley/country/south-korea-TAVG-Trend.txt",
+     "size_bytes": 240551,
+     "sha256": "66ff25088bdcfb3cd208f7341d290bf0b86e1a1c6439e3bfff5afe4c1057e2e1"
+    },
+    {
+     "file": "data/raw/berkeley/country/south-sudan-TAVG-Trend.txt",
+     "size_bytes": 155286,
+     "sha256": "d367f27c2a5b71f0d3d1f462ad01a3b2dced21d7bcfdc274a3b32eb662625b49"
+    },
+    {
+     "file": "data/raw/berkeley/country/spain-TAVG-Trend.txt",
+     "size_bytes": 305807,
+     "sha256": "51309c03038f663380f1dc97162a771011773bc7c01f4bd203a6d3179c102f84"
+    },
+    {
+     "file": "data/raw/berkeley/country/sri-lanka-TAVG-Trend.txt",
+     "size_bytes": 268177,
+     "sha256": "6359619614f19a4fa08a40358ac26b29ce10792462b77d5e06a6cd03f63ff933"
+    },
+    {
+     "file": "data/raw/berkeley/country/sudan-TAVG-Trend.txt",
+     "size_bytes": 162529,
+     "sha256": "cb3c50a51ce6dcc3519df76ae1add069c37582a1d88b0f38a6a061544f373889"
+    },
+    {
+     "file": "data/raw/berkeley/country/suriname-TAVG-Trend.txt",
+     "size_bytes": 210554,
+     "sha256": "f272925807cbcca80602646c55ac3ef9c73be02a8bfd5f07bbc7ba14d10c6059"
+    },
+    {
+     "file": "data/raw/berkeley/country/svalbard-and-jan-mayen-TAVG-Trend.txt",
+     "size_bytes": 303913,
+     "sha256": "024db4003fc076efbc71d2400ee56d0e957ecc8140cd080f516338647f64f292"
+    },
+    {
+     "file": "data/raw/berkeley/country/sweden-TAVG-Trend.txt",
+     "size_bytes": 322272,
+     "sha256": "647a66f431af0000b8372c353ca52221c816afd08d22ee195098352b9c8503d7"
+    },
+    {
+     "file": "data/raw/berkeley/country/switzerland-TAVG-Trend.txt",
+     "size_bytes": 322279,
+     "sha256": "0f3f878323b51d77148e08e2f466b025200bf43efb411f079428715626e611a6"
+    },
+    {
+     "file": "data/raw/berkeley/country/syria-TAVG-Trend.txt",
+     "size_bytes": 241124,
+     "sha256": "01ffa9f53699b7132a084613e8f99f9af8828911276d101525c4ebb78898c6a8"
+    },
+    {
+     "file": "data/raw/berkeley/country/taiwan-TAVG-Trend.txt",
+     "size_bytes": 208200,
+     "sha256": "61e7f99f5109309ffd8e51fdd3c49d4efe416c55e7652a29c6598cac81fb69e9"
+    },
+    {
+     "file": "data/raw/berkeley/country/tajikistan-TAVG-Trend.txt",
+     "size_bytes": 207030,
+     "sha256": "1174666966d1e456718685f8bf7f792b662592a9be17f1f61fc0f5425ec17a16"
+    },
+    {
+     "file": "data/raw/berkeley/country/thailand-TAVG-Trend.txt",
+     "size_bytes": 216436,
+     "sha256": "e6d300bb00786c6ecee80001c9d9888dab7e19728f9944f3a61765937fb2a2e6"
+    },
+    {
+     "file": "data/raw/berkeley/country/the-bahamas-TAVG-Trend.txt",
+     "size_bytes": 235257,
+     "sha256": "e8f3f9507332c0273d5d358934a44e530c0ca316ea1607b60a01383d29c0a48d"
+    },
+    {
+     "file": "data/raw/berkeley/country/togo-TAVG-Trend.txt",
+     "size_bytes": 177027,
+     "sha256": "16a11400a0ca9b897c6800426101aae703669663e27517fef663766016805d5f"
+    },
+    {
+     "file": "data/raw/berkeley/country/tonga-TAVG-Trend.txt",
+     "size_bytes": 184678,
+     "sha256": "84cf0cede29d182870238f8d126ebd1635dfc1071981660a86a617f12736f7d3"
+    },
+    {
+     "file": "data/raw/berkeley/country/trinidad-and-tobago-TAVG-Trend.txt",
+     "size_bytes": 235271,
+     "sha256": "4123772d8c0ebb9607e0de6a49dc29dcc9d9e7cb376654324977deda440d4adf"
+    },
+    {
+     "file": "data/raw/berkeley/country/tunisia-TAVG-Trend.txt",
+     "size_bytes": 278760,
+     "sha256": "62053b108848782ea24d9a1200298f304f8ee4b67b240c32d918c275cc94ac0f"
+    },
+    {
+     "file": "data/raw/berkeley/country/turkey-TAVG-Trend.txt",
+     "size_bytes": 249361,
+     "sha256": "267b4391e1a21d9b5c89b7f807179cc28cb32cc9d4bece3915ecaeee85c9ef1f"
+    },
+    {
+     "file": "data/raw/berkeley/country/turkmenistan-TAVG-Trend.txt",
+     "size_bytes": 210759,
+     "sha256": "a979cb55e02eaf648fdd8ce7c87029446679254d8f732d5468d0712149702701"
+    },
+    {
+     "file": "data/raw/berkeley/country/uganda-TAVG-Trend.txt",
+     "size_bytes": 155278,
+     "sha256": "2f9fd8f34579e4523ab3778aa9d4920d8037a024bfd394f1c3a670c7f98ccfe2"
+    },
+    {
+     "file": "data/raw/berkeley/country/ukraine-TAVG-Trend.txt",
+     "size_bytes": 322274,
+     "sha256": "c0beefbc011ae7c496f224b9e6be0a62be4f87e7d3a8598666424a71eebb9f2e"
+    },
+    {
+     "file": "data/raw/berkeley/country/united-arab-emirates-TAVG-Trend.txt",
+     "size_bytes": 168731,
+     "sha256": "818920c545a3c758665d950dad88460e345f6896a64b4d9d620236788adcf963"
+    },
+    {
+     "file": "data/raw/berkeley/country/united-kingdom-TAVG-Trend.txt",
+     "size_bytes": 322291,
+     "sha256": "f854e1476789e7c3c22c74731c13ca7686f40f75e0861bdc181d771fc47b2a99"
+    },
+    {
+     "file": "data/raw/berkeley/country/united-republic-of-tanzania-TAVG-Trend.txt",
+     "size_bytes": 155322,
+     "sha256": "c8c7981da13238036dc3f5ecaccead4f3e86a4f62826d67871fa403b6e6038db"
+    },
+    {
+     "file": "data/raw/berkeley/country/united-states-of-america-TAVG-Trend.txt",
+     "size_bytes": 239016,
+     "sha256": "128bb59ad363fbc6414c5cb4578d56bb67ff07ae0ae505fe9825ad917e247d94"
+    },
+    {
+     "file": "data/raw/berkeley/country/uruguay-TAVG-Trend.txt",
+     "size_bytes": 198405,
+     "sha256": "a92984b7e3113ed1c8b2d35d14bc4dab12adb314acc7eb8d44a4cab8e83d9de9"
+    },
+    {
+     "file": "data/raw/berkeley/country/uzbekistan-TAVG-Trend.txt",
+     "size_bytes": 211343,
+     "sha256": "fd627361ce2671d421ec67d20bde5f102d172aef0cd6d333b9e6bf1d6d9713ff"
+    },
+    {
+     "file": "data/raw/berkeley/country/vanuatu-TAVG-Trend.txt",
+     "size_bytes": 184682,
+     "sha256": "358f03c25b65f59b531886d0221dfa3bfa4569d969ed6bdb8a0d103fd614c5ce"
+    },
+    {
+     "file": "data/raw/berkeley/country/venezuela-TAVG-Trend.txt",
+     "size_bytes": 235254,
+     "sha256": "29fe6bd0a35aa08dad7bdbbbb5dcfc5c5f3fb6c581f4b0eade322fcce63cb577"
+    },
+    {
+     "file": "data/raw/berkeley/country/vietnam-TAVG-Trend.txt",
+     "size_bytes": 216434,
+     "sha256": "b9b296563c71adc8c0652840d41c9b3129e20423a2454af51352b8d7da26b24d"
+    },
+    {
+     "file": "data/raw/berkeley/country/virgin-islands-TAVG-Trend.txt",
+     "size_bytes": 235261,
+     "sha256": "a16b09c74a5770faa2769509f94e9a854336cc163a311c23ec76b303c24ba6fc"
+    },
+    {
+     "file": "data/raw/berkeley/country/western-sahara-TAVG-Trend.txt",
+     "size_bytes": 205662,
+     "sha256": "0dbac08708e7560ff71fd1f80660bc8b0eb9e824fc6a708294bfecaf644b6a48"
+    },
+    {
+     "file": "data/raw/berkeley/country/yemen-TAVG-Trend.txt",
+     "size_bytes": 168702,
+     "sha256": "1cb8ae235fd195ca034a68967236588fc81999e5e83428b8b3688a8f955a3c3c"
+    },
+    {
+     "file": "data/raw/berkeley/country/zambia-TAVG-Trend.txt",
+     "size_bytes": 158514,
+     "sha256": "fcc4320c74bdd0b5b75380120935dea5b8553323a1392eb4bfcc571a2e8d3f07"
+    },
+    {
+     "file": "data/raw/berkeley/country/zimbabwe-TAVG-Trend.txt",
+     "size_bytes": 163517,
+     "sha256": "a5d258ac511c253ce511770c5dbb12b925cbc820ef62d4ac245fa3e47fed990c"
+    }
+   ],
+   "tables": [
+    {
+     "table": "monthly",
+     "rows": 517709,
+     "columns": 6,
+     "cells": 3106254,
+     "missing_cells": 48442,
+     "pct_missing_cells": 1.56,
+     "time_col": "date",
+     "time_freq": "M",
+     "entity_col": "iso3",
+     "value_cols": [
+      "anomaly"
+     ],
+     "key": [
+      "iso3",
+      "date"
+     ],
+     "sentinels_replaced": {
+      "anomaly: NaN": 24221,
+      "uncertainty: NaN": 24221
+     },
+     "notes": [
+      "228 files; moving-average columns not read"
+     ],
+     "period_all_rows": {
+      "first": "1743-11",
+      "last": "2020-12",
+      "n_periods": 3326
+     },
+     "period_with_values": {
+      "first": "1743-11",
+      "last": "2020-12",
+      "n_periods": 3264
+     },
+     "n_entities": 228,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "iso3": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 228,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "date": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 3326,
+       "kind": "datetime",
+       "min": "1743-11-01",
+       "max": "2020-12-01"
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 278,
+       "kind": "numeric",
+       "min": 1743.0,
+       "p01": 1759.0,
+       "median": 1925.0,
+       "p99": 2018.0,
+       "max": 2020.0,
+       "mean": 1918.8306693528605,
+       "std": 65.06650867887988,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "month": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 12,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 7.0,
+       "p99": 12.0,
+       "max": 12.0,
+       "mean": 6.500881769488265,
+       "std": 3.4521686844769186,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "anomaly": {
+       "dtype": "float64",
+       "n_missing": 24221,
+       "pct_missing": 4.68,
+       "n_unique": 11377,
+       "kind": "numeric",
+       "min": -10.693,
+       "p01": -3.747,
+       "median": -0.07,
+       "p99": 3.206,
+       "max": 11.817,
+       "mean": -0.06755603378400285,
+       "std": 1.226078973143643,
+       "n_negative": 262871,
+       "n_zero": 222
+      },
+      "uncertainty": {
+       "dtype": "float64",
+       "n_missing": 24221,
+       "pct_missing": 4.68,
+       "n_unique": 7929,
+       "kind": "numeric",
+       "min": 0.037,
+       "p01": 0.126,
+       "median": 0.485,
+       "p99": 5.357,
+       "max": 12.184,
+       "mean": 0.8700136214051811,
+       "std": 1.0433655799966413,
+       "n_negative": 0,
+       "n_zero": 0
+      }
+     }
+    },
+    {
+     "table": "file_headers",
+     "rows": 228,
+     "columns": 12,
+     "cells": 2736,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": null,
+     "time_freq": null,
+     "entity_col": "iso3",
+     "value_cols": [],
+     "key": [
+      "iso3"
+     ],
+     "sentinels_replaced": {},
+     "notes": [
+      "one row per file, parsed from the comment header"
+     ],
+     "n_entities": 228,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "iso3": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 228,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "file": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 228,
+       "kind": "text",
+       "min_length": 19,
+       "max_length": 50
+      },
+      "region": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 228,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 35
+      },
+      "area_km2": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 223,
+       "kind": "numeric",
+       "min": 19.94,
+       "p01": 54.032399999999996,
+       "median": 86365.82500000001,
+       "p99": 9341404.1595,
+       "max": 16732931.01,
+       "mean": 612685.0729824561,
+       "std": 1760716.1169527306,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "n_stations": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 103,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 21.5,
+       "p99": 4313.769999999966,
+       "max": 19020.0,
+       "mean": 205.21052631578948,
+       "std": 1356.003326530845,
+       "n_negative": 0,
+       "n_zero": 10
+      },
+      "lat_range": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 228,
+       "kind": "text",
+       "min_length": 12,
+       "max_length": 16
+      },
+      "lon_range": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 225,
+       "kind": "text",
+       "min_length": 12,
+       "max_length": 18
+      },
+      "analysis_run": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2,
+       "kind": "text",
+       "min_length": 20,
+       "max_length": 20,
+       "top_values": {
+        "06-Jan-2021 15:35:34": 196,
+        "08-Jun-2016 03:02:13": 32
+       }
+      },
+      "baseline_abs_c": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 206,
+       "kind": "numeric",
+       "min": -25.07,
+       "p01": -15.625399999999999,
+       "median": 23.015,
+       "p99": 28.2949,
+       "max": 28.64,
+       "mean": 18.733245614035088,
+       "std": 9.597393735389582,
+       "n_negative": 8,
+       "n_zero": 0
+      },
+      "first_valid": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 79,
+       "kind": "datetime",
+       "min": "1743-11-01",
+       "max": "1956-01-01"
+      },
+      "last_valid": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 3,
+       "kind": "datetime",
+       "min": "2016-05-01",
+       "max": "2020-12-01"
+      },
+      "last_row": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2,
+       "kind": "datetime",
+       "min": "2016-05-01",
+       "max": "2020-12-01"
+      }
+     }
+    }
+   ]
+  },
+  "noaa_co2_mlo_monthly": {
+   "declared": {
+    "provider": "NOAA GML",
+    "native_units": "ppm",
+    "missing_sentinel": -99.99,
+    "license": "Public domain; cite per GML"
+   },
+   "files": [
+    {
+     "file": "data/raw/noaa/co2_mm_mlo.csv",
+     "size_bytes": 38776,
+     "sha256": "d895fb5b4a59fb5e4cd98e69b7667fe5bef595c6581f630852b12cb41c07f675"
+    }
+   ],
+   "tables": [
+    {
+     "table": "monthly",
+     "rows": 823,
+     "columns": 9,
+     "cells": 7407,
+     "missing_cells": 585,
+     "pct_missing_cells": 7.9,
+     "time_col": "date",
+     "time_freq": "M",
+     "entity_col": null,
+     "value_cols": [
+      "average",
+      "deseasonalized"
+     ],
+     "key": [
+      "date"
+     ],
+     "sentinels_replaced": {
+      "ndays: -1": 195,
+      "sdev: -9.99": 196,
+      "unc: -0.99": 194
+     },
+     "notes": [],
+     "period_all_rows": {
+      "first": "1958-03",
+      "last": "2026-09",
+      "n_periods": 823
+     },
+     "period_with_values": {
+      "first": "1958-03",
+      "last": "2026-09",
+      "n_periods": 823
+     },
+     "column_profiles": {
+      "date": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 823,
+       "kind": "datetime",
+       "min": "1958-03-01",
+       "max": "2026-09-01"
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 69,
+       "kind": "numeric",
+       "min": 1958.0,
+       "p01": 1958.0,
+       "median": 1992.0,
+       "p99": 2025.78,
+       "max": 2026.0,
+       "mean": 1991.958687727825,
+       "std": 19.812337187853174,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "month": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 12,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 6.0,
+       "p99": 12.0,
+       "max": 12.0,
+       "mean": 6.495747266099635,
+       "std": 3.4446854435000316,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "decimal date": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 823,
+       "kind": "numeric",
+       "min": 1958.2027,
+       "p01": 1958.892084,
+       "median": 1992.4583,
+       "p99": 2026.023352,
+       "max": 2026.7083,
+       "mean": 1992.4577364520048,
+       "std": 19.81112249706416,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "average": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 799,
+       "kind": "numeric",
+       "min": 312.42,
+       "p01": 314.8022,
+       "median": 356.38,
+       "p99": 429.01779999999997,
+       "max": 432.34,
+       "mean": 361.43910085054677,
+       "std": 33.51183158052607,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "deseasonalized": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 790,
+       "kind": "numeric",
+       "min": 314.44,
+       "p01": 315.42220000000003,
+       "median": 356.5,
+       "p99": 428.3746,
+       "max": 429.55,
+       "mean": 361.43178614823813,
+       "std": 33.45172547592639,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "ndays": {
+       "dtype": "float64",
+       "n_missing": 195,
+       "pct_missing": 23.69,
+       "n_unique": 24,
+       "kind": "numeric",
+       "min": 2.0,
+       "p01": 13.0,
+       "median": 26.0,
+       "p99": 31.0,
+       "max": 31.0,
+       "mean": 25.426751592356688,
+       "std": 4.139441627904277,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "sdev": {
+       "dtype": "float64",
+       "n_missing": 196,
+       "pct_missing": 23.82,
+       "n_unique": 93,
+       "kind": "numeric",
+       "min": 0.15,
+       "p01": 0.2,
+       "median": 0.48,
+       "p99": 1.1548,
+       "max": 1.31,
+       "mean": 0.5087081339712919,
+       "std": 0.2011931406729877,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "unc": {
+       "dtype": "float64",
+       "n_missing": 194,
+       "pct_missing": 23.57,
+       "n_unique": 46,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0728,
+       "median": 0.18,
+       "p99": 0.4572000000000003,
+       "max": 0.58,
+       "mean": 0.19465818759936407,
+       "std": 0.08129575155121486,
+       "n_negative": 0,
+       "n_zero": 2
+      }
+     }
+    }
+   ]
+  },
+  "noaa_oni": {
+   "declared": {
+    "provider": "NOAA CPC",
+    "native_units": "degC (3-month running mean SST anomaly, Nino 3.4)",
+    "license": "Public domain"
+   },
+   "files": [
+    {
+     "file": "data/raw/noaa/oni.ascii.txt",
+     "size_bytes": 23050,
+     "sha256": "118c563331335c8649cdc2677e6be7ae89d1259d901345fcddbc2857af280f7f"
+    }
+   ],
+   "tables": [
+    {
+     "table": "monthly",
+     "rows": 921,
+     "columns": 5,
+     "cells": 4605,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": "date",
+     "time_freq": "M",
+     "entity_col": null,
+     "value_cols": [
+      "ANOM"
+     ],
+     "key": [
+      "date"
+     ],
+     "sentinels_replaced": {},
+     "notes": [
+      "date = centre month of the 3-month season (DJF -> Jan of YR, NDJ -> Dec)"
+     ],
+     "period_all_rows": {
+      "first": "1950-01",
+      "last": "2026-09",
+      "n_periods": 921
+     },
+     "period_with_values": {
+      "first": "1950-01",
+      "last": "2026-09",
+      "n_periods": 921
+     },
+     "column_profiles": {
+      "date": {
+       "dtype": "datetime64[us]",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 921,
+       "kind": "datetime",
+       "min": "1950-01-01",
+       "max": "2026-09-01"
+      },
+      "SEAS": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 12,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3,
+       "top_values": {
+        "DJF": 77,
+        "JFM": 77,
+        "FMA": 77,
+        "MAM": 77,
+        "AMJ": 77,
+        "MJJ": 77,
+        "JJA": 77,
+        "JAS": 77
+       }
+      },
+      "YR": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 77,
+       "kind": "numeric",
+       "min": 1950.0,
+       "p01": 1950.0,
+       "median": 1988.0,
+       "p99": 2025.0,
+       "max": 2026.0,
+       "mean": 1987.8762214983713,
+       "std": 22.168080491191127,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "TOTAL": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 340,
+       "kind": "numeric",
+       "min": 24.39,
+       "p01": 24.878,
+       "median": 26.98,
+       "p99": 28.968,
+       "max": 29.23,
+       "mean": 26.938805646036915,
+       "std": 0.9090094263457772,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "ANOM": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 309,
+       "kind": "numeric",
+       "min": -2.04,
+       "p01": -1.59,
+       "median": -0.04,
+       "p99": 2.1999999999999975,
+       "max": 2.59,
+       "mean": 0.023626492942453853,
+       "std": 0.793990121169497,
+       "n_negative": 471,
+       "n_zero": 5
+      }
+     }
+    }
+   ]
+  },
+  "owid_co2": {
+   "declared": {
+    "provider": "Our World in Data",
+    "license": "CC BY 4.0"
+   },
+   "files": [
+    {
+     "file": "data/raw/owid/owid-co2-data.csv",
+     "size_bytes": 15242657,
+     "sha256": "300fb68fe6b0d514ed7f5cf773df77d7e24a495438d84b76e2f39eba1584a0f7"
+    }
+   ],
+   "tables": [
+    {
+     "table": "country_year",
+     "rows": 56269,
+     "columns": 79,
+     "cells": 4445251,
+     "missing_cells": 2488290,
+     "pct_missing_cells": 55.98,
+     "time_col": "year",
+     "time_freq": "Y",
+     "entity_col": "iso_code",
+     "value_cols": [
+      "co2",
+      "co2_per_capita"
+     ],
+     "key": [
+      "country",
+      "year"
+     ],
+     "sentinels_replaced": {},
+     "notes": [],
+     "period_all_rows": {
+      "first": 1750,
+      "last": 2025,
+      "n_periods": 276
+     },
+     "period_with_values": {
+      "first": 1750,
+      "last": 2025,
+      "n_periods": 276
+     },
+     "n_entities": 223,
+     "rows_without_entity": 7963,
+     "column_profiles": {
+      "country": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 259,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 40
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 276,
+       "kind": "numeric",
+       "min": 1750.0,
+       "p01": 1755.0,
+       "median": 1916.0,
+       "p99": 2023.0,
+       "max": 2025.0,
+       "mean": 1910.8893884732267,
+       "std": 72.08432677245173,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "iso_code": {
+       "dtype": "str",
+       "n_missing": 7963,
+       "pct_missing": 14.15,
+       "n_unique": 223,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "population": {
+       "dtype": "float64",
+       "n_missing": 12145,
+       "pct_missing": 21.58,
+       "n_unique": 42880,
+       "kind": "numeric",
+       "min": 21.0,
+       "p01": 2760.38,
+       "median": 2285948.5,
+       "p99": 1270779039.129995,
+       "max": 8231613067.0,
+       "mean": 57857275.298431695,
+       "std": 324515976.4934252,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "gdp": {
+       "dtype": "float64",
+       "n_missing": 40902,
+       "pct_missing": 72.69,
+       "n_unique": 15364,
+       "kind": "numeric",
+       "min": 49980000.0,
+       "p01": 220903657.6,
+       "median": 27014316000.0,
+       "p99": 3869544530403.7236,
+       "max": 130112562171125.0,
+       "mean": 327722823894.95557,
+       "std": 3074831838935.052,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "cement_co2": {
+       "dtype": "float64",
+       "n_missing": 17844,
+       "pct_missing": 31.71,
+       "n_unique": 5749,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 114.96140000000024,
+       "max": 1655.514,
+       "mean": 6.179912400780743,
+       "std": 56.34362433295742,
+       "n_negative": 0,
+       "n_zero": 24181
+      },
+      "cement_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 24453,
+       "pct_missing": 43.46,
+       "n_unique": 740,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 0.5308499999999986,
+       "max": 2.484,
+       "mean": 0.04932005908976615,
+       "std": 0.11426650016991377,
+       "n_negative": 0,
+       "n_zero": 17941
+      },
+      "co2": {
+       "dtype": "float64",
+       "n_missing": 26050,
+       "pct_missing": 46.3,
+       "n_unique": 16732,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 4.668,
+       "p99": 9460.745939999988,
+       "max": 38995.105,
+       "mean": 416.44381693636456,
+       "std": 1980.8076106721983,
+       "n_negative": 0,
+       "n_zero": 1581
+      },
+      "co2_growth_abs": {
+       "dtype": "float64",
+       "n_missing": 28231,
+       "pct_missing": 50.17,
+       "n_unique": 9569,
+       "kind": "numeric",
+       "min": -1965.339,
+       "p01": -64.14368,
+       "median": 0.04,
+       "p99": 213.7878000000036,
+       "max": 1816.207,
+       "mean": 6.137888651116342,
+       "std": 61.69967094420339,
+       "n_negative": 7474,
+       "n_zero": 2614
+      },
+      "co2_growth_prct": {
+       "dtype": "float64",
+       "n_missing": 29430,
+       "pct_missing": 52.3,
+       "n_unique": 16783,
+       "kind": "numeric",
+       "min": -100.0,
+       "p01": -52.30234,
+       "median": 3.789,
+       "p99": 178.05047999999942,
+       "max": 180870.0,
+       "mean": 40.96422966578486,
+       "std": 1654.974663639432,
+       "n_negative": 7646,
+       "n_zero": 1066
+      },
+      "co2_including_luc": {
+       "dtype": "float64",
+       "n_missing": 32204,
+       "pct_missing": 57.23,
+       "n_unique": 20312,
+       "kind": "numeric",
+       "min": -19.177,
+       "p01": -0.073,
+       "median": 26.106,
+       "p99": 9502.63428,
+       "max": 43347.484,
+       "mean": 524.6462387699979,
+       "std": 2276.192094057106,
+       "n_negative": 299,
+       "n_zero": 3
+      },
+      "co2_including_luc_growth_abs": {
+       "dtype": "float64",
+       "n_missing": 32499,
+       "pct_missing": 57.76,
+       "n_unique": 12771,
+       "kind": "numeric",
+       "min": -2965.135,
+       "p01": -161.80361,
+       "median": 0.103,
+       "p99": 299.1582200000001,
+       "max": 2840.99,
+       "mean": 7.442963104753892,
+       "std": 94.74751018007197,
+       "n_negative": 9447,
+       "n_zero": 226
+      },
+      "co2_including_luc_growth_prct": {
+       "dtype": "float64",
+       "n_missing": 32499,
+       "pct_missing": 57.76,
+       "n_unique": 17084,
+       "kind": "numeric",
+       "min": -28711.529,
+       "p01": -62.84144,
+       "median": 1.299,
+       "p99": 120.09606000000016,
+       "max": 16702.533,
+       "mean": 2.532105721497686,
+       "std": 279.9657870312533,
+       "n_negative": 9584,
+       "n_zero": 126
+      },
+      "co2_including_luc_per_capita": {
+       "dtype": "float64",
+       "n_missing": 32243,
+       "pct_missing": 57.3,
+       "n_unique": 12330,
+       "kind": "numeric",
+       "min": -12.261,
+       "p01": -0.14575,
+       "median": 4.233499999999999,
+       "p99": 35.90875,
+       "max": 364.861,
+       "mean": 6.729461791392658,
+       "std": 8.833768949588318,
+       "n_negative": 300,
+       "n_zero": 0
+      },
+      "co2_including_luc_per_gdp": {
+       "dtype": "float64",
+       "n_missing": 39467,
+       "pct_missing": 70.14,
+       "n_unique": 5043,
+       "kind": "numeric",
+       "min": -6.108,
+       "p01": -0.00799000000000001,
+       "median": 0.798,
+       "p99": 20.96374000000004,
+       "max": 191.537,
+       "mean": 2.07748029996429,
+       "std": 5.150613712625733,
+       "n_negative": 181,
+       "n_zero": 1
+      },
+      "co2_including_luc_per_unit_energy": {
+       "dtype": "float64",
+       "n_missing": 46136,
+       "pct_missing": 81.99,
+       "n_unique": 10051,
+       "kind": "numeric",
+       "min": -5600.882,
+       "p01": -15.294519999999995,
+       "median": 278.097,
+       "p99": 13200.190960000005,
+       "max": 432319.094,
+       "mean": 1153.686862429685,
+       "std": 5650.972592352395,
+       "n_negative": 112,
+       "n_zero": 0
+      },
+      "co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 29031,
+       "pct_missing": 51.59,
+       "n_unique": 8967,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 1.0305,
+       "p99": 29.80467000000001,
+       "max": 1062.532,
+       "mean": 3.934807438137895,
+       "std": 18.758294237415903,
+       "n_negative": 0,
+       "n_zero": 988
+      },
+      "co2_per_gdp": {
+       "dtype": "float64",
+       "n_missing": 38729,
+       "pct_missing": 68.83,
+       "n_unique": 1713,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.262,
+       "p99": 1.8356100000000006,
+       "max": 82.613,
+       "mean": 0.3953064994298746,
+       "std": 0.7538517466405809,
+       "n_negative": 0,
+       "n_zero": 246
+      },
+      "co2_per_unit_energy": {
+       "dtype": "float64",
+       "n_missing": 45316,
+       "pct_missing": 80.53,
+       "n_unique": 10543,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 57.92492,
+       "median": 220.596,
+       "p99": 769.4100799999994,
+       "max": 10690.725,
+       "mean": 247.21372199397425,
+       "std": 303.4252545619545,
+       "n_negative": 0,
+       "n_zero": 17
+      },
+      "coal_co2": {
+       "dtype": "float64",
+       "n_missing": 34121,
+       "pct_missing": 60.64,
+       "n_unique": 10992,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 2.063,
+       "p99": 3692.6809099999587,
+       "max": 15720.894,
+       "mean": 186.4597713111793,
+       "std": 866.7753523005002,
+       "n_negative": 0,
+       "n_zero": 2284
+      },
+      "coal_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 34734,
+       "pct_missing": 61.73,
+       "n_unique": 5013,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.227,
+       "p99": 9.94632,
+       "max": 34.295,
+       "mean": 1.280323055491061,
+       "std": 2.337352193502277,
+       "n_negative": 0,
+       "n_zero": 2391
+      },
+      "consumption_co2": {
+       "dtype": "float64",
+       "n_missing": 51067,
+       "pct_missing": 90.76,
+       "n_unique": 5065,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.87702,
+       "median": 74.2535,
+       "p99": 19409.92407999997,
+       "max": 38995.109,
+       "mean": 1327.4851899269513,
+       "std": 3942.6681507038743,
+       "n_negative": 0,
+       "n_zero": 1
+      },
+      "consumption_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 51489,
+       "pct_missing": 91.51,
+       "n_unique": 3901,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.058,
+       "median": 4.3195,
+       "p99": 30.70117000000001,
+       "max": 60.108,
+       "mean": 6.427298744769874,
+       "std": 6.746338726608947,
+       "n_negative": 0,
+       "n_zero": 1
+      },
+      "consumption_co2_per_gdp": {
+       "dtype": "float64",
+       "n_missing": 51821,
+       "pct_missing": 92.1,
+       "n_unique": 856,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.048,
+       "median": 0.302,
+       "p99": 1.2157099999999983,
+       "max": 3.311,
+       "mean": 0.34944739208633097,
+       "std": 0.2445524807246737,
+       "n_negative": 0,
+       "n_zero": 1
+      },
+      "cumulative_cement_co2": {
+       "dtype": "float64",
+       "n_missing": 17866,
+       "pct_missing": 31.75,
+       "n_unique": 11264,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 3593.70896000007,
+       "max": 51294.938,
+       "mean": 158.89585508944614,
+       "std": 1370.179245148904,
+       "n_negative": 0,
+       "n_zero": 23839
+      },
+      "cumulative_co2": {
+       "dtype": "float64",
+       "n_missing": 27883,
+       "pct_missing": 49.55,
+       "n_unique": 22180,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 73.749,
+       "p99": 301565.28775000066,
+       "max": 1886832.625,
+       "mean": 12431.27982491369,
+       "std": 73634.21190753735,
+       "n_negative": 0,
+       "n_zero": 1139
+      },
+      "cumulative_co2_including_luc": {
+       "dtype": "float64",
+       "n_missing": 32204,
+       "pct_missing": 57.23,
+       "n_unique": 23663,
+       "kind": "numeric",
+       "min": -81.509,
+       "p01": 0.029640000000000014,
+       "median": 909.111,
+       "p99": 529289.8780000003,
+       "max": 2779810.5,
+       "mean": 26217.017919384998,
+       "std": 124749.28346466807,
+       "n_negative": 205,
+       "n_zero": 0
+      },
+      "cumulative_coal_co2": {
+       "dtype": "float64",
+       "n_missing": 34121,
+       "pct_missing": 60.64,
+       "n_unique": 16612,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 56.992999999999995,
+       "p99": 208472.23392999856,
+       "max": 864470.0,
+       "mean": 9401.57031799711,
+       "std": 44037.172910372654,
+       "n_negative": 0,
+       "n_zero": 1103
+      },
+      "cumulative_flaring_co2": {
+       "dtype": "float64",
+       "n_missing": 39923,
+       "pct_missing": 70.95,
+       "n_unique": 5305,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 4010.4368999999942,
+       "max": 21043.697,
+       "mean": 181.65900715771443,
+       "std": 943.6451501164717,
+       "n_negative": 0,
+       "n_zero": 9986
+      },
+      "cumulative_gas_co2": {
+       "dtype": "float64",
+       "n_missing": 37964,
+       "pct_missing": 67.47,
+       "n_unique": 8451,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.217,
+       "p99": 50084.22875999993,
+       "max": 283812.844,
+       "mean": 1932.5318179732315,
+       "std": 12055.465649142763,
+       "n_negative": 0,
+       "n_zero": 8039
+      },
+      "cumulative_luc_co2": {
+       "dtype": "float64",
+       "n_missing": 18605,
+       "pct_missing": 33.06,
+       "n_unique": 32819,
+       "kind": "numeric",
+       "min": -2182.405,
+       "p01": -52.88328,
+       "median": 228.60750000000002,
+       "p99": 172108.65211000046,
+       "max": 897551.312,
+       "mean": 8534.251993070306,
+       "std": 42415.614460616554,
+       "n_negative": 2720,
+       "n_zero": 1224
+      },
+      "cumulative_oil_co2": {
+       "dtype": "float64",
+       "n_missing": 30238,
+       "pct_missing": 53.74,
+       "n_unique": 18403,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 23.845,
+       "p99": 97201.34920000023,
+       "max": 651001.062,
+       "mean": 3793.5034223041757,
+       "std": 25149.5330773589,
+       "n_negative": 0,
+       "n_zero": 3415
+      },
+      "cumulative_other_co2": {
+       "dtype": "float64",
+       "n_missing": 52821,
+       "pct_missing": 93.87,
+       "n_unique": 2298,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 21.565,
+       "p99": 6589.140499999992,
+       "max": 15210.114,
+       "mean": 419.20040139211136,
+       "std": 1340.9765131161753,
+       "n_negative": 0,
+       "n_zero": 742
+      },
+      "energy_per_capita": {
+       "dtype": "float64",
+       "n_missing": 45503,
+       "pct_missing": 80.87,
+       "n_unique": 10625,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 11817.5075,
+       "p99": 158456.69885000004,
+       "max": 318559.688,
+       "mean": 24003.207801318968,
+       "std": 31996.083562097218,
+       "n_negative": 0,
+       "n_zero": 139
+      },
+      "energy_per_gdp": {
+       "dtype": "float64",
+       "n_missing": 48482,
+       "pct_missing": 86.16,
+       "n_unique": 3221,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.17486,
+       "median": 1.245,
+       "p99": 7.189800000000007,
+       "max": 25.253,
+       "mean": 1.672906382432259,
+       "std": 1.6297689469810257,
+       "n_negative": 0,
+       "n_zero": 6
+      },
+      "flaring_co2": {
+       "dtype": "float64",
+       "n_missing": 39858,
+       "pct_missing": 70.83,
+       "n_unique": 3694,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 126.47829999999954,
+       "max": 483.696,
+       "mean": 6.031337273779783,
+       "std": 27.57227091350324,
+       "n_negative": 0,
+       "n_zero": 10624
+      },
+      "flaring_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 41128,
+       "pct_missing": 73.09,
+       "n_unique": 1050,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 3.5638000000000103,
+       "max": 114.509,
+       "mean": 0.2679808467076151,
+       "std": 2.9726433131589345,
+       "n_negative": 0,
+       "n_zero": 9521
+      },
+      "gas_co2": {
+       "dtype": "float64",
+       "n_missing": 37964,
+       "pct_missing": 67.47,
+       "n_unique": 6618,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.022,
+       "p99": 1802.8453999999901,
+       "max": 8089.549,
+       "mean": 76.09807948647912,
+       "std": 402.7393153659431,
+       "n_negative": 0,
+       "n_zero": 8446
+      },
+      "gas_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 38667,
+       "pct_missing": 68.72,
+       "n_unique": 3177,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.004,
+       "p99": 14.938140000000137,
+       "max": 53.482,
+       "mean": 0.8035967503692762,
+       "std": 2.800588210571788,
+       "n_negative": 0,
+       "n_zero": 8038
+      },
+      "ghg_excluding_lucf_per_capita": {
+       "dtype": "float64",
+       "n_missing": 20427,
+       "pct_missing": 36.3,
+       "n_unique": 9215,
+       "kind": "numeric",
+       "min": 0.022,
+       "p01": 0.049,
+       "median": 0.661,
+       "p99": 30.283689999999684,
+       "max": 369.65,
+       "mean": 3.07965780369399,
+       "std": 7.785316011606318,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "ghg_per_capita": {
+       "dtype": "float64",
+       "n_missing": 20090,
+       "pct_missing": 35.7,
+       "n_unique": 16041,
+       "kind": "numeric",
+       "min": -28.852,
+       "p01": -0.2943199999999998,
+       "median": 4.282,
+       "p99": 48.393880000000124,
+       "max": 369.705,
+       "mean": 7.716282069708948,
+       "std": 11.276805224471332,
+       "n_negative": 488,
+       "n_zero": 0
+      },
+      "land_use_change_co2": {
+       "dtype": "float64",
+       "n_missing": 18605,
+       "pct_missing": 33.06,
+       "n_unique": 21273,
+       "kind": "numeric",
+       "min": -206.365,
+       "p01": -14.8404,
+       "median": 2.921,
+       "p99": 2219.3716300000056,
+       "max": 8751.867,
+       "mean": 108.92580108326254,
+       "std": 480.18583232372055,
+       "n_negative": 5766,
+       "n_zero": 1905
+      },
+      "land_use_change_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 19423,
+       "pct_missing": 34.52,
+       "n_unique": 11910,
+       "kind": "numeric",
+       "min": -30.378,
+       "p01": -2.4682000000000004,
+       "median": 1.001,
+       "p99": 32.26980000000016,
+       "max": 212.111,
+       "mean": 3.370932095749878,
+       "std": 7.524946850142209,
+       "n_negative": 5897,
+       "n_zero": 1213
+      },
+      "methane": {
+       "dtype": "float64",
+       "n_missing": 18119,
+       "pct_missing": 32.2,
+       "n_unique": 19109,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.001,
+       "median": 3.4625000000000004,
+       "p99": 1965.906080000016,
+       "max": 9498.914,
+       "mean": 95.27770736566187,
+       "std": 435.1021345902942,
+       "n_negative": 0,
+       "n_zero": 190
+      },
+      "methane_per_capita": {
+       "dtype": "float64",
+       "n_missing": 20090,
+       "pct_missing": 35.7,
+       "n_unique": 5657,
+       "kind": "numeric",
+       "min": 0.032,
+       "p01": 0.073,
+       "median": 1.007,
+       "p99": 11.975540000000008,
+       "max": 133.104,
+       "mean": 1.7415052931258466,
+       "std": 3.832682834644329,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "nitrous_oxide": {
+       "dtype": "float64",
+       "n_missing": 17769,
+       "pct_missing": 31.58,
+       "n_unique": 12886,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.706,
+       "p99": 489.69076000000234,
+       "max": 2935.779,
+       "mean": 25.42475122077922,
+       "std": 129.992407655073,
+       "n_negative": 0,
+       "n_zero": 1765
+      },
+      "nitrous_oxide_per_capita": {
+       "dtype": "float64",
+       "n_missing": 19830,
+       "pct_missing": 35.24,
+       "n_unique": 2784,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.225,
+       "p99": 4.059240000000005,
+       "max": 20.393,
+       "mean": 0.4446004555558605,
+       "std": 0.799282444848757,
+       "n_negative": 0,
+       "n_zero": 422
+      },
+      "oil_co2": {
+       "dtype": "float64",
+       "n_missing": 30237,
+       "pct_missing": 53.74,
+       "n_unique": 11289,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 1.381,
+       "p99": 2575.489969999987,
+       "max": 12836.631,
+       "mean": 114.8068090043024,
+       "std": 648.1566042312859,
+       "n_negative": 0,
+       "n_zero": 3659
+      },
+      "oil_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 30976,
+       "pct_missing": 55.05,
+       "n_unique": 6053,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.423,
+       "p99": 16.87303999999993,
+       "max": 1062.532,
+       "mean": 2.3567683153441665,
+       "std": 18.848018420380246,
+       "n_negative": 0,
+       "n_zero": 3293
+      },
+      "other_co2_per_capita": {
+       "dtype": "float64",
+       "n_missing": 53418,
+       "pct_missing": 94.93,
+       "n_unique": 308,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.061,
+       "p99": 0.368,
+       "max": 0.627,
+       "mean": 0.07785233251490704,
+       "std": 0.07688583204413456,
+       "n_negative": 0,
+       "n_zero": 172
+      },
+      "other_industry_co2": {
+       "dtype": "float64",
+       "n_missing": 52821,
+       "pct_missing": 93.87,
+       "n_unique": 1903,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 1.2315,
+       "p99": 326.4290499999978,
+       "max": 436.649,
+       "mean": 19.418530162412996,
+       "std": 54.52745479924162,
+       "n_negative": 0,
+       "n_zero": 764
+      },
+      "primary_energy_consumption": {
+       "dtype": "float64",
+       "n_missing": 45458,
+       "pct_missing": 80.79,
+       "n_unique": 9792,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 53.662,
+       "p99": 65407.635899999565,
+       "max": 176737.094,
+       "mean": 2410.1711925816303,
+       "std": 11295.848720773942,
+       "n_negative": 0,
+       "n_zero": 139
+      },
+      "share_global_cement_co2": {
+       "dtype": "float64",
+       "n_missing": 24870,
+       "pct_missing": 44.2,
+       "n_unique": 4127,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 3.1018368100894933,
+       "std": 13.955020378457485,
+       "n_negative": 0,
+       "n_zero": 17175
+      },
+      "share_global_co2": {
+       "dtype": "float64",
+       "n_missing": 27883,
+       "pct_missing": 49.55,
+       "n_unique": 5025,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.047,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 5.229347107729161,
+       "std": 18.497611001692814,
+       "n_negative": 0,
+       "n_zero": 3599
+      },
+      "share_global_co2_including_luc": {
+       "dtype": "float64",
+       "n_missing": 32204,
+       "pct_missing": 57.23,
+       "n_unique": 5309,
+       "kind": "numeric",
+       "min": -0.356,
+       "p01": 0.0,
+       "median": 0.159,
+       "p99": 64.2805600000002,
+       "max": 100.0,
+       "mean": 3.2339794307084975,
+       "std": 11.280216803424688,
+       "n_negative": 222,
+       "n_zero": 982
+      },
+      "share_global_coal_co2": {
+       "dtype": "float64",
+       "n_missing": 34121,
+       "pct_missing": 60.64,
+       "n_unique": 4892,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.057,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 6.742896514357955,
+       "std": 20.8989383239672,
+       "n_negative": 0,
+       "n_zero": 3964
+      },
+      "share_global_cumulative_cement_co2": {
+       "dtype": "float64",
+       "n_missing": 24870,
+       "pct_missing": 44.2,
+       "n_unique": 3940,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 3.103498837542597,
+       "std": 13.942134149463055,
+       "n_negative": 0,
+       "n_zero": 16957
+      },
+      "share_global_cumulative_co2": {
+       "dtype": "float64",
+       "n_missing": 27883,
+       "pct_missing": 49.55,
+       "n_unique": 4574,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.026,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 5.357610371309801,
+       "std": 19.25402590141763,
+       "n_negative": 0,
+       "n_zero": 5145
+      },
+      "share_global_cumulative_co2_including_luc": {
+       "dtype": "float64",
+       "n_missing": 32204,
+       "pct_missing": 57.23,
+       "n_unique": 4978,
+       "kind": "numeric",
+       "min": -0.057,
+       "p01": 0.0,
+       "median": 0.122,
+       "p99": 63.92612000000008,
+       "max": 100.0,
+       "mean": 3.0618646166632035,
+       "std": 11.140006976339109,
+       "n_negative": 103,
+       "n_zero": 1630
+      },
+      "share_global_cumulative_coal_co2": {
+       "dtype": "float64",
+       "n_missing": 34121,
+       "pct_missing": 60.64,
+       "n_unique": 4521,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.039,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 6.925856555896695,
+       "std": 21.713255156980402,
+       "n_negative": 0,
+       "n_zero": 4388
+      },
+      "share_global_cumulative_flaring_co2": {
+       "dtype": "float64",
+       "n_missing": 44945,
+       "pct_missing": 79.88,
+       "n_unique": 2752,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.003,
+       "p99": 45.78385000000009,
+       "max": 100.0,
+       "mean": 3.021957877075238,
+       "std": 11.011197579895887,
+       "n_negative": 0,
+       "n_zero": 5321
+      },
+      "share_global_cumulative_gas_co2": {
+       "dtype": "float64",
+       "n_missing": 40944,
+       "pct_missing": 72.76,
+       "n_unique": 2828,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.015,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 4.094803980424143,
+       "std": 17.102038759482,
+       "n_negative": 0,
+       "n_zero": 5756
+      },
+      "share_global_cumulative_luc_co2": {
+       "dtype": "float64",
+       "n_missing": 18605,
+       "pct_missing": 33.06,
+       "n_unique": 5631,
+       "kind": "numeric",
+       "min": -0.243,
+       "p01": -0.019,
+       "median": 0.086,
+       "p99": 37.35646000000042,
+       "max": 100.0,
+       "mean": 2.1879923534409516,
+       "std": 8.952616293605962,
+       "n_negative": 1456,
+       "n_zero": 5820
+      },
+      "share_global_cumulative_oil_co2": {
+       "dtype": "float64",
+       "n_missing": 31863,
+       "pct_missing": 56.63,
+       "n_unique": 4549,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.053,
+       "p99": 84.86765,
+       "max": 100.0,
+       "mean": 3.2894346881914283,
+       "std": 13.135234500079203,
+       "n_negative": 0,
+       "n_zero": 3338
+      },
+      "share_global_cumulative_other_co2": {
+       "dtype": "float64",
+       "n_missing": 54037,
+       "pct_missing": 96.03,
+       "n_unique": 1204,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.4355,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 7.056598566308244,
+       "std": 17.53977864312958,
+       "n_negative": 0,
+       "n_zero": 156
+      },
+      "share_global_flaring_co2": {
+       "dtype": "float64",
+       "n_missing": 44945,
+       "pct_missing": 79.88,
+       "n_unique": 2915,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.001,
+       "p99": 50.26963000000001,
+       "max": 100.0,
+       "mean": 3.103430148357471,
+       "std": 10.981199895965311,
+       "n_negative": 0,
+       "n_zero": 5608
+      },
+      "share_global_gas_co2": {
+       "dtype": "float64",
+       "n_missing": 40944,
+       "pct_missing": 72.76,
+       "n_unique": 3162,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.027,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 4.1843154323001635,
+       "std": 16.630266564641754,
+       "n_negative": 0,
+       "n_zero": 5690
+      },
+      "share_global_luc_co2": {
+       "dtype": "float64",
+       "n_missing": 18605,
+       "pct_missing": 33.06,
+       "n_unique": 5929,
+       "kind": "numeric",
+       "min": -4.341,
+       "p01": -0.25237,
+       "median": 0.061,
+       "p99": 40.87350000000013,
+       "max": 100.0,
+       "mean": 2.148917826040782,
+       "std": 9.086764429306758,
+       "n_negative": 4436,
+       "n_zero": 5403
+      },
+      "share_global_oil_co2": {
+       "dtype": "float64",
+       "n_missing": 31863,
+       "pct_missing": 56.63,
+       "n_unique": 4713,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.063,
+       "p99": 84.61960000000003,
+       "max": 100.0,
+       "mean": 3.2704540686716377,
+       "std": 12.906057575261169,
+       "n_negative": 0,
+       "n_zero": 2785
+      },
+      "share_global_other_co2": {
+       "dtype": "float64",
+       "n_missing": 54037,
+       "pct_missing": 96.03,
+       "n_unique": 1311,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.551,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 7.181067652329749,
+       "std": 17.490735153378797,
+       "n_negative": 0,
+       "n_zero": 147
+      },
+      "share_of_temperature_change_from_ghg": {
+       "dtype": "float64",
+       "n_missing": 15031,
+       "pct_missing": 26.71,
+       "n_unique": 6069,
+       "kind": "numeric",
+       "min": -0.824,
+       "p01": 0.0,
+       "median": 0.081,
+       "p99": 51.80947999999975,
+       "max": 100.0,
+       "mean": 2.272236092924002,
+       "std": 9.287404408361638,
+       "n_negative": 393,
+       "n_zero": 6936
+      },
+      "temperature_change_from_ch4": {
+       "dtype": "float64",
+       "n_missing": 17989,
+       "pct_missing": 31.97,
+       "n_unique": 211,
+       "kind": "numeric",
+       "min": -0.001,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 0.059,
+       "max": 0.377,
+       "mean": 0.0028705851619644724,
+       "std": 0.015373384173856565,
+       "n_negative": 99,
+       "n_zero": 28695
+      },
+      "temperature_change_from_co2": {
+       "dtype": "float64",
+       "n_missing": 15031,
+       "pct_missing": 26.71,
+       "n_unique": 455,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 0.188,
+       "max": 1.216,
+       "mean": 0.008013531209079005,
+       "std": 0.0457237414722255,
+       "n_negative": 0,
+       "n_zero": 27733
+      },
+      "temperature_change_from_ghg": {
+       "dtype": "float64",
+       "n_missing": 15031,
+       "pct_missing": 26.71,
+       "n_unique": 547,
+       "kind": "numeric",
+       "min": -0.001,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 0.256,
+       "max": 1.678,
+       "mean": 0.011223531694068577,
+       "std": 0.06293603443659804,
+       "n_negative": 32,
+       "n_zero": 25351
+      },
+      "temperature_change_from_n2o": {
+       "dtype": "float64",
+       "n_missing": 17989,
+       "pct_missing": 31.97,
+       "n_unique": 81,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 0.0,
+       "p99": 0.011,
+       "max": 0.085,
+       "mean": 0.0005090386624869383,
+       "std": 0.0030489397606317885,
+       "n_negative": 0,
+       "n_zero": 34272
+      },
+      "total_ghg": {
+       "dtype": "float64",
+       "n_missing": 18119,
+       "pct_missing": 32.2,
+       "n_unique": 26445,
+       "kind": "numeric",
+       "min": -19.725,
+       "p01": -0.12256999999999993,
+       "median": 14.6055,
+       "p99": 10090.49832000009,
+       "max": 54433.398,
+       "mean": 490.79960809960676,
+       "std": 2416.8553373678938,
+       "n_negative": 488,
+       "n_zero": 164
+      },
+      "total_ghg_excluding_lucf": {
+       "dtype": "float64",
+       "n_missing": 18456,
+       "pct_missing": 32.8,
+       "n_unique": 18564,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 2.222,
+       "p99": 7166.260599999988,
+       "max": 43714.777,
+       "mean": 310.5214588369079,
+       "std": 1813.3999820426493,
+       "n_negative": 0,
+       "n_zero": 500
+      },
+      "trade_co2": {
+       "dtype": "float64",
+       "n_missing": 51418,
+       "pct_missing": 91.38,
+       "n_unique": 4448,
+       "kind": "numeric",
+       "min": -2391.872,
+       "p01": -1397.7785,
+       "median": 1.704,
+       "p99": 820.6869999999999,
+       "max": 1891.144,
+       "mean": -7.121198103483817,
+       "std": 264.08179179977,
+       "n_negative": 1624,
+       "n_zero": 144
+      },
+      "trade_co2_share": {
+       "dtype": "float64",
+       "n_missing": 51418,
+       "pct_missing": 91.38,
+       "n_unique": 4589,
+       "kind": "numeric",
+       "min": -99.219,
+       "p01": -68.406,
+       "median": 8.862,
+       "p99": 258.975,
+       "max": 1020.102,
+       "mean": 21.615933003504434,
+       "std": 62.903653899724574,
+       "n_negative": 1620,
+       "n_zero": 155
+      }
+     }
+    }
+   ]
+  },
+  "faostat_crops_livestock": {
+   "declared": {
+    "provider": "UN FAO",
+    "license": "CC BY 4.0 (since 2024-07-01) + FAO Statistical Database Terms of Use"
+   },
+   "files": [
+    {
+     "file": "data/raw/faostat/Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+     "size_bytes": 33921825,
+     "sha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853"
+    }
+   ],
+   "tables": [
+    {
+     "table": "production",
+     "rows": 4209110,
+     "columns": 13,
+     "cells": 54718430,
+     "missing_cells": 94355,
+     "pct_missing_cells": 0.17,
+     "time_col": "Year",
+     "time_freq": "Y",
+     "entity_col": "Area Code",
+     "value_cols": [
+      "Value"
+     ],
+     "key": [
+      "Area Code",
+      "Item Code",
+      "Element Code",
+      "Year"
+     ],
+     "sentinels_replaced": {
+      "Value: blank": 94355
+     },
+     "notes": [
+      "member Production_Crops_Livestock_E_All_Data_(Normalized).csv (545,005,770 bytes uncompressed, dated 2025-12-23 17:21)",
+      "member Production_Crops_Livestock_E_AreaCodes.csv (5,391 bytes uncompressed, dated 2025-12-23 17:23)",
+      "member Production_Crops_Livestock_E_Elements.csv (404 bytes uncompressed, dated 2025-12-23 17:23)",
+      "member Production_Crops_Livestock_E_Flags.csv (169 bytes uncompressed, dated 2025-12-23 17:22)",
+      "member Production_Crops_Livestock_E_ItemCodes.csv (10,838 bytes uncompressed, dated 2025-12-23 17:23)",
+      "Production_Crops_Livestock_E_All_Data_(Normalized).csv: decoded as utf-8",
+      "'Year Code' dropped (duplicates 'Year' in annual data)"
+     ],
+     "period_all_rows": {
+      "first": 1961,
+      "last": 2024,
+      "n_periods": 64
+     },
+     "period_with_values": {
+      "first": 1961,
+      "last": 2024,
+      "n_periods": 64
+     },
+     "n_entities": 244,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "Area Code": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 244,
+       "kind": "text",
+       "min_length": 1,
+       "max_length": 4
+      },
+      "Area Code (M49)": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 244,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 4
+      },
+      "Area": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 244,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 52
+      },
+      "Item Code": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 301,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 5
+      },
+      "Item Code (CPC)": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 301,
+       "kind": "text",
+       "min_length": 5,
+       "max_length": 9
+      },
+      "Item": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 301,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 128
+      },
+      "Element Code": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 14,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 4,
+       "top_values": {
+        "5510": 1625403,
+        "5312": 893484,
+        "5412": 823058,
+        "5320": 261580,
+        "5417": 181253,
+        "5111": 117255,
+        "5424": 80944,
+        "5112": 53845
+       }
+      },
+      "Element": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 8,
+       "kind": "text",
+       "min_length": 5,
+       "max_length": 29,
+       "top_values": {
+        "Production": 1643611,
+        "Area harvested": 893484,
+        "Yield": 839819,
+        "Producing Animals/Slaughtered": 313081,
+        "Yield/Carcass Weight": 262197,
+        "Stocks": 180294,
+        "Milk Animals": 45801,
+        "Laying": 30823
+       }
+      },
+      "Year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 64,
+       "kind": "numeric",
+       "min": 1961.0,
+       "p01": 1961.0,
+       "median": 1995.0,
+       "p99": 2024.0,
+       "max": 2024.0,
+       "mean": 1993.9551285188554,
+       "std": 18.346869043298693,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Unit": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 10,
+       "kind": "text",
+       "min_length": 1,
+       "max_length": 7,
+       "top_values": {
+        "t": 1625403,
+        "ha": 893484,
+        "kg/ha": 823058,
+        "An": 424636,
+        "kg/An": 181253,
+        "1000 An": 136169,
+        "g/An": 80944,
+        "1000 No": 18208
+       }
+      },
+      "Value": {
+       "dtype": "float64",
+       "n_missing": 94355,
+       "pct_missing": 2.24,
+       "n_unique": 1141494,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.0,
+       "median": 9254.0,
+       "p99": 45552270.75999993,
+       "max": 3133222740.92,
+       "mean": 2483334.7269382505,
+       "std": 28015636.322956886,
+       "n_negative": 0,
+       "n_zero": 73671
+      },
+      "Flag": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 1,
+       "max_length": 1,
+       "top_values": {
+        "A": 1837346,
+        "E": 1778734,
+        "I": 387557,
+        "X": 111118,
+        "M": 94355
+       }
+      },
+      "Note": {
+       "dtype": "category",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 17,
+       "top_values": {
+        "": 4125820,
+        "Unofficial figure": 83290
+       }
+      }
+     }
+    },
+    {
+     "table": "flags_legend",
+     "rows": 5,
+     "columns": 2,
+     "cells": 10,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": null,
+     "time_freq": null,
+     "entity_col": null,
+     "value_cols": [],
+     "key": [],
+     "sentinels_replaced": {},
+     "notes": [],
+     "column_profiles": {
+      "Flag": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 1,
+       "max_length": 1,
+       "top_values": {
+        "A": 1,
+        "E": 1,
+        "I": 1,
+        "M": 1,
+        "X": 1
+       }
+      },
+      " Description": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 15,
+       "max_length": 35,
+       "top_values": {
+        "Official figure": 1,
+        "Estimated value": 1,
+        "Value imputed by a receiving agency": 1,
+        "Missing value; data cannot exist": 1,
+        "Figure from external organization": 1
+       }
+      }
+     }
+    }
+   ]
+  },
+  "wdi": {
+   "declared": {
+    "provider": "World Bank",
+    "license": "CC BY 4.0"
+   },
+   "files": [
+    {
+     "file": "data/raw/wdi/WDI_CSV.zip",
+     "size_bytes": 283089754,
+     "sha256": "1cbb81b7e8e656e05fe9236f201d6d59a82d62a77f96c147c1bc63940a7b0c0c"
+    }
+   ],
+   "tables": [
+    {
+     "table": "indicators",
+     "rows": 87780,
+     "columns": 6,
+     "cells": 526680,
+     "missing_cells": 17126,
+     "pct_missing_cells": 3.25,
+     "time_col": "year",
+     "time_freq": "Y",
+     "entity_col": "Country Code",
+     "value_cols": [
+      "value"
+     ],
+     "key": [
+      "Country Code",
+      "Indicator Code",
+      "year"
+     ],
+     "sentinels_replaced": {
+      "value: blank": 17126
+     },
+     "notes": [
+      "member WDICSV.csv (198,924,434 bytes uncompressed, dated 2026-10-08 19:47)",
+      "member WDICountry.csv (157,313 bytes uncompressed, dated 2026-10-08 19:48)",
+      "member WDISeries.csv (6,677,615 bytes uncompressed, dated 2026-10-08 19:48)",
+      "member WDIcountry-series.csv (1,362,558 bytes uncompressed, dated 2026-10-08 19:48)",
+      "member WDIfootnote.csv (75,909,490 bytes uncompressed, dated 2026-10-08 19:48)",
+      "member WDIseries-time.csv (14,388 bytes uncompressed, dated 2026-10-08 19:48)",
+      "WDICountry.csv: decoded as utf-8",
+      "filtered to the 5 configured indicators"
+     ],
+     "period_all_rows": {
+      "first": 1960,
+      "last": 2025,
+      "n_periods": 66
+     },
+     "period_with_values": {
+      "first": 1960,
+      "last": 2025,
+      "n_periods": 66
+     },
+     "n_entities": 266,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "Country Name": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 266,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 73
+      },
+      "Country Code": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 266,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "Indicator Name": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 17,
+       "max_length": 58,
+       "top_values": {
+        "Agriculture, forestry, and fishing, value added (% of GDP)": 17556,
+        "GDP per capita, PPP (constant 2021 international $)": 17556,
+        "Land area (sq. km)": 17556,
+        "Population, total": 17556,
+        "Urban population (% of total population)": 17556
+       }
+      },
+      "Indicator Code": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 11,
+       "max_length": 17,
+       "top_values": {
+        "NV.AGR.TOTL.ZS": 17556,
+        "NY.GDP.PCAP.PP.KD": 17556,
+        "AG.LND.TOTL.K2": 17556,
+        "SP.POP.TOTL": 17556,
+        "SP.URB.TOTL.IN.ZS": 17556
+       }
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 66,
+       "kind": "numeric",
+       "min": 1960.0,
+       "p01": 1960.0,
+       "median": 1992.5,
+       "p99": 2025.0,
+       "max": 2025.0,
+       "mean": 1992.5,
+       "std": 19.05048033784895,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "value": {
+       "dtype": "float64",
+       "n_missing": 17126,
+       "pct_missing": 19.51,
+       "n_unique": 56169,
+       "kind": "numeric",
+       "min": 0.0,
+       "p01": 0.9966329394543096,
+       "median": 7967.046200357714,
+       "p99": 1449311490.4600036,
+       "max": 8215424893.0,
+       "mean": 55688586.38340345,
+       "std": 371981324.370422,
+       "n_negative": 0,
+       "n_zero": 42
+      }
+     }
+    },
+    {
+     "table": "country_classification",
+     "rows": 265,
+     "columns": 31,
+     "cells": 8215,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": null,
+     "time_freq": null,
+     "entity_col": "Country Code",
+     "value_cols": [],
+     "key": [
+      "Country Code"
+     ],
+     "sentinels_replaced": {},
+     "notes": [
+      "empty Region = aggregate (World, income groups, regions)"
+     ],
+     "n_entities": 265,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "Country Code": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 265,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "Short Name": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 265,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 73
+      },
+      "Table Name": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 265,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 73
+      },
+      "Long Name": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 265,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 73
+      },
+      "2-alpha code": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 265,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 2
+      },
+      "Currency Unit": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 151,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 42
+      },
+      "Special Notes": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 116,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 1326
+      },
+      "Region": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 8,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 26,
+       "top_values": {
+        "Europe & Central Asia": 58,
+        "": 48,
+        "Sub-Saharan Africa": 48,
+        "Latin America & Caribbean": 42,
+        "East Asia & Pacific": 37,
+        "Middle East & North Africa": 23,
+        "South Asia": 6,
+        "North America": 3
+       }
+      },
+      "Income Group": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 19,
+       "top_values": {
+        "High income": 86,
+        "Upper middle income": 59,
+        "": 48,
+        "Lower middle income": 47,
+        "Low income": 25
+       }
+      },
+      "WB-2 code": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 265,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 2
+      },
+      "National accounts base year": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 33,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 50,
+       "top_values": {
+        "Original chained constant price data are rescaled.": 93,
+        "": 51,
+        "2015": 18,
+        "2018": 12,
+        "2016": 10,
+        "2013": 9,
+        "2010": 9,
+        "2019": 7
+       }
+      },
+      "National accounts reference year": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 22,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 4,
+       "top_values": {
+        "": 170,
+        "2020": 35,
+        "2015": 9,
+        "2010": 7,
+        "2018": 5,
+        "2014": 5,
+        "2005": 4,
+        "2023": 4
+       }
+      },
+      "SNA price valuation": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 39,
+       "top_values": {
+        "Value added at basic prices (VAB)": 204,
+        "": 49,
+        "Value added at producer prices (VAP)": 9,
+        "0": 2,
+        "Value Added at Purchasers\u2019 Prices (VAP)": 1
+       }
+      },
+      "Lending category": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 4,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 5,
+       "top_values": {
+        "": 120,
+        "IBRD": 67,
+        "IDA": 59,
+        "Blend": 19
+       }
+      },
+      "Other groups": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 3,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 9,
+       "top_values": {
+        "": 205,
+        "HIPC": 40,
+        "Euro area": 20
+       }
+      },
+      "System of National Accounts": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 4,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 61,
+       "top_values": {
+        "Country uses the 2008 System of National Accounts methodology": 161,
+        "": 52,
+        "Country uses the 1993 System of National Accounts methodology": 46,
+        "Country uses the 1968 System of National Accounts methodology": 6
+       }
+      },
+      "Alternative conversion factor": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 1,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 0,
+       "top_values": {
+        "": 265
+       }
+      },
+      "PPP survey year": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 1,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 0,
+       "top_values": {
+        "": 265
+       }
+      },
+      "Balance of Payments Manual in use": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 3,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 33,
+       "top_values": {
+        "BPM6": 176,
+        "": 69,
+        "BPM5 (Converted into BPM6 by IMF)": 20
+       }
+      },
+      "External debt Reporting status": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 11,
+       "top_values": {
+        "": 145,
+        "Actual": 109,
+        "Estimate": 6,
+        "Preliminary": 4,
+        "Estimated": 1
+       }
+      },
+      "System of trade": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 3,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 20,
+       "top_values": {
+        "General trade system": 108,
+        "": 93,
+        "Special trade system": 64
+       }
+      },
+      "Government Accounting concept": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 3,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 31,
+       "top_values": {
+        "": 107,
+        "Consolidated central government": 91,
+        "Budgetary central government": 67
+       }
+      },
+      "IMF data dissemination standard": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 4,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 52,
+       "top_values": {
+        "Enhanced General Data Dissemination System (e-GDDS)": 110,
+        "": 77,
+        "Special Data Dissemination Standard (SDDS)": 54,
+        "Special Data Dissemination Standard Plus (SDDS Plus)": 24
+       }
+      },
+      "Latest population census": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 37,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 173,
+       "top_values": {
+        "": 51,
+        "2021": 42,
+        "2022": 36,
+        "2020": 13,
+        "2017": 11,
+        "2011": 9,
+        "2019": 9,
+        "2020 (expected)": 8
+       }
+      },
+      "Latest household survey": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 103,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 76
+      },
+      "Source of most recent Income and expenditure data": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 69,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 88
+      },
+      "Vital registration complete": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 3,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 48,
+       "top_values": {
+        "": 145,
+        "Yes": 119,
+        "Yes. Vital registration for Guernsey and Jersey.": 1
+       }
+      },
+      "Latest agricultural census": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 26,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 4,
+       "top_values": {
+        "": 109,
+        "2020": 41,
+        "2015": 10,
+        "2019": 8,
+        "2021": 8,
+        "2014": 7,
+        "2013": 7,
+        "2010": 6
+       }
+      },
+      "Latest industrial data": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 34,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 4,
+       "top_values": {
+        "": 118,
+        "2013": 32,
+        "2014": 30,
+        "2012": 16,
+        "2011": 11,
+        "2010": 7,
+        "2006": 5,
+        "1996": 4
+       }
+      },
+      "Latest trade data": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 17,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 4,
+       "top_values": {
+        "2018": 129,
+        "": 74,
+        "2017": 24,
+        "2015": 8,
+        "2016": 8,
+        "2012": 4,
+        "2009": 4,
+        "2013": 3
+       }
+      },
+      "Latest water withdrawal data": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 1,
+       "kind": "text",
+       "min_length": 0,
+       "max_length": 0,
+       "top_values": {
+        "": 265
+       }
+      }
+     }
+    }
+   ]
+  },
+  "emdat": {
+   "declared": {
+    "provider": "CRED, UCLouvain",
+    "license": "Non-commercial; no redistribution of records; derived aggregates/charts publishable with citation"
+   },
+   "files": [
+    {
+     "file": "data/raw/emdat/emdat_export.xlsx",
+     "size_bytes": 6556886,
+     "sha256": "a391a7aa1c8fb9a5b6b58f020224efe650302fb70e4e9a88f47cd1df0b43bf0a"
+    }
+   ],
+   "tables": [
+    {
+     "table": "events",
+     "rows": 18086,
+     "columns": 47,
+     "cells": 850042,
+     "missing_cells": 302902,
+     "pct_missing_cells": 35.63,
+     "time_col": "Start Year",
+     "time_freq": "Y",
+     "entity_col": "ISO",
+     "value_cols": [
+      "Total Deaths",
+      "Total Affected"
+     ],
+     "key": [
+      "DisNo."
+     ],
+     "sentinels_replaced": {},
+     "notes": [
+      "sheets: ['EM-DAT Data', 'EM-DAT Info']; licence: aggregates only, never publish records"
+     ],
+     "period_all_rows": {
+      "first": 1900,
+      "last": 2026,
+      "n_periods": 127
+     },
+     "period_with_values": {
+      "first": 1900,
+      "last": 2026,
+      "n_periods": 127
+     },
+     "n_entities": 230,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "DisNo.": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 18086,
+       "kind": "text",
+       "min_length": 13,
+       "max_length": 13
+      },
+      "Historic": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 3,
+       "top_values": {
+        "No": 10949,
+        "Yes": 7137
+       }
+      },
+      "Classification Key": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 50,
+       "kind": "text",
+       "min_length": 15,
+       "max_length": 15,
+       "top_values": {
+        "nat-met-sto-tro": 2830,
+        "nat-hyd-flo-riv": 2677,
+        "nat-hyd-flo-flo": 2507,
+        "nat-geo-ear-gro": 1607,
+        "nat-hyd-flo-fla": 958,
+        "nat-met-sto-sto": 925,
+        "nat-cli-dro-dro": 806,
+        "nat-bio-epi-bac": 798
+       }
+      },
+      "Disaster Group": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 1,
+       "kind": "text",
+       "min_length": 7,
+       "max_length": 7,
+       "top_values": {
+        "Natural": 18086
+       }
+      },
+      "Disaster Subgroup": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 6,
+       "kind": "text",
+       "min_length": 10,
+       "max_length": 17,
+       "top_values": {
+        "Hydrological": 7105,
+        "Meteorological": 6015,
+        "Geophysical": 1996,
+        "Biological": 1624,
+        "Climatological": 1345,
+        "Extra-terrestrial": 1
+       }
+      },
+      "Disaster Type": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 15,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 27,
+       "top_values": {
+        "Flood": 6229,
+        "Storm": 5245,
+        "Earthquake": 1666,
+        "Epidemic": 1528,
+        "Mass movement (wet)": 876,
+        "Drought": 806,
+        "Extreme temperature": 769,
+        "Wildfire": 531
+       }
+      },
+      "Disaster Subtype": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 50,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 32,
+       "top_values": {
+        "Tropical cyclone": 2830,
+        "Riverine flood": 2677,
+        "Flood (General)": 2507,
+        "Ground movement": 1607,
+        "Flash flood": 958,
+        "Storm (General)": 925,
+        "Drought": 806,
+        "Bacterial disease": 798
+       }
+      },
+      "External IDs": {
+       "dtype": "str",
+       "n_missing": 13434,
+       "pct_missing": 74.28,
+       "n_unique": 3412,
+       "kind": "text",
+       "min_length": 7,
+       "max_length": 130
+      },
+      "Event Name": {
+       "dtype": "str",
+       "n_missing": 13570,
+       "pct_missing": 75.03,
+       "n_unique": 1906,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 76
+      },
+      "ISO": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 230,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "Country": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 230,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 52
+      },
+      "Subregion": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 17,
+       "kind": "text",
+       "min_length": 9,
+       "max_length": 31,
+       "top_values": {
+        "Latin America and the Caribbean": 3138,
+        "Sub-Saharan Africa": 2953,
+        "Southern Asia": 2270,
+        "South-eastern Asia": 2238,
+        "Eastern Asia": 1984,
+        "Northern America": 1403,
+        "Southern Europe": 759,
+        "Eastern Europe": 665
+       }
+      },
+      "Region": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 8,
+       "top_values": {
+        "Asia": 7218,
+        "Americas": 4541,
+        "Africa": 3304,
+        "Europe": 2284,
+        "Oceania": 739
+       }
+      },
+      "Location": {
+       "dtype": "str",
+       "n_missing": 1974,
+       "pct_missing": 10.91,
+       "n_unique": 14536,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 2878
+      },
+      "Origin": {
+       "dtype": "str",
+       "n_missing": 13297,
+       "pct_missing": 73.52,
+       "n_unique": 826,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 118
+      },
+      "Associated Types": {
+       "dtype": "str",
+       "n_missing": 13565,
+       "pct_missing": 75.0,
+       "n_unique": 149,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 60
+      },
+      "OFDA/BHA Response": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 3,
+       "top_values": {
+        "No": 16367,
+        "Yes": 1719
+       }
+      },
+      "Appeal": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 3,
+       "top_values": {
+        "No": 17854,
+        "Yes": 232
+       }
+      },
+      "Declaration": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 3,
+       "top_values": {
+        "No": 16847,
+        "Yes": 1239
+       }
+      },
+      "AID Contribution ('000 US$)": {
+       "dtype": "float64",
+       "n_missing": 17310,
+       "pct_missing": 95.71,
+       "n_unique": 634,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 10.0,
+       "median": 721.0,
+       "p99": 273570.75,
+       "max": 3518530.0,
+       "mean": 20033.572164948455,
+       "std": 169031.10734958533,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Magnitude": {
+       "dtype": "float64",
+       "n_missing": 12437,
+       "pct_missing": 68.77,
+       "n_unique": 1943,
+       "kind": "numeric",
+       "min": -57.0,
+       "p01": -27.0,
+       "median": 150.0,
+       "p99": 583780.0447999986,
+       "max": 13025874.0,
+       "mean": 34293.47331740131,
+       "std": 223937.20206604223,
+       "n_negative": 133,
+       "n_zero": 13
+      },
+      "Magnitude Scale": {
+       "dtype": "str",
+       "n_missing": 2110,
+       "pct_missing": 11.67,
+       "n_unique": 5,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 16,
+       "top_values": {
+        "Km2": 7566,
+        "Kph": 5245,
+        "Moment Magnitude": 1666,
+        "\u00b0C": 769,
+        "Vaccinated": 730
+       }
+      },
+      "Latitude": {
+       "dtype": "float64",
+       "n_missing": 15237,
+       "pct_missing": 84.25,
+       "n_unique": 2435,
+       "kind": "numeric",
+       "min": -72.64,
+       "p01": -38.10796,
+       "median": 23.083,
+       "p99": 53.266864,
+       "max": 67.93,
+       "mean": 18.68461062864163,
+       "std": 21.613263510204654,
+       "n_negative": 611,
+       "n_zero": 0
+      },
+      "Longitude": {
+       "dtype": "float64",
+       "n_missing": 15237,
+       "pct_missing": 84.25,
+       "n_unique": 2510,
+       "kind": "numeric",
+       "min": -178.252,
+       "p01": -122.36485330000001,
+       "median": 49.329,
+       "p99": 168.346,
+       "max": 179.65,
+       "mean": 39.583530057353464,
+       "std": 77.405643373618,
+       "n_negative": 717,
+       "n_zero": 0
+      },
+      "River Basin": {
+       "dtype": "str",
+       "n_missing": 16471,
+       "pct_missing": 91.07,
+       "n_unique": 1527,
+       "kind": "text",
+       "min_length": 2,
+       "max_length": 402
+      },
+      "Start Year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 127,
+       "kind": "numeric",
+       "min": 1900.0,
+       "p01": 1922.0,
+       "median": 2004.0,
+       "p99": 2026.0,
+       "max": 2026.0,
+       "mean": 1999.7849165100076,
+       "std": 21.040029682929465,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Start Month": {
+       "dtype": "float64",
+       "n_missing": 371,
+       "pct_missing": 2.05,
+       "n_unique": 12,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 7.0,
+       "p99": 12.0,
+       "max": 12.0,
+       "mean": 6.461755574372001,
+       "std": 3.3715969834638293,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Start Day": {
+       "dtype": "float64",
+       "n_missing": 3615,
+       "pct_missing": 19.99,
+       "n_unique": 31,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 15.0,
+       "p99": 31.0,
+       "max": 31.0,
+       "mean": 15.215672724759864,
+       "std": 8.961161246148652,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "End Year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 127,
+       "kind": "numeric",
+       "min": 1900.0,
+       "p01": 1922.0,
+       "median": 2004.0,
+       "p99": 2026.0,
+       "max": 2026.0,
+       "mean": 1999.8366139555458,
+       "std": 21.029302981012425,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "End Month": {
+       "dtype": "float64",
+       "n_missing": 667,
+       "pct_missing": 3.69,
+       "n_unique": 12,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 7.0,
+       "p99": 12.0,
+       "max": 12.0,
+       "mean": 6.620586715655319,
+       "std": 3.340869803847575,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "End Day": {
+       "dtype": "float64",
+       "n_missing": 3507,
+       "pct_missing": 19.39,
+       "n_unique": 31,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 16.0,
+       "p99": 31.0,
+       "max": 31.0,
+       "mean": 15.843679264695796,
+       "std": 8.89787003545251,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Total Deaths": {
+       "dtype": "float64",
+       "n_missing": 5036,
+       "pct_missing": 27.84,
+       "n_unique": 951,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 18.0,
+       "p99": 7095.880000000041,
+       "max": 3700000.0,
+       "mean": 2516.7373946360153,
+       "std": 64167.12751147371,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "No. Injured": {
+       "dtype": "float64",
+       "n_missing": 13294,
+       "pct_missing": 73.5,
+       "n_unique": 891,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 1.0,
+       "median": 50.0,
+       "p99": 44407.23000000074,
+       "max": 1800000.0,
+       "mean": 2558.3739565943238,
+       "std": 32422.8692094466,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "No. Affected": {
+       "dtype": "float64",
+       "n_missing": 7322,
+       "pct_missing": 40.48,
+       "n_unique": 4172,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 39.0,
+       "median": 10000.0,
+       "p99": 13329900.000000216,
+       "max": 330000000.0,
+       "mean": 824124.9039390561,
+       "std": 7978447.5479146065,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "No. Homeless": {
+       "dtype": "float64",
+       "n_missing": 15460,
+       "pct_missing": 85.48,
+       "n_unique": 999,
+       "kind": "numeric",
+       "min": 3.0,
+       "p01": 15.0,
+       "median": 2980.5,
+       "p99": 1045204.75,
+       "max": 15850000.0,
+       "mean": 70368.53236862148,
+       "std": 504470.1434760335,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Total Affected": {
+       "dtype": "float64",
+       "n_missing": 4660,
+       "pct_missing": 25.77,
+       "n_unique": 5943,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 5.0,
+       "median": 6000.0,
+       "p99": 10598962.0,
+       "max": 330000000.0,
+       "mean": 675400.5630865485,
+       "std": 7218092.188073529,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Reconstruction Costs ('000 US$)": {
+       "dtype": "float64",
+       "n_missing": 18043,
+       "pct_missing": 99.76,
+       "n_unique": 39,
+       "kind": "numeric",
+       "min": 84.0,
+       "p01": 468.71999999999997,
+       "median": 538000.0,
+       "p99": 68499999.99999988,
+       "max": 100000000.0,
+       "mean": 5451378.046511628,
+       "std": 15681529.8527158,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Reconstruction Costs, Adjusted ('000 US$)": {
+       "dtype": "float64",
+       "n_missing": 18044,
+       "pct_missing": 99.77,
+       "n_unique": 41,
+       "kind": "numeric",
+       "min": 138.0,
+       "p01": 937.09,
+       "median": 567964.0,
+       "p99": 82148848.32999979,
+       "max": 105658407.0,
+       "mean": 7095254.261904762,
+       "std": 17948342.535104666,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Insured Damage ('000 US$)": {
+       "dtype": "float64",
+       "n_missing": 16942,
+       "pct_missing": 93.67,
+       "n_unique": 379,
+       "kind": "numeric",
+       "min": 34.0,
+       "p01": 1000.0,
+       "median": 192500.0,
+       "p99": 15569999.999999937,
+       "max": 60000000.0,
+       "mean": 1020255.5337412587,
+       "std": 3954984.868239034,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Insured Damage, Adjusted ('000 US$)": {
+       "dtype": "float64",
+       "n_missing": 16945,
+       "pct_missing": 93.69,
+       "n_unique": 890,
+       "kind": "numeric",
+       "min": 50.0,
+       "p01": 1717.6,
+       "median": 296251.0,
+       "p99": 22433219.0,
+       "max": 98911427.0,
+       "mean": 1472188.7800175285,
+       "std": 5373433.236812575,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Total Damage ('000 US$)": {
+       "dtype": "float64",
+       "n_missing": 12189,
+       "pct_missing": 67.39,
+       "n_unique": 1669,
+       "kind": "numeric",
+       "min": 1.0,
+       "p01": 50.0,
+       "median": 68700.0,
+       "p99": 12903999.999999996,
+       "max": 210000000.0,
+       "mean": 838067.6284415805,
+       "std": 5025771.172577148,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Total Damage, Adjusted ('000 US$)": {
+       "dtype": "float64",
+       "n_missing": 12231,
+       "pct_missing": 67.63,
+       "n_unique": 4423,
+       "kind": "numeric",
+       "min": 3.0,
+       "p01": 108.16,
+       "median": 141669.0,
+       "p99": 19929358.200000007,
+       "max": 300561348.0,
+       "mean": 1386948.4447480785,
+       "std": 7522739.250352954,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "CPI": {
+       "dtype": "float64",
+       "n_missing": 199,
+       "pct_missing": 1.1,
+       "n_unique": 114,
+       "kind": "numeric",
+       "min": 2.584224967578082,
+       "p01": 4.2236989595133645,
+       "median": 57.1400352670416,
+       "p99": 100.0,
+       "max": 100.0,
+       "mean": 56.05466187657865,
+       "std": 24.654623292344077,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "Admin Units": {
+       "dtype": "str",
+       "n_missing": 9719,
+       "pct_missing": 53.74,
+       "n_unique": 6882,
+       "kind": "text",
+       "min_length": 38,
+       "max_length": 11178
+      },
+      "GADM Admin Units": {
+       "dtype": "str",
+       "n_missing": 10016,
+       "pct_missing": 55.38,
+       "n_unique": 6688,
+       "kind": "text",
+       "min_length": 37,
+       "max_length": 32694
+      },
+      "Entry Date": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 2547,
+       "kind": "text",
+       "min_length": 10,
+       "max_length": 10
+      },
+      "Last Update": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 380,
+       "kind": "text",
+       "min_length": 10,
+       "max_length": 10
+      }
+     }
+    }
+   ]
+  },
+  "nd_gain": {
+   "declared": {
+    "provider": "University of Notre Dame",
+    "license": "Per ND-GAIN terms"
+   },
+   "files": [
+    {
+     "file": "data/raw/nd_gain/nd_gain_country_index_2026_release_data_v2.zip",
+     "size_bytes": 4910250,
+     "sha256": "e854c7fe6ccef8c5d24a5ef7f370b7f61d1b8c6816da19fda4cd892ca6cdf0de"
+    }
+   ],
+   "tables": [
+    {
+     "table": "vulnerability",
+     "rows": 5760,
+     "columns": 4,
+     "cells": 23040,
+     "missing_cells": 60,
+     "pct_missing_cells": 0.26,
+     "time_col": "year",
+     "time_freq": "Y",
+     "entity_col": "ISO3",
+     "value_cols": [
+      "value"
+     ],
+     "key": [
+      "ISO3",
+      "year"
+     ],
+     "sentinels_replaced": {
+      "value: blank": 60
+     },
+     "notes": [
+      "member resources 2/vulnerability/vulnerability.csv (105,771 bytes uncompressed, dated 2026-08-14 12:52)",
+      "vulnerability.csv: decoded as utf-8"
+     ],
+     "period_all_rows": {
+      "first": 1995,
+      "last": 2024,
+      "n_periods": 30
+     },
+     "period_with_values": {
+      "first": 1995,
+      "last": 2024,
+      "n_periods": 30
+     },
+     "n_entities": 192,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "ISO3": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 192,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "Name": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 192,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 32
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 30,
+       "kind": "numeric",
+       "min": 1995.0,
+       "p01": 1995.0,
+       "median": 2009.5,
+       "p99": 2024.0,
+       "max": 2024.0,
+       "mean": 2009.5,
+       "std": 8.656192886647634,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "value": {
+       "dtype": "float64",
+       "n_missing": 60,
+       "pct_missing": 1.04,
+       "n_unique": 5700,
+       "kind": "numeric",
+       "min": 0.260903494354492,
+       "p01": 0.2804427415070041,
+       "median": 0.461781252536821,
+       "p99": 0.6499703460468992,
+       "max": 0.679182344944678,
+       "mean": 0.4643404785121014,
+       "std": 0.0903245532795651,
+       "n_negative": 0,
+       "n_zero": 0
+      }
+     }
+    },
+    {
+     "table": "readiness",
+     "rows": 5760,
+     "columns": 4,
+     "cells": 23040,
+     "missing_cells": 0,
+     "pct_missing_cells": 0.0,
+     "time_col": "year",
+     "time_freq": "Y",
+     "entity_col": "ISO3",
+     "value_cols": [
+      "value"
+     ],
+     "key": [
+      "ISO3",
+      "year"
+     ],
+     "sentinels_replaced": {},
+     "notes": [
+      "member resources 2/readiness/readiness.csv (106,813 bytes uncompressed, dated 2026-08-14 12:52)",
+      "readiness.csv: decoded as utf-8"
+     ],
+     "period_all_rows": {
+      "first": 1995,
+      "last": 2024,
+      "n_periods": 30
+     },
+     "period_with_values": {
+      "first": 1995,
+      "last": 2024,
+      "n_periods": 30
+     },
+     "n_entities": 192,
+     "rows_without_entity": 0,
+     "column_profiles": {
+      "ISO3": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 192,
+       "kind": "text",
+       "min_length": 3,
+       "max_length": 3
+      },
+      "Name": {
+       "dtype": "str",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 192,
+       "kind": "text",
+       "min_length": 4,
+       "max_length": 32
+      },
+      "year": {
+       "dtype": "int64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 30,
+       "kind": "numeric",
+       "min": 1995.0,
+       "p01": 1995.0,
+       "median": 2009.5,
+       "p99": 2024.0,
+       "max": 2024.0,
+       "mean": 2009.5,
+       "std": 8.656192886647634,
+       "n_negative": 0,
+       "n_zero": 0
+      },
+      "value": {
+       "dtype": "float64",
+       "n_missing": 0,
+       "pct_missing": 0.0,
+       "n_unique": 5745,
+       "kind": "numeric",
+       "min": 0.121505987208732,
+       "p01": 0.17595961123256934,
+       "median": 0.3897654902579645,
+       "p99": 0.7909714620064867,
+       "max": 0.81516158549202,
+       "mean": 0.41939611587057385,
+       "std": 0.14556710954853805,
+       "n_negative": 0,
+       "n_zero": 0
+      }
+     }
+    }
+   ]
+  },
+  "era5_monthly_single_levels": {
+   "declared": {
+    "provider": "ECMWF / Copernicus C3S",
+    "version": "ERA5 monthly averaged reanalysis (CDS)",
+    "native_units": {
+     "t2m": "K",
+     "tp": "m per day (monthly mean of daily accumulation)"
+    },
+    "license": "Copernicus licence (attribution required)"
+   },
+   "files": [
+    {
+     "file": "data/raw/era5/era5_monthly_1960_1970.zip",
+     "size_bytes": 358807875,
+     "sha256": "d409ea9252ae717e5c10426568b18d69d664ce5a026289ecabcac1f1106a3e99"
+    },
+    {
+     "file": "data/raw/era5/era5_monthly_1971_1981.zip",
+     "size_bytes": 359667240,
+     "sha256": "7d7f388e63558f8c2df6e41d70ed365538493e152eef8d6f7f32dfbf8b32cbfc"
+    },
+    {
+     "file": "data/raw/era5/era5_monthly_1982_1992.zip",
+     "size_bytes": 358948382,
+     "sha256": "de2e5913b59bd44348aa2c14629c046ed05e66f3e2a2f42a7d5b6836fe3cca6d"
+    },
+    {
+     "file": "data/raw/era5/era5_monthly_1993_2003.zip",
+     "size_bytes": 356335863,
+     "sha256": "f45620aa12729e083feccb2b9770e9f6d950ec7b8e39a085b9f49b5fa415d631"
+    },
+    {
+     "file": "data/raw/era5/era5_monthly_2004_2014.zip",
+     "size_bytes": 359627222,
+     "sha256": "1212acdf3e73b2d334259d2a929d3218e65e9296876a62a99e25fcba5f6ae205"
+    },
+    {
+     "file": "data/raw/era5/era5_monthly_2015_2025.zip",
+     "size_bytes": 362060226,
+     "sha256": "6cc769bf01759be48c8e9797d9114fd577a616b67469f593ea916dc6ec59cb26"
+    }
+   ],
+   "era5": {
+    "chunks": [
+     {
+      "file": "data/raw/era5/era5_monthly_1960_1970.zip",
+      "members": [
+       {
+        "member": "data_stream-moda_stepType-avgua.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1960-01-01",
+        "time_last": "1970-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "00:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "t2m": {
+          "units": "K",
+          "long_name": "2 metre temperature",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 201.17886352539062,
+          "max": 313.5272216796875,
+          "area_weighted_mean": 286.89867924573383,
+          "area_weighted_monthly_min": 284.7502053799074,
+          "area_weighted_monthly_max": 288.9706773642986
+         }
+        }
+       },
+       {
+        "member": "data_stream-moda_stepType-avgad.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1960-01-01",
+        "time_last": "1970-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "06:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "tp": {
+          "units": "m",
+          "long_name": "Total precipitation",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 0.0,
+          "max": 0.1702423095703125,
+          "area_weighted_mean": 0.00286765340568209,
+          "area_weighted_monthly_min": 0.002730608328990338,
+          "area_weighted_monthly_max": 0.0030192735711304162
+         }
+        }
+       }
+      ]
+     },
+     {
+      "file": "data/raw/era5/era5_monthly_1971_1981.zip",
+      "members": [
+       {
+        "member": "data_stream-moda_stepType-avgua.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1971-01-01",
+        "time_last": "1981-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "00:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "t2m": {
+          "units": "K",
+          "long_name": "2 metre temperature",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 199.93215942382812,
+          "max": 313.1798095703125,
+          "area_weighted_mean": 286.95413526595297,
+          "area_weighted_monthly_min": 284.721287193692,
+          "area_weighted_monthly_max": 289.17018705489585
+         }
+        }
+       },
+       {
+        "member": "data_stream-moda_stepType-avgad.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1971-01-01",
+        "time_last": "1981-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "06:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "tp": {
+          "units": "m",
+          "long_name": "Total precipitation",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 0.0,
+          "max": 0.15104293823242188,
+          "area_weighted_mean": 0.002882765202506614,
+          "area_weighted_monthly_min": 0.002753544944684136,
+          "area_weighted_monthly_max": 0.003096257862985887
+         }
+        }
+       }
+      ]
+     },
+     {
+      "file": "data/raw/era5/era5_monthly_1982_1992.zip",
+      "members": [
+       {
+        "member": "data_stream-moda_stepType-avgua.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1982-01-01",
+        "time_last": "1992-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "00:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "t2m": {
+          "units": "K",
+          "long_name": "2 metre temperature",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 199.93072509765625,
+          "max": 313.8658447265625,
+          "area_weighted_mean": 287.17646730920023,
+          "area_weighted_monthly_min": 284.99584613302903,
+          "area_weighted_monthly_max": 289.3317908484382
+         }
+        }
+       },
+       {
+        "member": "data_stream-moda_stepType-avgad.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1982-01-01",
+        "time_last": "1992-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "06:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "tp": {
+          "units": "m",
+          "long_name": "Total precipitation",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 0.0,
+          "max": 0.15449142456054688,
+          "area_weighted_mean": 0.002870504901623,
+          "area_weighted_monthly_min": 0.002720929356246454,
+          "area_weighted_monthly_max": 0.003051342197368857
+         }
+        }
+       }
+      ]
+     },
+     {
+      "file": "data/raw/era5/era5_monthly_1993_2003.zip",
+      "members": [
+       {
+        "member": "data_stream-moda_stepType-avgua.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1993-01-01",
+        "time_last": "2003-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "00:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "t2m": {
+          "units": "K",
+          "long_name": "2 metre temperature",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 200.77694702148438,
+          "max": 314.70843505859375,
+          "area_weighted_mean": 287.34857496730336,
+          "area_weighted_monthly_min": 285.19635099522844,
+          "area_weighted_monthly_max": 289.5007545831598
+         }
+        }
+       },
+       {
+        "member": "data_stream-moda_stepType-avgad.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "1993-01-01",
+        "time_last": "2003-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "06:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "tp": {
+          "units": "m",
+          "long_name": "Total precipitation",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 0.0,
+          "max": 0.14609146118164062,
+          "area_weighted_mean": 0.0028986013805123536,
+          "area_weighted_monthly_min": 0.0027229433413718347,
+          "area_weighted_monthly_max": 0.0030715159237386675
+         }
+        }
+       }
+      ]
+     },
+     {
+      "file": "data/raw/era5/era5_monthly_2004_2014.zip",
+      "members": [
+       {
+        "member": "data_stream-moda_stepType-avgua.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "2004-01-01",
+        "time_last": "2014-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "00:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "t2m": {
+          "units": "K",
+          "long_name": "2 metre temperature",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 204.063232421875,
+          "max": 314.8792724609375,
+          "area_weighted_mean": 287.55547032530905,
+          "area_weighted_monthly_min": 285.2639172831345,
+          "area_weighted_monthly_max": 289.5220280722695
+         }
+        }
+       },
+       {
+        "member": "data_stream-moda_stepType-avgad.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "2004-01-01",
+        "time_last": "2014-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "06:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "tp": {
+          "units": "m",
+          "long_name": "Total precipitation",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 0.0,
+          "max": 0.14894485473632812,
+          "area_weighted_mean": 0.002951473210465167,
+          "area_weighted_monthly_min": 0.0028388546290507794,
+          "area_weighted_monthly_max": 0.0030737685331392543
+         }
+        }
+       }
+      ]
+     },
+     {
+      "file": "data/raw/era5/era5_monthly_2015_2025.zip",
+      "members": [
+       {
+        "member": "data_stream-moda_stepType-avgua.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "2015-01-01",
+        "time_last": "2025-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "00:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "t2m": {
+          "units": "K",
+          "long_name": "2 metre temperature",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 202.9405975341797,
+          "max": 316.623046875,
+          "area_weighted_mean": 287.94145455607213,
+          "area_weighted_monthly_min": 285.78451673471557,
+          "area_weighted_monthly_max": 290.10315811426887
+         }
+        }
+       },
+       {
+        "member": "data_stream-moda_stepType-avgad.nc",
+        "dims": {
+         "valid_time": 132,
+         "latitude": 721,
+         "longitude": 1440
+        },
+        "coords": [
+         "expver",
+         "latitude",
+         "longitude",
+         "number",
+         "valid_time"
+        ],
+        "time_first": "2015-01-01",
+        "time_last": "2025-12-01",
+        "n_times": 132,
+        "n_distinct_months": 132,
+        "time_of_day": [
+         "06:00"
+        ],
+        "latitude": {
+         "first": 90.0,
+         "last": -90.0,
+         "n": 721
+        },
+        "longitude": {
+         "first": 0.0,
+         "last": 359.75,
+         "n": 1440
+        },
+        "grid_step_deg": 0.25,
+        "global_attrs": {
+         "Conventions": "CF-1.7"
+        },
+        "expver_counts": {
+         "0001": 132
+        },
+        "variables": {
+         "tp": {
+          "units": "m",
+          "long_name": "Total precipitation",
+          "dims": [
+           "valid_time",
+           "latitude",
+           "longitude"
+          ],
+          "dtype": "float32",
+          "n_values": 137047680,
+          "n_nan": 0,
+          "n_negative": 0,
+          "min": 0.0,
+          "max": 0.13542556762695312,
+          "area_weighted_mean": 0.002947095045237523,
+          "area_weighted_monthly_min": 0.0027692736032439123,
+          "area_weighted_monthly_max": 0.0030834097073108285
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "coverage": {
+     "t2m": {
+      "first": "1960-01",
+      "last": "2025-12",
+      "n_months": 792,
+      "n_duplicated": 0,
+      "missing_months": []
+     },
+     "tp": {
+      "first": "1960-01",
+      "last": "2025-12",
+      "n_months": 792,
+      "n_duplicated": 0,
+      "missing_months": []
+     }
+    }
+   }
+  }
+ }
+}

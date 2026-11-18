@@ -1,0 +1,1841 @@
+{
+ "gistemp_v4_global_monthly/monthly": {
+  "rows_assessed": 1764,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "date"
+   ],
+   "rows": 1764,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "anomaly"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1880,
+   2025
+  ],
+  "timeliness": {
+   "method": "complete_years",
+   "effective_end": 2025,
+   "months_per_year_last": {
+    "2023": 12,
+    "2024": 12,
+    "2025": 12,
+    "2026": 10
+   },
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "assessed": "1880..2025",
+   "method": "single_series",
+   "expected_periods": 1752,
+   "missing_periods": 0,
+   "missing_examples": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "anomaly",
+     "range": [
+      -2.5,
+      3.0
+     ],
+     "n_checked": 1762,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -0.81,
+     "max": 1.55,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 1752,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "hadcrut5_global_monthly/monthly": {
+  "rows_assessed": 2121,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "date"
+   ],
+   "rows": 2121,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "anomaly"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1880,
+   2025
+  ],
+  "timeliness": {
+   "method": "complete_years",
+   "effective_end": 2025,
+   "months_per_year_last": {
+    "2023": 12,
+    "2024": 12,
+    "2025": 12,
+    "2026": 9
+   },
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "assessed": "1880..2025",
+   "method": "single_series",
+   "expected_periods": 1752,
+   "missing_periods": 0,
+   "missing_examples": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "anomaly",
+     "range": [
+      -2.5,
+      3.0
+     ],
+     "n_checked": 2121,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -1.0416374,
+     "max": 1.36002,
+     "examples": []
+    },
+    {
+     "check": "lower_2p5",
+     "range": [
+      -3.5,
+      3.0
+     ],
+     "n_checked": 2121,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -1.2204044,
+     "max": 1.297572,
+     "examples": []
+    },
+    {
+     "check": "upper_97p5",
+     "range": [
+      -2.5,
+      4.0
+     ],
+     "n_checked": 2121,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -0.8628705,
+     "max": 1.4224682,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 5256,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "berkeley_global_monthly/air_over_sea_ice": {
+  "rows_assessed": 2100,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "date"
+   ],
+   "rows": 2100,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "anomaly"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1880,
+   2025
+  ],
+  "timeliness": {
+   "method": "complete_years",
+   "effective_end": 2024,
+   "months_per_year_last": {
+    "2021": 12,
+    "2022": 12,
+    "2023": 12,
+    "2024": 12
+   },
+   "years_short": 1,
+   "score": "Acceptable"
+  },
+  "completeness": {
+   "assessed": "1880..2024",
+   "method": "single_series",
+   "expected_periods": 1740,
+   "missing_periods": 0,
+   "missing_examples": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "anomaly",
+     "range": [
+      -2.5,
+      3.0
+     ],
+     "n_checked": 2100,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -1.004,
+     "max": 1.548,
+     "examples": []
+    },
+    {
+     "check": "uncertainty",
+     "range": [
+      0.0,
+      2.0
+     ],
+     "n_checked": 2100,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.03,
+     "max": 0.57,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 3480,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "berkeley_global_monthly/water_under_sea_ice": {
+  "rows_assessed": 2100,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "date"
+   ],
+   "rows": 2100,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "anomaly"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1880,
+   2025
+  ],
+  "timeliness": {
+   "method": "complete_years",
+   "effective_end": 2024,
+   "months_per_year_last": {
+    "2021": 12,
+    "2022": 12,
+    "2023": 12,
+    "2024": 12
+   },
+   "years_short": 1,
+   "score": "Acceptable"
+  },
+  "completeness": {
+   "assessed": "1880..2024",
+   "method": "single_series",
+   "expected_periods": 1740,
+   "missing_periods": 0,
+   "missing_examples": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "anomaly",
+     "range": [
+      -2.5,
+      3.0
+     ],
+     "n_checked": 2100,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -0.949,
+     "max": 1.326,
+     "examples": []
+    },
+    {
+     "check": "uncertainty",
+     "range": [
+      0.0,
+      2.0
+     ],
+     "n_checked": 2100,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.025,
+     "max": 0.501,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 3480,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "berkeley_country_monthly/monthly": {
+  "rows_assessed": 517709,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "iso3",
+    "date"
+   ],
+   "rows": 517709,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "anomaly"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1961,
+   2025
+  ],
+  "timeliness": {
+   "method": "panel_monthly",
+   "effective_end": 2020,
+   "n_in_scope": 196,
+   "n_out_of_scope": 32,
+   "complete_share_last": {
+    "2015": 1.0,
+    "2016": 1.0,
+    "2017": 1.0,
+    "2018": 1.0,
+    "2019": 1.0,
+    "2020": 0.995
+   },
+   "years_short": 5,
+   "score": "Problematic"
+  },
+  "completeness": {
+   "assessed": "1961..2020",
+   "method": "panel_internal_gaps",
+   "n_series": 228,
+   "n_series_with_gaps": 1,
+   "pct_series_full_window": 85.5,
+   "gap_periods": 24,
+   "span_periods": 162398,
+   "worst_series": [
+    {
+     "series": [
+      "KIR"
+     ],
+     "gaps": 24
+    }
+   ],
+   "metric": 0.015,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "anomaly",
+     "range": [
+      -15.0,
+      15.0
+     ],
+     "n_checked": 493488,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -10.693,
+     "max": 11.817,
+     "examples": []
+    },
+    {
+     "check": "uncertainty",
+     "range": [
+      0.0,
+      10.0
+     ],
+     "n_checked": 493488,
+     "n_out": 138,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.037,
+     "max": 12.184,
+     "examples": [
+      {
+       "iso3": "LUX",
+       "date": "1772-02-01",
+       "uncertainty": "12.184"
+      },
+      {
+       "iso3": "DEU",
+       "date": "1772-02-01",
+       "uncertainty": "12.169"
+      },
+      {
+       "iso3": "BEL",
+       "date": "1772-02-01",
+       "uncertainty": "12.15"
+      },
+      {
+       "iso3": "IMN",
+       "date": "1786-11-01",
+       "uncertainty": "12.109"
+      },
+      {
+       "iso3": "DEU",
+       "date": "1779-02-01",
+       "uncertainty": "12.079"
+      }
+     ]
+    }
+   ],
+   "n_checked_in_window": 324748,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "berkeley_country_monthly/file_headers": {
+  "rows_assessed": 228,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "iso3"
+   ],
+   "rows": 228,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [],
+   "score": "Good"
+  }
+ },
+ "noaa_co2_mlo_monthly/monthly": {
+  "rows_assessed": 823,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "date"
+   ],
+   "rows": 823,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "average",
+    "deseasonalized"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1959,
+   2025
+  ],
+  "timeliness": {
+   "method": "complete_years",
+   "effective_end": 2025,
+   "months_per_year_last": {
+    "2023": 12,
+    "2024": 12,
+    "2025": 12,
+    "2026": 9
+   },
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "assessed": "1959..2025",
+   "method": "single_series",
+   "expected_periods": 804,
+   "missing_periods": 0,
+   "missing_examples": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "average",
+     "range": [
+      300.0,
+      500.0
+     ],
+     "n_checked": 823,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 312.42,
+     "max": 432.34,
+     "examples": []
+    },
+    {
+     "check": "deseasonalized",
+     "range": [
+      300.0,
+      500.0
+     ],
+     "n_checked": 823,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 314.44,
+     "max": 429.55,
+     "examples": []
+    },
+    {
+     "check": "ndays",
+     "range": [
+      0.0,
+      31.0
+     ],
+     "n_checked": 628,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 2.0,
+     "max": 31.0,
+     "examples": []
+    },
+    {
+     "check": "sdev",
+     "range": [
+      0.0,
+      5.0
+     ],
+     "n_checked": 627,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.15,
+     "max": 1.31,
+     "examples": []
+    },
+    {
+     "check": "unc",
+     "range": [
+      0.0,
+      5.0
+     ],
+     "n_checked": 629,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.0,
+     "max": 0.58,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 3465,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "noaa_oni/monthly": {
+  "rows_assessed": 921,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "date"
+   ],
+   "rows": 921,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "ANOM"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1959,
+   2025
+  ],
+  "timeliness": {
+   "method": "complete_years",
+   "effective_end": 2025,
+   "months_per_year_last": {
+    "2023": 12,
+    "2024": 12,
+    "2025": 12,
+    "2026": 9
+   },
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "assessed": "1959..2025",
+   "method": "single_series",
+   "expected_periods": 804,
+   "missing_periods": 0,
+   "missing_examples": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "ANOM",
+     "range": [
+      -3.5,
+      3.5
+     ],
+     "n_checked": 921,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": -2.04,
+     "max": 2.59,
+     "examples": []
+    },
+    {
+     "check": "TOTAL",
+     "range": [
+      20.0,
+      32.0
+     ],
+     "n_checked": 921,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 24.39,
+     "max": 29.23,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 1608,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "owid_co2/country_year": {
+  "rows_assessed": 48306,
+  "selection": [
+   "excluded 7,963 aggregate rows (owid)"
+  ],
+  "uniqueness": {
+   "key": [
+    "country",
+    "year"
+   ],
+   "rows": 48306,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "co2",
+    "co2_per_capita"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1961,
+   2025
+  ],
+  "timeliness": {
+   "method": "panel_annual",
+   "effective_end": 2025,
+   "reporting": {
+    "2020": {
+     "n": 220,
+     "ref": 220.0,
+     "ok": true
+    },
+    "2021": {
+     "n": 220,
+     "ref": 220.0,
+     "ok": true
+    },
+    "2022": {
+     "n": 220,
+     "ref": 220.0,
+     "ok": true
+    },
+    "2023": {
+     "n": 220,
+     "ref": 220.0,
+     "ok": true
+    },
+    "2024": {
+     "n": 220,
+     "ref": 220.0,
+     "ok": true
+    },
+    "2025": {
+     "n": 220,
+     "ref": 220.0,
+     "ok": true
+    }
+   },
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "assessed": "1961..2025",
+   "method": "panel_internal_gaps",
+   "n_series": 220,
+   "n_series_with_gaps": 3,
+   "pct_series_full_window": 87.3,
+   "gap_periods": 24,
+   "span_periods": 13810,
+   "worst_series": [
+    {
+     "series": [
+      "SHN"
+     ],
+     "gaps": 12
+    },
+    {
+     "series": [
+      "CXR"
+     ],
+     "gaps": 10
+    },
+    {
+     "series": [
+      "SWZ"
+     ],
+     "gaps": 2
+    }
+   ],
+   "metric": 0.174,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "co2",
+     "range": [
+      0.0,
+      50000.0
+     ],
+     "n_checked": 24109,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.0,
+     "max": 12417.493,
+     "examples": []
+    },
+    {
+     "check": "co2_per_capita",
+     "range": [
+      0.0,
+      100.0
+     ],
+     "n_checked": 23599,
+     "n_out": 39,
+     "n_out_in_window": 23,
+     "n_non_numeric": 0,
+     "min": 0.0,
+     "max": 1062.532,
+     "examples": [
+      {
+       "country": "Sint Maarten (Dutch part)",
+       "year": "1956",
+       "co2_per_capita": "1062.532"
+      },
+      {
+       "country": "Sint Maarten (Dutch part)",
+       "year": "1954",
+       "co2_per_capita": "953.602"
+      },
+      {
+       "country": "Sint Maarten (Dutch part)",
+       "year": "1951",
+       "co2_per_capita": "829.606"
+      },
+      {
+       "country": "Sint Maarten (Dutch part)",
+       "year": "1955",
+       "co2_per_capita": "811.526"
+      },
+      {
+       "country": "Sint Maarten (Dutch part)",
+       "year": "1959",
+       "co2_per_capita": "741.733"
+      }
+     ]
+    },
+    {
+     "check": "population",
+     "range": [
+      0.0,
+      2000000000.0
+     ],
+     "n_checked": 41276,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 21.0,
+     "max": 1463865527.0,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 41852,
+   "n_out_in_window": 23,
+   "metric": 0.055,
+   "score": "Acceptable"
+  }
+ },
+ "faostat_crops_livestock/production": {
+  "rows_assessed": 90639,
+  "selection": [
+   "kept Item Code in ['15', '27', '56', '236']: 114,876 rows",
+   "kept Element Code in ['5312', '5510', '5412', '5419']: 114,876 rows",
+   "excluded 24,237 aggregate rows (faostat)"
+  ],
+  "uniqueness": {
+   "key": [
+    "Area Code",
+    "Item Code",
+    "Element Code",
+    "Year"
+   ],
+   "rows": 90639,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "Value"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1961,
+   2025
+  ],
+  "timeliness": {
+   "method": "panel_annual",
+   "effective_end": 2024,
+   "by": {
+    "column": "Element Code",
+    "effective_end": {
+     "5312": 2024,
+     "5412": 2024,
+     "5510": 2024
+    },
+    "reporting": {
+     "5312": {
+      "2019": {
+       "n": 180,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2020": {
+       "n": 180,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 180,
+       "ref": 180.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 180,
+       "ref": 180.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 179,
+       "ref": 180.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 178,
+       "ref": 180.0,
+       "ok": true
+      }
+     },
+     "5412": {
+      "2019": {
+       "n": 179,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2020": {
+       "n": 179,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 179,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 179,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 178,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 177,
+       "ref": 179.0,
+       "ok": true
+      }
+     },
+     "5510": {
+      "2019": {
+       "n": 180,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2020": {
+       "n": 180,
+       "ref": 179.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 180,
+       "ref": 180.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 180,
+       "ref": 180.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 179,
+       "ref": 180.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 178,
+       "ref": 180.0,
+       "ok": true
+      }
+     }
+    }
+   },
+   "years_short": 1,
+   "score": "Acceptable"
+  },
+  "completeness": {
+   "assessed": "1961..2024",
+   "method": "panel_internal_gaps",
+   "n_series": 1717,
+   "n_series_with_gaps": 33,
+   "pct_series_full_window": 65.9,
+   "gap_periods": 362,
+   "span_periods": 89696,
+   "worst_series": [
+    {
+     "series": [
+      "194",
+      "27",
+      "5412"
+     ],
+     "gaps": 37
+    },
+    {
+     "series": [
+      "131",
+      "56",
+      "5412"
+     ],
+     "gaps": 30
+    },
+    {
+     "series": [
+      "131",
+      "56",
+      "5312"
+     ],
+     "gaps": 30
+    },
+    {
+     "series": [
+      "131",
+      "56",
+      "5510"
+     ],
+     "gaps": 30
+    },
+    {
+     "series": [
+      "23",
+      "236",
+      "5510"
+     ],
+     "gaps": 27
+    }
+   ],
+   "metric": 0.404,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "Value [Element Code=5312]",
+     "range": [
+      0.0,
+      1000000000.0
+     ],
+     "n_checked": 30199,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.0,
+     "max": 70205008.0,
+     "examples": []
+    },
+    {
+     "check": "Value [Element Code=5510]",
+     "range": [
+      0.0,
+      2000000000.0
+     ],
+     "n_checked": 30203,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.0,
+     "max": 412262180.0,
+     "examples": []
+    },
+    {
+     "check": "Value [Element Code=5412]",
+     "range": [
+      1.0,
+      30000.0
+     ],
+     "n_checked": 28932,
+     "n_out": 26,
+     "n_out_in_window": 26,
+     "n_non_numeric": 0,
+     "min": 0.0,
+     "max": 39405.7,
+     "examples": [
+      {
+       "Area Code": "221",
+       "Item Code": "56",
+       "Element Code": "5412",
+       "Year": "2022",
+       "Value": "39405.7"
+      },
+      {
+       "Area Code": "225",
+       "Item Code": "56",
+       "Element Code": "5412",
+       "Year": "2013",
+       "Value": "36761.9"
+      },
+      {
+       "Area Code": "225",
+       "Item Code": "56",
+       "Element Code": "5412",
+       "Year": "2015",
+       "Value": "35291.3"
+      },
+      {
+       "Area Code": "105",
+       "Item Code": "56",
+       "Element Code": "5412",
+       "Year": "2014",
+       "Value": "34097.7"
+      },
+      {
+       "Area Code": "105",
+       "Item Code": "56",
+       "Element Code": "5412",
+       "Year": "2011",
+       "Value": "33815.8"
+      }
+     ]
+    },
+    {
+     "check": "Value [Element Code=5419]",
+     "range": [
+      10.0,
+      300000.0
+     ],
+     "n_checked": 0,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": null,
+     "max": null,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 89334,
+   "n_out_in_window": 26,
+   "metric": 0.0291,
+   "score": "Acceptable"
+  }
+ },
+ "wdi/indicators": {
+  "rows_assessed": 71940,
+  "selection": [
+   "excluded 15,840 aggregate rows (wdi)"
+  ],
+  "uniqueness": {
+   "key": [
+    "Country Code",
+    "Indicator Code",
+    "year"
+   ],
+   "rows": 71940,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "value"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1961,
+   2025
+  ],
+  "timeliness": {
+   "method": "panel_annual",
+   "effective_end": 2024,
+   "by": {
+    "column": "Indicator Code",
+    "effective_end": {
+     "AG.LND.TOTL.K2": 2024,
+     "NV.AGR.TOTL.ZS": 2024,
+     "NY.GDP.PCAP.PP.KD": 2025,
+     "SP.POP.TOTL": 2025,
+     "SP.URB.TOTL.IN.ZS": 2025
+    },
+    "reporting": {
+     "AG.LND.TOTL.K2": {
+      "2019": {
+       "n": 216,
+       "ref": 216.0,
+       "ok": true
+      },
+      "2020": {
+       "n": 216,
+       "ref": 216.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 216,
+       "ref": 216.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 215,
+       "ref": 216.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 215,
+       "ref": 216.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 214,
+       "ref": 216.0,
+       "ok": true
+      }
+     },
+     "NV.AGR.TOTL.ZS": {
+      "2020": {
+       "n": 198,
+       "ref": 200.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 197,
+       "ref": 199.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 196,
+       "ref": 199.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 194,
+       "ref": 198.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 187,
+       "ref": 197.0,
+       "ok": true
+      },
+      "2025": {
+       "n": 158,
+       "ref": 196.0,
+       "ok": false
+      }
+     },
+     "NY.GDP.PCAP.PP.KD": {
+      "2020": {
+       "n": 199,
+       "ref": 199.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 199,
+       "ref": 199.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 199,
+       "ref": 199.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 197,
+       "ref": 199.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 195,
+       "ref": 199.0,
+       "ok": true
+      },
+      "2025": {
+       "n": 185,
+       "ref": 199.0,
+       "ok": true
+      }
+     },
+     "SP.POP.TOTL": {
+      "2020": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2025": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      }
+     },
+     "SP.URB.TOTL.IN.ZS": {
+      "2020": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2021": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2022": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2023": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2024": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      },
+      "2025": {
+       "n": 217,
+       "ref": 217.0,
+       "ok": true
+      }
+     }
+    }
+   },
+   "years_short": 1,
+   "score": "Acceptable"
+  },
+  "completeness": {
+   "assessed": "1961..2024",
+   "method": "panel_internal_gaps",
+   "n_series": 1055,
+   "n_series_with_gaps": 9,
+   "pct_series_full_window": 61.7,
+   "gap_periods": 51,
+   "span_periods": 56042,
+   "worst_series": [
+    {
+     "series": [
+      "MDG",
+      "NV.AGR.TOTL.ZS"
+     ],
+     "gaps": 15
+    },
+    {
+     "series": [
+      "PER",
+      "NV.AGR.TOTL.ZS"
+     ],
+     "gaps": 11
+    },
+    {
+     "series": [
+      "FSM",
+      "NV.AGR.TOTL.ZS"
+     ],
+     "gaps": 11
+    },
+    {
+     "series": [
+      "PYF",
+      "NV.AGR.TOTL.ZS"
+     ],
+     "gaps": 4
+    },
+    {
+     "series": [
+      "BMU",
+      "NV.AGR.TOTL.ZS"
+     ],
+     "gaps": 4
+    }
+   ],
+   "metric": 0.091,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "value [Indicator Code=SP.POP.TOTL]",
+     "range": [
+      1000.0,
+      2000000000.0
+     ],
+     "n_checked": 14292,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 2715.0,
+     "max": 1463865525.0,
+     "examples": []
+    },
+    {
+     "check": "value [Indicator Code=NY.GDP.PCAP.PP.KD]",
+     "range": [
+      100.0,
+      250000.0
+     ],
+     "n_checked": 6977,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 510.82282292831013,
+     "max": 174569.52317126683,
+     "examples": []
+    },
+    {
+     "check": "value [Indicator Code=NV.AGR.TOTL.ZS]",
+     "range": [
+      0.0,
+      100.0
+     ],
+     "n_checked": 9088,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.0,
+     "max": 89.41450980392158,
+     "examples": []
+    },
+    {
+     "check": "value [Indicator Code=SP.URB.TOTL.IN.ZS]",
+     "range": [
+      0.0,
+      100.0
+     ],
+     "n_checked": 14322,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 1.83856656446502,
+     "max": 100.0,
+     "examples": []
+    },
+    {
+     "check": "value [Indicator Code=AG.LND.TOTL.K2]",
+     "range": [
+      0.1,
+      20000000.0
+     ],
+     "n_checked": 12563,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 2.0,
+     "max": 16389950.0,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 56768,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "wdi/country_classification": {
+  "rows_assessed": 265,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "Country Code"
+   ],
+   "rows": 265,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [],
+   "score": "Good"
+  }
+ },
+ "emdat/events": {
+  "rows_assessed": 18086,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "DisNo."
+   ],
+   "rows": 18086,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "Total Deaths",
+    "Total Affected"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1980,
+   2025
+  ],
+  "timeliness": {
+   "method": "events",
+   "effective_end": 2025,
+   "access_year": 2026,
+   "rows_per_year_last": {
+    "2021": 437,
+    "2022": 436,
+    "2023": 462,
+    "2024": 447,
+    "2025": 413,
+    "2026": 199
+   },
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "assessed": "1980..2025",
+   "method": "events",
+   "rows": 15491,
+   "pct_missing": {
+    "ISO": 0.0,
+    "Start Year": 0.0,
+    "Disaster Subgroup": 0.0,
+    "Total Deaths": 28.92,
+    "Total Affected": 22.35
+   },
+   "metric": 28.92,
+   "score": "Problematic"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "Start Year",
+     "range": [
+      1900.0,
+      2026.0
+     ],
+     "n_checked": 18086,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 1900.0,
+     "max": 2026.0,
+     "examples": []
+    },
+    {
+     "check": "Start Month",
+     "range": [
+      1.0,
+      12.0
+     ],
+     "n_checked": 17715,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 1.0,
+     "max": 12.0,
+     "examples": []
+    },
+    {
+     "check": "Total Deaths",
+     "range": [
+      0.0,
+      5000000.0
+     ],
+     "n_checked": 13050,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 1.0,
+     "max": 3700000.0,
+     "examples": []
+    },
+    {
+     "check": "Total Affected",
+     "range": [
+      0.0,
+      2000000000.0
+     ],
+     "n_checked": 13426,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 1.0,
+     "max": 330000000.0,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 53794,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "nd_gain/vulnerability": {
+  "rows_assessed": 5760,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "ISO3",
+    "year"
+   ],
+   "rows": 5760,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "value"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1995,
+   2025
+  ],
+  "timeliness": {
+   "method": "panel_annual",
+   "effective_end": 2024,
+   "reporting": {
+    "2019": {
+     "n": 190,
+     "ref": 190.0,
+     "ok": true
+    },
+    "2020": {
+     "n": 190,
+     "ref": 190.0,
+     "ok": true
+    },
+    "2021": {
+     "n": 190,
+     "ref": 190.0,
+     "ok": true
+    },
+    "2022": {
+     "n": 190,
+     "ref": 190.0,
+     "ok": true
+    },
+    "2023": {
+     "n": 190,
+     "ref": 190.0,
+     "ok": true
+    },
+    "2024": {
+     "n": 190,
+     "ref": 190.0,
+     "ok": true
+    }
+   },
+   "years_short": 1,
+   "score": "Acceptable"
+  },
+  "completeness": {
+   "assessed": "1995..2024",
+   "method": "panel_internal_gaps",
+   "n_series": 190,
+   "n_series_with_gaps": 0,
+   "pct_series_full_window": 100.0,
+   "gap_periods": 0,
+   "span_periods": 5700,
+   "worst_series": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "value",
+     "range": [
+      0.0,
+      1.0
+     ],
+     "n_checked": 5700,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.260903494354492,
+     "max": 0.679182344944678,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 5700,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "nd_gain/readiness": {
+  "rows_assessed": 5760,
+  "selection": [],
+  "uniqueness": {
+   "key": [
+    "ISO3",
+    "year"
+   ],
+   "rows": 5760,
+   "rows_with_null_key": 0,
+   "rows_in_duplicate_keys": 0,
+   "exact_duplicate_rows": 0,
+   "conflicting_keys": 0,
+   "conflicting_examples": [],
+   "value_cols_compared": [
+    "value"
+   ],
+   "score": "Good"
+  },
+  "window": [
+   1995,
+   2025
+  ],
+  "timeliness": {
+   "method": "panel_annual",
+   "effective_end": 2024,
+   "reporting": {
+    "2019": {
+     "n": 192,
+     "ref": 192.0,
+     "ok": true
+    },
+    "2020": {
+     "n": 192,
+     "ref": 192.0,
+     "ok": true
+    },
+    "2021": {
+     "n": 192,
+     "ref": 192.0,
+     "ok": true
+    },
+    "2022": {
+     "n": 192,
+     "ref": 192.0,
+     "ok": true
+    },
+    "2023": {
+     "n": 192,
+     "ref": 192.0,
+     "ok": true
+    },
+    "2024": {
+     "n": 192,
+     "ref": 192.0,
+     "ok": true
+    }
+   },
+   "years_short": 1,
+   "score": "Acceptable"
+  },
+  "completeness": {
+   "assessed": "1995..2024",
+   "method": "panel_internal_gaps",
+   "n_series": 192,
+   "n_series_with_gaps": 0,
+   "pct_series_full_window": 100.0,
+   "gap_periods": 0,
+   "span_periods": 5760,
+   "worst_series": [],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "checks": [
+    {
+     "check": "value",
+     "range": [
+      0.0,
+      1.0
+     ],
+     "n_checked": 5760,
+     "n_out": 0,
+     "n_out_in_window": 0,
+     "n_non_numeric": 0,
+     "min": 0.121505987208732,
+     "max": 0.81516158549202,
+     "examples": []
+    }
+   ],
+   "n_checked_in_window": 5760,
+   "n_out_in_window": 0,
+   "metric": 0.0,
+   "score": "Good"
+  }
+ },
+ "era5_monthly_single_levels/t2m": {
+  "timeliness": {
+   "method": "complete_years (profile)",
+   "effective_end": 2025,
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "missing_months": [],
+   "n_nan": 0,
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "range": [
+    183.15,
+    333.15
+   ],
+   "min": 199.93072509765625,
+   "max": 316.623046875,
+   "score": "Good"
+  },
+  "uniqueness": {
+   "duplicated_months": 0,
+   "score": "Good"
+  }
+ },
+ "era5_monthly_single_levels/tp": {
+  "timeliness": {
+   "method": "complete_years (profile)",
+   "effective_end": 2025,
+   "years_short": 0,
+   "score": "Good"
+  },
+  "completeness": {
+   "missing_months": [],
+   "n_nan": 0,
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "validity": {
+   "range": [
+    0.0,
+    null
+   ],
+   "min": 0.0,
+   "max": 0.1702423095703125,
+   "score": "Good"
+  },
+  "uniqueness": {
+   "duplicated_months": 0,
+   "score": "Good"
+  }
+ }
+}

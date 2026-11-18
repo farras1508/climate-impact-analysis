@@ -23,3 +23,9 @@ verify-data:  ## Re-hash raw data against the manifest
 
 mlflow-ui:  ## Browse experiments at http://127.0.0.1:5000
 	mlflow ui --backend-store-uri sqlite:///mlflow.db --port 5000
+profile:  ## Step 3.1: profile every raw dataset (writes reports/profiling/)
+	$(PY) -m climate_impact.quality.profile
+quality:  ## Step 3.2: score every raw table on the data-quality dimensions (reports/quality/)
+	$(PY) -m climate_impact.quality.checks
+crosschecks:  ## Step 3.2b: consistency/integrity checks, ERA5 extremes, EM-DAT lag (reports/quality/)
+	$(PY) -m climate_impact.quality.crosschecks
