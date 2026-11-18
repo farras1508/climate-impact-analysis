@@ -4,6 +4,8 @@ check-sources:  ## Check every HTTP data source is reachable (writes reports/sou
 	$(PY) -m climate_impact.ingest.source_check
 data-http:  ## Download all direct-URL HTTP datasets into data/raw (provenance-recorded)
 	$(PY) -m climate_impact.ingest.http all
+data-era5:  ## Download ERA5 monthly means by year (CDS queue; resumable)
+	$(PY) -m climate_impact.ingest.era5
 
 PY := python
 
