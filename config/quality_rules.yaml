@@ -154,3 +154,64 @@ crosschecks:
   required_values:
     emdat/events: {Disaster Subgroup: [Hydrological, Meteorological, Climatological, Geophysical]}
     faostat_crops_livestock/production: {Item Code: "@crops", Element Code: [5312, 5510, 5412]}
+
+# ---------------------------------------------------------------- Step 3.3 (DEC-072)
+domain:
+  # An anomaly series averages ~0 over its own reference period: this tests the declared
+  # baseline empirically instead of trusting documentation.
+  baseline_tolerance_degc: 0.02
+  rebase_period: [1991, 2020]                 # DEC-009: needs 360 valid months per series
+  baselines:                                  # dataset/table: declared native reference period
+    gistemp_v4_global_monthly/monthly: [1951, 1980]
+    hadcrut5_global_monthly/monthly: [1961, 1990]
+    berkeley_global_monthly/air_over_sea_ice: [1951, 1980]
+    berkeley_global_monthly/water_under_sea_ice: [1951, 1980]
+    berkeley_country_monthly/monthly: [1951, 1980]   # stated in every file header
+  # Predecessor -> successor states (risk RD3). Codes: ISO3 / ISO 3166-3, or "FAO:<area code>".
+  # `ended` = last year the predecessor existed as one statistical unit (FAOSTAT convention:
+  # Belgium-Luxembourg reported jointly to 1999). Successor values up to `ended` are back-casts.
+  successions:
+    USSR:
+      ended: 1991                              # last year of the predecessor
+      predecessors: [SUN, "FAO:228"]
+      successors: [ARM, AZE, BLR, EST, GEO, KAZ, KGZ, LTU, LVA, MDA, RUS, TJK, TKM, UKR, UZB]
+    Yugoslavia:
+      ended: 1991                              # last year of the predecessor
+      predecessors: [YUG, "FAO:248"]
+      successors: [BIH, HRV, MKD, SVN, SCG, SRB, MNE, XKX]
+    Serbia and Montenegro:
+      ended: 2005                              # last year of the predecessor
+      predecessors: [SCG, "FAO:186"]
+      successors: [SRB, MNE, XKX]
+    Czechoslovakia:
+      ended: 1992                              # last year of the predecessor
+      predecessors: [CSK, "FAO:51"]
+      successors: [CZE, SVK]
+    Ethiopia PDR:
+      ended: 1992                              # last year of the predecessor
+      predecessors: ["FAO:62"]
+      successors: [ETH, ERI]
+    Sudan (former):
+      ended: 2011                              # last year of the predecessor
+      predecessors: ["FAO:206"]
+      successors: [SDN, SSD]
+    Belgium-Luxembourg:
+      ended: 1999                              # last year of the predecessor
+      predecessors: ["FAO:15"]
+      successors: [BEL, LUX]
+    Germany:
+      ended: 1990                              # last year of the predecessor
+      predecessors: [DDR, DFR, DEW]
+      successors: [DEU]
+    Yemen:
+      ended: 1990                              # last year of the predecessor
+      predecessors: [YMD, YMN]
+      successors: [YEM]
+    Netherlands Antilles:
+      ended: 2010                              # last year of the predecessor
+      predecessors: [ANT]
+      successors: [CUW, SXM, BES]
+  # Outcome blinding (DEC-072): Phase 3 tabulates data-generation features only. Climate-related
+  # EM-DAT subgroup counts and yield levels are NOT tabulated before Phase 6.
+  emdat_reporting_subgroup: Geophysical       # placebo subgroup = reporting-effort proxy
+  faostat_flag_elements: [5412, 5510, 5312]
