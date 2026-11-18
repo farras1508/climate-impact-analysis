@@ -285,3 +285,27 @@ def test_era5_scored_from_profile():
     assert out["t2m"]["timeliness"]["effective_end"] == 2025
     assert out["tp"]["timeliness"]["effective_end"] == 2024  # 2025 incomplete
     assert out["tp"]["validity"]["score"] == "Problematic"  # negative precipitation
+
+
+def test_era5_results_render_in_scorecard():
+    era5 = {
+        "t2m": {
+            "first": "1960-01",
+            "last": "2025-12",
+            "n_months": 792,
+            "n_duplicated": 0,
+            "missing_months": [],
+        }
+    }
+    stats = {"n_values": 10, "n_nan": 0, "min": 200.0, "max": 300.0}
+    profile = {
+        "datasets": {
+            checks.ERA5: {
+                "era5": {"coverage": era5, "chunks": [{"members": [{"variables": {"t2m": stats}}]}]}
+            }
+        }
+    }
+    rules = {"scoring": SCORING, "era5": {"ranges": {"t2m": [183.15, 333.15]}}}
+    results = {f"{checks.ERA5}/{k}": v for k, v in checks.assess_era5(profile, rules, CFG).items()}
+    page = checks.render_scorecard(results)
+    assert "Good (end 2025)" in page

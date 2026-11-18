@@ -483,6 +483,7 @@ def assess_era5(
         )
         out[var] = {
             "timeliness": {
+                "method": "complete_years (profile)",
                 "effective_end": last_year,
                 "years_short": short,
                 "score": grade(short, scoring["timeliness_years_short"]),
