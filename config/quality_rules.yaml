@@ -215,3 +215,40 @@ domain:
   # EM-DAT subgroup counts and yield levels are NOT tabulated before Phase 6.
   emdat_reporting_subgroup: Geophysical       # placebo subgroup = reporting-effort proxy
   faostat_flag_elements: [5412, 5510, 5312]
+
+# ---------------------------------------------------------------- Step 3.4 (DEC-076)
+missingness:
+  # Each block = one variable as an analysis will use it. Grid = universe (217 WDI economies)
+  # x years, restricted to years in which the country exists as a territorially constant unit
+  # (DEC-074). Outcome = 1 if the value is missing. Values themselves are never read (blinding).
+  covariates: [income, region, log_pop, year]   # GDP per capita is itself a tested variable,
+                                                # so income group stands in for it (no circularity)
+  separation_abs_coef: 15.0                     # |logit coef| above this = quasi-complete separation
+  multiple_testing: holm                        # within each model's family of terms (FWER)
+  variables:
+    h3_yield:
+      source: faostat
+      element: 5412
+      window: [1961, 2024]                      # DEC-066 effective end
+      scope: growers                            # country-crop pairs with >= 1 observed yield
+    h4_population:
+      source: wdi
+      indicator: SP.POP.TOTL
+      window: [1989, 2024]                      # H4 1990-2025 with 1-year-lagged controls
+    h4_gdp_pc_ppp:
+      source: wdi
+      indicator: NY.GDP.PCAP.PP.KD
+      window: [1989, 2024]
+    h5_agri_share:
+      source: wdi
+      indicator: NV.AGR.TOTL.ZS
+      window: [2015, 2024]                      # H5: 10-year mean, >= 5 valid years (DEC-070)
+      min_valid: 5
+    h5_vulnerability:
+      source: nd_gain
+      table: vulnerability
+      year: 2024
+    h5_readiness:
+      source: nd_gain
+      table: readiness
+      year: 2024

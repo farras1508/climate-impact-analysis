@@ -31,3 +31,5 @@ crosschecks:  ## Step 3.2b: consistency/integrity checks, ERA5 extremes, EM-DAT 
 	$(PY) -m climate_impact.quality.crosschecks
 domain:  ## Step 3.3: baselines, state successions, reporting effort (reports/quality/)
 	$(PY) -m climate_impact.quality.domain
+missingness:  ## Step 3.4: missingness patterns, logit tests, heatmaps (reports/quality/, reports/figures/)
+	$(PY) -m climate_impact.quality.missingness
