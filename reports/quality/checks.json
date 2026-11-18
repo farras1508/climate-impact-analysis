@@ -1786,6 +1786,7 @@
  },
  "era5_monthly_single_levels/t2m": {
   "timeliness": {
+   "method": "complete_years (profile)",
    "effective_end": 2025,
    "years_short": 0,
    "score": "Good"
@@ -1812,6 +1813,7 @@
  },
  "era5_monthly_single_levels/tp": {
   "timeliness": {
+   "method": "complete_years (profile)",
    "effective_end": 2025,
    "years_short": 0,
    "score": "Good"
