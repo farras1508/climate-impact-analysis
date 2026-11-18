@@ -1,0 +1,129 @@
+# Step 3.2 data-quality rules (DEC-064).
+# Every threshold and range is fixed here BEFORE any score is computed, so a score cannot be
+# tuned after seeing it. Changing a value after the first run = a decision-log entry.
+#
+# Windows (resolved from config.yaml): study = 1961-2025, h1b = 1880-2025, h2 = 1959-2025,
+# h4_all = 1980-2025 (earliest H4 sensitivity start). Completeness and timeliness are judged
+# inside the window; validity and uniqueness on every row read (a bad value is bad in any year).
+
+scoring:
+  completeness_gap_pct: {good: 1.0, acceptable: 5.0}        # internal gaps, % of observed span
+  validity_out_of_range_pct: {good: 0.0, acceptable: 0.1}   # % of checked values, inside window
+  timeliness_years_short: {good: 0, acceptable: 1}          # study_end - effective_end
+  panel_reporting_share: 0.90                               # DEC-037
+  panel_reference_years: 5                                  # median of the 5 preceding years
+
+tables:
+  gistemp_v4_global_monthly/monthly:
+    window: h1b
+    effective_end: {method: complete_years}
+    ranges: {anomaly: [-2.5, 3.0]}
+
+  hadcrut5_global_monthly/monthly:
+    window: h1b
+    effective_end: {method: complete_years}
+    ranges: {anomaly: [-2.5, 3.0], lower_2p5: [-3.5, 3.0], upper_97p5: [-2.5, 4.0]}
+
+  berkeley_global_monthly/air_over_sea_ice:
+    window: h1b
+    effective_end: {method: complete_years}
+    ranges: {anomaly: [-2.5, 3.0], uncertainty: [0.0, 2.0]}
+
+  berkeley_global_monthly/water_under_sea_ice:
+    window: h1b
+    effective_end: {method: complete_years}
+    ranges: {anomaly: [-2.5, 3.0], uncertainty: [0.0, 2.0]}
+
+  berkeley_country_monthly/monthly:
+    window: study
+    # DV2: the replication covers files reaching 2020; share judged among those countries
+    effective_end: {method: panel_monthly, scope_year: 2020}
+    # Monthly country anomalies: high-latitude winter months can exceed +-10 degC, so the
+    # data dictionary's -6..6 (written for annual means) is too tight for monthly data.
+    ranges: {anomaly: [-15.0, 15.0], uncertainty: [0.0, 10.0]}
+
+  berkeley_country_monthly/file_headers:
+    uniqueness_only: true
+
+  noaa_co2_mlo_monthly/monthly:
+    window: h2
+    effective_end: {method: complete_years}
+    ranges:
+      average: [300.0, 500.0]
+      deseasonalized: [300.0, 500.0]
+      ndays: [0, 31]
+      sdev: [0.0, 5.0]
+      unc: [0.0, 5.0]
+
+  noaa_oni/monthly:
+    window: h2
+    effective_end: {method: complete_years}
+    ranges: {ANOM: [-3.5, 3.5], TOTAL: [20.0, 32.0]}
+
+  owid_co2/country_year:
+    window: study
+    aggregates: owid
+    value: co2
+    effective_end: {method: panel_annual}
+    ranges: {co2: [0.0, 50000.0], co2_per_capita: [0.0, 100.0], population: [0.0, 2.0e+9]}
+
+  faostat_crops_livestock/production:
+    window: study
+    aggregates: faostat
+    include_values: {Item Code: "@crops", Element Code: "@faostat_elements"}
+    series: [Item Code, Element Code]
+    value: Value
+    effective_end: {method: panel_annual, by: Element Code}
+    ranges_by:
+      column: Value
+      by: Element Code
+      ranges:
+        "5312": [0.0, 1.0e+9]       # area harvested, ha
+        "5510": [0.0, 2.0e+9]       # production, t
+        "5412": [1.0, 30000.0]     # yield, kg/ha
+        "5419": [10.0, 300000.0]   # yield, hg/ha (legacy element)
+
+  wdi/indicators:
+    window: study
+    aggregates: wdi
+    series: [Indicator Code]
+    value: value
+    effective_end: {method: panel_annual, by: Indicator Code}
+    ranges_by:
+      column: value
+      by: Indicator Code
+      ranges:
+        SP.POP.TOTL: [1000.0, 2.0e+9]
+        NY.GDP.PCAP.PP.KD: [100.0, 250000.0]
+        NV.AGR.TOTL.ZS: [0.0, 100.0]
+        SP.URB.TOTL.IN.ZS: [0.0, 100.0]
+        AG.LND.TOTL.K2: [0.1, 2.0e+7]
+
+  wdi/country_classification:
+    uniqueness_only: true
+
+  emdat/events:
+    window: h4_all
+    effective_end: {method: events}
+    completeness:
+      method: events
+      columns: [ISO, Start Year, Disaster Subgroup, Total Deaths, Total Affected]
+    ranges:
+      Start Year: [1900, 2026]
+      Start Month: [1, 12]
+      Total Deaths: [0, 5.0e+6]
+      Total Affected: [0, 2.0e+9]
+
+  nd_gain/vulnerability:
+    window: [1995, 2025]
+    effective_end: {method: panel_annual}
+    ranges: {value: [0.0, 1.0]}
+
+  nd_gain/readiness:
+    window: [1995, 2025]
+    effective_end: {method: panel_annual}
+    ranges: {value: [0.0, 1.0]}
+
+# ERA5 is scored from reports/profiling/profile.json (no second 2 GB scan).
+era5:
+  ranges: {t2m: [183.15, 333.15], tp: [0.0, null]}   # K (-90..+60 degC); m/day, >= 0
