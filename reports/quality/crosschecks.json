@@ -1,0 +1,616 @@
+{
+ "reference": {
+  "source": "WDICountry.csv rows with a Region",
+  "n": 217
+ },
+ "consistency": {
+  "faostat": {
+   "units_per_element": {
+    "5312": [
+     "ha"
+    ],
+    "5412": [
+     "kg/ha"
+    ],
+    "5510": [
+     "t"
+    ]
+   },
+   "yield_identity": {
+    "n_triples": 28916,
+    "n_off": 102,
+    "pct_off": 0.353,
+    "median_rel_diff": 1e-05,
+    "examples": [
+     {
+      "Area Code": "179",
+      "Item Code": "15",
+      "Year": "2022",
+      "reported_kg_ha": 1800.0,
+      "computed_kg_ha": 900.0,
+      "area_ha": 1.0
+     },
+     {
+      "Area Code": "179",
+      "Item Code": "15",
+      "Year": "2019",
+      "reported_kg_ha": 2333.3,
+      "computed_kg_ha": 1400.0,
+      "area_ha": 1.0
+     },
+     {
+      "Area Code": "35",
+      "Item Code": "56",
+      "Year": "2017",
+      "reported_kg_ha": 0.1,
+      "computed_kg_ha": 0.1,
+      "area_ha": 31699.0
+     },
+     {
+      "Area Code": "179",
+      "Item Code": "15",
+      "Year": "2023",
+      "reported_kg_ha": 3000.0,
+      "computed_kg_ha": 2400.0,
+      "area_ha": 1.0
+     },
+     {
+      "Area Code": "207",
+      "Item Code": "236",
+      "Year": "2023",
+      "reported_kg_ha": 1111.7,
+      "computed_kg_ha": 986.7,
+      "area_ha": 3.0
+     }
+    ],
+    "score": "Good"
+   },
+   "high_yields": [
+    {
+     "Area Code": "105",
+     "Item Code": "56",
+     "Year": "2011",
+     "yield_kg_ha": 33815.8,
+     "area_ha": 2850.0
+    },
+    {
+     "Area Code": "105",
+     "Item Code": "56",
+     "Year": "2014",
+     "yield_kg_ha": 34097.7,
+     "area_ha": 4798.0
+    },
+    {
+     "Area Code": "118",
+     "Item Code": "56",
+     "Year": "2013",
+     "yield_kg_ha": 31147.8,
+     "area_ha": 873.0
+    },
+    {
+     "Area Code": "118",
+     "Item Code": "56",
+     "Year": "2014",
+     "yield_kg_ha": 30753.2,
+     "area_ha": 1564.0
+    },
+    {
+     "Area Code": "221",
+     "Item Code": "56",
+     "Year": "2021",
+     "yield_kg_ha": 30691.0,
+     "area_ha": 507.0
+    },
+    {
+     "Area Code": "221",
+     "Item Code": "56",
+     "Year": "2022",
+     "yield_kg_ha": 39405.7,
+     "area_ha": 562.0
+    },
+    {
+     "Area Code": "225",
+     "Item Code": "56",
+     "Year": "2013",
+     "yield_kg_ha": 36761.9,
+     "area_ha": 21.0
+    },
+    {
+     "Area Code": "225",
+     "Item Code": "56",
+     "Year": "2015",
+     "yield_kg_ha": 35291.3,
+     "area_ha": 105.0
+    },
+    {
+     "Area Code": "225",
+     "Item Code": "56",
+     "Year": "2016",
+     "yield_kg_ha": 33396.5,
+     "area_ha": 179.0
+    },
+    {
+     "Area Code": "225",
+     "Item Code": "56",
+     "Year": "2017",
+     "yield_kg_ha": 30801.8,
+     "area_ha": 557.0
+    }
+   ],
+   "blank_vs_flag": {
+    "n_blank": 1305,
+    "blank_without_flag_M": 0,
+    "flag_M_with_value": 0,
+    "flag_shares_pct": {
+     "A": 79.03,
+     "E": 13.27,
+     "X": 3.3,
+     "I": 2.96,
+     "M": 1.44
+    },
+    "score": "Good"
+   },
+   "units_ok": true,
+   "score": "Good"
+  },
+  "noaa_co2": {
+   "missing_patterns_ndays_sdev_unc": {
+    "000": 627,
+    "111": 194,
+    "110": 1,
+    "010": 1
+   },
+   "months_disagreeing": [
+    {
+     "date": "1975-12-01",
+     "ndays": null,
+     "sdev": null,
+     "unc": 0.0
+    },
+    {
+     "date": "1984-04-01",
+     "ndays": 2.0,
+     "sdev": null,
+     "unc": 0.0
+    }
+   ],
+   "co2_missing_in_those_months": 0,
+   "score": "Acceptable"
+  },
+  "owid_code_name": {
+   "codes_with_several_names": {},
+   "names_with_several_codes": {},
+   "score": "Good"
+  },
+  "wdi_code_name": {
+   "codes_with_several_names": {},
+   "names_with_several_codes": {},
+   "score": "Good"
+  },
+  "wdi_indicator_name": {
+   "codes_with_several_names": {},
+   "names_with_several_codes": {},
+   "score": "Good"
+  },
+  "emdat_code_name": {
+   "codes_with_several_names": {},
+   "names_with_several_codes": {},
+   "score": "Good"
+  },
+  "required_values emdat/events": {
+   "absent": {},
+   "score": "Good"
+  },
+  "required_values faostat_crops_livestock/production": {
+   "absent": {},
+   "score": "Good"
+  },
+  "emdat_reporting_lag": {
+   "last_full_year": 2025,
+   "events_last_year": 413,
+   "prior_9y_mean": 410.2,
+   "prior_9y_sd": 45.7,
+   "z_last_year": 0.06,
+   "entry_date_missing": 0,
+   "export_age_of_last_year_days": 321,
+   "late_entry_pct_by_year": {
+    "2015": 1.8,
+    "2016": 0.6,
+    "2017": 1.1,
+    "2018": 1.2,
+    "2019": 0.5,
+    "2020": 1.0,
+    "2021": 0.0,
+    "2022": 0.2,
+    "2023": 1.5
+   },
+   "expected_missing_pct_last_year": 1.0,
+   "score": "Good"
+  }
+ },
+ "integrity": {
+  "wdi_codes_without_classification": [
+   "INX"
+  ],
+  "wdi": {
+   "n_codes": 218,
+   "n_in_reference": 217,
+   "reference_coverage_pct": 100.0,
+   "territory_or_other": [],
+   "historical": [],
+   "invalid": [
+    "INX (Not classified)"
+   ],
+   "reference_codes_absent": [],
+   "metric": 0.46,
+   "score": "Acceptable"
+  },
+  "owid_co2": {
+   "n_codes": 223,
+   "n_in_reference": 206,
+   "reference_coverage_pct": 94.9,
+   "territory_or_other": [
+    "AIA (Anguilla)",
+    "ATA (Antarctica)",
+    "BES (Bonaire Sint Eustatius and Saba)",
+    "COK (Cook Islands)",
+    "CXR (Christmas Island)",
+    "GLP (Guadeloupe)",
+    "GUF (French Guiana)",
+    "MSR (Montserrat)",
+    "MTQ (Martinique)",
+    "MYT (Mayotte)",
+    "NIU (Niue)",
+    "REU (Reunion)",
+    "SHN (Saint Helena)",
+    "SPM (Saint Pierre and Miquelon)",
+    "TWN (Taiwan)",
+    "VAT (Vatican)",
+    "WLF (Wallis and Futuna)"
+   ],
+   "historical": [],
+   "invalid": [],
+   "reference_codes_absent": [
+    "ASM",
+    "CHI",
+    "CYM",
+    "GIB",
+    "GUM",
+    "IMN",
+    "MAF",
+    "MNP",
+    "PRI",
+    "VIR",
+    "XKX"
+   ],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "faostat_mapping": {
+   "n_areas": 192,
+   "by_source": {
+    "m49": 185,
+    "none": 6,
+    "fao_code": 1
+   },
+   "unmapped_areas": [
+    "15 Belgium-Luxembourg (M49 '058)",
+    "51 Czechoslovakia (M49 '200)",
+    "62 Ethiopia PDR (M49 '230)",
+    "186 Serbia and Montenegro (M49 '891)",
+    "206 Sudan (former) (M49 '736)",
+    "248 Yugoslav SFR (M49 '890)"
+   ],
+   "m49_and_fao_code_disagree": [],
+   "iso3_from_several_areas": {}
+  },
+  "faostat": {
+   "n_codes": 186,
+   "n_in_reference": 181,
+   "reference_coverage_pct": 83.4,
+   "territory_or_other": [
+    "GLP (Guadeloupe)",
+    "GUF (French Guiana)",
+    "REU (R\u00e9union)",
+    "TWN (China, Taiwan Province of)"
+   ],
+   "historical": [
+    "SUN (USSR)",
+    "15 Belgium-Luxembourg (M49 '058)",
+    "51 Czechoslovakia (M49 '200)",
+    "62 Ethiopia PDR (M49 '230)",
+    "186 Serbia and Montenegro (M49 '891)",
+    "206 Sudan (former) (M49 '736)",
+    "248 Yugoslav SFR (M49 '890)"
+   ],
+   "invalid": [],
+   "reference_codes_absent": [
+    "ABW",
+    "AND",
+    "ASM",
+    "BHR",
+    "BMU",
+    "CHI",
+    "CUW",
+    "CYM",
+    "FRO",
+    "GIB",
+    "GNQ",
+    "GRL",
+    "GUM",
+    "IMN",
+    "ISL",
+    "KIR",
+    "KNA",
+    "LIE",
+    "MAC",
+    "MAF",
+    "MCO",
+    "MHL",
+    "MNP",
+    "NRU",
+    "PLW",
+    "SGP",
+    "SMR",
+    "SXM",
+    "SYC",
+    "TCA",
+    "TON",
+    "TUV",
+    "VGB",
+    "VIR",
+    "WSM",
+    "XKX"
+   ],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "emdat": {
+   "n_codes": 230,
+   "n_in_reference": 205,
+   "reference_coverage_pct": 94.5,
+   "territory_or_other": [
+    "AIA (Anguilla)",
+    "BLM (Saint Barth\u00e9lemy)",
+    "COK (Cook Islands)",
+    "GLP (Guadeloupe)",
+    "GUF (French Guiana)",
+    "MSR (Montserrat)",
+    "MTQ (Martinique)",
+    "MYT (Mayotte)",
+    "NIU (Niue)",
+    "REU (R\u00e9union)",
+    "SHN (Saint Helena)",
+    "TKL (Tokelau)",
+    "TWN (Taiwan (Province of China))",
+    "WLF (Wallis and Futuna Islands)"
+   ],
+   "historical": [
+    "ANT (Netherlands Antilles)",
+    "CSK (Czechoslovakia)",
+    "DDR (German Democratic Republic)",
+    "SCG (Serbia Montenegro)",
+    "SUN (Soviet Union)",
+    "YMD (People's Democratic Republic of Yemen)",
+    "YMN (Yemen Arab Republic)",
+    "YUG (Yugoslavia)"
+   ],
+   "invalid": [
+    "AZO (Azores Islands)",
+    "DFR (Germany Federal Republic)",
+    "SPI (Canary Islands)"
+   ],
+   "reference_codes_absent": [
+    "ABW",
+    "AND",
+    "CHI",
+    "CUW",
+    "FRO",
+    "GIB",
+    "GRL",
+    "IMN",
+    "MCO",
+    "NRU",
+    "SMR",
+    "XKX"
+   ],
+   "metric": 1.3,
+   "score": "Acceptable"
+  },
+  "nd_gain": {
+   "n_codes": 192,
+   "n_in_reference": 192,
+   "reference_coverage_pct": 88.5,
+   "territory_or_other": [],
+   "historical": [],
+   "invalid": [],
+   "reference_codes_absent": [
+    "ABW",
+    "ASM",
+    "BMU",
+    "CHI",
+    "CUW",
+    "CYM",
+    "FRO",
+    "GIB",
+    "GRL",
+    "GUM",
+    "HKG",
+    "IMN",
+    "MAC",
+    "MAF",
+    "MNP",
+    "NCL",
+    "PRI",
+    "PSE",
+    "PYF",
+    "SSD",
+    "SXM",
+    "TCA",
+    "VGB",
+    "VIR",
+    "XKX"
+   ],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "nd_gain_readiness_without_vulnerability": [
+   "LIE",
+   "SMR"
+  ],
+  "berkeley_country": {
+   "n_codes": 228,
+   "n_in_reference": 208,
+   "reference_coverage_pct": 95.9,
+   "territory_or_other": [
+    "AIA (Anguilla)",
+    "ATA (Antarctica)",
+    "ATF (French Southern and Antarctic Lands)",
+    "BES (Bonaire, Saint Eustatius and Saba)",
+    "CXR (Christmas Island)",
+    "ESH (Western Sahara)",
+    "FLK (Falkland Islands (Islas Malvinas))",
+    "GGY (Guernsey)",
+    "GLP (Guadeloupe)",
+    "GUF (French Guiana)",
+    "HMD (Heard Island and McDonald Islands)",
+    "JEY (Jersey)",
+    "MSR (Montserrat)",
+    "MTQ (Martinique)",
+    "MYT (Mayotte)",
+    "NIU (Niue)",
+    "REU (Reunion)",
+    "SJM (Svalbard and Jan Mayen)",
+    "SPM (Saint Pierre and Miquelon)",
+    "TWN (Taiwan)"
+   ],
+   "historical": [],
+   "invalid": [],
+   "reference_codes_absent": [
+    "BMU",
+    "CHI",
+    "CUW",
+    "GIB",
+    "MDV",
+    "MHL",
+    "NRU",
+    "TCA",
+    "TUV"
+   ],
+   "metric": 0.0,
+   "score": "Good"
+  },
+  "berkeley_2020": {
+   "countries_with_2020_data": 196,
+   "incomplete_2020": {
+    "KIR": 10
+   },
+   "header_last_row_counts": {
+    "2020-12-01": 196,
+    "2016-05-01": 32
+   }
+  }
+ },
+ "era5_extremes": {
+  "t2m": {
+   "highest": [
+    {
+     "lat": 30.0,
+     "lon": 58.75,
+     "month": "2024-07",
+     "value": 316.623046875
+    },
+    {
+     "lat": 30.25,
+     "lon": 58.75,
+     "month": "2024-07",
+     "value": 316.5546875
+    },
+    {
+     "lat": 29.75,
+     "lon": 58.75,
+     "month": "2024-07",
+     "value": 316.279296875
+    },
+    {
+     "lat": 30.5,
+     "lon": 58.5,
+     "month": "2024-07",
+     "value": 316.232421875
+    },
+    {
+     "lat": 30.0,
+     "lon": 59.0,
+     "month": "2024-07",
+     "value": 316.150390625
+    }
+   ],
+   "lowest": [
+    {
+     "lat": -79.5,
+     "lon": 90.5,
+     "month": "1987-08",
+     "value": 199.93072509765625
+    },
+    {
+     "lat": -76.75,
+     "lon": 103.5,
+     "month": "1975-08",
+     "value": 199.93215942382812
+    },
+    {
+     "lat": -79.5,
+     "lon": 90.25,
+     "month": "1987-08",
+     "value": 199.94830322265625
+    },
+    {
+     "lat": -76.75,
+     "lon": 103.25,
+     "month": "1975-08",
+     "value": 199.95559692382812
+    },
+    {
+     "lat": -79.5,
+     "lon": 90.75,
+     "month": "1987-08",
+     "value": 199.97564697265625
+    }
+   ]
+  },
+  "tp": {
+   "highest": [
+    {
+     "lat": 3.5,
+     "lon": -77.0,
+     "month": "1961-05",
+     "value": 0.1702423095703125
+    },
+    {
+     "lat": 3.25,
+     "lon": -77.0,
+     "month": "1971-07",
+     "value": 0.15080642700195312
+    },
+    {
+     "lat": -1.5,
+     "lon": -79.25,
+     "month": "1997-12",
+     "value": 0.14160919189453125
+    },
+    {
+     "lat": 3.5,
+     "lon": -77.25,
+     "month": "1961-05",
+     "value": 0.14061355590820312
+    },
+    {
+     "lat": -1.25,
+     "lon": -79.25,
+     "month": "1997-12",
+     "value": 0.13942337036132812
+    }
+   ]
+  }
+ }
+}
