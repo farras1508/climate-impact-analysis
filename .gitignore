@@ -45,7 +45,6 @@ renv/library/
 renv/staging/
 
 # ---- Generated reports (keep the source .qmd/.md, ignore renders) ----
-reports/profiling/
 reports/*_files/
 *.html
 
