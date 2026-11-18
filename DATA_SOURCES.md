@@ -9,7 +9,7 @@ run `make data` to download it yourself.
 | GISTEMP v4 | NASA GISS | v4 (GHCN v4 + ERSST v5) | 14-11-2026 | Public domain (US Gov) | GISTEMP Team (year). GISS Surface Temperature Analysis v4. Lenssen et al. (2019) |
 | HadCRUT5 | Met Office Hadley Centre / UEA CRU | 5.2.0.0 | 14-11-2026 | Open Government Licence v3 | Morice et al. (2021), JGR Atmospheres |
 | Berkeley Earth | Berkeley Earth | TBD | 14-11-2026 | CC BY-NC 4.0 | Rohde & Hausfather (2020), ESSD |
-| ERA5 monthly single levels | ECMWF / Copernicus C3S | ERA5 monthly averaged reanalysis (CDS), 1960-2025, 6 ZIP chunks | 2026-11-17 to completion (per chunk in manifest) | Copernicus licence (attribution required) | Hersbach et al. (2020), QJRMS; Copernicus Climate Change Service (C3S) Climate Data Store |
+| ERA5 monthly single levels | ECMWF / Copernicus C3S | ERA5 monthly averaged reanalysis (CDS), 1960-2025, 6 ZIP chunks | 2026-11-17 to 2026-11-18 (per chunk in manifest) | Copernicus licence (attribution required) | Hersbach et al. (2020), QJRMS; Copernicus Climate Change Service (C3S) Climate Data Store |
 | Mauna Loa CO₂ | NOAA GML | TBD | 14-11-2026 | Public domain; cite per GML | Lan, Tans & Thoning, NOAA GML |
 | ONI | NOAA CPC | TBD | 14-11-2026 | Public domain | NOAA CPC |
 | OWID CO₂ | Our World in Data | TBD | 14-11-2026 | CC BY 4.0 | Ritchie, Rosado & Roser |
