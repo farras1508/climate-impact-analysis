@@ -624,7 +624,7 @@ def main(argv: list[str] | None = None) -> int:
         json.dumps(results, indent=1, default=str) + "\n", encoding="utf-8", newline="\n"
     )
     (args.out / "scorecard.md").write_text(
-        render_scorecard(results) + "\n", encoding="utf-8", newline="\n"
+        render_scorecard(results), encoding="utf-8", newline="\n"
     )
     logger.info("wrote %s (%d table(s))", args.out, len(results))
     return 0

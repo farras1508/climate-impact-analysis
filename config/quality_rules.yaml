@@ -127,3 +127,30 @@ tables:
 # ERA5 is scored from reports/profiling/profile.json (no second 2 GB scan).
 era5:
   ranges: {t2m: [183.15, 333.15], tp: [0.0, null]}   # K (-90..+60 degC); m/day, >= 0
+
+# ---------------------------------------------------------------- Step 3.2b (DEC-065)
+crosschecks:
+  integrity_invalid_pct: {good: 0.0, acceptable: 2.0}       # unknown codes, % of a dataset's codes
+  yield_identity_pct: {good: 1.0, acceptable: 5.0}          # % of triples with |rel. diff| > tolerance
+  yield_identity_tolerance: 0.01                            # production / area vs reported yield
+  blank_flag_pct: {good: 0.0, acceptable: 1.0}              # % of blank values without flag M
+  emdat_late_entry_pct: {good: 5.0, acceptable: 10.0}       # expected share of last-year events not yet entered
+  emdat_mature_years: [2015, 2023]                          # years whose entry history is complete
+  # ISO 3166-3 codes of former countries (EM-DAT, OWID); classified as historical, not invalid
+  historical_codes:
+    SUN: Soviet Union
+    YUG: Yugoslavia (SFR)
+    CSK: Czechoslovakia
+    DDR: German Democratic Republic
+    DEW: West Germany
+    YMD: South Yemen
+    YMN: North Yemen (former code)
+    SCG: Serbia and Montenegro
+    ANT: Netherlands Antilles
+    VDR: North Vietnam
+    ZAR: Zaire
+    TMP: East Timor (former code)
+    ROM: Romania (former code)
+  required_values:
+    emdat/events: {Disaster Subgroup: [Hydrological, Meteorological, Climatological, Geophysical]}
+    faostat_crops_livestock/production: {Item Code: "@crops", Element Code: [5312, 5510, 5412]}
