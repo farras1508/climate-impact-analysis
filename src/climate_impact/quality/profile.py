@@ -472,13 +472,19 @@ def main(argv: list[str] | None = None) -> int:
         if not isinstance(result, dict):
             raise TypeError(f"{name}: profile is not a mapping")
         results[name] = result
-        (args.out / f"{name}.md").write_text(render_dataset(name, result), encoding="utf-8")
+        (args.out / f"{name}.md").write_text(
+            render_dataset(name, result), encoding="utf-8", newline="\n"
+        )
         logger.info("%s: profiled", name)
 
     ordered = {n: results[n] for n in [*READERS, ERA5] if n in results}
     payload = {"manifest_sha256": sha256_file(get_path("manifest")), "datasets": ordered}
-    json_path.write_text(json.dumps(payload, indent=1, sort_keys=False) + "\n", encoding="utf-8")
-    (args.out / "inventory.md").write_text(render_inventory(ordered), encoding="utf-8")
+    json_path.write_text(
+        json.dumps(payload, indent=1, sort_keys=False) + "\n", encoding="utf-8", newline="\n"
+    )
+    (args.out / "inventory.md").write_text(
+        render_inventory(ordered), encoding="utf-8", newline="\n"
+    )
     logger.info("wrote %s (%d dataset(s))", args.out, len(ordered))
     return 0
 
