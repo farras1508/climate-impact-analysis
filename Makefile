@@ -29,3 +29,5 @@ quality:  ## Step 3.2: score every raw table on the data-quality dimensions (rep
 	$(PY) -m climate_impact.quality.checks
 crosschecks:  ## Step 3.2b: consistency/integrity checks, ERA5 extremes, EM-DAT lag (reports/quality/)
 	$(PY) -m climate_impact.quality.crosschecks
+domain:  ## Step 3.3: baselines, state successions, reporting effort (reports/quality/)
+	$(PY) -m climate_impact.quality.domain
