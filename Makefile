@@ -33,3 +33,5 @@ domain:  ## Step 3.3: baselines, state successions, reporting effort (reports/qu
 	$(PY) -m climate_impact.quality.domain
 missingness:  ## Step 3.4: missingness patterns, logit tests, heatmaps (reports/quality/, reports/figures/)
 	$(PY) -m climate_impact.quality.missingness
+consistency:  ## Step 3.5: global records and ERA5 vs Berkeley by country (reports/quality/, reports/figures/)
+	$(PY) -m climate_impact.quality.consistency

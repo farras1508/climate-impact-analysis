@@ -252,3 +252,26 @@ missingness:
       source: nd_gain
       table: readiness
       year: 2024
+
+# ---------------------------------------------------------------- Step 3.5 (DEC-078)
+consistency:
+  # Sources are compared with each other only (differences, correlations, steps). No warming
+  # trend is estimated: that is H1, tested in Phase 6 (blinding).
+  global_series:                              # all rebased per calendar month to 1991-2020
+    gistemp: gistemp_v4_global_monthly/monthly
+    hadcrut5: hadcrut5_global_monthly/monthly
+    berkeley: berkeley_global_monthly/air_over_sea_ice   # DV1 primary table
+  global_window: [1880, 2024]                 # common to all three (Berkeley ends 2024)
+  periods: [[1880, 1919], [1920, 1949], [1950, 1979], [1980, 2024]]
+  # Agreement on year-to-year changes: first differences remove any shared trend, so the
+  # correlation measures agreement on variability rather than "both series go up".
+  global_diff_corr: {good: 0.90, acceptable: 0.80}
+  country_diff_corr: {good: 0.90, acceptable: 0.70}
+  # ERA5 vs Berkeley by country: fixed sample spanning size, climate zone, station density and
+  # the two territory cases found in Step 3.1 (FRA, USA). Chosen before any comparison.
+  country_window: [1961, 2020]                # Berkeley country files end 2020 (DEC-066)
+  countries: [USA, FRA, RUS, CAN, BRA, ARG, MEX, AUS, CHN, IND, IDN, JPN, DEU, FIN, NGA, COD,
+              KEN, EGY, SAU, MDG, RWA, NZL]
+  # Risk RD5: step in (ERA5 - Berkeley) at the start of satellite assimilation
+  rd5_split_year: 1979
+  rd5_step_tolerance_degc: 0.20               # tripwire: |step| >= 0.20 degC and Holm p < alpha

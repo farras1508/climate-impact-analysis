@@ -1,0 +1,551 @@
+{
+ "global": {
+  "window": [
+   1880,
+   2024
+  ],
+  "pairs": {
+   "gistemp-hadcrut5": {
+    "monthly_corr_levels": 0.9867,
+    "monthly_corr_changes": 0.8848,
+    "annual_corr_levels": 0.9919,
+    "annual_corr_changes": 0.9661,
+    "annual_difference_by_period": {
+     "1880-1919": {
+      "mean": 0.0721,
+      "sd": 0.0443,
+      "rms": 0.0843
+     },
+     "1920-1949": {
+      "mean": -0.032,
+      "sd": 0.0524,
+      "rms": 0.0606
+     },
+     "1950-1979": {
+      "mean": 0.0205,
+      "sd": 0.032,
+      "rms": 0.0376
+     },
+     "1980-2024": {
+      "mean": 0.0063,
+      "sd": 0.0179,
+      "rms": 0.0188
+     }
+    },
+    "largest_abs_difference": {
+     "year": 1892,
+     "degc": 0.1737
+    },
+    "score": "Good"
+   },
+   "gistemp-berkeley": {
+    "monthly_corr_levels": 0.989,
+    "monthly_corr_changes": 0.9043,
+    "annual_corr_levels": 0.9936,
+    "annual_corr_changes": 0.9703,
+    "annual_difference_by_period": {
+     "1880-1919": {
+      "mean": 0.1273,
+      "sd": 0.0432,
+      "rms": 0.1342
+     },
+     "1920-1949": {
+      "mean": 0.0415,
+      "sd": 0.037,
+      "rms": 0.0551
+     },
+     "1950-1979": {
+      "mean": 0.0314,
+      "sd": 0.0322,
+      "rms": 0.0445
+     },
+     "1980-2024": {
+      "mean": 0.0069,
+      "sd": 0.0188,
+      "rms": 0.0198
+     }
+    },
+    "largest_abs_difference": {
+     "year": 1884,
+     "degc": 0.2337
+    },
+    "score": "Good"
+   },
+   "hadcrut5-berkeley": {
+    "monthly_corr_levels": 0.9913,
+    "monthly_corr_changes": 0.9036,
+    "annual_corr_levels": 0.996,
+    "annual_corr_changes": 0.9791,
+    "annual_difference_by_period": {
+     "1880-1919": {
+      "mean": 0.0552,
+      "sd": 0.0356,
+      "rms": 0.0655
+     },
+     "1920-1949": {
+      "mean": 0.0735,
+      "sd": 0.0499,
+      "rms": 0.0883
+     },
+     "1950-1979": {
+      "mean": 0.0108,
+      "sd": 0.0137,
+      "rms": 0.0173
+     },
+     "1980-2024": {
+      "mean": 0.0005,
+      "sd": 0.0118,
+      "rms": 0.0117
+     }
+    },
+    "largest_abs_difference": {
+     "year": 1940,
+     "degc": 0.18
+    },
+    "score": "Good"
+   }
+  }
+ },
+ "countries": {
+  "ARG": {
+   "n_years": 60,
+   "corr_levels": 0.9572,
+   "corr_changes": 0.9787,
+   "rmsd_degc": 0.1128,
+   "rd5": {
+    "step_degc": -0.0356,
+    "se": 0.0434,
+    "p": 0.4121,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 4453,
+   "few_cells_flag": false,
+   "ne_area_km2": 2782454.0,
+   "berkeley_area_km2": 2770911.42,
+   "area_ratio_berkeley_to_ne": 0.996
+  },
+  "AUS": {
+   "n_years": 60,
+   "corr_levels": 0.9145,
+   "corr_changes": 0.9723,
+   "rmsd_degc": 0.2116,
+   "rd5": {
+    "step_degc": -0.1823,
+    "se": 0.1085,
+    "p": 0.0929,
+    "hac_lags": 3,
+    "p_holm": 0.929,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 11150,
+   "few_cells_flag": false,
+   "ne_area_km2": 7691237.0,
+   "berkeley_area_km2": 7687130.96,
+   "area_ratio_berkeley_to_ne": 0.999
+  },
+  "BRA": {
+   "n_years": 60,
+   "corr_levels": 0.9619,
+   "corr_changes": 0.9582,
+   "rmsd_degc": 0.1235,
+   "rd5": {
+    "step_degc": -0.0644,
+    "se": 0.0623,
+    "p": 0.3013,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 11309,
+   "few_cells_flag": false,
+   "ne_area_km2": 8467098.0,
+   "berkeley_area_km2": 8453622.46,
+   "area_ratio_berkeley_to_ne": 0.998
+  },
+  "CAN": {
+   "n_years": 60,
+   "corr_levels": 0.9977,
+   "corr_changes": 0.9983,
+   "rmsd_degc": 0.0638,
+   "rd5": {
+    "step_degc": 0.033,
+    "se": 0.0213,
+    "p": 0.1211,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 27112,
+   "few_cells_flag": false,
+   "ne_area_km2": 9923083.0,
+   "berkeley_area_km2": 9605156.38,
+   "area_ratio_berkeley_to_ne": 0.968
+  },
+  "CHN": {
+   "n_years": 60,
+   "corr_levels": 0.9915,
+   "corr_changes": 0.9676,
+   "rmsd_degc": 0.0773,
+   "rd5": {
+    "step_degc": 0.0614,
+    "se": 0.0176,
+    "p": 0.0005,
+    "hac_lags": 3,
+    "p_holm": 0.0085,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 15223,
+   "few_cells_flag": false,
+   "ne_area_km2": 9373024.0,
+   "berkeley_area_km2": 9356783.67,
+   "area_ratio_berkeley_to_ne": 0.998
+  },
+  "COD": {
+   "n_years": 60,
+   "corr_levels": 0.9311,
+   "corr_changes": 0.8654,
+   "rmsd_degc": 0.2038,
+   "rd5": {
+    "step_degc": 0.0581,
+    "se": 0.0734,
+    "p": 0.4285,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Acceptable",
+   "era5_cells": 3035,
+   "few_cells_flag": false,
+   "ne_area_km2": 2324447.0,
+   "berkeley_area_km2": 2294030.22,
+   "area_ratio_berkeley_to_ne": 0.987
+  },
+  "DEU": {
+   "n_years": 60,
+   "corr_levels": 0.9932,
+   "corr_changes": 0.9981,
+   "rmsd_degc": 0.1025,
+   "rd5": {
+    "step_degc": -0.1497,
+    "se": 0.0269,
+    "p": 0.0,
+    "hac_lags": 3,
+    "p_holm": 0.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 733,
+   "few_cells_flag": false,
+   "ne_area_km2": 357457.0,
+   "berkeley_area_km2": 357117.81,
+   "area_ratio_berkeley_to_ne": 0.999
+  },
+  "EGY": {
+   "n_years": 60,
+   "corr_levels": 0.9736,
+   "corr_changes": 0.9888,
+   "rmsd_degc": 0.2338,
+   "rd5": {
+    "step_degc": 0.2793,
+    "se": 0.0545,
+    "p": 0.0,
+    "hac_lags": 3,
+    "p_holm": 0.0,
+    "tripwire": true
+   },
+   "score": "Good",
+   "era5_cells": 1487,
+   "few_cells_flag": false,
+   "ne_area_km2": 1001772.0,
+   "berkeley_area_km2": 991545.58,
+   "area_ratio_berkeley_to_ne": 0.99
+  },
+  "FIN": {
+   "n_years": 60,
+   "corr_levels": 0.9985,
+   "corr_changes": 0.9988,
+   "rmsd_degc": 0.0823,
+   "rd5": {
+    "step_degc": -0.0666,
+    "se": 0.0213,
+    "p": 0.0018,
+    "hac_lags": 3,
+    "p_holm": 0.027,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 986,
+   "few_cells_flag": false,
+   "ne_area_km2": 332613.0,
+   "berkeley_area_km2": 318299.21,
+   "area_ratio_berkeley_to_ne": 0.957
+  },
+  "FRA": {
+   "n_years": 60,
+   "corr_levels": 0.996,
+   "corr_changes": 0.9948,
+   "rmsd_degc": 0.082,
+   "rd5": {
+    "step_degc": 0.005,
+    "se": 0.0241,
+    "p": 0.8357,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 1151,
+   "few_cells_flag": false,
+   "ne_area_km2": 636062.0,
+   "berkeley_area_km2": 658275.47,
+   "area_ratio_berkeley_to_ne": 1.035
+  },
+  "IDN": {
+   "n_years": 60,
+   "corr_levels": 0.9534,
+   "corr_changes": 0.919,
+   "rmsd_degc": 0.2398,
+   "rd5": {
+    "step_degc": 0.3407,
+    "se": 0.0594,
+    "p": 0.0,
+    "hac_lags": 3,
+    "p_holm": 0.0,
+    "tripwire": true
+   },
+   "score": "Good",
+   "era5_cells": 2413,
+   "few_cells_flag": false,
+   "ne_area_km2": 1863909.0,
+   "berkeley_area_km2": 1854024.48,
+   "area_ratio_berkeley_to_ne": 0.995
+  },
+  "IND": {
+   "n_years": 60,
+   "corr_levels": 0.9754,
+   "corr_changes": 0.971,
+   "rmsd_degc": 0.0911,
+   "rd5": {
+    "step_degc": -0.0716,
+    "se": 0.0269,
+    "p": 0.0077,
+    "hac_lags": 3,
+    "p_holm": 0.1001,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 4441,
+   "few_cells_flag": false,
+   "ne_area_km2": 3148263.0,
+   "berkeley_area_km2": 3127774.46,
+   "area_ratio_berkeley_to_ne": 0.993
+  },
+  "JPN": {
+   "n_years": 60,
+   "corr_levels": 0.9735,
+   "corr_changes": 0.9703,
+   "rmsd_degc": 0.1764,
+   "rd5": {
+    "step_degc": 0.1894,
+    "se": 0.0667,
+    "p": 0.0045,
+    "hac_lags": 3,
+    "p_holm": 0.063,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 612,
+   "few_cells_flag": false,
+   "ne_area_km2": 370276.0,
+   "berkeley_area_km2": 367860.53,
+   "area_ratio_berkeley_to_ne": 0.993
+  },
+  "KEN": {
+   "n_years": 60,
+   "corr_levels": 0.9661,
+   "corr_changes": 0.9205,
+   "rmsd_degc": 0.146,
+   "rd5": {
+    "step_degc": 0.0311,
+    "se": 0.0532,
+    "p": 0.5583,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 761,
+   "few_cells_flag": false,
+   "ne_area_km2": 592189.0,
+   "berkeley_area_km2": 589741.11,
+   "area_ratio_berkeley_to_ne": 0.996
+  },
+  "MDG": {
+   "n_years": 60,
+   "corr_levels": 0.9458,
+   "corr_changes": 0.896,
+   "rmsd_degc": 0.1533,
+   "rd5": {
+    "step_degc": 0.0943,
+    "se": 0.0719,
+    "p": 0.1895,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Acceptable",
+   "era5_cells": 816,
+   "few_cells_flag": false,
+   "ne_area_km2": 592826.0,
+   "berkeley_area_km2": 588824.5,
+   "area_ratio_berkeley_to_ne": 0.993
+  },
+  "MEX": {
+   "n_years": 60,
+   "corr_levels": 0.9231,
+   "corr_changes": 0.9758,
+   "rmsd_degc": 0.3395,
+   "rd5": {
+    "step_degc": 0.442,
+    "se": 0.065,
+    "p": 0.0,
+    "hac_lags": 3,
+    "p_holm": 0.0,
+    "tripwire": true
+   },
+   "score": "Good",
+   "era5_cells": 2793,
+   "few_cells_flag": false,
+   "ne_area_km2": 1957879.0,
+   "berkeley_area_km2": 1955384.74,
+   "area_ratio_berkeley_to_ne": 0.999
+  },
+  "NGA": {
+   "n_years": 60,
+   "corr_levels": 0.9347,
+   "corr_changes": 0.8969,
+   "rmsd_degc": 0.174,
+   "rd5": {
+    "step_degc": -0.1368,
+    "se": 0.0737,
+    "p": 0.0636,
+    "hac_lags": 3,
+    "p_holm": 0.7632,
+    "tripwire": false
+   },
+   "score": "Acceptable",
+   "era5_cells": 1202,
+   "few_cells_flag": false,
+   "ne_area_km2": 907833.0,
+   "berkeley_area_km2": 911541.0,
+   "area_ratio_berkeley_to_ne": 1.004
+  },
+  "NZL": {
+   "n_years": 60,
+   "corr_levels": 0.969,
+   "corr_changes": 0.9789,
+   "rmsd_degc": 0.1413,
+   "rd5": {
+    "step_degc": 0.0883,
+    "se": 0.0773,
+    "p": 0.2531,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 473,
+   "few_cells_flag": false,
+   "ne_area_km2": 267242.0,
+   "berkeley_area_km2": 264067.68,
+   "area_ratio_berkeley_to_ne": 0.988
+  },
+  "RUS": {
+   "n_years": 60,
+   "corr_levels": 0.9991,
+   "corr_changes": 0.999,
+   "rmsd_degc": 0.0427,
+   "rd5": {
+    "step_degc": 0.0028,
+    "se": 0.0166,
+    "p": 0.867,
+    "hac_lags": 3,
+    "p_holm": 1.0,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 46852,
+   "few_cells_flag": false,
+   "ne_area_km2": 16973513.0,
+   "berkeley_area_km2": 16732931.01,
+   "area_ratio_berkeley_to_ne": 0.986
+  },
+  "RWA": {
+   "n_years": 60,
+   "corr_levels": 0.9198,
+   "corr_changes": 0.8095,
+   "rmsd_degc": 0.2449,
+   "rd5": {
+    "step_degc": 0.1549,
+    "se": 0.0835,
+    "p": 0.0636,
+    "hac_lags": 3,
+    "p_holm": 0.7632,
+    "tripwire": false
+   },
+   "score": "Acceptable",
+   "era5_cells": 35,
+   "few_cells_flag": false,
+   "ne_area_km2": 25273.0,
+   "berkeley_area_km2": 24651.27,
+   "area_ratio_berkeley_to_ne": 0.975
+  },
+  "SAU": {
+   "n_years": 60,
+   "corr_levels": 0.9447,
+   "corr_changes": 0.9626,
+   "rmsd_degc": 0.4433,
+   "rd5": {
+    "step_degc": 0.7202,
+    "se": 0.0783,
+    "p": 0.0,
+    "hac_lags": 3,
+    "p_holm": 0.0,
+    "tripwire": true
+   },
+   "score": "Good",
+   "era5_cells": 2737,
+   "few_cells_flag": false,
+   "ne_area_km2": 1921560.0,
+   "berkeley_area_km2": 1906272.91,
+   "area_ratio_berkeley_to_ne": 0.992
+  },
+  "USA": {
+   "n_years": 60,
+   "corr_levels": 0.9892,
+   "corr_changes": 0.9932,
+   "rmsd_degc": 0.1211,
+   "rd5": {
+    "step_degc": 0.1116,
+    "se": 0.0333,
+    "p": 0.0008,
+    "hac_lags": 3,
+    "p_holm": 0.0128,
+    "tripwire": false
+   },
+   "score": "Good",
+   "era5_cells": 17736,
+   "few_cells_flag": false,
+   "ne_area_km2": 9455760.0,
+   "berkeley_area_km2": 9299822.52,
+   "area_ratio_berkeley_to_ne": 0.984
+  }
+ }
+}
